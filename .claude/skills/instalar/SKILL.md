@@ -60,17 +60,27 @@ a passo que está no comentário do `.env.example`:
 3. `CLOUDINARY_*` (plano grátis). Só necessária para publicar no Instagram; pode ficar para
    quando houver o primeiro vídeo aprovado.
 
-## Fase 4: manager
+## Fase 4: manager (banco da rede — obrigatório)
 
-Perguntar se o usuário quer rodar o manager agora (fila de publicação multicanal). Se não,
-pular e marcar como pendente. Se sim:
+Todo dado da rede vive no banco do manager, então esta fase não é opcional. Precisa do
+Docker Desktop. Containers e portas próprios (`dark-postgres` em 5436, `dark-minio` em
+9010/9011), para não colidir com outro manager na mesma máquina:
+
+```bash
+cd manager
+docker compose up -d postgres minio && docker compose up minio-init
+npx prisma migrate deploy
+npm run import:canais -- --commit   # só se houver uma pasta canais/ legada
+```
+
+Depois, conferir que o MCP `dark-rede` (`.mcp.json`) aparece no `/mcp` do Claude Code.
+Para o `.env`:
 - `cp manager/.env.example manager/.env`;
 - `AUTH_SECRET`: `openssl rand -base64 32`; `ENCRYPTION_KEY`: `openssl rand -hex 32`
   (gerar e gravar direto no arquivo, sem mostrar). Avisar: perder a `ENCRYPTION_KEY` invalida
   as credenciais de canal guardadas no banco;
 - `ADMIN_USERNAME`/`ADMIN_PASSWORD`: perguntar ao usuário;
-- `DATABASE_URL`: Postgres local (`docker compose up -d` em `manager/`) ou outro que o usuário
-  indicar. Ver `manager/README.md`;
+- `DATABASE_URL`: o padrão do `.env.example` já aponta para o `dark-postgres` local;
 - `PUBLISHING_DRY_RUN=true` até o usuário dizer o contrário.
 
 ## Fase 5: canais

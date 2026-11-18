@@ -78,8 +78,8 @@ O que importa:
 
 - **Origem editorial:** `marketing/conteudo/` — versionado no git, nunca tocado
   pelo manager.
-- **Banco:** `docker exec pm-postgres pg_dump -U pm publication_manager > backup.sql`
-- **MinIO:** volume `manager_pm-minio`. As mídias também continuam na origem,
+- **Banco:** `docker exec dark-postgres pg_dump -U dark dark > backup.sql`
+- **MinIO:** volume `dark_dark-minio`. As mídias também continuam na origem,
   então o bucket é reconstruível rodando o import de novo.
 - **`.env`:** não versionado. `ENCRYPTION_KEY` perdida = credenciais de canal
   perdidas (reconfiguráveis).

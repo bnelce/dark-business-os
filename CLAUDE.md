@@ -37,6 +37,12 @@ código.
 
 ---
 
+**Dados da rede ficam fora do repo** (desde 18/11/2026): canais, pautas,
+roteiros, fontes e métricas vivem no Postgres do `manager/`; mídia no MinIO;
+segredos nos `.env`. O Claude lê e grava pelo MCP `dark-rede` (`.mcp.json`).
+O repo é só o motor, reutilizável por outra rede. `canais/` é legado e sai do
+git quando as skills estiverem no MCP. Spec: `docs/specs/2026-11-18-painel-e-radar.md`.
+
 ## Regras editoriais (inegociáveis)
 
 A política de "conteúdo inautêntico" do YouTube (desde 15/07/2025) avalia o
@@ -44,8 +50,9 @@ A política de "conteúdo inautêntico" do YouTube (desde 15/07/2025) avalia o
 
 1. **Padrão no formato, autenticidade no conteúdo.** Cada vídeo tem tese,
    pesquisa e dados próprios. Nunca reaproveitar roteiro trocando nomes.
-2. **Toda afirmação factual tem fonte**, salva em `videos/<...>/fontes/`.
-   O roteiro é versionado no git como prova de processo.
+2. **Toda afirmação factual tem fonte**, registrada no painel (`Source`, com
+   cópia no MinIO). Cada versão de pauta, embalagem e roteiro fica salva como
+   `Revision` imutável no banco: esse histórico é a prova de processo para o YPP.
 3. **Título e thumbnail antes do roteiro.** Uma pauta só entra no backlog se
    tiver um outlier comprovado no nicho (vídeo com 3x ou mais a média do canal
    de origem).

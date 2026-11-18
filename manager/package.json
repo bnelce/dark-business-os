@@ -15,17 +15,19 @@
     "db:deploy": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
-    "db:test:setup": "docker exec pm-postgres psql -U pm -d postgres -c 'CREATE DATABASE publication_manager_test' || true && DATABASE_URL=postgresql://pm:pm@localhost:5435/publication_manager_test prisma migrate deploy",
+    "db:test:setup": "docker exec dark-postgres psql -U dark -d postgres -c 'CREATE DATABASE dark_test' || true && DATABASE_URL=postgresql://dark:dark@localhost:5436/dark_test prisma migrate deploy",
     "limpar-ensaios": "tsx --env-file=.env src/import/limpar-ensaios.ts",
     "worker:prod": "tsx src/worker/index.ts",
     "import:prod": "tsx src/import/cli.ts",
     "checar-canal": "tsx --env-file=.env src/import/checar-canal.ts",
-    "checar-canal:prod": "tsx src/import/checar-canal.ts"
+    "checar-canal:prod": "tsx src/import/checar-canal.ts",
+    "import:canais": "tsx --env-file=.env src/rede/importar-canais.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "@prisma/client": "^6.19.3",
     "@radix-ui/react-dialog": "^1.1.23",
     "@radix-ui/react-dropdown-menu": "^2.1.24",

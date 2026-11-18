@@ -85,19 +85,20 @@ model Project {
 
   channelConfigs ChannelConfig[]
   publications   Publication[]
+  darkChannel    DarkChannel?
 }
 
 model ChannelConfig {
-  id        String   @id @default(cuid())
-  projectId String
-  channel   Channel
+  id          String   @id @default(cuid())
+  projectId   String
+  channel     Channel
   /// @revisaorapida1ano — só rótulo, a identidade real vem das credenciais.
-  handle    String?
+  handle      String?
   /// Credenciais cifradas em AES-256-GCM (src/lib/crypto.ts). Nunca em texto claro.
   credentials String?
-  isActive  Boolean  @default(true)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   project      Project       @relation(fields: [projectId], references: [id], onDelete: Cascade)
   publications Publication[]
@@ -106,7 +107,7 @@ model ChannelConfig {
 }
 
 model Publication {
-  id              String            @id @default(cuid())
+  id              String  @id @default(cuid())
   projectId       String
   channelConfigId String?
 
@@ -164,7 +165,7 @@ model Publication {
 }
 
 model Media {
-  id            String  @id @default(cuid())
+  id            String   @id @default(cuid())
   publicationId String
   /// Ordem no carrossel, começando em 1. Único por publicação.
   position      Int
@@ -203,4 +204,289 @@ model WorkerInstance {
   version         String?
   lastHeartbeatAt DateTime @default(now())
   startedAt       DateTime @default(now())
+}
+
+// ================================================================ rede de canais dark
+// Todo dado de uma rede vive aqui, não no repositório (docs/specs/2026-11-18-painel-e-radar.md).
+
+enum ChannelPhase {
+  CANDIDATO
+  PILOTO
+  ATIVO
+  PAUSADO
+  ENCERRADO
+}
+
+enum SignalType {
+  OUTLIER // views >= 3x a mediana do canal de origem
+  VELOCIDADE // views/hora nas primeiras 72h >= 3x a mediana do canal
+  BRECHA // muitas views num canal pequeno ou novo
+  TENDENCIA // mesmo tema em 3+ canais na mesma semana
+}
+
+enum SignalStatus {
+  NOVO
+  VIRA_PAUTA
+  DESCARTADO
+}
+
+enum PautaStatus {
+  PROPOSTA
+  APROVADA
+  DESCARTADA
+  EM_PRODUCAO
+}
+
+/// Etapas do processo. As marcadas com ✋ só avançam por ação do usuário no painel.
+enum VideoStage {
+  EMBALAGEM // ✋ aprovar título e thumb
+  PESQUISA
+  ROTEIRO
+  VOZ
+  MONTAGEM
+  REVISAO // ✋ aprovar o vídeo final
+  AGENDADO
+  NO_AR
+  ANALISE
+}
+
+enum RevisionTarget {
+  PAUTA
+  EMBALAGEM
+  ROTEIRO
+}
+
+enum Author {
+  USUARIO
+  CLAUDE
+  LLM
+  SISTEMA
+}
+
+enum AssetKind {
+  NARRACAO
+  RENDER
+  CORTE
+  THUMB
+  FONTE
+  OUTRO
+}
+
+model DarkChannel {
+  id          String       @id @default(cuid())
+  slug        String       @unique
+  name        String
+  handle      String?
+  niche       String
+  phase       ChannelPhase @default(CANDIDATO)
+  /// canal.md estruturado: ângulo, público, voz, cadência, produto, regras do canal.
+  profile     Json         @default("{}")
+  /// identidade.md estruturado: paleta, tipografia, vinheta, template de thumbnail.
+  identity    Json         @default("{}")
+  /// Palavras usadas na busca do Radar.
+  keywords    String[]     @default([])
+  /// Categorias do YouTube (videoCategoryId) para o mostPopular.
+  categoryIds String[]     @default([])
+  /// Liga à publicação (ChannelConfig com credenciais cifradas).
+  projectId   String?      @unique
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  project    Project?           @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  references ChannelReference[]
+  pautas     Pauta[]
+  videos     Video[]
+}
+
+model ReferenceChannel {
+  id                String    @id @default(cuid())
+  youtubeId         String    @unique
+  title             String
+  handle            String?
+  subscribers       Int?
+  videoCount        Int?
+  publishedAt       DateTime?
+  uploadsPlaylistId String?
+  active            Boolean   @default(true)
+  lastCollectedAt   DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  channels ChannelReference[]
+  videos   RefVideo[]
+}
+
+model ChannelReference {
+  darkChannelId      String
+  referenceChannelId String
+  /// Por que este canal é referência (anotado por quem adicionou).
+  note               String?
+  addedBy            Author   @default(USUARIO)
+  createdAt          DateTime @default(now())
+
+  darkChannel      DarkChannel      @relation(fields: [darkChannelId], references: [id], onDelete: Cascade)
+  referenceChannel ReferenceChannel @relation(fields: [referenceChannelId], references: [id], onDelete: Cascade)
+
+  @@id([darkChannelId, referenceChannelId])
+}
+
+model RefVideo {
+  id          String   @id @default(cuid())
+  youtubeId   String   @unique
+  channelId   String?
+  title       String
+  publishedAt DateTime
+  durationSec Int?
+  thumbUrl    String?
+  /// De onde veio: UPLOADS, MOST_POPULAR, BUSCA.
+  origin      String
+  createdAt   DateTime @default(now())
+
+  channel   ReferenceChannel?  @relation(fields: [channelId], references: [id], onDelete: SetNull)
+  snapshots RefVideoSnapshot[]
+  signals   Signal[]
+
+  @@index([channelId, publishedAt])
+}
+
+model RefVideoSnapshot {
+  id         String   @id @default(cuid())
+  videoId    String
+  capturedAt DateTime @default(now())
+  views      Int
+  likes      Int?
+  comments   Int?
+
+  video RefVideo @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@index([videoId, capturedAt])
+}
+
+model Signal {
+  id         String       @id @default(cuid())
+  videoId    String
+  type       SignalType
+  score      Float
+  /// views ÷ mediana (OUTLIER) ou velocidade ÷ mediana de velocidade (VELOCIDADE).
+  multiple   Float?
+  baseline   Float?
+  status     SignalStatus @default(NOVO)
+  /// "Por que funcionou" — escrito pelo Claude ao interpretar o sinal.
+  note       String?
+  detectedAt DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+
+  video  RefVideo @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  pautas Pauta[]
+
+  @@unique([videoId, type])
+  @@index([status, score])
+}
+
+/// Uso diário da cota da YouTube Data API (10.000 unidades/dia por projeto do Google).
+model QuotaUsage {
+  day   DateTime @id @db.Date
+  units Int      @default(0)
+}
+
+model Pauta {
+  id            String      @id @default(cuid())
+  darkChannelId String
+  signalId      String?
+  thesis        String
+  angle         String?
+  titles        String[]    @default([])
+  status        PautaStatus @default(PROPOSTA)
+  createdBy     Author      @default(CLAUDE)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  darkChannel DarkChannel @relation(fields: [darkChannelId], references: [id], onDelete: Cascade)
+  signal      Signal?     @relation(fields: [signalId], references: [id], onDelete: SetNull)
+  video       Video?
+  revisions   Revision[]
+}
+
+model Video {
+  id             String     @id @default(cuid())
+  darkChannelId  String
+  pautaId        String     @unique
+  stage          VideoStage @default(EMBALAGEM)
+  title          String?
+  /// Momento em que entrou em cada etapa: { "PESQUISA": "2026-11-20T..." }.
+  stageDates     Json       @default("{}")
+  youtubeVideoId String?
+  publishedAt    DateTime?
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  darkChannel DarkChannel @relation(fields: [darkChannelId], references: [id], onDelete: Cascade)
+  pauta       Pauta       @relation(fields: [pautaId], references: [id], onDelete: Cascade)
+  revisions   Revision[]
+  sources     Source[]
+  assets      Asset[]
+  metrics     Metric[]
+
+  @@index([darkChannelId, stage])
+}
+
+/// Versão imutável de pauta, embalagem ou roteiro. É a prova de processo (YPP):
+/// nunca editar nem apagar uma linha; salvar de novo cria a versão seguinte.
+model Revision {
+  id        String         @id @default(cuid())
+  target    RevisionTarget
+  pautaId   String?
+  videoId   String?
+  version   Int
+  content   String
+  author    Author
+  note      String?
+  createdAt DateTime       @default(now())
+
+  pauta Pauta? @relation(fields: [pautaId], references: [id], onDelete: Cascade)
+  video Video? @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@unique([target, pautaId, videoId, version])
+  @@index([videoId, target, version])
+}
+
+model Source {
+  id         String   @id @default(cuid())
+  videoId    String
+  url        String
+  title      String?
+  /// A afirmação do roteiro que esta fonte sustenta.
+  claim      String?
+  accessedAt DateTime @default(now())
+  /// Cópia salva (PDF/print) no MinIO.
+  objectKey  String?
+  createdAt  DateTime @default(now())
+
+  video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+}
+
+model Asset {
+  id        String    @id @default(cuid())
+  videoId   String
+  kind      AssetKind
+  /// Chave no MinIO ou caminho local.
+  location  String
+  meta      Json      @default("{}")
+  createdAt DateTime  @default(now())
+
+  video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+}
+
+model Metric {
+  id           String   @id @default(cuid())
+  videoId      String
+  day          DateTime @db.Date
+  views        Int?
+  ctr          Float?
+  avgRetention Float?
+  retention30s Float?
+
+  video Video @relation(fields: [videoId], references: [id], onDelete: Cascade)
+
+  @@unique([videoId, day])
 }

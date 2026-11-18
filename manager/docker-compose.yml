@@ -1,35 +1,37 @@
-# Ambiente local do Publication Manager.
-# Portas deslocadas: 5432/5433/5434 já estão ocupadas nesta máquina.
+# Ambiente local do painel da rede (Dark Business OS).
+# Nome de projeto, containers, volumes e portas próprios, para não colidir com
+# outro manager (ex.: o do VENDAS-IG, que usa pm-postgres:5435 e pm-minio:9000).
+name: dark
 services:
   postgres:
     image: postgres:18-alpine
-    container_name: pm-postgres
+    container_name: dark-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: pm
-      POSTGRES_PASSWORD: pm
-      POSTGRES_DB: publication_manager
-    ports: ["127.0.0.1:5435:5432"]
-    volumes: ["pm-postgres:/var/lib/postgresql"]
+      POSTGRES_USER: dark
+      POSTGRES_PASSWORD: dark
+      POSTGRES_DB: dark
+    ports: ["127.0.0.1:5436:5432"]
+    volumes: ["dark-postgres:/var/lib/postgresql"]
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U pm -d publication_manager"]
+      test: ["CMD-SHELL", "pg_isready -U dark -d dark"]
       interval: 5s
       timeout: 3s
       retries: 10
 
   minio:
     image: minio/minio:latest
-    container_name: pm-minio
+    container_name: dark-minio
     restart: unless-stopped
     command: server /data --console-address ":9001"
     environment:
       MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-pmadmin}
       MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-pmadmin123}
     ports:
-      - "9000:9000"   # API S3
+      - "9010:9000"   # API S3
       # Console admin: só em 127.0.0.1, nunca exposto na rede (item 37 do spec).
-      - "127.0.0.1:9001:9001"
-    volumes: ["pm-minio:/data"]
+      - "127.0.0.1:9011:9001"
+    volumes: ["dark-minio:/data"]
     healthcheck:
       test: ["CMD", "mc", "ready", "local"]
       interval: 5s
@@ -38,13 +40,14 @@ services:
 
   # Cria o bucket e o deixa pronto. Roda uma vez e sai.
   minio-init:
-    image: minio/mc:latest
+    # minio/mc saiu do Docker Hub; o mc também vem dentro da imagem do servidor.
+    image: minio/minio:latest
     depends_on:
       minio: { condition: service_healthy }
     environment:
       MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-pmadmin}
       MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:-pmadmin123}
-      MINIO_BUCKET: ${MINIO_BUCKET:-publication-media}
+      MINIO_BUCKET: ${MINIO_BUCKET:-dark-media}
     entrypoint: >
       /bin/sh -c "
       mc alias set local http://minio:9000 $$MINIO_ACCESS_KEY $$MINIO_SECRET_KEY &&
@@ -59,11 +62,11 @@ services:
   app:
     profiles: ["completo"]
     build: .
-    container_name: pm-app
+    container_name: dark-app
     command: sh -c "npx prisma migrate deploy && npm run dev"
     env_file: [.env]
     environment:
-      DATABASE_URL: postgresql://pm:pm@postgres:5432/publication_manager
+      DATABASE_URL: postgresql://dark:dark@postgres:5432/dark
       MINIO_ENDPOINT: minio
     ports: ["3100:3100"]
     depends_on:
@@ -73,11 +76,11 @@ services:
   worker:
     profiles: ["completo"]
     build: .
-    container_name: pm-worker
+    container_name: dark-worker
     command: npm run worker
     env_file: [.env]
     environment:
-      DATABASE_URL: postgresql://pm:pm@postgres:5432/publication_manager
+      DATABASE_URL: postgresql://dark:dark@postgres:5432/dark
       MINIO_ENDPOINT: minio
       # Um worker por vez. O lock aguenta mais de um, mas publicar em rajada
       # é ruim pro alcance — o espaçamento vem do agendamento.
@@ -87,5 +90,5 @@ services:
       minio: { condition: service_healthy }
 
 volumes:
-  pm-postgres:
-  pm-minio:
+  dark-postgres:
+  dark-minio:

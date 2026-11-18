@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dark-rede": {
+      "command": "npx",
+      "args": ["--prefix", "manager", "tsx", "--env-file=manager/.env", "manager/src/mcp/server.ts"]
+    }
+  }
+}

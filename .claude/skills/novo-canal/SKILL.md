@@ -1,6 +1,6 @@
 ---
 name: novo-canal
-description: Adiciona um canal novo à rede de canais dark. Valida o nicho (demanda × concorrência, RPM, risco de política), propõe nomes e confere os handles, cria canais/<slug>/ com canal.md, identidade.md e pautas.md, gera o tema visual no Remotion e registra o canal em canais/_rede.md. Use quando o usuário disser "novo canal", "adicionar canal", "criar canal de X", "trocar o canal Y por outro nicho", ou /novo-canal.
+description: Adiciona um canal novo à rede de canais dark. Valida o nicho (demanda × concorrência, RPM, risco de política), propõe nomes e confere os handles, grava o canal no banco da rede pelo MCP dark-rede (perfil, identidade, palavras do Radar e 20 a 40 canais de referência) e gera o tema visual no Remotion. Use quando o usuário disser "novo canal", "adicionar canal", "criar canal de X", "trocar o canal Y por outro nicho", ou /novo-canal.
 ---
 
 # /novo-canal
@@ -14,8 +14,12 @@ usuário.
 Se o usuário já trouxe nicho e ângulo, seguir. Se não, perguntar uma coisa só:
 "Qual assunto esse canal cobre e por que alguém assistiria 15 minutos sobre ele?"
 
+**Pré-requisitos:** o MCP `dark-rede` respondendo (`rede_listar_canais`) e a
+`YT_API_KEY` no `.env` da raiz. Sem a chave, os passos 2 e 5 não têm dados reais:
+avisar e oferecer o `/instalar` antes de seguir.
+
 Ler antes:
-- `canais/_rede.md`, para não repetir nicho nem colidir com outro canal;
+- `rede_listar_canais` (MCP), para não repetir nicho nem colidir com outro canal;
 - `docs/pesquisa/roadmap-rede-canais-dark.md` (seções 2 e 3);
 - `docs/pesquisa/reports/` (RPM e risco por nicho).
 
@@ -51,48 +55,65 @@ Para cada nome, conferir se está livre:
 
 Mostrar a tabela e o usuário escolhe.
 
-## Passo 4: criar a estrutura
+## Passo 4: gravar o canal no banco
 
-Slug em kebab-case. Criar:
+Slug em kebab-case. Tudo vai para o banco, nada para o repo (o repo é só o motor):
 
-```
-canais/<slug>/
-  canal.md
-  identidade.md
-  pautas.md
-  videos/.gitkeep
-```
+- `canal_criar(slug, nome, nicho)` se o canal ainda não existe (os candidatos do
+  roadmap já existem: usar `canal_obter`);
+- `canal_atualizar` com:
+  - `perfil`: ângulo (o que torna cada vídeo autêntico), público, idioma (inglês),
+    voz TTS, cadência (piloto: 2 longos + 6 cortes por semana), motor visual base
+    do `reels/`, produto low cost, riscos e regras do canal;
+  - `identidade`: paleta (4 a 6 cores com hex), tipografia (Google Fonts), estilo
+    de thumbnail, vinheta de 3s, lower-thirds;
+  - `handle` escolhido e `fase` (`PILOTO` ou `CANDIDATO`).
 
-**canal.md:** nicho, ângulo (o que torna cada vídeo autêntico), público,
-idioma (inglês), voz TTS escolhida, cadência (piloto: 2 longos + 6 cortes por
-semana), estilo de vídeo base (qual motor do `reels/`), produto low cost, fase,
-riscos e regras específicas do canal.
+## Passo 5: configurar o Radar do canal
 
-**identidade.md:** paleta (4 a 6 cores com hex), tipografia (Google Fonts),
-estilo de thumbnail, vinheta de 3s, lower-thirds.
+É o que alimenta as pautas: sem canais de referência o Radar não acha outliers.
 
-**pautas.md:** 10 pautas iniciais. Cada uma com título candidato, ideia da
-thumbnail, vídeo-outlier de referência (link + views ÷ média do canal) e
-fontes primárias prováveis.
+1. **Palavras de busca** (5 a 10, em inglês, por tema e não pelo nome do nicho:
+   "why is rent so high", não "economics") e **categorias do YouTube**
+   (`videoCategoryId`, ex.: 27 Education, 25 News & Politics, 22 People & Blogs).
+   Gravar com `canal_atualizar(palavrasRadar, categoriasYoutube)`.
+2. **Levantar de 20 a 40 canais de referência**: buscar pelas palavras na YouTube
+   Data API (`scripts/validar-nicho.js --consultas "..."` e `search.list` de canais),
+   e incluir os canais de origem dos outliers achados no passo 2. Para cada canal:
+   inscritos, nº de vídeos, idade, mediana de views dos últimos 30 vídeos e o maior
+   múltiplo (views ÷ mediana). Priorizar uma mistura: grandes (o teto do nicho) e
+   **pequenos ou novos com outliers** (as brechas). Cuidar da cota: busca custa 100
+   unidades; parar antes de 2.000 por canal configurado.
+3. Mostrar a tabela ao usuário com uma linha de motivo por canal. **O usuário
+   confirma** quais entram (pode cortar ou acrescentar).
+4. Gravar os confirmados com `radar_adicionar_referencia(slug, youtubeId, nota)`.
+   Se essa ferramenta ainda não existir no MCP (etapa 2 da spec em construção),
+   deixar a lista confirmada no resumo do passo 8 para gravar depois, e avisar.
 
-## Passo 5: tema visual
+## Passo 6: 10 pautas iniciais
 
-Adicionar um tema para o canal em `reels/src/tokens.ts` (ou no arquivo de
-temas que existir), com as cores e fontes de `identidade.md`. Não criar
-componentes novos por canal: só o tema muda.
+Do material dos passos 2 e 5, propor 10 pautas. Cada uma com tese, ângulo
+próprio, 3 títulos candidatos, ideia de thumbnail, vídeo-outlier de referência
+(link + views ÷ mediana do canal de origem) e fontes primárias prováveis.
+Uma pauta sem outlier comprovado não entra (regra 3). Gravar com `pauta_criar`
+(status `PROPOSTA`, aguardando o usuário) quando a ferramenta existir; até lá,
+entregar a lista no resumo.
 
-## Passo 6: registrar na rede
+## Passo 7: tema visual
 
-Adicionar uma linha em `canais/_rede.md`:
-`| <nome> | <slug> | <nicho> | <fase> | <data de criação> |`
+Adicionar um tema para o canal no arquivo de temas do `reels/`, lendo cores e
+fontes da `identidade` do banco. Não criar componentes novos por canal: só o
+tema muda. Os valores ficam no banco; o tema só os referencia pelo slug.
 
-## Passo 7: fechar
+## Passo 8: fechar
 
 Mostrar ao usuário:
-- o que foi criado;
-- o que **ele** precisa fazer: criar as contas com o handle escolhido, rodar o
-  OAuth do YouTube do canal (`scripts/youtube/autorizar.js`) e guardar as
-  credenciais em `canais/<slug>/.env`;
-- a primeira pauta sugerida para o vídeo-piloto.
+- o que foi gravado (perfil, identidade, palavras, nº de canais de referência,
+  pautas);
+- o que **ele** precisa fazer: criar as contas com o handle escolhido (brand
+  account própria no YouTube), copiar `canais/_modelo.env.example` para
+  `canais/<slug>/.env` e rodar o OAuth do YouTube do canal
+  (`scripts/youtube/autorizar.js`);
+- a pauta mais forte para o vídeo-piloto.
 
 Nunca commitar `.env` nem credenciais.
