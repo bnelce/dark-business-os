@@ -1,0 +1,18 @@
+{
+ "_fontes": {
+  "egr": "UNEP, Emissions Gap Report 2026: The Point of Return, 21/10/2026. Resumo conferido em https://www.pbl.nl/en/publications/unep-emissions-gap-report-2026 (PBL fez a modelagem) e https://www.un.org/en/node/249341 (ONU, 21/10/2026). unep.org e sdg.iisd.org devolveram 403 em 9/11/2026.",
+  "omm": "WMO, State of the Climate Update for COP31, 9/11/2026: https://wmo.int/news/media-centre/state-of-climate-2026-gives-new-meaning-phrase-charts"
+ },
+ "cenarios": [
+  { "id": "atual", "c": 2.8, "rotulo": "POLÍTICAS ATUAIS", "nota": "E SOBE DEPOIS" },
+  { "id": "ndc", "c": 2.6, "rotulo": "TODAS AS NDCs", "nota": "AS PROMESSAS DOS PAÍSES" },
+  { "id": "otimista", "c": 2.1, "rotulo": "NDCs + NEUTRALIDADE", "nota": "O CENÁRIO MAIS OTIMISTA" },
+  { "id": "paris", "c": 1.5, "rotulo": "ACORDO DE PARIS", "nota": "O LIMITE QUE ELE BUSCA" }
+ ],
+ "cortes": [
+  { "ano": 2030, "cenario": 18, "ndc": [5, 8] },
+  { "ano": 2035, "cenario": 45, "ndc": [11, 15] }
+ ],
+ "pico": [1.7, 1.8],
+ "omm": { "anos": 12, "de": 2015, "ate": 2026 }
+}

@@ -1,0 +1,72 @@
+{
+ "_fontes": {
+  "promotoria": "Promotoria de Paris, via franceinfo (9/11/2026): ~700 sites da grande distribuição, 'une vingtaine de départs de feu', ciclos de degelo anormais de duração ilimitada e alertas de temperatura desligados, noite de 11 para 12/10. https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaque-contre-des-frigos-de-supermarches-le-parquet-de-paris-ouvre-une-enquete-visant-une-unite-des-gardiens-de-la-revolution-iraniens_8274806.html · France 24 (9/11): https://www.france24.com/en/europe/20261109-iran-revolutionary-guards-behind-cyberattacks-on-supermarket-fridges-says-french-fm-barrot",
+  "certfr": "CERTFR-2026-ALE-012 (12/10/2026, atualizado 13 e 16/10): Danfoss AK-SC, Danfoss AK-SM, Copeland XWEB, Dixell XWEB. https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+  "cisa": "CSAF em github.com/cisagov/CSAF (csaf_files/OT/white): ICSA-25-140-03 e ICSA-26-057-10. KEV: https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv, conferido em 12/11/2026 (1.779 entradas, última inclusão 10/11/2026). Conferência: negocios/ciencia-visual/marketing/reels/geladeiras-hackeadas-2026-11-12/dados/conferir.py",
+  "coalition": "Coalition: 1.506 IPs com painel Danfoss StoreView exposto entre 7/9 e 6/10/2026, 820 (54%) em redes francesas. https://www.commercialriskonline.com/coalition-says-warnings-were-issued-ahead-of-french-supermarket-hack/ · https://insurance-edge.net/2026/10/16/cyber-before-the-fridges-heated-up-warning-signs-were-visible/",
+  "ira": "Al Jazeera (10/11/2026): o Ministério das Relações Exteriores do Irã chama as acusações de 'baseless'. https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage"
+ },
+ "locais": 700,
+ "incendios": 20,
+ "noite": "11 PARA 12/10/2026",
+ "avisos": [
+  {
+   "id": "ICSA-25-140-03",
+   "produto": "DANFOSS AK-SM",
+   "data": "20/05/2025",
+   "rotulo": "MAI/2025",
+   "cves": 3
+  },
+  {
+   "id": "ICSA-26-057-10",
+   "produto": "COPELAND XWEB PRO",
+   "data": "26/02/2026",
+   "rotulo": "FEV/2026",
+   "cves": 23
+  }
+ ],
+ "falhas": 26,
+ "notaMaxima": {
+  "cve": "CVE-2026-21718",
+  "nota": 10
+ },
+ "kev": {
+  "entradas": 1779,
+  "ate": "10/11/2026",
+  "achadas": 0
+ },
+ "expostos": {
+  "franca": 820,
+  "total": 1506,
+  "de": "7/9",
+  "ate": "6/10"
+ },
+ "cves": [
+  "CVE-2025-41450",
+  "CVE-2025-41451",
+  "CVE-2025-41452",
+  "CVE-2026-25085",
+  "CVE-2026-21718",
+  "CVE-2026-24663",
+  "CVE-2026-21389",
+  "CVE-2026-25111",
+  "CVE-2026-20742",
+  "CVE-2026-24517",
+  "CVE-2026-25195",
+  "CVE-2026-20910",
+  "CVE-2026-24689",
+  "CVE-2026-25109",
+  "CVE-2026-20902",
+  "CVE-2026-24695",
+  "CVE-2026-25105",
+  "CVE-2026-24452",
+  "CVE-2026-23702",
+  "CVE-2026-25721",
+  "CVE-2026-20764",
+  "CVE-2026-25196",
+  "CVE-2026-25037",
+  "CVE-2026-22877",
+  "CVE-2026-20797",
+  "CVE-2026-3037"
+ ]
+}

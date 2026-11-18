@@ -1,0 +1,63 @@
+{
+  "fala": {
+    "gancho": 8,
+    "satelite": 190,
+    "recorde": 462,
+    "foco": 827,
+    "madrugada": 1163,
+    "tarde": 1389,
+    "cidades": 1679,
+    "fim": 2013,
+    "cta": 2163
+  },
+  "destaquePA": 80,
+  "goesNome": 232,
+  "varredura": 271,
+  "historico": 450,
+  "aqua": 531,
+  "barraAtual": 615,
+  "recordeAnterior": 690,
+  "foco": 819,
+  "focoFogo": 920,
+  "focoPixels": 956,
+  "focoMesmo": 1052,
+  "dia": 1155,
+  "relogio": [
+    [
+      1178,
+      0
+    ],
+    [
+      1304,
+      210
+    ],
+    [
+      1389,
+      540
+    ],
+    [
+      1425,
+      900
+    ],
+    [
+      1590,
+      1160
+    ],
+    [
+      1639,
+      1439
+    ]
+  ],
+  "cidades": 1671,
+  "nomes": [
+    1843,
+    1873,
+    1923,
+    1954,
+    1970
+  ],
+  "fim": 2003,
+  "cta": 2163,
+  "marca": 2342,
+  "total": 2417
+}

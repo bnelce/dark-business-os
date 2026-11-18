@@ -1,0 +1,907 @@
+{
+ "fala": {
+  "gancho": 1,
+  "turquia": 144,
+  "australia": 341,
+  "mundo": 511,
+  "brasil": 723,
+  "tempo": 944,
+  "pergunta": 1233
+ },
+ "dur": {
+  "gancho": 138,
+  "turquia": 192,
+  "australia": 165,
+  "mundo": 207,
+  "brasil": 216,
+  "tempo": 270,
+  "pergunta": 176
+ },
+ "m": {
+  "metade": 72,
+  "carvao0": 107,
+  "gas0": 132,
+  "p57": 190,
+  "turquia": 236,
+  "fosseis": 265,
+  "terco": 298,
+  "carvao1": 322,
+  "australia": 343,
+  "negociacoes": 382,
+  "p60": 416,
+  "so": 443,
+  "p43": 471,
+  "contradicao": 522,
+  "mundo": 555,
+  "p58": 585,
+  "turquia2": 628,
+  "abaixo": 653,
+  "australia2": 675,
+  "acima": 705,
+  "brasil": 728,
+  "cop30": 771,
+  "p11": 809,
+  "metade2": 858,
+  "hidro": 920,
+  "desde": 944,
+  "a2000": 954,
+  "caiu": 999,
+  "p32": 1008,
+  "estava": 1039,
+  "p92": 1060,
+  "t18": 1115,
+  "m7": 1159,
+  "brasil2": 1178,
+  "b2": 1198,
+  "conversa": 1240,
+  "fosseis2": 1284,
+  "pesa": 1307
+ },
+ "varre": {
+  "volta": 951,
+  "de": 993,
+  "ate": 1038
+ },
+ "contas": [
+  {
+   "id": "aus",
+   "de": 341,
+   "ate": 418,
+   "passo": 2
+  },
+  {
+   "id": "mun",
+   "de": 553,
+   "ate": 587,
+   "passo": 2
+  },
+  {
+   "id": "bra",
+   "de": 726,
+   "ate": 811,
+   "passo": 3
+  },
+  {
+   "id": "anos",
+   "de": 993,
+   "ate": 1038,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Quem",
+     "chave": false
+    },
+    {
+     "t": "preside",
+     "chave": false
+    }
+   ],
+   "ate": 21
+  },
+  {
+   "de": 21,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "COP",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": true
+    },
+    {
+     "t": "clima",
+     "chave": true
+    }
+   ],
+   "ate": 45
+  },
+  {
+   "de": 45,
+   "partes": [
+    {
+     "t": "tira",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "metade",
+     "chave": true
+    }
+   ],
+   "ate": 78
+  },
+  {
+   "de": 78,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "eletricidade",
+     "chave": false
+    }
+   ],
+   "ate": 100
+  },
+  {
+   "de": 100,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "carvão",
+     "chave": true
+    }
+   ],
+   "ate": 116
+  },
+  {
+   "de": 116,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "gás.",
+     "chave": true
+    }
+   ],
+   "ate": 142
+  },
+  {
+   "de": 142,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2025,",
+     "chave": false
+    }
+   ],
+   "ate": 188
+  },
+  {
+   "de": 188,
+   "partes": [
+    {
+     "t": "57%",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "eletricidade",
+     "chave": false
+    }
+   ],
+   "ate": 230
+  },
+  {
+   "de": 230,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Turquia",
+     "chave": true
+    }
+   ],
+   "ate": 244
+  },
+  {
+   "de": 244,
+   "partes": [
+    {
+     "t": "veio",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "fósseis.",
+     "chave": false
+    }
+   ],
+   "ate": 275
+  },
+  {
+   "de": 275,
+   "partes": [
+    {
+     "t": "Mais",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "terço,",
+     "chave": true
+    }
+   ],
+   "ate": 303
+  },
+  {
+   "de": 303,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "carvão.",
+     "chave": true
+    }
+   ],
+   "ate": 339
+  },
+  {
+   "de": 339,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Austrália,",
+     "chave": true
+    }
+   ],
+   "ate": 362
+  },
+  {
+   "de": 362,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "conduz",
+     "chave": false
+    }
+   ],
+   "ate": 377
+  },
+  {
+   "de": 377,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "negociações,",
+     "chave": false
+    }
+   ],
+   "ate": 398
+  },
+  {
+   "de": 398,
+   "partes": [
+    {
+     "t": "chega",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "60%.",
+     "chave": true
+    }
+   ],
+   "ate": 441
+  },
+  {
+   "de": 441,
+   "partes": [
+    {
+     "t": "Só",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "carvão",
+     "chave": false
+    }
+   ],
+   "ate": 462
+  },
+  {
+   "de": 462,
+   "partes": [
+    {
+     "t": "dá",
+     "chave": false
+    },
+    {
+     "t": "43%.",
+     "chave": true
+    }
+   ],
+   "ate": 509
+  },
+  {
+   "de": 509,
+   "partes": [
+    {
+     "t": "Parece",
+     "chave": false
+    },
+    {
+     "t": "contradição?",
+     "chave": true
+    }
+   ],
+   "ate": 542
+  },
+  {
+   "de": 542,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "mundo",
+     "chave": true
+    },
+    {
+     "t": "inteiro",
+     "chave": true
+    }
+   ],
+   "ate": 571
+  },
+  {
+   "de": 571,
+   "partes": [
+    {
+     "t": "fica",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "58%.",
+     "chave": true
+    }
+   ],
+   "ate": 618
+  },
+  {
+   "de": 618,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Turquia,",
+     "chave": false
+    }
+   ],
+   "ate": 637
+  },
+  {
+   "de": 637,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "abaixo.",
+     "chave": true
+    }
+   ],
+   "ate": 661
+  },
+  {
+   "de": 661,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Austrália,",
+     "chave": false
+    }
+   ],
+   "ate": 690
+  },
+  {
+   "de": 690,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "acima.",
+     "chave": true
+    }
+   ],
+   "ate": 721
+  },
+  {
+   "de": 721,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "Brasil,",
+     "chave": true
+    }
+   ],
+   "ate": 741
+  },
+  {
+   "de": 741,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "presidiu",
+     "chave": false
+    }
+   ],
+   "ate": 762
+  },
+  {
+   "de": 762,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "COP30,",
+     "chave": false
+    }
+   ],
+   "ate": 785
+  },
+  {
+   "de": 785,
+   "partes": [
+    {
+     "t": "fica",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "11%:",
+     "chave": true
+    }
+   ],
+   "ate": 840
+  },
+  {
+   "de": 840,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "metade",
+     "chave": false
+    }
+   ],
+   "ate": 867
+  },
+  {
+   "de": 867,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "nossa",
+     "chave": false
+    },
+    {
+     "t": "eletricidade",
+     "chave": false
+    }
+   ],
+   "ate": 899
+  },
+  {
+   "de": 899,
+   "partes": [
+    {
+     "t": "vem",
+     "chave": false
+    },
+    {
+     "t": "das",
+     "chave": false
+    },
+    {
+     "t": "hidrelétricas.",
+     "chave": true
+    }
+   ],
+   "ate": 942
+  },
+  {
+   "de": 942,
+   "partes": [
+    {
+     "t": "Desde",
+     "chave": false
+    },
+    {
+     "t": "2000,",
+     "chave": true
+    }
+   ],
+   "ate": 973
+  },
+  {
+   "de": 973,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Austrália",
+     "chave": false
+    }
+   ],
+   "ate": 997
+  },
+  {
+   "de": 997,
+   "partes": [
+    {
+     "t": "caiu",
+     "chave": false
+    },
+    {
+     "t": "32",
+     "chave": true
+    },
+    {
+     "t": "pontos:",
+     "chave": true
+    }
+   ],
+   "ate": 1037
+  },
+  {
+   "de": 1037,
+   "partes": [
+    {
+     "t": "estava",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "92%.",
+     "chave": true
+    }
+   ],
+   "ate": 1090
+  },
+  {
+   "de": 1090,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Turquia",
+     "chave": false
+    }
+   ],
+   "ate": 1106
+  },
+  {
+   "de": 1106,
+   "partes": [
+    {
+     "t": "caiu",
+     "chave": false
+    },
+    {
+     "t": "18.",
+     "chave": true
+    }
+   ],
+   "ate": 1125
+  },
+  {
+   "de": 1125,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "mundo,",
+     "chave": false
+    },
+    {
+     "t": "7.",
+     "chave": true
+    }
+   ],
+   "ate": 1162
+  },
+  {
+   "de": 1162,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Brasil",
+     "chave": false
+    }
+   ],
+   "ate": 1186
+  },
+  {
+   "de": 1186,
+   "partes": [
+    {
+     "t": "subiu",
+     "chave": false
+    },
+    {
+     "t": "2.",
+     "chave": true
+    }
+   ],
+   "ate": 1218
+  },
+  {
+   "de": 1231,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "conversa",
+     "chave": false
+    }
+   ],
+   "ate": 1255
+  },
+  {
+   "de": 1255,
+   "partes": [
+    {
+     "t": "sobre",
+     "chave": false
+    },
+    {
+     "t": "deixar",
+     "chave": false
+    }
+   ],
+   "ate": 1271
+  },
+  {
+   "de": 1271,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "fósseis,",
+     "chave": true
+    }
+   ],
+   "ate": 1289
+  },
+  {
+   "de": 1289,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "pesa",
+     "chave": true
+    },
+    {
+     "t": "mais:",
+     "chave": true
+    }
+   ],
+   "ate": 1329
+  }
+ ],
+ "grande": [
+  {
+   "t": "onde",
+   "chave": false,
+   "f": 1321,
+   "l": 0
+  },
+  {
+   "t": "cada",
+   "chave": false,
+   "f": 1335,
+   "l": 0
+  },
+  {
+   "t": "país",
+   "chave": true,
+   "f": 1342,
+   "l": 0
+  },
+  {
+   "t": "está,",
+   "chave": true,
+   "f": 1349,
+   "l": 0
+  },
+  {
+   "t": "ou",
+   "chave": false,
+   "f": 1358,
+   "l": 1
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 1368,
+   "l": 1
+  },
+  {
+   "t": "velocidade",
+   "chave": true,
+   "f": 1372,
+   "l": 1
+  },
+  {
+   "t": "com",
+   "chave": false,
+   "f": 1382,
+   "l": 2
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1390,
+   "l": 2
+  },
+  {
+   "t": "ele",
+   "chave": false,
+   "f": 1393,
+   "l": 2
+  },
+  {
+   "t": "sai?",
+   "chave": true,
+   "f": 1397,
+   "l": 2
+  }
+ ],
+ "cenas": [
+  341,
+  511,
+  723,
+  954,
+  1321,
+  1417
+ ],
+ "fimFala": 1409,
+ "cta": 1417,
+ "fim": 1417,
+ "total": 1462
+}

@@ -1,0 +1,11 @@
+{
+  "fonte": "SEEG 13 (Observatório do Clima), emissões brutas de 2024, em milhões de toneladas de CO2e",
+  "brasil2024": { "usoDaTerra": 906, "agropecuaria": 626, "energia": 424, "residuos": 96, "processos": 94 },
+  "total2024": 2145,
+  "quedaPct": 16.7,
+  "usoDaTerra2023": 1341,
+  "desmatamentoNoUsoDaTerraPct": 98,
+  "incendios2024": 241,
+  "mundoFonte": "Climate Watch / Our World in Data, participação de cada setor nas emissões globais (%)",
+  "mundo": { "energia": 73.2, "campo": 18.4, "processos": 5.2, "residuos": 3.2 }
+}

@@ -1,0 +1,1750 @@
+{
+ "fala": {
+  "gancho": 1,
+  "tamanho": 113,
+  "fortaleza": 322,
+  "cofre": 550,
+  "ataque": 686,
+  "misterio": 908,
+  "padrao": 1113,
+  "cauda": 1372,
+  "congelar": 1610,
+  "bitcoin": 1927,
+  "quem": 2087,
+  "pergunta": 2257
+ },
+ "dur": {
+  "gancho": 107,
+  "tamanho": 204,
+  "fortaleza": 223,
+  "cofre": 131,
+  "ataque": 217,
+  "misterio": 200,
+  "padrao": 254,
+  "cauda": 191,
+  "congelar": 312,
+  "bitcoin": 155,
+  "quem": 165,
+  "pergunta": 263
+ },
+ "m": {
+  "dois": 52,
+  "numa": 90,
+  "transacao": 93,
+  "maior": 134,
+  "b64": 205,
+  "elliptic": 261,
+  "binance": 282,
+  "quinta": 305,
+  "furto": 357,
+  "rendeu": 400,
+  "ton": 411,
+  "corrigido": 471,
+  "vezes": 514,
+  "quente": 594,
+  "conectada": 624,
+  "saques": 665,
+  "h1720": 694,
+  "a50": 753,
+  "carteira": 802,
+  "uma": 813,
+  "programa": 870,
+  "invasores": 883,
+  "evidencia": 961,
+  "chave": 1000,
+  "como": 1015,
+  "ainda": 1076,
+  "regra": 1136,
+  "contar": 1152,
+  "p62": 1186,
+  "n1300": 1241,
+  "pchave": 1296,
+  "sistema": 1302,
+  "gente": 1333,
+  "tipico": 1385,
+  "menos": 1410,
+  "milhao": 1431,
+  "esse": 1453,
+  "quarto": 1502,
+  "cauda": 1541,
+  "virada": 1638,
+  "tether": 1659,
+  "b12": 1677,
+  "m37": 1716,
+  "p44": 1795,
+  "digital": 1868,
+  "empresa": 1894,
+  "m18": 1989,
+  "nenhum": 2047,
+  "coreia": 2145,
+  "binance2": 2175,
+  "p95": 2211,
+  "dolar": 2329,
+  "travou": 2351,
+  "q3": 2377,
+  "mas": 2397,
+  "decide": 2433,
+  "trava": 2464
+ },
+ "digita": [
+  {
+   "id": "t35",
+   "texto": "3,5 TONELADAS",
+   "de": 409,
+   "ate": 426
+  },
+  {
+   "id": "x60",
+   "texto": "MAIS DE 60×",
+   "de": 508,
+   "ate": 522
+  },
+  {
+   "id": "a50",
+   "texto": "50 ASSINATURAS,",
+   "de": 751,
+   "ate": 769
+  },
+  {
+   "id": "v1",
+   "texto": "1 VALEU",
+   "de": 812,
+   "ate": 822
+  },
+  {
+   "id": "m1",
+   "texto": "MENOS DE US$ 1 MI",
+   "de": 1408,
+   "ate": 1435
+  },
+  {
+   "id": "b12",
+   "texto": "US$ 1,2 BI",
+   "de": 1675,
+   "ate": 1689
+  },
+  {
+   "id": "btc",
+   "texto": "18.270 BTC",
+   "de": 1987,
+   "ate": 2001
+  }
+ ],
+ "contas": [
+  {
+   "id": "c25",
+   "de": 0,
+   "ate": 100,
+   "passo": 3
+  },
+  {
+   "id": "c64",
+   "de": 203,
+   "ate": 217,
+   "passo": 2
+  },
+  {
+   "id": "c62",
+   "de": 1184,
+   "ate": 1200,
+   "passo": 2
+  },
+  {
+   "id": "c285",
+   "de": 1793,
+   "ate": 1817,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Menos",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "quatro",
+     "chave": true
+    },
+    {
+     "t": "minutos.",
+     "chave": true
+    }
+   ],
+   "ate": 50
+  },
+  {
+   "de": 50,
+   "partes": [
+    {
+     "t": "Dois",
+     "chave": true
+    },
+    {
+     "t": "bilhões",
+     "chave": true
+    },
+    {
+     "t": "e",
+     "chave": true
+    },
+    {
+     "t": "meio",
+     "chave": true
+    }
+   ],
+   "ate": 70
+  },
+  {
+   "de": 70,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "dólares.",
+     "chave": false
+    }
+   ],
+   "ate": 88
+  },
+  {
+   "de": 88,
+   "partes": [
+    {
+     "t": "Numa",
+     "chave": false
+    },
+    {
+     "t": "transação.",
+     "chave": false
+    }
+   ],
+   "ate": 111
+  },
+  {
+   "de": 111,
+   "partes": [
+    {
+     "t": "É",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "maior",
+     "chave": true
+    },
+    {
+     "t": "roubo",
+     "chave": true
+    }
+   ],
+   "ate": 146
+  },
+  {
+   "de": 146,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "cripto",
+     "chave": false
+    }
+   ],
+   "ate": 166
+  },
+  {
+   "de": 166,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "registrado:",
+     "chave": false
+    }
+   ],
+   "ate": 203
+  },
+  {
+   "de": 203,
+   "partes": [
+    {
+     "t": "6,4",
+     "chave": true
+    },
+    {
+     "t": "bilhões,",
+     "chave": true
+    }
+   ],
+   "ate": 234
+  },
+  {
+   "de": 234,
+   "partes": [
+    {
+     "t": "pela",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": false
+    }
+   ],
+   "ate": 254
+  },
+  {
+   "de": 254,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Elliptic.",
+     "chave": false
+    }
+   ],
+   "ate": 271
+  },
+  {
+   "de": 271,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "Binance,",
+     "chave": false
+    }
+   ],
+   "ate": 294
+  },
+  {
+   "de": 294,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "quinta.",
+     "chave": false
+    }
+   ],
+   "ate": 320
+  },
+  {
+   "de": 320,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2005,",
+     "chave": false
+    }
+   ],
+   "ate": 343
+  },
+  {
+   "de": 343,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "furto",
+     "chave": false
+    }
+   ],
+   "ate": 360
+  },
+  {
+   "de": 360,
+   "partes": [
+    {
+     "t": "ao",
+     "chave": false
+    },
+    {
+     "t": "Banco",
+     "chave": false
+    },
+    {
+     "t": "Central",
+     "chave": false
+    }
+   ],
+   "ate": 378
+  },
+  {
+   "de": 378,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Fortaleza",
+     "chave": true
+    }
+   ],
+   "ate": 398
+  },
+  {
+   "de": 398,
+   "partes": [
+    {
+     "t": "rendeu",
+     "chave": false
+    }
+   ],
+   "ate": 409
+  },
+  {
+   "de": 409,
+   "partes": [
+    {
+     "t": "3,5",
+     "chave": true
+    },
+    {
+     "t": "toneladas",
+     "chave": true
+    }
+   ],
+   "ate": 445
+  },
+  {
+   "de": 445,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "notas.",
+     "chave": false
+    }
+   ],
+   "ate": 469
+  },
+  {
+   "de": 469,
+   "partes": [
+    {
+     "t": "Corrigido",
+     "chave": false
+    }
+   ],
+   "ate": 475
+  },
+  {
+   "de": 475,
+   "partes": [
+    {
+     "t": "pela",
+     "chave": false
+    },
+    {
+     "t": "inflação,",
+     "chave": false
+    }
+   ],
+   "ate": 489
+  },
+  {
+   "de": 489,
+   "partes": [
+    {
+     "t": "esse",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    }
+   ],
+   "ate": 504
+  },
+  {
+   "de": 504,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "60",
+     "chave": true
+    },
+    {
+     "t": "vezes",
+     "chave": true
+    }
+   ],
+   "ate": 531
+  },
+  {
+   "de": 531,
+   "partes": [
+    {
+     "t": "maior.",
+     "chave": false
+    }
+   ],
+   "ate": 548
+  },
+  {
+   "de": 548,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "alvo",
+     "chave": false
+    },
+    {
+     "t": "foi",
+     "chave": false
+    }
+   ],
+   "ate": 574
+  },
+  {
+   "de": 574,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "carteira",
+     "chave": false
+    },
+    {
+     "t": "quente,",
+     "chave": true
+    }
+   ],
+   "ate": 605
+  },
+  {
+   "de": 605,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "parte",
+     "chave": false
+    },
+    {
+     "t": "conectada",
+     "chave": false
+    }
+   ],
+   "ate": 639
+  },
+  {
+   "de": 639,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "paga",
+     "chave": false
+    }
+   ],
+   "ate": 657
+  },
+  {
+   "de": 657,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "saques.",
+     "chave": true
+    }
+   ],
+   "ate": 684
+  },
+  {
+   "de": 684,
+   "partes": [
+    {
+     "t": "Às",
+     "chave": false
+    },
+    {
+     "t": "17h20,",
+     "chave": true
+    }
+   ],
+   "ate": 721
+  },
+  {
+   "de": 721,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "transação",
+     "chave": false
+    },
+    {
+     "t": "levou",
+     "chave": false
+    }
+   ],
+   "ate": 751
+  },
+  {
+   "de": 751,
+   "partes": [
+    {
+     "t": "50",
+     "chave": true
+    },
+    {
+     "t": "autorizações",
+     "chave": true
+    }
+   ],
+   "ate": 782
+  },
+  {
+   "de": 782,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "nome",
+     "chave": false
+    }
+   ],
+   "ate": 795
+  },
+  {
+   "de": 795,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "carteira.",
+     "chave": false
+    }
+   ],
+   "ate": 811
+  },
+  {
+   "de": 811,
+   "partes": [
+    {
+     "t": "Uma",
+     "chave": true
+    },
+    {
+     "t": "valeu,",
+     "chave": true
+    }
+   ],
+   "ate": 829
+  },
+  {
+   "de": 829,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "passou",
+     "chave": false
+    }
+   ],
+   "ate": 847
+  },
+  {
+   "de": 847,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "obedecer",
+     "chave": false
+    }
+   ],
+   "ate": 863
+  },
+  {
+   "de": 863,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "programa",
+     "chave": false
+    }
+   ],
+   "ate": 875
+  },
+  {
+   "de": 875,
+   "partes": [
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "invasores.",
+     "chave": true
+    }
+   ],
+   "ate": 906
+  },
+  {
+   "de": 906,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Binance",
+     "chave": false
+    },
+    {
+     "t": "diz",
+     "chave": false
+    }
+   ],
+   "ate": 939
+  },
+  {
+   "de": 939,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "achou",
+     "chave": false
+    }
+   ],
+   "ate": 959
+  },
+  {
+   "de": 959,
+   "partes": [
+    {
+     "t": "evidência",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "vazamento",
+     "chave": false
+    }
+   ],
+   "ate": 994
+  },
+  {
+   "de": 994,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "chave.",
+     "chave": true
+    }
+   ],
+   "ate": 1013
+  },
+  {
+   "de": 1013,
+   "partes": [
+    {
+     "t": "Como",
+     "chave": false
+    },
+    {
+     "t": "essas",
+     "chave": false
+    },
+    {
+     "t": "autorizações",
+     "chave": false
+    }
+   ],
+   "ate": 1042
+  },
+  {
+   "de": 1042,
+   "partes": [
+    {
+     "t": "foram",
+     "chave": false
+    },
+    {
+     "t": "assinadas,",
+     "chave": false
+    }
+   ],
+   "ate": 1072
+  },
+  {
+   "de": 1072,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "ainda",
+     "chave": true
+    },
+    {
+     "t": "não",
+     "chave": true
+    }
+   ],
+   "ate": 1086
+  },
+  {
+   "de": 1086,
+   "partes": [
+    {
+     "t": "explicou.",
+     "chave": false
+    }
+   ],
+   "ate": 1111
+  },
+  {
+   "de": 1111,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "regra:",
+     "chave": true
+    }
+   ],
+   "ate": 1148
+  },
+  {
+   "de": 1148,
+   "partes": [
+    {
+     "t": "sem",
+     "chave": false
+    },
+    {
+     "t": "contar",
+     "chave": false
+    }
+   ],
+   "ate": 1156
+  },
+  {
+   "de": 1156,
+   "partes": [
+    {
+     "t": "esse",
+     "chave": false
+    },
+    {
+     "t": "caso,",
+     "chave": false
+    }
+   ],
+   "ate": 1184
+  },
+  {
+   "de": 1184,
+   "partes": [
+    {
+     "t": "62%",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "dinheiro",
+     "chave": false
+    }
+   ],
+   "ate": 1220
+  },
+  {
+   "de": 1220,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "1.300",
+     "chave": true
+    }
+   ],
+   "ate": 1257
+  },
+  {
+   "de": 1257,
+   "partes": [
+    {
+     "t": "ataques",
+     "chave": false
+    }
+   ],
+   "ate": 1272
+  },
+  {
+   "de": 1272,
+   "partes": [
+    {
+     "t": "saiu",
+     "chave": false
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "chave,",
+     "chave": false
+    }
+   ],
+   "ate": 1300
+  },
+  {
+   "de": 1300,
+   "partes": [
+    {
+     "t": "sistema",
+     "chave": false
+    }
+   ],
+   "ate": 1322
+  },
+  {
+   "de": 1322,
+   "partes": [
+    {
+     "t": "ou",
+     "chave": false
+    },
+    {
+     "t": "gente",
+     "chave": false
+    },
+    {
+     "t": "enganada.",
+     "chave": false
+    }
+   ],
+   "ate": 1370
+  },
+  {
+   "de": 1370,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "ataque",
+     "chave": false
+    },
+    {
+     "t": "típico",
+     "chave": true
+    }
+   ],
+   "ate": 1397
+  },
+  {
+   "de": 1397,
+   "partes": [
+    {
+     "t": "leva",
+     "chave": false
+    },
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    }
+   ],
+   "ate": 1425
+  },
+  {
+   "de": 1425,
+   "partes": [
+    {
+     "t": "1",
+     "chave": true
+    },
+    {
+     "t": "milhão",
+     "chave": true
+    }
+   ],
+   "ate": 1434
+  },
+  {
+   "de": 1434,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "dólares.",
+     "chave": false
+    }
+   ],
+   "ate": 1451
+  },
+  {
+   "de": 1451,
+   "partes": [
+    {
+     "t": "Esse",
+     "chave": false
+    },
+    {
+     "t": "sozinho",
+     "chave": false
+    }
+   ],
+   "ate": 1476
+  },
+  {
+   "de": 1476,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "quarto",
+     "chave": true
+    }
+   ],
+   "ate": 1506
+  },
+  {
+   "de": 1506,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "tudo.",
+     "chave": false
+    }
+   ],
+   "ate": 1518
+  },
+  {
+   "de": 1518,
+   "partes": [
+    {
+     "t": "Isso",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    }
+   ],
+   "ate": 1539
+  },
+  {
+   "de": 1539,
+   "partes": [
+    {
+     "t": "cauda",
+     "chave": true
+    },
+    {
+     "t": "pesada.",
+     "chave": true
+    }
+   ],
+   "ate": 1565
+  },
+  {
+   "de": 1608,
+   "partes": [
+    {
+     "t": "Aí",
+     "chave": false
+    },
+    {
+     "t": "veio",
+     "chave": false
+    }
+   ],
+   "ate": 1631
+  },
+  {
+   "de": 1631,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "virada.",
+     "chave": true
+    }
+   ],
+   "ate": 1655
+  },
+  {
+   "de": 1655,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Tether",
+     "chave": false
+    },
+    {
+     "t": "travou",
+     "chave": false
+    }
+   ],
+   "ate": 1675
+  },
+  {
+   "de": 1675,
+   "partes": [
+    {
+     "t": "1,2",
+     "chave": true
+    },
+    {
+     "t": "bilhão",
+     "chave": true
+    }
+   ],
+   "ate": 1714
+  },
+  {
+   "de": 1714,
+   "partes": [
+    {
+     "t": "37",
+     "chave": true
+    },
+    {
+     "t": "minutos",
+     "chave": true
+    },
+    {
+     "t": "depois",
+     "chave": false
+    }
+   ],
+   "ate": 1751
+  },
+  {
+   "de": 1751,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "dinheiro",
+     "chave": false
+    },
+    {
+     "t": "chegar.",
+     "chave": false
+    }
+   ],
+   "ate": 1783
+  },
+  {
+   "de": 1783,
+   "partes": [
+    {
+     "t": "Já",
+     "chave": false
+    },
+    {
+     "t": "são",
+     "chave": false
+    }
+   ],
+   "ate": 1793
+  },
+  {
+   "de": 1793,
+   "partes": [
+    {
+     "t": "44%",
+     "chave": true
+    },
+    {
+     "t": "travados,",
+     "chave": false
+    }
+   ],
+   "ate": 1832
+  },
+  {
+   "de": 1832,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": false
+    },
+    {
+     "t": "tudo",
+     "chave": false
+    }
+   ],
+   "ate": 1854
+  },
+  {
+   "de": 1854,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": true
+    },
+    {
+     "t": "digital,",
+     "chave": true
+    }
+   ],
+   "ate": 1877
+  },
+  {
+   "de": 1877,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "tem",
+     "chave": false
+    },
+    {
+     "t": "empresa",
+     "chave": false
+    }
+   ],
+   "ate": 1901
+  },
+  {
+   "de": 1901,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "trás.",
+     "chave": false
+    }
+   ],
+   "ate": 1925
+  },
+  {
+   "de": 1925,
+   "partes": [
+    {
+     "t": "Bitcoin",
+     "chave": true
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "tem",
+     "chave": false
+    }
+   ],
+   "ate": 1958
+  },
+  {
+   "de": 1958,
+   "partes": [
+    {
+     "t": "esse",
+     "chave": false
+    },
+    {
+     "t": "botão.",
+     "chave": false
+    }
+   ],
+   "ate": 1974
+  },
+  {
+   "de": 1974,
+   "partes": [
+    {
+     "t": "Dos",
+     "chave": false
+    },
+    {
+     "t": "18",
+     "chave": false
+    },
+    {
+     "t": "mil",
+     "chave": false
+    },
+    {
+     "t": "roubados,",
+     "chave": false
+    }
+   ],
+   "ate": 2022
+  },
+  {
+   "de": 2022,
+   "partes": [
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "agora",
+     "chave": false
+    }
+   ],
+   "ate": 2045
+  },
+  {
+   "de": 2045,
+   "partes": [
+    {
+     "t": "nenhum",
+     "chave": true
+    },
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "travado.",
+     "chave": false
+    }
+   ],
+   "ate": 2085
+  },
+  {
+   "de": 2085,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "FBI",
+     "chave": true
+    },
+    {
+     "t": "atribuiu",
+     "chave": false
+    }
+   ],
+   "ate": 2129
+  },
+  {
+   "de": 2129,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "roubo",
+     "chave": false
+    }
+   ],
+   "ate": 2135
+  },
+  {
+   "de": 2135,
+   "partes": [
+    {
+     "t": "à",
+     "chave": false
+    },
+    {
+     "t": "Coreia",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": true
+    },
+    {
+     "t": "Norte.",
+     "chave": true
+    }
+   ],
+   "ate": 2161
+  },
+  {
+   "de": 2161,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Binance",
+     "chave": false
+    },
+    {
+     "t": "diz",
+     "chave": false
+    }
+   ],
+   "ate": 2193
+  },
+  {
+   "de": 2193,
+   "partes": [
+    {
+     "t": "ter",
+     "chave": false
+    },
+    {
+     "t": "reposto",
+     "chave": false
+    },
+    {
+     "t": "95%.",
+     "chave": true
+    }
+   ],
+   "ate": 2255
+  },
+  {
+   "de": 2255,
+   "partes": [
+    {
+     "t": "Bitcoin",
+     "chave": false
+    },
+    {
+     "t": "nasceu",
+     "chave": false
+    }
+   ],
+   "ate": 2284
+  },
+  {
+   "de": 2284,
+   "partes": [
+    {
+     "t": "sem",
+     "chave": false
+    },
+    {
+     "t": "botão",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "travar.",
+     "chave": true
+    }
+   ],
+   "ate": 2315
+  },
+  {
+   "de": 2315,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": false
+    },
+    {
+     "t": "digital",
+     "chave": false
+    }
+   ],
+   "ate": 2349
+  },
+  {
+   "de": 2349,
+   "partes": [
+    {
+     "t": "travou",
+     "chave": false
+    }
+   ],
+   "ate": 2364
+  },
+  {
+   "de": 2364,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "3",
+     "chave": true
+    },
+    {
+     "t": "bilhões.",
+     "chave": true
+    }
+   ],
+   "ate": 2395
+  },
+  {
+   "de": 2395,
+   "partes": [
+    {
+     "t": "Mas",
+     "chave": false
+    },
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "tem",
+     "chave": false
+    }
+   ],
+   "ate": 2421
+  },
+  {
+   "de": 2421,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "botão",
+     "chave": false
+    }
+   ],
+   "ate": 2431
+  },
+  {
+   "de": 2431,
+   "partes": [
+    {
+     "t": "decide",
+     "chave": false
+    }
+   ],
+   "ate": 2451
+  },
+  {
+   "de": 2451,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "trava.",
+     "chave": true
+    }
+   ],
+   "ate": 2476
+  }
+ ],
+ "grande": [
+  {
+   "t": "Você",
+   "chave": false,
+   "f": 2468,
+   "l": 0
+  },
+  {
+   "t": "daria",
+   "chave": false,
+   "f": 2484,
+   "l": 0
+  },
+  {
+   "t": "esse",
+   "chave": false,
+   "f": 2493,
+   "l": 1
+  },
+  {
+   "t": "botão",
+   "chave": true,
+   "f": 2499,
+   "l": 1
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 2505,
+   "l": 2
+  },
+  {
+   "t": "alguém?",
+   "chave": false,
+   "f": 2510,
+   "l": 2
+  }
+ ],
+ "relogio": {
+  "ate": 94,
+  "ticks": [
+   24,
+   47,
+   71,
+   94
+  ],
+  "voltaTicks": [
+   2543,
+   2552,
+   2561,
+   2570
+  ]
+ },
+ "cenas": [
+  113,
+  322,
+  471,
+  550,
+  686,
+  908,
+  1113,
+  1372,
+  1610,
+  1927,
+  2087,
+  2257,
+  2468,
+  2528
+ ],
+ "fimFala": 2520,
+ "cta": 2528,
+ "fim": 2528,
+ "total": 2573
+}

@@ -1,0 +1,1047 @@
+{
+ "fala": {
+  "gancho": 1,
+  "mediana": 209,
+  "renda": 381,
+  "aviso": 532,
+  "extremos": 673,
+  "partidos": 943,
+  "reeleitos": 1163,
+  "pergunta": 1471
+ },
+ "dur": {
+  "gancho": 203,
+  "mediana": 167,
+  "renda": 146,
+  "aviso": 136,
+  "extremos": 255,
+  "partidos": 191,
+  "reeleitos": 297,
+  "pergunta": 93
+ },
+ "m": {
+  "seis": 53,
+  "milhao": 95,
+  "ir": 151,
+  "n7": 182,
+  "n586": 215,
+  "tipico": 274,
+  "mi": 301,
+  "renda": 390,
+  "n81": 464,
+  "nada": 516,
+  "tse": 569,
+  "mercado": 596,
+  "imovel": 606,
+  "compra": 655,
+  "pontas": 682,
+  "governador": 706,
+  "pivetta": 764,
+  "n575": 802,
+  "oito": 872,
+  "nenhum": 920,
+  "n172": 982,
+  "n4": 1006,
+  "aqui": 1081,
+  "n20": 1101,
+  "n289": 1178,
+  "subiu": 1254,
+  "n39": 1271,
+  "inflacao": 1355,
+  "n20b": 1383,
+  "n68": 1407,
+  "menos": 1445,
+  "estado": 1506,
+  "declararam": 1544
+ },
+ "contas": [
+  {
+   "id": "c81",
+   "de": 450,
+   "ate": 466,
+   "passo": 2
+  },
+  {
+   "id": "c575",
+   "de": 786,
+   "ate": 804,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Quem",
+     "chave": false
+    },
+    {
+     "t": "vai",
+     "chave": false
+    },
+    {
+     "t": "decidir",
+     "chave": false
+    }
+   ],
+   "ate": 21
+  },
+  {
+   "de": 21,
+   "partes": [
+    {
+     "t": "teus",
+     "chave": true
+    },
+    {
+     "t": "impostos:",
+     "chave": true
+    }
+   ],
+   "ate": 51
+  },
+  {
+   "de": 51,
+   "partes": [
+    {
+     "t": "seis",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": true
+    },
+    {
+     "t": "cada",
+     "chave": true
+    },
+    {
+     "t": "dez",
+     "chave": true
+    }
+   ],
+   "ate": 68
+  },
+  {
+   "de": 68,
+   "partes": [
+    {
+     "t": "declararam",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 92
+  },
+  {
+   "de": 92,
+   "partes": [
+    {
+     "t": "1",
+     "chave": true
+    },
+    {
+     "t": "milhão",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "reais",
+     "chave": true
+    }
+   ],
+   "ate": 112
+  },
+  {
+   "de": 112,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "bens.",
+     "chave": false
+    }
+   ],
+   "ate": 130
+  },
+  {
+   "de": 130,
+   "partes": [
+    {
+     "t": "Entre",
+     "chave": false
+    },
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "declara",
+     "chave": false
+    }
+   ],
+   "ate": 149
+  },
+  {
+   "de": 149,
+   "partes": [
+    {
+     "t": "Imposto",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Renda,",
+     "chave": false
+    },
+    {
+     "t": "são",
+     "chave": false
+    }
+   ],
+   "ate": 180
+  },
+  {
+   "de": 180,
+   "partes": [
+    {
+     "t": "7",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": true
+    },
+    {
+     "t": "cada",
+     "chave": true
+    },
+    {
+     "t": "100.",
+     "chave": true
+    }
+   ],
+   "ate": 207
+  },
+  {
+   "de": 207,
+   "partes": [
+    {
+     "t": "Dos",
+     "chave": false
+    },
+    {
+     "t": "586",
+     "chave": true
+    },
+    {
+     "t": "eleitos",
+     "chave": true
+    }
+   ],
+   "ate": 258
+  },
+  {
+   "de": 258,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "outubro,",
+     "chave": false
+    }
+   ],
+   "ate": 271
+  },
+  {
+   "de": 271,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "típico",
+     "chave": true
+    },
+    {
+     "t": "declarou",
+     "chave": false
+    }
+   ],
+   "ate": 298
+  },
+  {
+   "de": 298,
+   "partes": [
+    {
+     "t": "1",
+     "chave": true
+    },
+    {
+     "t": "milhão",
+     "chave": true
+    },
+    {
+     "t": "e",
+     "chave": true
+    }
+   ],
+   "ate": 311
+  },
+  {
+   "de": 311,
+   "partes": [
+    {
+     "t": "450",
+     "chave": true
+    },
+    {
+     "t": "mil",
+     "chave": true
+    },
+    {
+     "t": "reais.",
+     "chave": true
+    }
+   ],
+   "ate": 350
+  },
+  {
+   "de": 379,
+   "partes": [
+    {
+     "t": "Com",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "renda",
+     "chave": false
+    }
+   ],
+   "ate": 397
+  },
+  {
+   "de": 397,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "brasileiro",
+     "chave": true
+    },
+    {
+     "t": "típico,",
+     "chave": true
+    }
+   ],
+   "ate": 432
+  },
+  {
+   "de": 432,
+   "partes": [
+    {
+     "t": "juntar",
+     "chave": false
+    },
+    {
+     "t": "isso",
+     "chave": false
+    }
+   ],
+   "ate": 449
+  },
+  {
+   "de": 449,
+   "partes": [
+    {
+     "t": "levaria",
+     "chave": false
+    },
+    {
+     "t": "81",
+     "chave": true
+    },
+    {
+     "t": "anos,",
+     "chave": true
+    }
+   ],
+   "ate": 492
+  },
+  {
+   "de": 492,
+   "partes": [
+    {
+     "t": "sem",
+     "chave": false
+    },
+    {
+     "t": "gastar",
+     "chave": false
+    },
+    {
+     "t": "nada.",
+     "chave": false
+    }
+   ],
+   "ate": 530
+  },
+  {
+   "de": 530,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "valor",
+     "chave": true
+    },
+    {
+     "t": "declarado",
+     "chave": true
+    }
+   ],
+   "ate": 562
+  },
+  {
+   "de": 562,
+   "partes": [
+    {
+     "t": "ao",
+     "chave": false
+    },
+    {
+     "t": "TSE,",
+     "chave": false
+    }
+   ],
+   "ate": 580
+  },
+  {
+   "de": 580,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "mercado:",
+     "chave": true
+    }
+   ],
+   "ate": 604
+  },
+  {
+   "de": 604,
+   "partes": [
+    {
+     "t": "imóvel",
+     "chave": false
+    },
+    {
+     "t": "costuma",
+     "chave": false
+    },
+    {
+     "t": "entrar",
+     "chave": false
+    }
+   ],
+   "ate": 636
+  },
+  {
+   "de": 636,
+   "partes": [
+    {
+     "t": "pelo",
+     "chave": false
+    },
+    {
+     "t": "preço",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "compra.",
+     "chave": true
+    }
+   ],
+   "ate": 671
+  },
+  {
+   "de": 671,
+   "partes": [
+    {
+     "t": "Nas",
+     "chave": false
+    },
+    {
+     "t": "pontas:",
+     "chave": false
+    }
+   ],
+   "ate": 699
+  },
+  {
+   "de": 699,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "governador",
+     "chave": false
+    },
+    {
+     "t": "eleito",
+     "chave": false
+    }
+   ],
+   "ate": 725
+  },
+  {
+   "de": 725,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Mato",
+     "chave": false
+    },
+    {
+     "t": "Grosso,",
+     "chave": false
+    }
+   ],
+   "ate": 744
+  },
+  {
+   "de": 744,
+   "partes": [
+    {
+     "t": "Otaviano",
+     "chave": false
+    },
+    {
+     "t": "Pivetta,",
+     "chave": false
+    }
+   ],
+   "ate": 786
+  },
+  {
+   "de": 786,
+   "partes": [
+    {
+     "t": "declarou",
+     "chave": false
+    },
+    {
+     "t": "575",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 845
+  },
+  {
+   "de": 845,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "reais.",
+     "chave": false
+    }
+   ],
+   "ate": 867
+  },
+  {
+   "de": 867,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "oito",
+     "chave": true
+    },
+    {
+     "t": "eleitos",
+     "chave": true
+    }
+   ],
+   "ate": 886
+  },
+  {
+   "de": 886,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "declararam",
+     "chave": false
+    }
+   ],
+   "ate": 912
+  },
+  {
+   "de": 912,
+   "partes": [
+    {
+     "t": "bem",
+     "chave": true
+    },
+    {
+     "t": "nenhum.",
+     "chave": true
+    }
+   ],
+   "ate": 941
+  },
+  {
+   "de": 941,
+   "partes": [
+    {
+     "t": "Por",
+     "chave": false
+    },
+    {
+     "t": "partido,",
+     "chave": false
+    }
+   ],
+   "ate": 955
+  },
+  {
+   "de": 955,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "mediana",
+     "chave": false
+    },
+    {
+     "t": "vai",
+     "chave": false
+    }
+   ],
+   "ate": 977
+  },
+  {
+   "de": 977,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "172",
+     "chave": true
+    },
+    {
+     "t": "mil",
+     "chave": true
+    }
+   ],
+   "ate": 1001
+  },
+  {
+   "de": 1001,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "4",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 1028
+  },
+  {
+   "de": 1028,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "300",
+     "chave": false
+    },
+    {
+     "t": "mil",
+     "chave": false
+    },
+    {
+     "t": "reais.",
+     "chave": false
+    }
+   ],
+   "ate": 1074
+  },
+  {
+   "de": 1074,
+   "partes": [
+    {
+     "t": "Estão",
+     "chave": false
+    },
+    {
+     "t": "aqui",
+     "chave": false
+    }
+   ],
+   "ate": 1092
+  },
+  {
+   "de": 1092,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "20",
+     "chave": true
+    },
+    {
+     "t": "partidos",
+     "chave": true
+    }
+   ],
+   "ate": 1113
+  },
+  {
+   "de": 1113,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "eleitos.",
+     "chave": false
+    }
+   ],
+   "ate": 1134
+  },
+  {
+   "de": 1161,
+   "partes": [
+    {
+     "t": "Entre",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "289",
+     "chave": true
+    },
+    {
+     "t": "reeleitos,",
+     "chave": true
+    }
+   ],
+   "ate": 1229
+  },
+  {
+   "de": 1229,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "valor",
+     "chave": false
+    },
+    {
+     "t": "declarado",
+     "chave": false
+    }
+   ],
+   "ate": 1252
+  },
+  {
+   "de": 1252,
+   "partes": [
+    {
+     "t": "subiu",
+     "chave": true
+    },
+    {
+     "t": "39%",
+     "chave": true
+    }
+   ],
+   "ate": 1290
+  },
+  {
+   "de": 1290,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "2022,",
+     "chave": false
+    }
+   ],
+   "ate": 1330
+  },
+  {
+   "de": 1330,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "mediana.",
+     "chave": false
+    }
+   ],
+   "ate": 1352
+  },
+  {
+   "de": 1352,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "inflação",
+     "chave": true
+    }
+   ],
+   "ate": 1362
+  },
+  {
+   "de": 1362,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "20%.",
+     "chave": true
+    }
+   ],
+   "ate": 1395
+  },
+  {
+   "de": 1395,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "68",
+     "chave": true
+    }
+   ],
+   "ate": 1422
+  },
+  {
+   "de": 1422,
+   "partes": [
+    {
+     "t": "declararam",
+     "chave": true
+    },
+    {
+     "t": "menos.",
+     "chave": true
+    }
+   ],
+   "ate": 1461
+  }
+ ],
+ "grande": [
+  {
+   "t": "E",
+   "chave": false,
+   "f": 1471,
+   "l": 0
+  },
+  {
+   "t": "os",
+   "chave": false,
+   "f": 1475,
+   "l": 0
+  },
+  {
+   "t": "eleitos",
+   "chave": false,
+   "f": 1481,
+   "l": 0
+  },
+  {
+   "t": "do",
+   "chave": false,
+   "f": 1496,
+   "l": 1
+  },
+  {
+   "t": "teu",
+   "chave": true,
+   "f": 1500,
+   "l": 1
+  },
+  {
+   "t": "estado,",
+   "chave": true,
+   "f": 1506,
+   "l": 1
+  },
+  {
+   "t": "quanto",
+   "chave": false,
+   "f": 1515,
+   "l": 2
+  },
+  {
+   "t": "será",
+   "chave": false,
+   "f": 1532,
+   "l": 2
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1540,
+   "l": 2
+  },
+  {
+   "t": "declararam?",
+   "chave": true,
+   "f": 1544,
+   "l": 3
+  }
+ ],
+ "cena": {
+  "grade": {
+   "de": 0,
+   "ate": 209
+  },
+  "mediana": {
+   "de": 209,
+   "ate": 381
+  },
+  "renda": {
+   "de": 381,
+   "ate": 532
+  },
+  "aviso": {
+   "de": 532,
+   "ate": 673
+  },
+  "extremos": {
+   "de": 673,
+   "ate": 943
+  },
+  "partidos": {
+   "de": 943,
+   "ate": 1163
+  },
+  "reeleitos": {
+   "de": 1163,
+   "ate": 1471
+  },
+  "pergunta": {
+   "de": 1471,
+   "ate": 1574
+  }
+ },
+ "cenas": [
+  209,
+  381,
+  532,
+  673,
+  943,
+  1163,
+  1471,
+  1574
+ ],
+ "fimFala": 1564,
+ "cta": 1574,
+ "fim": 1574,
+ "total": 1614
+}

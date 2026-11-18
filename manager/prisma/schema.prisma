@@ -1,0 +1,206 @@
+// Publication Manager — infraestrutura pessoal de publicação.
+// Um usuário administrativo, vários projetos/marcas, vários canais.
+// Não existe tenant, organização, plano ou billing — ver docs/architecture.md.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------- enums
+
+enum ProjectStatus {
+  ACTIVE
+  ARCHIVED
+}
+
+enum Channel {
+  INSTAGRAM
+  YOUTUBE
+  TIKTOK
+  FACEBOOK
+  LINKEDIN
+}
+
+enum PublicationType {
+  IMAGE
+  CAROUSEL
+  REEL
+  STORY
+  VIDEO
+}
+
+enum PublicationStatus {
+  DRAFT
+  APPROVED
+  SCHEDULED
+  PUBLISHING
+  PUBLISHED
+  FAILED
+  RETRYING
+  CANCELLED
+}
+
+enum ErrorKind {
+  TRANSIENT
+  PERMANENT
+}
+
+enum EventType {
+  CREATED
+  IMPORTED
+  APPROVED
+  SCHEDULED
+  RESCHEDULED
+  PUBLISHING_STARTED
+  MEDIA_UPLOADED
+  PUBLISH_REQUEST_SENT
+  PUBLISHED
+  RECONCILED
+  METADATA_SYNCED
+  METADATA_SYNC_FAILED
+  RETRY_SCHEDULED
+  FAILED
+  CANCELLED
+  LOCK_EXPIRED
+}
+
+// ---------------------------------------------------------------- modelos
+
+model Project {
+  id          String        @id @default(cuid())
+  name        String
+  slug        String        @unique
+  description String?
+  logoUrl     String?
+  status      ProjectStatus @default(ACTIVE)
+  /// Branding e preferências do projeto (cores, fuso, handle). Nada de config de canal aqui.
+  settings    Json          @default("{}")
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  channelConfigs ChannelConfig[]
+  publications   Publication[]
+}
+
+model ChannelConfig {
+  id        String   @id @default(cuid())
+  projectId String
+  channel   Channel
+  /// @revisaorapida1ano — só rótulo, a identidade real vem das credenciais.
+  handle    String?
+  /// Credenciais cifradas em AES-256-GCM (src/lib/crypto.ts). Nunca em texto claro.
+  credentials String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project      Project       @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  publications Publication[]
+
+  @@unique([projectId, channel])
+}
+
+model Publication {
+  id              String            @id @default(cuid())
+  projectId       String
+  channelConfigId String?
+
+  title       String
+  description String?
+  caption     String            @default("")
+  type        PublicationType
+  channel     Channel           @default(INSTAGRAM)
+  status      PublicationStatus @default(DRAFT)
+
+  scheduledAt DateTime?
+  publishedAt DateTime?
+
+  // --- resultado na plataforma
+  externalId       String?
+  externalUrl      String?
+  /// Quando os metadados auxiliares (permalink etc.) foram sincronizados.
+  /// null com status PUBLISHED = publicado, metadados pendentes. Nunca é motivo de retry.
+  metadataSyncedAt DateTime?
+
+  // --- controle de fila
+  attempts      Int        @default(0)
+  maxAttempts   Int        @default(3)
+  nextAttemptAt DateTime?
+  lastError     String?
+  lastErrorKind ErrorKind?
+
+  // --- lock do worker
+  lockedAt DateTime?
+  lockedBy String?
+
+  // --- idempotência (ver docs/publishing.md)
+  /// Container criado na plataforma antes do publish. Permite reconciliar um publish
+  /// que respondeu erro mas foi processado do outro lado.
+  remoteContainerId  String?
+  publishRequestedAt DateTime?
+  /// Hash da legenda: identifica a publicação na listagem remota durante a reconciliação.
+  captionFingerprint String?
+
+  /// Pasta de origem no sistema antigo (marketing/conteudo/...). Torna o import idempotente.
+  sourcePath String? @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project       Project            @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  channelConfig ChannelConfig?     @relation(fields: [channelConfigId], references: [id], onDelete: SetNull)
+  media         Media[]
+  events        PublicationEvent[]
+
+  /// O worker varre por (status, quando executar) — é o índice que sustenta a fila.
+  @@index([status, scheduledAt])
+  @@index([status, nextAttemptAt])
+  @@index([projectId, status])
+}
+
+model Media {
+  id            String  @id @default(cuid())
+  publicationId String
+  /// Ordem no carrossel, começando em 1. Único por publicação.
+  position      Int
+  objectKey     String
+  mimeType      String
+  size          Int
+  width         Int?
+  height        Int?
+  /// Duração em segundos, só para vídeo/reel.
+  duration      Float?
+  checksum      String?
+  createdAt     DateTime @default(now())
+
+  publication Publication @relation(fields: [publicationId], references: [id], onDelete: Cascade)
+
+  @@unique([publicationId, position])
+}
+
+model PublicationEvent {
+  id            String    @id @default(cuid())
+  publicationId String
+  type          EventType
+  message       String?
+  metadata      Json      @default("{}")
+  createdAt     DateTime  @default(now())
+
+  publication Publication @relation(fields: [publicationId], references: [id], onDelete: Cascade)
+
+  @@index([publicationId, createdAt])
+}
+
+model WorkerInstance {
+  id              String   @id @default(cuid())
+  workerId        String   @unique
+  hostname        String?
+  version         String?
+  lastHeartbeatAt DateTime @default(now())
+  startedAt       DateTime @default(now())
+}

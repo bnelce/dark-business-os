@@ -1,0 +1,340 @@
+{
+ "pop": {
+  "m": 51.48115806699085,
+  "n": 55.514735231732146
+ },
+ "m": {
+  "cand": 37.04505479637397,
+  "fefc": 34.525056877956956,
+  "el": 21.24756335282651,
+  "nEl": 109,
+  "reais": 951742575.3
+ },
+ "n": {
+  "cand": 46.380733324313354,
+  "fefc": 36.667546176634346,
+  "el": 26.31578947368421,
+  "nEl": 135,
+  "reais": 1010803977.86
+ },
+ "fefcTotal": 2756671998.15,
+ "candidatos": 7391,
+ "mn": {
+  "n": 1356,
+  "el": 34
+ },
+ "hb": {
+  "n": 2517,
+  "el": 301
+ },
+ "assentos": {
+  "negros": 135,
+  "mulheres": 109
+ },
+ "partidos": [
+  {
+   "p": "AGIR",
+   "cand": 446,
+   "cm": 32.51,
+   "fm": 33.55,
+   "fn": 64.9,
+   "fefc": 2362874.8,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "AVANTE",
+   "cand": 956,
+   "cm": 33.26,
+   "fm": 27.66,
+   "fn": 54.29,
+   "fefc": 71026059.77,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "CIDADANIA",
+   "cand": 151,
+   "cm": 43.71,
+   "fm": 47.55,
+   "fn": 31.17,
+   "fefc": 52214353.85,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "DC",
+   "cand": 727,
+   "cm": 32.05,
+   "fm": 61.33,
+   "fn": 46.68,
+   "fefc": 3072377.32,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "DEMOCRATA",
+   "cand": 429,
+   "cm": 34.97,
+   "fm": 100,
+   "fn": 100,
+   "fefc": 3000,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "MDB",
+   "cand": 1366,
+   "cm": 35.65,
+   "fm": 32.21,
+   "fn": 28.2,
+   "fefc": 397014990.42,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "MISSÃO",
+   "cand": 525,
+   "cm": 34.48,
+   "fm": 35.83,
+   "fn": 41.28,
+   "fefc": 3282354.35,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "MOBILIZA",
+   "cand": 567,
+   "cm": 32.45,
+   "fm": 50.06,
+   "fn": 56.91,
+   "fefc": 2423000,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "NOVO",
+   "cand": 1269,
+   "cm": 32.86,
+   "fm": 31.14,
+   "fn": 26.94,
+   "fefc": 34720131.49,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "PCB",
+   "cand": 13,
+   "cm": 15.38,
+   "fm": null,
+   "fn": null,
+   "fefc": 0,
+   "mOk": null,
+   "nOk": null
+  },
+  {
+   "p": "PCDOB",
+   "cand": 146,
+   "cm": 44.52,
+   "fm": 45.22,
+   "fn": 49.39,
+   "fefc": 60659735.25,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "PCO",
+   "cand": 100,
+   "cm": 35,
+   "fm": 13.09,
+   "fn": 22.03,
+   "fefc": 522358.88,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "PDT",
+   "cand": 1095,
+   "cm": 35.53,
+   "fm": 33.86,
+   "fn": 32.48,
+   "fefc": 167345332.88,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PL",
+   "cand": 1577,
+   "cm": 33.54,
+   "fm": 25.89,
+   "fn": 22.12,
+   "fefc": 871150602.62,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "PODE",
+   "cand": 1209,
+   "cm": 34.66,
+   "fm": 31.19,
+   "fn": 37.56,
+   "fefc": 246252612.01,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PP",
+   "cand": 688,
+   "cm": 35.76,
+   "fm": 34.09,
+   "fn": 34.17,
+   "fefc": 422129489.21,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PRD",
+   "cand": 498,
+   "cm": 36.95,
+   "fm": 31.14,
+   "fn": 39.09,
+   "fefc": 70227490.68,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PRTB",
+   "cand": 6,
+   "cm": 0,
+   "fm": 0,
+   "fn": 23.38,
+   "fefc": 1277047.96,
+   "mOk": null,
+   "nOk": false
+  },
+  {
+   "p": "PSB",
+   "cand": 941,
+   "cm": 35.28,
+   "fm": 33.65,
+   "fn": 32.65,
+   "fefc": 150990388.41,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PSD",
+   "cand": 1090,
+   "cm": 34.77,
+   "fm": 32.31,
+   "fn": 29.98,
+   "fefc": 423942046.12,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "PSDB",
+   "cand": 1060,
+   "cm": 35.38,
+   "fm": 32.02,
+   "fn": 34.16,
+   "fefc": 144696320.35,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PSOL",
+   "cand": 745,
+   "cm": 39.19,
+   "fm": 56.09,
+   "fn": 46.41,
+   "fefc": 126456664.06,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "PSTU",
+   "cand": 78,
+   "cm": 38.46,
+   "fm": 34.79,
+   "fn": 71.27,
+   "fefc": 3191197,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "PT",
+   "cand": 1067,
+   "cm": 36.83,
+   "fm": 36.42,
+   "fn": 29.96,
+   "fefc": 613862927.87,
+   "mOk": false,
+   "nOk": false
+  },
+  {
+   "p": "PV",
+   "cand": 228,
+   "cm": 40.35,
+   "fm": 41.75,
+   "fn": 33.08,
+   "fefc": 43295991.3,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "REDE",
+   "cand": 341,
+   "cm": 37.83,
+   "fm": 43.6,
+   "fn": 40.38,
+   "fefc": 30518366.25,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "REPUBLICANOS",
+   "cand": 1274,
+   "cm": 33.44,
+   "fm": 31.31,
+   "fn": 40.24,
+   "fefc": 349766253.13,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "SOLIDARIEDADE",
+   "cand": 524,
+   "cm": 35.69,
+   "fm": 30.28,
+   "fn": 40.2,
+   "fefc": 83342271.73,
+   "mOk": false,
+   "nOk": true
+  },
+  {
+   "p": "UNIÃO",
+   "cand": 825,
+   "cm": 37.7,
+   "fm": 37.72,
+   "fn": 45.18,
+   "fefc": 530398690.67,
+   "mOk": true,
+   "nOk": true
+  },
+  {
+   "p": "UP",
+   "cand": 124,
+   "cm": 51.61,
+   "fm": 81.84,
+   "fn": 69.05,
+   "fefc": 2084037.31,
+   "mOk": true,
+   "nOk": true
+  }
+ ],
+ "abaixoM": 16,
+ "totalM": 28,
+ "abaixoN": 7,
+ "totalN": 29
+}

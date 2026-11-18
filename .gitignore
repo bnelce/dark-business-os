@@ -1,0 +1,69 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Claude Code (sessões locais, não devem ir pro repo)
+.claude/projects/
+.claude/sessions/
+.claude/shell-snapshots/
+.claude/telemetry/
+.claude/file-history/
+.claude/backups/
+# Permissões pessoais — autorizam publicar em conta real, não são config de projeto
+.claude/settings.local.json
+
+# Dependências
+node_modules/
+
+# Remotion
+reels/node_modules/
+reels/public/narracao/
+reels/out/
+# props do render: escrito e removido no finally, mas sobrevive a um SIGINT
+reels/props-atual.json
+
+# Artefatos de reel — regeneráveis, e o MP4 tem ~10MB
+# Artefatos de reel são regeneráveis (MP4 ~5-15MB, MP3 de narração).
+# Depois da reestruturação multi-negócio o caminho virou negocios/<slug>/marketing/,
+# então a regra precisa casar em qualquer profundidade.
+**/marketing/reels/**/reel.mp4
+**/marketing/reels/**/*.mp4
+**/marketing/reels/**/audio/
+
+# Publication Manager (manager/)
+.next/
+manager/next-env.d.ts
+manager/.tsbuildinfo
+manager/tsconfig.tsbuildinfo
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Drop zone do usuário (só o README vai versionado)
+dados/*
+!dados/README.md
+
+# Segredos — nunca versionar
+secrets/
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Repositórios de terceiros clonados para estudo (testes/ferramentas/)
+# São ~600MB de código que não é nosso e não deve entrar no histórico.
+# O README de testes/ferramentas/ fica versionado; o resto não.
+testes/ferramentas/*
+!testes/ferramentas/README.md
+
+# Dark Business OS — mídia gerada por canal (regenerável e pesada)
+canais/**/videos/**/*.mp4
+canais/**/videos/**/*.mp3
+canais/**/videos/**/*.wav
+canais/**/videos/**/audio/
+reels/public/narracao*/

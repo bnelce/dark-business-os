@@ -1,0 +1,783 @@
+{
+ "fala": {
+  "gancho": 1,
+  "cop": 131,
+  "atual": 338,
+  "otimista": 464,
+  "paris": 574,
+  "corte": 690,
+  "pergunta": 1011
+ },
+ "dur": {
+  "gancho": 126,
+  "cop": 203,
+  "atual": 122,
+  "otimista": 106,
+  "paris": 112,
+  "corte": 302,
+  "pergunta": 126
+ },
+ "m": {
+  "cada": 18,
+  "prometeu": 45,
+  "aquecimento": 65,
+  "g26": 95,
+  "conta": 142,
+  "onu": 154,
+  "cop31": 167,
+  "hoje": 205,
+  "omm": 222,
+  "ultimos": 258,
+  "n12": 265,
+  "quentes": 306,
+  "medidos": 319,
+  "mantidas": 338,
+  "g28": 397,
+  "seculo": 445,
+  "promessas": 476,
+  "neutralidade": 520,
+  "g21": 536,
+  "paris": 574,
+  "g15": 600,
+  "otimista": 659,
+  "la": 678,
+  "cenario": 697,
+  "ultrapassagem": 721,
+  "emissoes": 774,
+  "cair": 794,
+  "p18": 803,
+  "a2030": 834,
+  "p45": 864,
+  "a2035": 900,
+  "promessasC": 938,
+  "metade": 979,
+  "achava": 1021,
+  "promessasP": 1051,
+  "seguravam": 1069,
+  "planeta": 1086,
+  "q15": 1108
+ },
+ "digita": [
+  {
+   "id": "cop",
+   "texto": "COP31 · ANTÁLIA · 9/11",
+   "de": 163,
+   "ate": 181
+  },
+  {
+   "id": "omm",
+   "texto": "ESTADO DO CLIMA 2026",
+   "de": 220,
+   "ate": 236
+  },
+  {
+   "id": "esc",
+   "texto": "CENÁRIO DE MENOR\nULTRAPASSAGEM DE 1,5 °C",
+   "de": 695,
+   "ate": 737
+  }
+ ],
+ "contas": [
+  {
+   "id": "sobe26",
+   "de": 0,
+   "ate": 99,
+   "passo": 3
+  },
+  {
+   "id": "sobe28",
+   "de": 338,
+   "ate": 401,
+   "passo": 2
+  },
+  {
+   "id": "desce21",
+   "de": 474,
+   "ate": 540,
+   "passo": 2
+  },
+  {
+   "id": "b18",
+   "de": 799,
+   "ate": 813,
+   "passo": 2
+  },
+  {
+   "id": "b45",
+   "de": 860,
+   "ate": 876,
+   "passo": 2
+  },
+  {
+   "id": "ndc",
+   "de": 936,
+   "ate": 950,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Mesmo",
+     "chave": false
+    },
+    {
+     "t": "se",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": true
+    },
+    {
+     "t": "país",
+     "chave": true
+    }
+   ],
+   "ate": 29
+  },
+  {
+   "de": 29,
+   "partes": [
+    {
+     "t": "cumprir",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    }
+   ],
+   "ate": 43
+  },
+  {
+   "de": 43,
+   "partes": [
+    {
+     "t": "prometeu,",
+     "chave": true
+    }
+   ],
+   "ate": 55
+  },
+  {
+   "de": 55,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "aquecimento",
+     "chave": false
+    }
+   ],
+   "ate": 75
+  },
+  {
+   "de": 75,
+   "partes": [
+    {
+     "t": "chega",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "2,6",
+     "chave": true
+    },
+    {
+     "t": "graus.",
+     "chave": true
+    }
+   ],
+   "ate": 129
+  },
+  {
+   "de": 129,
+   "partes": [
+    {
+     "t": "É",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": false
+    }
+   ],
+   "ate": 147
+  },
+  {
+   "de": 147,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "ONU",
+     "chave": false
+    }
+   ],
+   "ate": 160
+  },
+  {
+   "de": 160,
+   "partes": [
+    {
+     "t": "pra",
+     "chave": false
+    },
+    {
+     "t": "COP31,",
+     "chave": true
+    }
+   ],
+   "ate": 184
+  },
+  {
+   "de": 184,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "abriu",
+     "chave": false
+    },
+    {
+     "t": "hoje.",
+     "chave": true
+    }
+   ],
+   "ate": 209
+  },
+  {
+   "de": 209,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "OMM",
+     "chave": false
+    },
+    {
+     "t": "mostrou:",
+     "chave": false
+    }
+   ],
+   "ate": 244
+  },
+  {
+   "de": 244,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "últimos",
+     "chave": false
+    }
+   ],
+   "ate": 263
+  },
+  {
+   "de": 263,
+   "partes": [
+    {
+     "t": "12",
+     "chave": true
+    },
+    {
+     "t": "anos",
+     "chave": true
+    }
+   ],
+   "ate": 283
+  },
+  {
+   "de": 283,
+   "partes": [
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "quentes",
+     "chave": true
+    }
+   ],
+   "ate": 312
+  },
+  {
+   "de": 312,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "medidos.",
+     "chave": false
+    }
+   ],
+   "ate": 336
+  },
+  {
+   "de": 336,
+   "partes": [
+    {
+     "t": "Mantidas",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "políticas",
+     "chave": false
+    }
+   ],
+   "ate": 369
+  },
+  {
+   "de": 369,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "hoje,",
+     "chave": true
+    }
+   ],
+   "ate": 383
+  },
+  {
+   "de": 383,
+   "partes": [
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "2,8",
+     "chave": true
+    },
+    {
+     "t": "graus",
+     "chave": true
+    }
+   ],
+   "ate": 432
+  },
+  {
+   "de": 432,
+   "partes": [
+    {
+     "t": "neste",
+     "chave": false
+    },
+    {
+     "t": "século.",
+     "chave": false
+    }
+   ],
+   "ate": 462
+  },
+  {
+   "de": 462,
+   "partes": [
+    {
+     "t": "Com",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "promessas",
+     "chave": true
+    }
+   ],
+   "ate": 495
+  },
+  {
+   "de": 495,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "metas",
+     "chave": false
+    }
+   ],
+   "ate": 514
+  },
+  {
+   "de": 514,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "neutralidade,",
+     "chave": true
+    }
+   ],
+   "ate": 534
+  },
+  {
+   "de": 534,
+   "partes": [
+    {
+     "t": "2,1.",
+     "chave": true
+    }
+   ],
+   "ate": 572
+  },
+  {
+   "de": 572,
+   "partes": [
+    {
+     "t": "Paris",
+     "chave": true
+    },
+    {
+     "t": "mira",
+     "chave": false
+    },
+    {
+     "t": "1,5.",
+     "chave": true
+    }
+   ],
+   "ate": 626
+  },
+  {
+   "de": 626,
+   "partes": [
+    {
+     "t": "Nem",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "cenário",
+     "chave": false
+    }
+   ],
+   "ate": 649
+  },
+  {
+   "de": 649,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "otimista",
+     "chave": true
+    }
+   ],
+   "ate": 669
+  },
+  {
+   "de": 669,
+   "partes": [
+    {
+     "t": "chega",
+     "chave": false
+    },
+    {
+     "t": "lá.",
+     "chave": false
+    }
+   ],
+   "ate": 688
+  },
+  {
+   "de": 688,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "cenário",
+     "chave": false
+    }
+   ],
+   "ate": 706
+  },
+  {
+   "de": 706,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "menor",
+     "chave": true
+    },
+    {
+     "t": "ultrapassagem",
+     "chave": true
+    }
+   ],
+   "ate": 737
+  },
+  {
+   "de": 737,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "1,5,",
+     "chave": false
+    }
+   ],
+   "ate": 769
+  },
+  {
+   "de": 769,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "emissões",
+     "chave": false
+    }
+   ],
+   "ate": 780
+  },
+  {
+   "de": 780,
+   "partes": [
+    {
+     "t": "teriam",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "cair",
+     "chave": false
+    }
+   ],
+   "ate": 801
+  },
+  {
+   "de": 801,
+   "partes": [
+    {
+     "t": "18%",
+     "chave": true
+    },
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "2030",
+     "chave": false
+    }
+   ],
+   "ate": 852
+  },
+  {
+   "de": 852,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "45%",
+     "chave": true
+    },
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "2035.",
+     "chave": false
+    }
+   ],
+   "ate": 921
+  },
+  {
+   "de": 921,
+   "partes": [
+    {
+     "t": "As",
+     "chave": false
+    },
+    {
+     "t": "promessas",
+     "chave": false
+    },
+    {
+     "t": "cortam",
+     "chave": false
+    }
+   ],
+   "ate": 963
+  },
+  {
+   "de": 963,
+   "partes": [
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "metade.",
+     "chave": true
+    }
+   ],
+   "ate": 993
+  },
+  {
+   "de": 1009,
+   "partes": [
+    {
+     "t": "Você",
+     "chave": false
+    },
+    {
+     "t": "achava",
+     "chave": false
+    }
+   ],
+   "ate": 1034
+  },
+  {
+   "de": 1034,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "promessas",
+     "chave": true
+    }
+   ],
+   "ate": 1061
+  },
+  {
+   "de": 1061,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "seguravam",
+     "chave": true
+    }
+   ],
+   "ate": 1079
+  },
+  {
+   "de": 1079,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "planeta",
+     "chave": false
+    }
+   ],
+   "ate": 1094
+  },
+  {
+   "de": 1094,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "1,5?",
+     "chave": true
+    }
+   ],
+   "ate": 1138
+  }
+ ],
+ "cenas": [
+  131,
+  338,
+  690,
+  1011,
+  1145
+ ],
+ "fimFala": 1137,
+ "cta": 1145,
+ "fim": 1145,
+ "total": 1185
+}

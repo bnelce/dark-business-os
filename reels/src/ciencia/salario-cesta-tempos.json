@@ -1,0 +1,1134 @@
+{
+ "fala": {
+  "gancho": 1,
+  "real": 120,
+  "cesta": 296,
+  "cestas": 565,
+  "pergunta": 878,
+  "relogio": 939,
+  "historia": 1255,
+  "final": 1508
+ },
+ "dur": {
+  "gancho": 114,
+  "real": 171,
+  "cesta": 264,
+  "cestas": 308,
+  "pergunta": 47,
+  "relogio": 311,
+  "historia": 248,
+  "final": 135
+ },
+ "m": {
+  "recorde": 39,
+  "menos": 62,
+  "g2017": 90,
+  "inflacao": 151,
+  "hoje": 184,
+  "tres": 203,
+  "r1995": 251,
+  "cestaB": 320,
+  "subiu": 349,
+  "paulo": 373,
+  "c570": 438,
+  "c2011": 493,
+  "hoje2": 509,
+  "c918": 537,
+  "k1995": 570,
+  "uma": 637,
+  "k2017": 659,
+  "duas": 698,
+  "melhor": 714,
+  "k2022": 732,
+  "k16": 755,
+  "pior": 795,
+  "k2004": 809,
+  "hoje3": 827,
+  "k18": 841,
+  "caro": 909,
+  "arroz": 943,
+  "m36": 1013,
+  "carne": 1078,
+  "h7": 1091,
+  "m23": 1122,
+  "r2018": 1160,
+  "h5": 1195,
+  "m36b": 1226,
+  "simples": 1307,
+  "maior": 1331,
+  "h1995": 1383,
+  "melhorAno": 1439,
+  "h2017": 1471,
+  "compra": 1591,
+  "diz": 1599
+ },
+ "digita": [
+  {
+   "id": "x3",
+   "texto": "3",
+   "de": 202,
+   "ate": 206
+  },
+  {
+   "id": "c570",
+   "texto": "570",
+   "de": 436,
+   "ate": 447
+  },
+  {
+   "id": "c918",
+   "texto": "918",
+   "de": 535,
+   "ate": 546
+  },
+  {
+   "id": "k102",
+   "texto": "1,02",
+   "de": 635,
+   "ate": 647
+  },
+  {
+   "id": "k216",
+   "texto": "2,16",
+   "de": 696,
+   "ate": 708
+  },
+  {
+   "id": "k159",
+   "texto": "1,59",
+   "de": 753,
+   "ate": 765
+  },
+  {
+   "id": "k179",
+   "texto": "1,79",
+   "de": 839,
+   "ate": 851
+  },
+  {
+   "id": "m36",
+   "texto": "36",
+   "de": 1011,
+   "ate": 1019
+  },
+  {
+   "id": "h723",
+   "texto": "7H23",
+   "de": 1089,
+   "ate": 1124
+  },
+  {
+   "id": "h536",
+   "texto": "5H36",
+   "de": 1193,
+   "ate": 1228
+  },
+  {
+   "id": "g226",
+   "texto": "+22,6%",
+   "de": 1381,
+   "ate": 1397
+  },
+  {
+   "id": "h216",
+   "texto": "2,16",
+   "de": 1469,
+   "ate": 1481
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "salário",
+     "chave": false
+    },
+    {
+     "t": "mínimo",
+     "chave": false
+    }
+   ],
+   "ate": 25
+  },
+  {
+   "de": 25,
+   "partes": [
+    {
+     "t": "bateu",
+     "chave": false
+    },
+    {
+     "t": "recorde.",
+     "chave": true
+    }
+   ],
+   "ate": 51
+  },
+  {
+   "de": 51,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "compra",
+     "chave": false
+    }
+   ],
+   "ate": 60
+  },
+  {
+   "de": 60,
+   "partes": [
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "comida",
+     "chave": true
+    }
+   ],
+   "ate": 78
+  },
+  {
+   "de": 78,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2017.",
+     "chave": false
+    }
+   ],
+   "ate": 118
+  },
+  {
+   "de": 118,
+   "partes": [
+    {
+     "t": "Descontada",
+     "chave": false
+    }
+   ],
+   "ate": 141
+  },
+  {
+   "de": 141,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "inflação,",
+     "chave": false
+    }
+   ],
+   "ate": 161
+  },
+  {
+   "de": 161,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "mínimo",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "hoje",
+     "chave": false
+    }
+   ],
+   "ate": 189
+  },
+  {
+   "de": 189,
+   "partes": [
+    {
+     "t": "vale",
+     "chave": false
+    },
+    {
+     "t": "três",
+     "chave": true
+    },
+    {
+     "t": "vezes",
+     "chave": true
+    }
+   ],
+   "ate": 221
+  },
+  {
+   "de": 221,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "começo",
+     "chave": false
+    }
+   ],
+   "ate": 240
+  },
+  {
+   "de": 240,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "1995.",
+     "chave": false
+    }
+   ],
+   "ate": 294
+  },
+  {
+   "de": 294,
+   "partes": [
+    {
+     "t": "Só",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    }
+   ],
+   "ate": 313
+  },
+  {
+   "de": 313,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "cesta",
+     "chave": true
+    },
+    {
+     "t": "básica",
+     "chave": true
+    }
+   ],
+   "ate": 336
+  },
+  {
+   "de": 336,
+   "partes": [
+    {
+     "t": "também",
+     "chave": false
+    },
+    {
+     "t": "subiu.",
+     "chave": false
+    }
+   ],
+   "ate": 364
+  },
+  {
+   "de": 364,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "São",
+     "chave": false
+    },
+    {
+     "t": "Paulo,",
+     "chave": false
+    }
+   ],
+   "ate": 386
+  },
+  {
+   "de": 386,
+   "partes": [
+    {
+     "t": "descontada",
+     "chave": false
+    }
+   ],
+   "ate": 398
+  },
+  {
+   "de": 398,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "inflação,",
+     "chave": false
+    }
+   ],
+   "ate": 417
+  },
+  {
+   "de": 417,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "perto",
+     "chave": false
+    }
+   ],
+   "ate": 433
+  },
+  {
+   "de": 433,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "570",
+     "chave": true
+    },
+    {
+     "t": "reais",
+     "chave": true
+    }
+   ],
+   "ate": 478
+  },
+  {
+   "de": 478,
+   "partes": [
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "2011.",
+     "chave": false
+    }
+   ],
+   "ate": 507
+  },
+  {
+   "de": 507,
+   "partes": [
+    {
+     "t": "Hoje",
+     "chave": false
+    },
+    {
+     "t": "custa",
+     "chave": false
+    },
+    {
+     "t": "918.",
+     "chave": true
+    }
+   ],
+   "ate": 563
+  },
+  {
+   "de": 563,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "1995,",
+     "chave": false
+    }
+   ],
+   "ate": 604
+  },
+  {
+   "de": 604,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "mínimo",
+     "chave": false
+    },
+    {
+     "t": "comprava",
+     "chave": false
+    }
+   ],
+   "ate": 635
+  },
+  {
+   "de": 635,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": true
+    },
+    {
+     "t": "cesta.",
+     "chave": true
+    }
+   ],
+   "ate": 647
+  },
+  {
+   "de": 647,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2017,",
+     "chave": false
+    }
+   ],
+   "ate": 678
+  },
+  {
+   "de": 678,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "duas:",
+     "chave": true
+    }
+   ],
+   "ate": 702
+  },
+  {
+   "de": 702,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "melhor",
+     "chave": false
+    },
+    {
+     "t": "ano.",
+     "chave": false
+    }
+   ],
+   "ate": 726
+  },
+  {
+   "de": 726,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2022,",
+     "chave": false
+    }
+   ],
+   "ate": 753
+  },
+  {
+   "de": 753,
+   "partes": [
+    {
+     "t": "1,6,",
+     "chave": true
+    }
+   ],
+   "ate": 781
+  },
+  {
+   "de": 781,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "pior",
+     "chave": false
+    }
+   ],
+   "ate": 798
+  },
+  {
+   "de": 798,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "2004.",
+     "chave": false
+    }
+   ],
+   "ate": 825
+  },
+  {
+   "de": 825,
+   "partes": [
+    {
+     "t": "Hoje,",
+     "chave": false
+    },
+    {
+     "t": "1,8.",
+     "chave": true
+    }
+   ],
+   "ate": 874
+  },
+  {
+   "de": 937,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "arroz",
+     "chave": true
+    }
+   ],
+   "ate": 953
+  },
+  {
+   "de": 953,
+   "partes": [
+    {
+     "t": "nunca",
+     "chave": false
+    },
+    {
+     "t": "custou",
+     "chave": false
+    }
+   ],
+   "ate": 980
+  },
+  {
+   "de": 980,
+   "partes": [
+    {
+     "t": "tão",
+     "chave": false
+    },
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "trabalho:",
+     "chave": false
+    }
+   ],
+   "ate": 1011
+  },
+  {
+   "de": 1011,
+   "partes": [
+    {
+     "t": "36",
+     "chave": true
+    },
+    {
+     "t": "minutos",
+     "chave": true
+    }
+   ],
+   "ate": 1046
+  },
+  {
+   "de": 1046,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "quilo.",
+     "chave": false
+    }
+   ],
+   "ate": 1056
+  },
+  {
+   "de": 1056,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "carne",
+     "chave": true
+    }
+   ],
+   "ate": 1076
+  },
+  {
+   "de": 1076,
+   "partes": [
+    {
+     "t": "custa",
+     "chave": false
+    },
+    {
+     "t": "7",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    }
+   ],
+   "ate": 1110
+  },
+  {
+   "de": 1110,
+   "partes": [
+    {
+     "t": "e",
+     "chave": true
+    },
+    {
+     "t": "23",
+     "chave": true
+    },
+    {
+     "t": "minutos.",
+     "chave": true
+    }
+   ],
+   "ate": 1143
+  },
+  {
+   "de": 1143,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2018,",
+     "chave": false
+    }
+   ],
+   "ate": 1181
+  },
+  {
+   "de": 1181,
+   "partes": [
+    {
+     "t": "eram",
+     "chave": false
+    },
+    {
+     "t": "5",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    },
+    {
+     "t": "e",
+     "chave": true
+    },
+    {
+     "t": "36.",
+     "chave": true
+    }
+   ],
+   "ate": 1253
+  },
+  {
+   "de": 1253,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "série",
+     "chave": false
+    }
+   ],
+   "ate": 1270
+  },
+  {
+   "de": 1270,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": false
+    }
+   ],
+   "ate": 1292
+  },
+  {
+   "de": 1292,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "história",
+     "chave": false
+    }
+   ],
+   "ate": 1305
+  },
+  {
+   "de": 1305,
+   "partes": [
+    {
+     "t": "simples:",
+     "chave": true
+    }
+   ],
+   "ate": 1317
+  },
+  {
+   "de": 1317,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "maior",
+     "chave": false
+    }
+   ],
+   "ate": 1335
+  },
+  {
+   "de": 1335,
+   "partes": [
+    {
+     "t": "aumento",
+     "chave": false
+    },
+    {
+     "t": "real",
+     "chave": false
+    }
+   ],
+   "ate": 1354
+  },
+  {
+   "de": 1354,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "mínimo",
+     "chave": false
+    }
+   ],
+   "ate": 1365
+  },
+  {
+   "de": 1365,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "1995,",
+     "chave": true
+    }
+   ],
+   "ate": 1415
+  },
+  {
+   "de": 1415,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "melhor",
+     "chave": false
+    },
+    {
+     "t": "ano",
+     "chave": false
+    }
+   ],
+   "ate": 1443
+  },
+  {
+   "de": 1443,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "cestas",
+     "chave": false
+    }
+   ],
+   "ate": 1460
+  },
+  {
+   "de": 1460,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "2017.",
+     "chave": true
+    }
+   ],
+   "ate": 1504
+  },
+  {
+   "de": 1597,
+   "partes": [
+    {
+     "t": "Diz",
+     "chave": false
+    },
+    {
+     "t": "aí",
+     "chave": false
+    }
+   ],
+   "ate": 1615
+  },
+  {
+   "de": 1615,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "gente",
+     "chave": false
+    }
+   ],
+   "ate": 1624
+  },
+  {
+   "de": 1624,
+   "partes": [
+    {
+     "t": "faz",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "conta.",
+     "chave": false
+    }
+   ],
+   "ate": 1646
+  }
+ ],
+ "grande": [
+  {
+   "t": "Então",
+   "chave": false,
+   "f": 878,
+   "l": 0,
+   "g": "pergunta"
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 891,
+   "l": 1,
+   "g": "pergunta"
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 900,
+   "l": 1,
+   "g": "pergunta"
+  },
+  {
+   "t": "ficou",
+   "chave": false,
+   "f": 903,
+   "l": 2,
+   "g": "pergunta"
+  },
+  {
+   "t": "caro?",
+   "chave": true,
+   "f": 909,
+   "l": 2,
+   "g": "pergunta"
+  },
+  {
+   "t": "Quanto",
+   "chave": false,
+   "f": 1508,
+   "l": 0,
+   "g": "final"
+  },
+  {
+   "t": "tempo",
+   "chave": false,
+   "f": 1517,
+   "l": 0,
+   "g": "final"
+  },
+  {
+   "t": "de",
+   "chave": false,
+   "f": 1530,
+   "l": 1,
+   "g": "final"
+  },
+  {
+   "t": "trabalho",
+   "chave": false,
+   "f": 1534,
+   "l": 1,
+   "g": "final"
+  },
+  {
+   "t": "custa",
+   "chave": false,
+   "f": 1549,
+   "l": 2,
+   "g": "final"
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 1569,
+   "l": 2,
+   "g": "final"
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1572,
+   "l": 2,
+   "g": "final"
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1576,
+   "l": 3,
+   "g": "final"
+  },
+  {
+   "t": "mais",
+   "chave": false,
+   "f": 1583,
+   "l": 3,
+   "g": "final"
+  },
+  {
+   "t": "compra?",
+   "chave": true,
+   "f": 1591,
+   "l": 3,
+   "g": "final"
+  }
+ ],
+ "cenas": [
+  120,
+  296,
+  565,
+  878,
+  939,
+  1078,
+  1255,
+  1508,
+  1649
+ ],
+ "loop": {
+  "inicio": 40,
+  "fim": 45
+ },
+ "fimFala": 1643,
+ "cta": 1649,
+ "total": 1694
+}

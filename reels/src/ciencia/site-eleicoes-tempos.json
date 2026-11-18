@@ -1,0 +1,1041 @@
+{
+ "fala": {
+  "gancho": 1,
+  "cidade": 148,
+  "um-voto": 288,
+  "pergunta": 434,
+  "site": 537,
+  "fecho": 800
+ },
+ "fim": {
+  "gancho": 143,
+  "cidade": 283,
+  "um-voto": 429,
+  "pergunta": 532,
+  "site": 795,
+  "fecho": 869
+ },
+ "palavras": {
+  "gancho": [
+   {
+    "w": "Uma",
+    "f": 1,
+    "fe": 8
+   },
+   {
+    "w": "cidade",
+    "f": 8,
+    "fe": 17
+   },
+   {
+    "w": "brasileira",
+    "f": 17,
+    "fe": 32
+   },
+   {
+    "w": "terminou",
+    "f": 32,
+    "fe": 42
+   },
+   {
+    "w": "o",
+    "f": 42,
+    "fe": 48
+   },
+   {
+    "w": "segundo",
+    "f": 48,
+    "fe": 52
+   },
+   {
+    "w": "turno",
+    "f": 52,
+    "fe": 63
+   },
+   {
+    "w": "empatada:",
+    "f": 63,
+    "fe": 75
+   },
+   {
+    "w": "1.530",
+    "f": 75,
+    "fe": 105
+   },
+   {
+    "w": "a",
+    "f": 105,
+    "fe": 114
+   },
+   {
+    "w": "1.530.",
+    "f": 114,
+    "fe": 135
+   }
+  ],
+  "cidade": [
+   {
+    "w": "Foi",
+    "f": 148,
+    "fe": 153
+   },
+   {
+    "w": "Marquinho,",
+    "f": 153,
+    "fe": 166
+   },
+   {
+    "w": "no",
+    "f": 166,
+    "fe": 178
+   },
+   {
+    "w": "Paraná.",
+    "f": 178,
+    "fe": 188
+   },
+   {
+    "w": "3.060",
+    "f": 188,
+    "fe": 215
+   },
+   {
+    "w": "votos",
+    "f": 215,
+    "fe": 225
+   },
+   {
+    "w": "válidos,",
+    "f": 225,
+    "fe": 238
+   },
+   {
+    "w": "e",
+    "f": 238,
+    "fe": 246
+   },
+   {
+    "w": "nenhum",
+    "f": 246,
+    "fe": 256
+   },
+   {
+    "w": "voto",
+    "f": 256,
+    "fe": 265
+   },
+   {
+    "w": "de",
+    "f": 265,
+    "fe": 268
+   },
+   {
+    "w": "diferença.",
+    "f": 268,
+    "fe": 277
+   }
+  ],
+  "um-voto": [
+   {
+    "w": "Em",
+    "f": 288,
+    "fe": 293
+   },
+   {
+    "w": "outras",
+    "f": 293,
+    "fe": 304
+   },
+   {
+    "w": "cinco",
+    "f": 304,
+    "fe": 315
+   },
+   {
+    "w": "cidades,",
+    "f": 315,
+    "fe": 328
+   },
+   {
+    "w": "a",
+    "f": 328,
+    "fe": 339
+   },
+   {
+    "w": "diferença",
+    "f": 339,
+    "fe": 348
+   },
+   {
+    "w": "foi",
+    "f": 348,
+    "fe": 355
+   },
+   {
+    "w": "de",
+    "f": 355,
+    "fe": 359
+   },
+   {
+    "w": "um",
+    "f": 359,
+    "fe": 362
+   },
+   {
+    "w": "voto",
+    "f": 362,
+    "fe": 371
+   },
+   {
+    "w": "só:",
+    "f": 371,
+    "fe": 376
+   },
+   {
+    "w": "três",
+    "f": 376,
+    "fe": 387
+   },
+   {
+    "w": "pro",
+    "f": 387,
+    "fe": 390
+   },
+   {
+    "w": "Lula,",
+    "f": 390,
+    "fe": 397
+   },
+   {
+    "w": "duas",
+    "f": 397,
+    "fe": 410
+   },
+   {
+    "w": "pro",
+    "f": 410,
+    "fe": 415
+   },
+   {
+    "w": "Flávio.",
+    "f": 415,
+    "fe": 423
+   }
+  ],
+  "pergunta": [
+   {
+    "w": "E",
+    "f": 434,
+    "fe": 439
+   },
+   {
+    "w": "a",
+    "f": 439,
+    "fe": 448
+   },
+   {
+    "w": "sua",
+    "f": 448,
+    "fe": 454
+   },
+   {
+    "w": "cidade?",
+    "f": 454,
+    "fe": 465
+   },
+   {
+    "w": "Foi",
+    "f": 465,
+    "fe": 478
+   },
+   {
+    "w": "por",
+    "f": 478,
+    "fe": 484
+   },
+   {
+    "w": "pouco,",
+    "f": 484,
+    "fe": 491
+   },
+   {
+    "w": "ou",
+    "f": 491,
+    "fe": 503
+   },
+   {
+    "w": "nem",
+    "f": 503,
+    "fe": 509
+   },
+   {
+    "w": "teve",
+    "f": 509,
+    "fe": 514
+   },
+   {
+    "w": "disputa?",
+    "f": 514,
+    "fe": 526
+   }
+  ],
+  "site": [
+   {
+    "w": "Os",
+    "f": 537,
+    "fe": 542
+   },
+   {
+    "w": "5.571",
+    "f": 542,
+    "fe": 587
+   },
+   {
+    "w": "municípios",
+    "f": 587,
+    "fe": 604
+   },
+   {
+    "w": "estão",
+    "f": 604,
+    "fe": 613
+   },
+   {
+    "w": "num",
+    "f": 613,
+    "fe": 618
+   },
+   {
+    "w": "mapa",
+    "f": 618,
+    "fe": 625
+   },
+   {
+    "w": "só,",
+    "f": 625,
+    "fe": 632
+   },
+   {
+    "w": "com",
+    "f": 632,
+    "fe": 641
+   },
+   {
+    "w": "os",
+    "f": 641,
+    "fe": 646
+   },
+   {
+    "w": "dados",
+    "f": 646,
+    "fe": 651
+   },
+   {
+    "w": "do",
+    "f": 651,
+    "fe": 655
+   },
+   {
+    "w": "TSE.",
+    "f": 655,
+    "fe": 665
+   },
+   {
+    "w": "Digita",
+    "f": 665,
+    "fe": 682
+   },
+   {
+    "w": "o",
+    "f": 682,
+    "fe": 687
+   },
+   {
+    "w": "nome",
+    "f": 687,
+    "fe": 689
+   },
+   {
+    "w": "da",
+    "f": 689,
+    "fe": 692
+   },
+   {
+    "w": "sua",
+    "f": 692,
+    "fe": 698
+   },
+   {
+    "w": "cidade",
+    "f": 698,
+    "fe": 706
+   },
+   {
+    "w": "e",
+    "f": 706,
+    "fe": 716
+   },
+   {
+    "w": "vê",
+    "f": 716,
+    "fe": 719
+   },
+   {
+    "w": "quem",
+    "f": 719,
+    "fe": 722
+   },
+   {
+    "w": "ganhou,",
+    "f": 722,
+    "fe": 730
+   },
+   {
+    "w": "por",
+    "f": 730,
+    "fe": 741
+   },
+   {
+    "w": "quanto,",
+    "f": 741,
+    "fe": 748
+   },
+   {
+    "w": "e",
+    "f": 748,
+    "fe": 755
+   },
+   {
+    "w": "o",
+    "f": 755,
+    "fe": 764
+   },
+   {
+    "w": "quanto",
+    "f": 764,
+    "fe": 764
+   },
+   {
+    "w": "ela",
+    "f": 764,
+    "fe": 769
+   },
+   {
+    "w": "ficou",
+    "f": 769,
+    "fe": 773
+   },
+   {
+    "w": "longe",
+    "f": 773,
+    "fe": 781
+   },
+   {
+    "w": "do",
+    "f": 781,
+    "fe": 784
+   },
+   {
+    "w": "Brasil.",
+    "f": 784,
+    "fe": 790
+   }
+  ],
+  "fecho": [
+   {
+    "w": "Marquinho",
+    "f": 800,
+    "fe": 817
+   },
+   {
+    "w": "empatou.",
+    "f": 817,
+    "fe": 834
+   },
+   {
+    "w": "E",
+    "f": 834,
+    "fe": 843
+   },
+   {
+    "w": "a",
+    "f": 843,
+    "fe": 849
+   },
+   {
+    "w": "sua",
+    "f": 849,
+    "fe": 852
+   },
+   {
+    "w": "cidade?",
+    "f": 852,
+    "fe": 861
+   }
+  ]
+ },
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Uma",
+     "chave": false
+    },
+    {
+     "t": "cidade",
+     "chave": false
+    }
+   ],
+   "ate": 15
+  },
+  {
+   "de": 15,
+   "partes": [
+    {
+     "t": "brasileira",
+     "chave": false
+    }
+   ],
+   "ate": 30
+  },
+  {
+   "de": 30,
+   "partes": [
+    {
+     "t": "terminou",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "segundo",
+     "chave": false
+    },
+    {
+     "t": "turno",
+     "chave": false
+    }
+   ],
+   "ate": 61
+  },
+  {
+   "de": 61,
+   "partes": [
+    {
+     "t": "empatada:",
+     "chave": true
+    }
+   ],
+   "ate": 73
+  },
+  {
+   "de": 73,
+   "partes": [
+    {
+     "t": "1.530",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "1.530.",
+     "chave": true
+    }
+   ],
+   "ate": 146
+  },
+  {
+   "de": 146,
+   "partes": [
+    {
+     "t": "Foi",
+     "chave": false
+    },
+    {
+     "t": "Marquinho,",
+     "chave": true
+    }
+   ],
+   "ate": 164
+  },
+  {
+   "de": 164,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "Paraná.",
+     "chave": false
+    }
+   ],
+   "ate": 186
+  },
+  {
+   "de": 186,
+   "partes": [
+    {
+     "t": "3.060",
+     "chave": false
+    }
+   ],
+   "ate": 213
+  },
+  {
+   "de": 213,
+   "partes": [
+    {
+     "t": "votos",
+     "chave": false
+    },
+    {
+     "t": "válidos,",
+     "chave": false
+    }
+   ],
+   "ate": 236
+  },
+  {
+   "de": 236,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "nenhum",
+     "chave": true
+    },
+    {
+     "t": "voto",
+     "chave": true
+    }
+   ],
+   "ate": 263
+  },
+  {
+   "de": 263,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "diferença.",
+     "chave": false
+    }
+   ],
+   "ate": 286
+  },
+  {
+   "de": 286,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "outras",
+     "chave": false
+    }
+   ],
+   "ate": 302
+  },
+  {
+   "de": 302,
+   "partes": [
+    {
+     "t": "cinco",
+     "chave": true
+    },
+    {
+     "t": "cidades,",
+     "chave": true
+    }
+   ],
+   "ate": 326
+  },
+  {
+   "de": 326,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "diferença",
+     "chave": false
+    }
+   ],
+   "ate": 346
+  },
+  {
+   "de": 346,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "voto",
+     "chave": true
+    },
+    {
+     "t": "só:",
+     "chave": true
+    }
+   ],
+   "ate": 374
+  },
+  {
+   "de": 374,
+   "partes": [
+    {
+     "t": "três",
+     "chave": false
+    },
+    {
+     "t": "pro",
+     "chave": false
+    },
+    {
+     "t": "Lula,",
+     "chave": false
+    }
+   ],
+   "ate": 395
+  },
+  {
+   "de": 395,
+   "partes": [
+    {
+     "t": "duas",
+     "chave": false
+    },
+    {
+     "t": "pro",
+     "chave": false
+    },
+    {
+     "t": "Flávio.",
+     "chave": false
+    }
+   ],
+   "ate": 432
+  },
+  {
+   "de": 432,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "sua",
+     "chave": false
+    },
+    {
+     "t": "cidade?",
+     "chave": true
+    }
+   ],
+   "ate": 463
+  },
+  {
+   "de": 463,
+   "partes": [
+    {
+     "t": "Foi",
+     "chave": false
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "pouco,",
+     "chave": false
+    }
+   ],
+   "ate": 489
+  },
+  {
+   "de": 489,
+   "partes": [
+    {
+     "t": "ou",
+     "chave": false
+    },
+    {
+     "t": "nem",
+     "chave": false
+    },
+    {
+     "t": "teve",
+     "chave": false
+    }
+   ],
+   "ate": 512
+  },
+  {
+   "de": 512,
+   "partes": [
+    {
+     "t": "disputa?",
+     "chave": true
+    }
+   ],
+   "ate": 535
+  },
+  {
+   "de": 535,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "5.571",
+     "chave": true
+    },
+    {
+     "t": "municípios",
+     "chave": true
+    }
+   ],
+   "ate": 602
+  },
+  {
+   "de": 602,
+   "partes": [
+    {
+     "t": "estão",
+     "chave": false
+    },
+    {
+     "t": "num",
+     "chave": false
+    },
+    {
+     "t": "mapa",
+     "chave": false
+    },
+    {
+     "t": "só,",
+     "chave": false
+    }
+   ],
+   "ate": 630
+  },
+  {
+   "de": 630,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "dados",
+     "chave": false
+    }
+   ],
+   "ate": 649
+  },
+  {
+   "de": 649,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "TSE.",
+     "chave": false
+    }
+   ],
+   "ate": 663
+  },
+  {
+   "de": 663,
+   "partes": [
+    {
+     "t": "Digita",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "nome",
+     "chave": false
+    }
+   ],
+   "ate": 687
+  },
+  {
+   "de": 687,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "sua",
+     "chave": false
+    },
+    {
+     "t": "cidade",
+     "chave": false
+    }
+   ],
+   "ate": 704
+  },
+  {
+   "de": 704,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "vê",
+     "chave": false
+    },
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "ganhou,",
+     "chave": false
+    }
+   ],
+   "ate": 728
+  },
+  {
+   "de": 728,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "quanto,",
+     "chave": false
+    }
+   ],
+   "ate": 746
+  },
+  {
+   "de": 746,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "quanto",
+     "chave": false
+    }
+   ],
+   "ate": 762
+  },
+  {
+   "de": 762,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "longe",
+     "chave": false
+    }
+   ],
+   "ate": 779
+  },
+  {
+   "de": 779,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Brasil.",
+     "chave": true
+    }
+   ],
+   "ate": 798
+  },
+  {
+   "de": 798,
+   "partes": [
+    {
+     "t": "Marquinho",
+     "chave": true
+    },
+    {
+     "t": "empatou.",
+     "chave": false
+    }
+   ],
+   "ate": 832
+  },
+  {
+   "de": 832,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "sua",
+     "chave": false
+    },
+    {
+     "t": "cidade?",
+     "chave": true
+    }
+   ],
+   "ate": 869
+  }
+ ],
+ "marca": 869,
+ "total": 883
+}

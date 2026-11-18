@@ -1,0 +1,982 @@
+{
+ "fala": {
+  "rio": 1,
+  "sul": 182,
+  "elo": 344,
+  "mecanismo": 454,
+  "agora": 644,
+  "noaa": 956,
+  "brasil": 1164,
+  "pergunta": 1352
+ },
+ "dur": {
+  "rio": 176,
+  "sul": 157,
+  "elo": 105,
+  "mecanismo": 185,
+  "agora": 289,
+  "noaa": 203,
+  "brasil": 183,
+  "pergunta": 67
+ },
+ "m": {
+  "ano": 59,
+  "negro": 82,
+  "menor": 121,
+  "n121": 144,
+  "extremo": 238,
+  "enchentes": 252,
+  "a2023": 274,
+  "a2024": 313,
+  "casos": 357,
+  "elnino": 396,
+  "pacifico": 411,
+  "demais": 434,
+  "ventos": 461,
+  "asia": 522,
+  "enfraquecem": 534,
+  "escorre": 571,
+  "leste": 591,
+  "chuva": 612,
+  "lugar": 629,
+  "voltou": 669,
+  "desde": 693,
+  "nunca": 766,
+  "rapido": 799,
+  "abaixo": 820,
+  "v25": 865,
+  "oito": 894,
+  "noaa": 983,
+  "p83": 1007,
+  "superar": 1061,
+  "todos": 1071,
+  "alerta": 1172,
+  "extremos": 1223,
+  "seca": 1237,
+  "fogo": 1275,
+  "chuvaS": 1298,
+  "sulB": 1335,
+  "cidade": 1368,
+  "mudou": 1404
+ },
+ "contas": [
+  {
+   "id": "c83",
+   "de": 1005,
+   "ate": 1023,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Esse",
+     "chave": true
+    },
+    {
+     "t": "rio",
+     "chave": true
+    },
+    {
+     "t": "encolheu",
+     "chave": true
+    }
+   ],
+   "ate": 37
+  },
+  {
+   "de": 37,
+   "partes": [
+    {
+     "t": "assim",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "ano:",
+     "chave": false
+    }
+   ],
+   "ate": 63
+  },
+  {
+   "de": 63,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "rio",
+     "chave": true
+    },
+    {
+     "t": "Negro,",
+     "chave": true
+    }
+   ],
+   "ate": 88
+  },
+  {
+   "de": 88,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "Manaus,",
+     "chave": false
+    }
+   ],
+   "ate": 109
+  },
+  {
+   "de": 109,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "menor",
+     "chave": true
+    },
+    {
+     "t": "nível",
+     "chave": true
+    }
+   ],
+   "ate": 135
+  },
+  {
+   "de": 135,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "121",
+     "chave": true
+    },
+    {
+     "t": "anos.",
+     "chave": true
+    }
+   ],
+   "ate": 180
+  },
+  {
+   "de": 180,
+   "partes": [
+    {
+     "t": "Enquanto",
+     "chave": false
+    },
+    {
+     "t": "isso,",
+     "chave": false
+    }
+   ],
+   "ate": 202
+  },
+  {
+   "de": 202,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Sul",
+     "chave": false
+    },
+    {
+     "t": "ia",
+     "chave": false
+    }
+   ],
+   "ate": 223
+  },
+  {
+   "de": 223,
+   "partes": [
+    {
+     "t": "para",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "outro",
+     "chave": true
+    },
+    {
+     "t": "extremo:",
+     "chave": true
+    }
+   ],
+   "ate": 250
+  },
+  {
+   "de": 250,
+   "partes": [
+    {
+     "t": "enchentes",
+     "chave": true
+    }
+   ],
+   "ate": 268
+  },
+  {
+   "de": 268,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2023",
+     "chave": false
+    }
+   ],
+   "ate": 296
+  },
+  {
+   "de": 296,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2024.",
+     "chave": false
+    }
+   ],
+   "ate": 342
+  },
+  {
+   "de": 342,
+   "partes": [
+    {
+     "t": "Nos",
+     "chave": false
+    },
+    {
+     "t": "dois",
+     "chave": false
+    },
+    {
+     "t": "casos,",
+     "chave": false
+    }
+   ],
+   "ate": 365
+  },
+  {
+   "de": 365,
+   "partes": [
+    {
+     "t": "tinha",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "dedo",
+     "chave": false
+    }
+   ],
+   "ate": 387
+  },
+  {
+   "de": 387,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "El",
+     "chave": true
+    },
+    {
+     "t": "Niño:",
+     "chave": true
+    }
+   ],
+   "ate": 401
+  },
+  {
+   "de": 401,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Pacífico",
+     "chave": false
+    }
+   ],
+   "ate": 425
+  },
+  {
+   "de": 425,
+   "partes": [
+    {
+     "t": "quente",
+     "chave": true
+    },
+    {
+     "t": "demais.",
+     "chave": true
+    }
+   ],
+   "ate": 452
+  },
+  {
+   "de": 452,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "ventos",
+     "chave": true
+    }
+   ],
+   "ate": 471
+  },
+  {
+   "de": 471,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "prendem",
+     "chave": false
+    }
+   ],
+   "ate": 484
+  },
+  {
+   "de": 484,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "água",
+     "chave": false
+    },
+    {
+     "t": "quente",
+     "chave": false
+    }
+   ],
+   "ate": 505
+  },
+  {
+   "de": 505,
+   "partes": [
+    {
+     "t": "perto",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Ásia",
+     "chave": false
+    }
+   ],
+   "ate": 532
+  },
+  {
+   "de": 532,
+   "partes": [
+    {
+     "t": "enfraquecem,",
+     "chave": true
+    }
+   ],
+   "ate": 553
+  },
+  {
+   "de": 553,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "escorre",
+     "chave": true
+    }
+   ],
+   "ate": 577
+  },
+  {
+   "de": 577,
+   "partes": [
+    {
+     "t": "para",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "leste,",
+     "chave": false
+    }
+   ],
+   "ate": 592
+  },
+  {
+   "de": 592,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "chuva",
+     "chave": false
+    }
+   ],
+   "ate": 612
+  },
+  {
+   "de": 612,
+   "partes": [
+    {
+     "t": "muda",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "lugar.",
+     "chave": true
+    }
+   ],
+   "ate": 642
+  },
+  {
+   "de": 642,
+   "partes": [
+    {
+     "t": "Agora",
+     "chave": true
+    },
+    {
+     "t": "ele",
+     "chave": true
+    },
+    {
+     "t": "voltou.",
+     "chave": true
+    }
+   ],
+   "ate": 685
+  },
+  {
+   "de": 685,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "1950",
+     "chave": false
+    }
+   ],
+   "ate": 745
+  },
+  {
+   "de": 745,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Pacífico",
+     "chave": false
+    }
+   ],
+   "ate": 764
+  },
+  {
+   "de": 764,
+   "partes": [
+    {
+     "t": "nunca",
+     "chave": true
+    },
+    {
+     "t": "esquentou",
+     "chave": true
+    }
+   ],
+   "ate": 787
+  },
+  {
+   "de": 787,
+   "partes": [
+    {
+     "t": "tão",
+     "chave": true
+    },
+    {
+     "t": "rápido:",
+     "chave": true
+    }
+   ],
+   "ate": 815
+  },
+  {
+   "de": 815,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "abaixo",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "normal",
+     "chave": false
+    }
+   ],
+   "ate": 844
+  },
+  {
+   "de": 844,
+   "partes": [
+    {
+     "t": "para",
+     "chave": false
+    },
+    {
+     "t": "2,5",
+     "chave": true
+    },
+    {
+     "t": "graus",
+     "chave": true
+    },
+    {
+     "t": "acima,",
+     "chave": false
+    }
+   ],
+   "ate": 888
+  },
+  {
+   "de": 888,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "oito",
+     "chave": false
+    },
+    {
+     "t": "meses.",
+     "chave": false
+    }
+   ],
+   "ate": 932
+  },
+  {
+   "de": 954,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "agência",
+     "chave": false
+    },
+    {
+     "t": "americana",
+     "chave": false
+    }
+   ],
+   "ate": 981
+  },
+  {
+   "de": 981,
+   "partes": [
+    {
+     "t": "NOAA",
+     "chave": false
+    },
+    {
+     "t": "vê",
+     "chave": false
+    }
+   ],
+   "ate": 1005
+  },
+  {
+   "de": 1005,
+   "partes": [
+    {
+     "t": "83%",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "chance",
+     "chave": true
+    }
+   ],
+   "ate": 1044
+  },
+  {
+   "de": 1044,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "ele",
+     "chave": false
+    },
+    {
+     "t": "superar",
+     "chave": false
+    }
+   ],
+   "ate": 1069
+  },
+  {
+   "de": 1069,
+   "partes": [
+    {
+     "t": "todos",
+     "chave": true
+    },
+    {
+     "t": "desde",
+     "chave": true
+    },
+    {
+     "t": "1950",
+     "chave": true
+    }
+   ],
+   "ate": 1126
+  },
+  {
+   "de": 1126,
+   "partes": [
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "dezembro.",
+     "chave": false
+    }
+   ],
+   "ate": 1162
+  },
+  {
+   "de": 1162,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "alerta",
+     "chave": false
+    },
+    {
+     "t": "oficial",
+     "chave": false
+    }
+   ],
+   "ate": 1191
+  },
+  {
+   "de": 1191,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "fala",
+     "chave": false
+    }
+   ],
+   "ate": 1207
+  },
+  {
+   "de": 1207,
+   "partes": [
+    {
+     "t": "nos",
+     "chave": false
+    },
+    {
+     "t": "dois",
+     "chave": true
+    },
+    {
+     "t": "extremos:",
+     "chave": true
+    }
+   ],
+   "ate": 1235
+  },
+  {
+   "de": 1235,
+   "partes": [
+    {
+     "t": "seca",
+     "chave": true
+    }
+   ],
+   "ate": 1253
+  },
+  {
+   "de": 1253,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "risco",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "fogo",
+     "chave": true
+    }
+   ],
+   "ate": 1278
+  },
+  {
+   "de": 1278,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "centro-norte,",
+     "chave": false
+    }
+   ],
+   "ate": 1296
+  },
+  {
+   "de": 1296,
+   "partes": [
+    {
+     "t": "chuva",
+     "chave": true
+    },
+    {
+     "t": "acima",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "média",
+     "chave": false
+    }
+   ],
+   "ate": 1328
+  },
+  {
+   "de": 1328,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "Sul.",
+     "chave": false
+    }
+   ],
+   "ate": 1347
+  }
+ ],
+ "grande": [
+  {
+   "t": "E",
+   "chave": false,
+   "f": 1352,
+   "l": 0
+  },
+  {
+   "t": "na",
+   "chave": false,
+   "f": 1355,
+   "l": 0
+  },
+  {
+   "t": "sua",
+   "chave": true,
+   "f": 1359,
+   "l": 0
+  },
+  {
+   "t": "cidade,",
+   "chave": true,
+   "f": 1368,
+   "l": 0
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 1377,
+   "l": 1
+  },
+  {
+   "t": "chuva",
+   "chave": false,
+   "f": 1391,
+   "l": 1
+  },
+  {
+   "t": "já",
+   "chave": false,
+   "f": 1396,
+   "l": 1
+  },
+  {
+   "t": "mudou?",
+   "chave": true,
+   "f": 1404,
+   "l": 1
+  }
+ ],
+ "cena": {
+  "landsat": {
+   "de": 0,
+   "ate": 119
+  },
+  "porto": {
+   "de": 119,
+   "ate": 182
+  },
+  "enchente": {
+   "de": 182,
+   "ate": 344
+  },
+  "dois": {
+   "de": 344,
+   "ate": 409
+  },
+  "mapa": {
+   "de": 409,
+   "ate": 699
+  },
+  "grafico": {
+   "de": 699,
+   "ate": 956
+  },
+  "chance": {
+   "de": 956,
+   "ate": 1164
+  },
+  "brasil": {
+   "de": 1164,
+   "ate": 1429
+  }
+ },
+ "cenas": [
+  119,
+  182,
+  311,
+  344,
+  409,
+  454,
+  644,
+  699,
+  956,
+  1164,
+  1352,
+  1429
+ ],
+ "fimFala": 1419,
+ "cta": 1429,
+ "fim": 1429,
+ "total": 1474
+}

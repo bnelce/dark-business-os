@@ -1,0 +1,1282 @@
+{
+ "fala": {
+  "gancho": 3,
+  "promessa": 88,
+  "focus": 225,
+  "sismografo": 563,
+  "eleicoes": 789,
+  "ranking": 924,
+  "pergunta": 1111,
+  "espera": 1191,
+  "extremos": 1295,
+  "cauda": 1490,
+  "palpite": 1646
+ },
+ "dur": {
+  "gancho": 80,
+  "promessa": 132,
+  "focus": 333,
+  "sismografo": 221,
+  "eleicoes": 126,
+  "ranking": 182,
+  "pergunta": 68,
+  "espera": 99,
+  "extremos": 190,
+  "cauda": 151,
+  "palpite": 280
+ },
+ "m": {
+  "pico": 8,
+  "sino": 111,
+  "universo": 144,
+  "vez": 172,
+  "f505": 318,
+  "alto": 382,
+  "f540": 448,
+  "f550": 531,
+  "segunda": 702,
+  "pregao": 745,
+  "e2026": 793,
+  "fixo": 1009,
+  "crise": 1077,
+  "chance": 1139,
+  "normal": 1206,
+  "cada": 1240,
+  "quint": 1258,
+  "n18": 1368,
+  "impossiveis": 1422,
+  "zero": 1471,
+  "pesada": 1525,
+  "modelo": 1540,
+  "f533": 1707,
+  "p505": 1789,
+  "palpite": 1864
+ },
+ "digita": [
+  {
+   "id": "anos",
+   "texto": "29.000.000.000.000.000.000",
+   "de": 1212,
+   "ate": 1258
+  },
+  {
+   "id": "18",
+   "texto": "18",
+   "de": 1366,
+   "ate": 1372
+  },
+  {
+   "id": "previsto",
+   "texto": "0,004",
+   "de": 1467,
+   "ate": 1479
+  }
+ ],
+ "legendas": [
+  {
+   "de": 1,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": false
+    },
+    {
+     "t": "subiu",
+     "chave": false
+    }
+   ],
+   "ate": 29
+  },
+  {
+   "de": 29,
+   "partes": [
+    {
+     "t": "9,2%",
+     "chave": true
+    }
+   ],
+   "ate": 55
+  },
+  {
+   "de": 55,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "dia.",
+     "chave": false
+    }
+   ],
+   "ate": 86
+  },
+  {
+   "de": 86,
+   "partes": [
+    {
+     "t": "Pela",
+     "chave": false
+    },
+    {
+     "t": "curva",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "sino,",
+     "chave": false
+    }
+   ],
+   "ate": 125
+  },
+  {
+   "de": 125,
+   "partes": [
+    {
+     "t": "isso",
+     "chave": false
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "devia",
+     "chave": false
+    }
+   ],
+   "ate": 142
+  },
+  {
+   "de": 142,
+   "partes": [
+    {
+     "t": "acontecer",
+     "chave": false
+    }
+   ],
+   "ate": 156
+  },
+  {
+   "de": 156,
+   "partes": [
+    {
+     "t": "nem",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": true
+    },
+    {
+     "t": "vez",
+     "chave": true
+    }
+   ],
+   "ate": 179
+  },
+  {
+   "de": 179,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "idade",
+     "chave": false
+    }
+   ],
+   "ate": 198
+  },
+  {
+   "de": 198,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "universo.",
+     "chave": true
+    }
+   ],
+   "ate": 223
+  },
+  {
+   "de": 223,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "sexta,",
+     "chave": false
+    }
+   ],
+   "ate": 244
+  },
+  {
+   "de": 244,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "boletim",
+     "chave": false
+    },
+    {
+     "t": "Focus,",
+     "chave": true
+    }
+   ],
+   "ate": 269
+  },
+  {
+   "de": 269,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Banco",
+     "chave": false
+    },
+    {
+     "t": "Central,",
+     "chave": false
+    }
+   ],
+   "ate": 290
+  },
+  {
+   "de": 290,
+   "partes": [
+    {
+     "t": "previa",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "5,05",
+     "chave": true
+    }
+   ],
+   "ate": 339
+  },
+  {
+   "de": 339,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "fim",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "ano.",
+     "chave": false
+    }
+   ],
+   "ate": 354
+  },
+  {
+   "de": 354,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "palpite",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "alto,",
+     "chave": false
+    }
+   ],
+   "ate": 386
+  },
+  {
+   "de": 386,
+   "partes": [
+    {
+     "t": "entre",
+     "chave": false
+    },
+    {
+     "t": "112",
+     "chave": true
+    },
+    {
+     "t": "bancos",
+     "chave": false
+    }
+   ],
+   "ate": 421
+  },
+  {
+   "de": 421,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "consultorias,",
+     "chave": false
+    }
+   ],
+   "ate": 437
+  },
+  {
+   "de": 437,
+   "partes": [
+    {
+     "t": "era",
+     "chave": false
+    },
+    {
+     "t": "5,40.",
+     "chave": true
+    }
+   ],
+   "ate": 471
+  },
+  {
+   "de": 471,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "segunda,",
+     "chave": false
+    }
+   ],
+   "ate": 492
+  },
+  {
+   "de": 492,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "cotação",
+     "chave": false
+    },
+    {
+     "t": "oficial",
+     "chave": false
+    }
+   ],
+   "ate": 520
+  },
+  {
+   "de": 520,
+   "partes": [
+    {
+     "t": "bateu",
+     "chave": false
+    },
+    {
+     "t": "5,50.",
+     "chave": true
+    }
+   ],
+   "ate": 561
+  },
+  {
+   "de": 561,
+   "partes": [
+    {
+     "t": "Cada",
+     "chave": false
+    },
+    {
+     "t": "traço",
+     "chave": false
+    }
+   ],
+   "ate": 584
+  },
+  {
+   "de": 584,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "dia",
+     "chave": false
+    }
+   ],
+   "ate": 601
+  },
+  {
+   "de": 601,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "cotação",
+     "chave": false
+    },
+    {
+     "t": "oficial,",
+     "chave": false
+    }
+   ],
+   "ate": 630
+  },
+  {
+   "de": 630,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "1999.",
+     "chave": true
+    }
+   ],
+   "ate": 684
+  },
+  {
+   "de": 684,
+   "partes": [
+    {
+     "t": "Esse",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "segunda,",
+     "chave": true
+    }
+   ],
+   "ate": 718
+  },
+  {
+   "de": 718,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "primeiro",
+     "chave": false
+    },
+    {
+     "t": "pregão",
+     "chave": false
+    }
+   ],
+   "ate": 743
+  },
+  {
+   "de": 743,
+   "partes": [
+    {
+     "t": "depois",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    }
+   ],
+   "ate": 761
+  },
+  {
+   "de": 761,
+   "partes": [
+    {
+     "t": "segundo",
+     "chave": true
+    },
+    {
+     "t": "turno.",
+     "chave": true
+    }
+   ],
+   "ate": 787
+  },
+  {
+   "de": 787,
+   "partes": [
+    {
+     "t": "Nenhum",
+     "chave": true
+    },
+    {
+     "t": "dia",
+     "chave": false
+    }
+   ],
+   "ate": 811
+  },
+  {
+   "de": 811,
+   "partes": [
+    {
+     "t": "depois",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 832
+  },
+  {
+   "de": 832,
+   "partes": [
+    {
+     "t": "segundo",
+     "chave": false
+    },
+    {
+     "t": "turno,",
+     "chave": false
+    }
+   ],
+   "ate": 855
+  },
+  {
+   "de": 855,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "2002,",
+     "chave": false
+    }
+   ],
+   "ate": 886
+  },
+  {
+   "de": 886,
+   "partes": [
+    {
+     "t": "chegou",
+     "chave": false
+    },
+    {
+     "t": "perto.",
+     "chave": true
+    }
+   ],
+   "ate": 922
+  },
+  {
+   "de": 922,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "geral,",
+     "chave": false
+    }
+   ],
+   "ate": 936
+  },
+  {
+   "de": 936,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "dois",
+     "chave": true
+    },
+    {
+     "t": "dias",
+     "chave": true
+    }
+   ],
+   "ate": 963
+  },
+  {
+   "de": 963,
+   "partes": [
+    {
+     "t": "foram",
+     "chave": false
+    },
+    {
+     "t": "piores:",
+     "chave": false
+    }
+   ],
+   "ate": 978
+  },
+  {
+   "de": 978,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "saída",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    }
+   ],
+   "ate": 1000
+  },
+  {
+   "de": 1000,
+   "partes": [
+    {
+     "t": "câmbio",
+     "chave": true
+    },
+    {
+     "t": "fixo,",
+     "chave": true
+    }
+   ],
+   "ate": 1021
+  },
+  {
+   "de": 1021,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "1999,",
+     "chave": false
+    }
+   ],
+   "ate": 1052
+  },
+  {
+   "de": 1052,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "crise",
+     "chave": true
+    }
+   ],
+   "ate": 1078
+  },
+  {
+   "de": 1078,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "2008.",
+     "chave": false
+    }
+   ],
+   "ate": 1109
+  },
+  {
+   "de": 1109,
+   "partes": [
+    {
+     "t": "Então",
+     "chave": false
+    },
+    {
+     "t": "qual",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    }
+   ],
+   "ate": 1134
+  },
+  {
+   "de": 1134,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "chance",
+     "chave": true
+    }
+   ],
+   "ate": 1147
+  },
+  {
+   "de": 1147,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "dia",
+     "chave": false
+    },
+    {
+     "t": "assim?",
+     "chave": false
+    }
+   ],
+   "ate": 1189
+  },
+  {
+   "de": 1189,
+   "partes": [
+    {
+     "t": "Pela",
+     "chave": false
+    },
+    {
+     "t": "curva",
+     "chave": false
+    },
+    {
+     "t": "normal,",
+     "chave": false
+    }
+   ],
+   "ate": 1214
+  },
+  {
+   "de": 1214,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "vez",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    }
+   ],
+   "ate": 1241
+  },
+  {
+   "de": 1241,
+   "partes": [
+    {
+     "t": "29",
+     "chave": true
+    },
+    {
+     "t": "quintilhões",
+     "chave": true
+    }
+   ],
+   "ate": 1269
+  },
+  {
+   "de": 1269,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "anos.",
+     "chave": false
+    }
+   ],
+   "ate": 1293
+  },
+  {
+   "de": 1293,
+   "partes": [
+    {
+     "t": "Só",
+     "chave": false
+    },
+    {
+     "t": "que,",
+     "chave": false
+    }
+   ],
+   "ate": 1313
+  },
+  {
+   "de": 1313,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "1999,",
+     "chave": false
+    }
+   ],
+   "ate": 1355
+  },
+  {
+   "de": 1355,
+   "partes": [
+    {
+     "t": "foram",
+     "chave": false
+    },
+    {
+     "t": "18",
+     "chave": true
+    },
+    {
+     "t": "dias",
+     "chave": true
+    }
+   ],
+   "ate": 1388
+  },
+  {
+   "de": 1388,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "curva",
+     "chave": false
+    }
+   ],
+   "ate": 1405
+  },
+  {
+   "de": 1405,
+   "partes": [
+    {
+     "t": "chamaria",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 1420
+  },
+  {
+   "de": 1420,
+   "partes": [
+    {
+     "t": "impossíveis.",
+     "chave": true
+    }
+   ],
+   "ate": 1434
+  },
+  {
+   "de": 1434,
+   "partes": [
+    {
+     "t": "Ela",
+     "chave": false
+    },
+    {
+     "t": "previa",
+     "chave": false
+    }
+   ],
+   "ate": 1453
+  },
+  {
+   "de": 1453,
+   "partes": [
+    {
+     "t": "praticamente",
+     "chave": false
+    },
+    {
+     "t": "zero.",
+     "chave": true
+    }
+   ],
+   "ate": 1488
+  },
+  {
+   "de": 1488,
+   "partes": [
+    {
+     "t": "Isso",
+     "chave": false
+    },
+    {
+     "t": "tem",
+     "chave": false
+    },
+    {
+     "t": "nome:",
+     "chave": false
+    }
+   ],
+   "ate": 1509
+  },
+  {
+   "de": 1509,
+   "partes": [
+    {
+     "t": "cauda",
+     "chave": true
+    },
+    {
+     "t": "pesada.",
+     "chave": true
+    }
+   ],
+   "ate": 1538
+  },
+  {
+   "de": 1538,
+   "partes": [
+    {
+     "t": "Modelo",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "risco",
+     "chave": false
+    }
+   ],
+   "ate": 1565
+  },
+  {
+   "de": 1565,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "usa",
+     "chave": false
+    }
+   ],
+   "ate": 1573
+  },
+  {
+   "de": 1573,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "curva",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "sino",
+     "chave": false
+    }
+   ],
+   "ate": 1593
+  },
+  {
+   "de": 1593,
+   "partes": [
+    {
+     "t": "subestima",
+     "chave": true
+    }
+   ],
+   "ate": 1616
+  },
+  {
+   "de": 1616,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "crises.",
+     "chave": false
+    }
+   ],
+   "ate": 1644
+  },
+  {
+   "de": 1644,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "terça,",
+     "chave": false
+    }
+   ],
+   "ate": 1666
+  },
+  {
+   "de": 1666,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": false
+    },
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "voltou",
+     "chave": false
+    }
+   ],
+   "ate": 1700
+  },
+  {
+   "de": 1700,
+   "partes": [
+    {
+     "t": "pra",
+     "chave": false
+    },
+    {
+     "t": "5,33.",
+     "chave": true
+    }
+   ],
+   "ate": 1727
+  },
+  {
+   "de": 1727,
+   "partes": [
+    {
+     "t": "Até",
+     "chave": false
+    },
+    {
+     "t": "dezembro,",
+     "chave": false
+    }
+   ],
+   "ate": 1764
+  },
+  {
+   "de": 1764,
+   "partes": [
+    {
+     "t": "ele",
+     "chave": false
+    },
+    {
+     "t": "chega",
+     "chave": false
+    },
+    {
+     "t": "nos",
+     "chave": false
+    }
+   ],
+   "ate": 1787
+  },
+  {
+   "de": 1787,
+   "partes": [
+    {
+     "t": "5,05",
+     "chave": true
+    }
+   ],
+   "ate": 1814
+  },
+  {
+   "de": 1814,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "mercado",
+     "chave": false
+    },
+    {
+     "t": "previa?",
+     "chave": false
+    }
+   ],
+   "ate": 1843
+  },
+  {
+   "de": 1843,
+   "partes": [
+    {
+     "t": "Deixa",
+     "chave": false
+    },
+    {
+     "t": "seu",
+     "chave": false
+    },
+    {
+     "t": "palpite,",
+     "chave": true
+    }
+   ],
+   "ate": 1873
+  },
+  {
+   "de": 1873,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "dezembro",
+     "chave": false
+    }
+   ],
+   "ate": 1898
+  },
+  {
+   "de": 1898,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "gente",
+     "chave": false
+    },
+    {
+     "t": "confere.",
+     "chave": false
+    }
+   ],
+   "ate": 1929
+  }
+ ],
+ "cenas": [
+  88,
+  225,
+  563,
+  702,
+  789,
+  924,
+  1111,
+  1295,
+  1540,
+  1646,
+  1938
+ ],
+ "fimFala": 1926,
+ "cta": 1930,
+ "loop": 1938,
+ "total": 1975
+}

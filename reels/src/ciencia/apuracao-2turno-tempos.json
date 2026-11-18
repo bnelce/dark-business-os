@@ -1,0 +1,28 @@
+{
+  "fala": {
+    "gancho": 8,
+    "virada-1": 193,
+    "virada-2": 415,
+    "final": 630,
+    "mapa-cedo": 795,
+    "mapa-tarde": 993,
+    "sorteio": 1164,
+    "sorteadas": 1284,
+    "amostras": 1474,
+    "amostras-resposta": 1606,
+    "conclusao": 1810,
+    "cta": 2094
+  },
+  "virada1": 382,
+  "virada2": 544,
+  "fimReal": 620,
+  "mapa": 775,
+  "fimMapa": 1154,
+  "sorteio": 1164,
+  "sorteadas": 1284,
+  "amostras": 1474,
+  "conclusao": 1810,
+  "cta": 2094,
+  "marca": 2177,
+  "total": 2252
+}

@@ -1,0 +1,1098 @@
+{
+ "fala": {
+  "trava": 1,
+  "tamanho": 226,
+  "resolucao": 519,
+  "garantia": 713,
+  "virada": 931,
+  "senado": 1147,
+  "defesa": 1432,
+  "pergunta": 1562
+ },
+ "dur": {
+  "trava": 220,
+  "tamanho": 278,
+  "resolucao": 183,
+  "garantia": 213,
+  "virada": 197,
+  "senado": 280,
+  "defesa": 107,
+  "pergunta": 93
+ },
+ "m": {
+  "app": 5,
+  "cartao": 38,
+  "agencia": 80,
+  "paraguai": 119,
+  "milhoes": 175,
+  "so": 209,
+  "ueno": 248,
+  "pais": 272,
+  "m65": 289,
+  "pessoas": 327,
+  "guardava": 340,
+  "b28": 362,
+  "um": 433,
+  "dez": 456,
+  "depositados": 464,
+  "novembro": 537,
+  "central": 571,
+  "resolucao": 598,
+  "capital": 632,
+  "metade": 673,
+  "minimo": 689,
+  "fundo": 720,
+  "limite": 781,
+  "saldo": 813,
+  "p97": 839,
+  "estima": 884,
+  "mas": 931,
+  "moodys": 969,
+  "p30": 1003,
+  "resto": 1046,
+  "grandes": 1070,
+  "previdencia": 1098,
+  "dias": 1157,
+  "destituiu": 1199,
+  "pena": 1250,
+  "p44": 1293,
+  "acionista": 1346,
+  "a2025": 1395,
+  "nega": 1440,
+  "defesa": 1492,
+  "contesta": 1504,
+  "seu": 1573,
+  "primeiro": 1636
+ },
+ "contas": [
+  {
+   "id": "c28",
+   "de": 360,
+   "ate": 376,
+   "passo": 2
+  },
+  {
+   "id": "c97",
+   "de": 836,
+   "ate": 851,
+   "passo": 2
+  },
+  {
+   "id": "c30",
+   "de": 1000,
+   "ate": 1013,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "app",
+     "chave": true
+    },
+    {
+     "t": "parou.",
+     "chave": true
+    }
+   ],
+   "ate": 22
+  },
+  {
+   "de": 22,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "cartão,",
+     "chave": true
+    },
+    {
+     "t": "recusado.",
+     "chave": true
+    }
+   ],
+   "ate": 66
+  },
+  {
+   "de": 66,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "agência,",
+     "chave": true
+    },
+    {
+     "t": "fechada.",
+     "chave": true
+    }
+   ],
+   "ate": 107
+  },
+  {
+   "de": 107,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Paraguai,",
+     "chave": false
+    }
+   ],
+   "ate": 138
+  },
+  {
+   "de": 138,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "assim",
+     "chave": false
+    },
+    {
+     "t": "para",
+     "chave": false
+    }
+   ],
+   "ate": 153
+  },
+  {
+   "de": 153,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "3",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 180
+  },
+  {
+   "de": 180,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "clientes",
+     "chave": false
+    }
+   ],
+   "ate": 195
+  },
+  {
+   "de": 195,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "banco",
+     "chave": false
+    },
+    {
+     "t": "só.",
+     "chave": false
+    }
+   ],
+   "ate": 224
+  },
+  {
+   "de": 224,
+   "partes": [
+    {
+     "t": "É",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "banco",
+     "chave": true
+    },
+    {
+     "t": "Ueno,",
+     "chave": true
+    }
+   ],
+   "ate": 267
+  },
+  {
+   "de": 267,
+   "partes": [
+    {
+     "t": "num",
+     "chave": false
+    },
+    {
+     "t": "país",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 287
+  },
+  {
+   "de": 287,
+   "partes": [
+    {
+     "t": "6,5",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 314
+  },
+  {
+   "de": 314,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "pessoas.",
+     "chave": false
+    }
+   ],
+   "ate": 335
+  },
+  {
+   "de": 335,
+   "partes": [
+    {
+     "t": "Ele",
+     "chave": false
+    },
+    {
+     "t": "guardava",
+     "chave": false
+    }
+   ],
+   "ate": 360
+  },
+  {
+   "de": 360,
+   "partes": [
+    {
+     "t": "2,8",
+     "chave": true
+    },
+    {
+     "t": "bilhões",
+     "chave": true
+    }
+   ],
+   "ate": 404
+  },
+  {
+   "de": 404,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "dólares,",
+     "chave": false
+    },
+    {
+     "t": "quase",
+     "chave": false
+    }
+   ],
+   "ate": 431
+  },
+  {
+   "de": 431,
+   "partes": [
+    {
+     "t": "1",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": true
+    },
+    {
+     "t": "cada",
+     "chave": true
+    },
+    {
+     "t": "10",
+     "chave": true
+    }
+   ],
+   "ate": 462
+  },
+  {
+   "de": 462,
+   "partes": [
+    {
+     "t": "depositados",
+     "chave": false
+    },
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "país.",
+     "chave": false
+    }
+   ],
+   "ate": 517
+  },
+  {
+   "de": 517,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "novembro,",
+     "chave": true
+    }
+   ],
+   "ate": 547
+  },
+  {
+   "de": 547,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Banco",
+     "chave": false
+    },
+    {
+     "t": "Central",
+     "chave": false
+    }
+   ],
+   "ate": 579
+  },
+  {
+   "de": 579,
+   "partes": [
+    {
+     "t": "abriu",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "resolução",
+     "chave": true
+    }
+   ],
+   "ate": 608
+  },
+  {
+   "de": 608,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "banco:",
+     "chave": false
+    }
+   ],
+   "ate": 619
+  },
+  {
+   "de": 619,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "capital",
+     "chave": false
+    },
+    {
+     "t": "estava",
+     "chave": false
+    }
+   ],
+   "ate": 654
+  },
+  {
+   "de": 654,
+   "partes": [
+    {
+     "t": "abaixo",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "metade",
+     "chave": true
+    }
+   ],
+   "ate": 679
+  },
+  {
+   "de": 679,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "mínimo.",
+     "chave": false
+    }
+   ],
+   "ate": 711
+  },
+  {
+   "de": 711,
+   "partes": [
+    {
+     "t": "Um",
+     "chave": false
+    },
+    {
+     "t": "fundo",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "garantia",
+     "chave": true
+    }
+   ],
+   "ate": 752
+  },
+  {
+   "de": 752,
+   "partes": [
+    {
+     "t": "devolve",
+     "chave": false
+    },
+    {
+     "t": "até",
+     "chave": false
+    }
+   ],
+   "ate": 774
+  },
+  {
+   "de": 774,
+   "partes": [
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "limite,",
+     "chave": true
+    }
+   ],
+   "ate": 798
+  },
+  {
+   "de": 798,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "cobre",
+     "chave": false
+    }
+   ],
+   "ate": 808
+  },
+  {
+   "de": 808,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "saldo",
+     "chave": true
+    },
+    {
+     "t": "todo",
+     "chave": true
+    }
+   ],
+   "ate": 828
+  },
+  {
+   "de": 828,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "97%",
+     "chave": true
+    },
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "clientes,",
+     "chave": false
+    }
+   ],
+   "ate": 882
+  },
+  {
+   "de": 882,
+   "partes": [
+    {
+     "t": "estima",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    }
+   ],
+   "ate": 904
+  },
+  {
+   "de": 904,
+   "partes": [
+    {
+     "t": "Banco",
+     "chave": false
+    },
+    {
+     "t": "Central.",
+     "chave": false
+    }
+   ],
+   "ate": 929
+  },
+  {
+   "de": 929,
+   "partes": [
+    {
+     "t": "Mas,",
+     "chave": true
+    },
+    {
+     "t": "pela",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": false
+    }
+   ],
+   "ate": 962
+  },
+  {
+   "de": 962,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Moody's,",
+     "chave": false
+    }
+   ],
+   "ate": 990
+  },
+  {
+   "de": 990,
+   "partes": [
+    {
+     "t": "isso",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "só",
+     "chave": false
+    }
+   ],
+   "ate": 1001
+  },
+  {
+   "de": 1001,
+   "partes": [
+    {
+     "t": "30%",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": true
+    },
+    {
+     "t": "dinheiro.",
+     "chave": true
+    }
+   ],
+   "ate": 1032
+  },
+  {
+   "de": 1032,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "resto",
+     "chave": false
+    },
+    {
+     "t": "está",
+     "chave": false
+    }
+   ],
+   "ate": 1056
+  },
+  {
+   "de": 1056,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "contas",
+     "chave": true
+    },
+    {
+     "t": "grandes,",
+     "chave": true
+    }
+   ],
+   "ate": 1079
+  },
+  {
+   "de": 1079,
+   "partes": [
+    {
+     "t": "como",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    }
+   ],
+   "ate": 1096
+  },
+  {
+   "de": 1096,
+   "partes": [
+    {
+     "t": "previdência",
+     "chave": true
+    },
+    {
+     "t": "pública.",
+     "chave": true
+    }
+   ],
+   "ate": 1131
+  },
+  {
+   "de": 1145,
+   "partes": [
+    {
+     "t": "Quatro",
+     "chave": true
+    },
+    {
+     "t": "dias",
+     "chave": true
+    },
+    {
+     "t": "depois,",
+     "chave": true
+    }
+   ],
+   "ate": 1177
+  },
+  {
+   "de": 1177,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Senado",
+     "chave": false
+    },
+    {
+     "t": "destituiu",
+     "chave": true
+    }
+   ],
+   "ate": 1217
+  },
+  {
+   "de": 1217,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "presidente",
+     "chave": false
+    }
+   ],
+   "ate": 1234
+  },
+  {
+   "de": 1234,
+   "partes": [
+    {
+     "t": "Santiago",
+     "chave": false
+    },
+    {
+     "t": "Peña",
+     "chave": false
+    }
+   ],
+   "ate": 1258
+  },
+  {
+   "de": 1258,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "mau",
+     "chave": false
+    },
+    {
+     "t": "desempenho,",
+     "chave": false
+    }
+   ],
+   "ate": 1291
+  },
+  {
+   "de": 1291,
+   "partes": [
+    {
+     "t": "44",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "0.",
+     "chave": true
+    }
+   ],
+   "ate": 1327
+  },
+  {
+   "de": 1327,
+   "partes": [
+    {
+     "t": "Ele",
+     "chave": false
+    },
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "acionista",
+     "chave": true
+    }
+   ],
+   "ate": 1359
+  },
+  {
+   "de": 1359,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "grupo",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "banco",
+     "chave": false
+    }
+   ],
+   "ate": 1382
+  },
+  {
+   "de": 1382,
+   "partes": [
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "2025.",
+     "chave": false
+    }
+   ],
+   "ate": 1430
+  },
+  {
+   "de": 1430,
+   "partes": [
+    {
+     "t": "Peña",
+     "chave": false
+    },
+    {
+     "t": "nega",
+     "chave": true
+    }
+   ],
+   "ate": 1456
+  },
+  {
+   "de": 1456,
+   "partes": [
+    {
+     "t": "ter",
+     "chave": false
+    },
+    {
+     "t": "interferido,",
+     "chave": false
+    }
+   ],
+   "ate": 1478
+  },
+  {
+   "de": 1478,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "defesa",
+     "chave": true
+    }
+   ],
+   "ate": 1502
+  },
+  {
+   "de": 1502,
+   "partes": [
+    {
+     "t": "contesta",
+     "chave": true
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "processo.",
+     "chave": false
+    }
+   ],
+   "ate": 1541
+  }
+ ],
+ "grande": [
+  {
+   "t": "Se",
+   "chave": false,
+   "f": 1562,
+   "l": 0
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 1567,
+   "l": 0
+  },
+  {
+   "t": "seu",
+   "chave": true,
+   "f": 1573,
+   "l": 0
+  },
+  {
+   "t": "banco",
+   "chave": true,
+   "f": 1579,
+   "l": 0
+  },
+  {
+   "t": "travasse",
+   "chave": false,
+   "f": 1585,
+   "l": 1
+  },
+  {
+   "t": "amanhã,",
+   "chave": false,
+   "f": 1599,
+   "l": 1
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 1618,
+   "l": 2
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1623,
+   "l": 2
+  },
+  {
+   "t": "pararia",
+   "chave": false,
+   "f": 1625,
+   "l": 2
+  },
+  {
+   "t": "primeiro?",
+   "chave": true,
+   "f": 1636,
+   "l": 2
+  }
+ ],
+ "cena": {
+  "torre": {
+   "de": 0,
+   "ate": 226
+  },
+  "pessoas": {
+   "de": 226,
+   "ate": 354
+  },
+  "deposito": {
+   "de": 354,
+   "ate": 519
+  },
+  "resolucao": {
+   "de": 519,
+   "ate": 713
+  },
+  "cobertura": {
+   "de": 713,
+   "ate": 1147
+  },
+  "senado": {
+   "de": 1147,
+   "ate": 1562
+  },
+  "pergunta": {
+   "de": 1562,
+   "ate": 1665
+  }
+ },
+ "cenas": [
+  226,
+  354,
+  519,
+  713,
+  931,
+  1147,
+  1432,
+  1562,
+  1665
+ ],
+ "fimFala": 1655,
+ "cta": 1665,
+ "fim": 1665,
+ "total": 1710
+}

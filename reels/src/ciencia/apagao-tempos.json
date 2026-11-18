@@ -1,0 +1,1053 @@
+{
+ "fala": {
+  "gancho": 1,
+  "origem": 118,
+  "sudeste": 312,
+  "compara": 531,
+  "norte": 696,
+  "ons": 961,
+  "bolso": 1189,
+  "pergunta": 1328
+ },
+ "dur": {
+  "gancho": 113,
+  "origem": 190,
+  "sudeste": 215,
+  "compara": 151,
+  "norte": 249,
+  "ons": 224,
+  "bolso": 135,
+  "pergunta": 120
+ },
+ "m": {
+  "dezembro": 33,
+  "apagao": 62,
+  "n90": 73,
+  "dias": 81,
+  "falso": 100,
+  "mistura": 124,
+  "simpsons": 147,
+  "teste": 173,
+  "kit": 225,
+  "n72": 237,
+  "prevencao": 293,
+  "agua": 343,
+  "hidreletricas": 353,
+  "sudeste": 379,
+  "p70": 432,
+  "reservatorios": 467,
+  "p55": 493,
+  "ano": 538,
+  "p44": 544,
+  "a2021": 591,
+  "crise": 621,
+  "p19": 656,
+  "norte": 702,
+  "p57": 719,
+  "p69": 775,
+  "cheio": 860,
+  "seis": 870,
+  "p5": 923,
+  "ons": 964,
+  "nino": 994,
+  "sozinho": 999,
+  "g18": 1048,
+  "termicas": 1098,
+  "queda": 1132,
+  "temporal": 1149,
+  "conta": 1227,
+  "aneel": 1245,
+  "bandeira": 1269,
+  "dezembroB": 1277,
+  "d27": 1302,
+  "achava": 1337,
+  "reservatoriosP": 1365,
+  "vazios": 1402,
+  "passado": 1429
+ },
+ "digita": [
+  {
+   "id": "boato",
+   "texto": "APAGÃO DE 90 DIAS A PARTIR\nDE 17/11. REPASSA!",
+   "de": 58,
+   "ate": 85
+  },
+  {
+   "id": "ons",
+   "texto": "ONS: EL NIÑO, SOZINHO,\nNÃO AMEAÇA O FORNECIMENTO",
+   "de": 962,
+   "ate": 1013
+  },
+  {
+   "id": "queda",
+   "texto": "QUEDA LOCAL CONTINUA POSSÍVEL",
+   "de": 1130,
+   "ate": 1159
+  }
+ ],
+ "contas": [
+  {
+   "id": "enche55",
+   "de": 341,
+   "ate": 493,
+   "passo": 3
+  },
+  {
+   "id": "desce21",
+   "de": 587,
+   "ate": 658,
+   "passo": 2
+  },
+  {
+   "id": "volta55",
+   "de": 682,
+   "ate": 698,
+   "passo": 3
+  },
+  {
+   "id": "norte57",
+   "de": 713,
+   "ate": 725,
+   "passo": 2
+  },
+  {
+   "id": "gw",
+   "de": 1042,
+   "ate": 1102,
+   "passo": 2
+  },
+  {
+   "id": "dias",
+   "de": 1273,
+   "ate": 1308,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Vai",
+     "chave": false
+    },
+    {
+     "t": "faltar",
+     "chave": false
+    },
+    {
+     "t": "luz",
+     "chave": false
+    }
+   ],
+   "ate": 27
+  },
+  {
+   "de": 27,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "dezembro?",
+     "chave": true
+    }
+   ],
+   "ate": 44
+  },
+  {
+   "de": 44,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "tal",
+     "chave": false
+    },
+    {
+     "t": "apagão",
+     "chave": false
+    }
+   ],
+   "ate": 68
+  },
+  {
+   "de": 68,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "90",
+     "chave": true
+    },
+    {
+     "t": "dias",
+     "chave": true
+    }
+   ],
+   "ate": 88
+  },
+  {
+   "de": 88,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "falso.",
+     "chave": true
+    }
+   ],
+   "ate": 116
+  },
+  {
+   "de": 116,
+   "partes": [
+    {
+     "t": "Ele",
+     "chave": false
+    },
+    {
+     "t": "mistura",
+     "chave": false
+    },
+    {
+     "t": "Os",
+     "chave": true
+    },
+    {
+     "t": "Simpsons,",
+     "chave": true
+    }
+   ],
+   "ate": 167
+  },
+  {
+   "de": 167,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "teste",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "alerta",
+     "chave": true
+    }
+   ],
+   "ate": 187
+  },
+  {
+   "de": 187,
+   "partes": [
+    {
+     "t": "nos",
+     "chave": false
+    },
+    {
+     "t": "Estados",
+     "chave": false
+    },
+    {
+     "t": "Unidos",
+     "chave": false
+    }
+   ],
+   "ate": 215
+  },
+  {
+   "de": 215,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "kit",
+     "chave": true
+    }
+   ],
+   "ate": 226
+  },
+  {
+   "de": 226,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "72",
+     "chave": false
+    },
+    {
+     "t": "horas",
+     "chave": false
+    }
+   ],
+   "ate": 254
+  },
+  {
+   "de": 254,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Defesa",
+     "chave": false
+    },
+    {
+     "t": "Civil,",
+     "chave": false
+    }
+   ],
+   "ate": 281
+  },
+  {
+   "de": 281,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "prevenção.",
+     "chave": true
+    }
+   ],
+   "ate": 310
+  },
+  {
+   "de": 310,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "luz",
+     "chave": false
+    },
+    {
+     "t": "depende",
+     "chave": false
+    }
+   ],
+   "ate": 334
+  },
+  {
+   "de": 334,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "água",
+     "chave": false
+    }
+   ],
+   "ate": 346
+  },
+  {
+   "de": 346,
+   "partes": [
+    {
+     "t": "das",
+     "chave": false
+    },
+    {
+     "t": "hidrelétricas.",
+     "chave": true
+    }
+   ],
+   "ate": 377
+  },
+  {
+   "de": 377,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Sudeste",
+     "chave": true
+    }
+   ],
+   "ate": 392
+  },
+  {
+   "de": 392,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "Centro-Oeste,",
+     "chave": false
+    }
+   ],
+   "ate": 417
+  },
+  {
+   "de": 417,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "guardam",
+     "chave": false
+    }
+   ],
+   "ate": 430
+  },
+  {
+   "de": 430,
+   "partes": [
+    {
+     "t": "70%",
+     "chave": true
+    },
+    {
+     "t": "dela,",
+     "chave": false
+    }
+   ],
+   "ate": 454
+  },
+  {
+   "de": 454,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "reservatórios",
+     "chave": false
+    }
+   ],
+   "ate": 481
+  },
+  {
+   "de": 481,
+   "partes": [
+    {
+     "t": "estão",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "55%.",
+     "chave": true
+    }
+   ],
+   "ate": 529
+  },
+  {
+   "de": 529,
+   "partes": [
+    {
+     "t": "Há",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "ano,",
+     "chave": false
+    }
+   ],
+   "ate": 542
+  },
+  {
+   "de": 542,
+   "partes": [
+    {
+     "t": "44%.",
+     "chave": true
+    }
+   ],
+   "ate": 582
+  },
+  {
+   "de": 582,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "2021,",
+     "chave": true
+    }
+   ],
+   "ate": 608
+  },
+  {
+   "de": 608,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "crise",
+     "chave": false
+    },
+    {
+     "t": "hídrica,",
+     "chave": false
+    }
+   ],
+   "ate": 634
+  },
+  {
+   "de": 634,
+   "partes": [
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "19%.",
+     "chave": true
+    }
+   ],
+   "ate": 694
+  },
+  {
+   "de": 694,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "Norte",
+     "chave": true
+    },
+    {
+     "t": "caiu:",
+     "chave": false
+    }
+   ],
+   "ate": 717
+  },
+  {
+   "de": 717,
+   "partes": [
+    {
+     "t": "57%,",
+     "chave": true
+    }
+   ],
+   "ate": 759
+  },
+  {
+   "de": 759,
+   "partes": [
+    {
+     "t": "contra",
+     "chave": false
+    },
+    {
+     "t": "69%",
+     "chave": true
+    }
+   ],
+   "ate": 790
+  },
+  {
+   "de": 790,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2025,",
+     "chave": false
+    }
+   ],
+   "ate": 829
+  },
+  {
+   "de": 829,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "ano",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "cheio",
+     "chave": false
+    }
+   ],
+   "ate": 865
+  },
+  {
+   "de": 865,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "seis.",
+     "chave": false
+    }
+   ],
+   "ate": 887
+  },
+  {
+   "de": 887,
+   "partes": [
+    {
+     "t": "Mas",
+     "chave": false
+    },
+    {
+     "t": "lá",
+     "chave": false
+    },
+    {
+     "t": "fica",
+     "chave": false
+    }
+   ],
+   "ate": 910
+  },
+  {
+   "de": 910,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "5%",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "água.",
+     "chave": false
+    }
+   ],
+   "ate": 959
+  },
+  {
+   "de": 959,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "ONS",
+     "chave": false
+    },
+    {
+     "t": "diz",
+     "chave": false
+    }
+   ],
+   "ate": 982
+  },
+  {
+   "de": 982,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "El",
+     "chave": true
+    },
+    {
+     "t": "Niño,",
+     "chave": true
+    }
+   ],
+   "ate": 997
+  },
+  {
+   "de": 997,
+   "partes": [
+    {
+     "t": "sozinho,",
+     "chave": true
+    }
+   ],
+   "ate": 1009
+  },
+  {
+   "de": 1009,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "ameaça",
+     "chave": true
+    }
+   ],
+   "ate": 1029
+  },
+  {
+   "de": 1029,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "fornecimento,",
+     "chave": false
+    }
+   ],
+   "ate": 1045
+  },
+  {
+   "de": 1045,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "1,8",
+     "chave": true
+    },
+    {
+     "t": "gigawatt",
+     "chave": true
+    }
+   ],
+   "ate": 1093
+  },
+  {
+   "de": 1093,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "térmicas",
+     "chave": false
+    }
+   ],
+   "ate": 1106
+  },
+  {
+   "de": 1106,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "antecipado.",
+     "chave": false
+    }
+   ],
+   "ate": 1130
+  },
+  {
+   "de": 1130,
+   "partes": [
+    {
+     "t": "Queda",
+     "chave": false
+    },
+    {
+     "t": "local,",
+     "chave": true
+    }
+   ],
+   "ate": 1142
+  },
+  {
+   "de": 1142,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "temporal,",
+     "chave": false
+    }
+   ],
+   "ate": 1157
+  },
+  {
+   "de": 1157,
+   "partes": [
+    {
+     "t": "ainda",
+     "chave": false
+    },
+    {
+     "t": "acontece.",
+     "chave": false
+    }
+   ],
+   "ate": 1187
+  },
+  {
+   "de": 1187,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "pode",
+     "chave": false
+    }
+   ],
+   "ate": 1206
+  },
+  {
+   "de": 1206,
+   "partes": [
+    {
+     "t": "pesar",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    }
+   ],
+   "ate": 1221
+  },
+  {
+   "de": 1221,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "conta:",
+     "chave": true
+    }
+   ],
+   "ate": 1231
+  },
+  {
+   "de": 1231,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "ANEEL",
+     "chave": true
+    },
+    {
+     "t": "anuncia",
+     "chave": false
+    }
+   ],
+   "ate": 1261
+  },
+  {
+   "de": 1261,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "bandeira",
+     "chave": false
+    }
+   ],
+   "ate": 1272
+  },
+  {
+   "de": 1272,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "dezembro",
+     "chave": true
+    }
+   ],
+   "ate": 1287
+  },
+  {
+   "de": 1287,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "dia",
+     "chave": false
+    },
+    {
+     "t": "27.",
+     "chave": true
+    }
+   ],
+   "ate": 1326
+  },
+  {
+   "de": 1326,
+   "partes": [
+    {
+     "t": "Você",
+     "chave": false
+    },
+    {
+     "t": "achava",
+     "chave": false
+    }
+   ],
+   "ate": 1349
+  },
+  {
+   "de": 1349,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "reservatórios",
+     "chave": true
+    }
+   ],
+   "ate": 1381
+  },
+  {
+   "de": 1381,
+   "partes": [
+    {
+     "t": "estavam",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "vazios",
+     "chave": true
+    }
+   ],
+   "ate": 1412
+  },
+  {
+   "de": 1412,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "ano",
+     "chave": true
+    },
+    {
+     "t": "passado?",
+     "chave": true
+    }
+   ],
+   "ate": 1448
+  }
+ ],
+ "cenas": [
+  118,
+  312,
+  696,
+  961,
+  1189,
+  1328,
+  1456
+ ],
+ "fimFala": 1448,
+ "cta": 1456,
+ "fim": 1456,
+ "total": 1496
+}

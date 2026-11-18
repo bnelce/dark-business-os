@@ -1,0 +1,36 @@
+{
+ "fatos": {
+  "clientes": 2941996,
+  "depositosUsd": 2800000000,
+  "fatiaDepositos": 9,
+  "solvencia": 5.56,
+  "solvenciaMinima": 12,
+  "resolucaoAprovada": "2/11",
+  "resolucaoComunicada": "3/11",
+  "trava": "4/11",
+  "primeiroPagamento": "5/11",
+  "primeiraParcelaGs": 10000000,
+  "primeiraParcelaUsd": 1600,
+  "limiteSalarios": 75,
+  "limiteGs": 228300000,
+  "clientesCobertos": 97,
+  "valorDentroLimite": 30,
+  "ipsUsd": 355000000,
+  "destituicao": "6/11",
+  "votosSim": 44,
+  "votosNao": 0,
+  "ausentes": 1,
+  "senadores": 45,
+  "acionistaAte": "mar/2025",
+  "fundadorPreso": "5/11"
+ },
+ "ine": {
+  "pop2026": 6460159,
+  "pop2022": 6284020,
+  "fonte": "INE, Estimaciones y Proyecciones Nacional, Revisión 2024 (mitad de año)"
+ },
+ "fix": {
+  "depositosDez2025": 8.9
+ },
+ "razaoClientesPop": 0.4554
+}

@@ -1,0 +1,1016 @@
+{
+ "fala": {
+  "gancho": 1,
+  "fogo": 204,
+  "painel": 331,
+  "degelo": 468,
+  "alarme": 640,
+  "falhas": 716,
+  "kev": 879,
+  "expostos": 1028,
+  "autoria": 1177,
+  "pergunta": 1372
+ },
+ "dur": {
+  "gancho": 199,
+  "fogo": 115,
+  "painel": 133,
+  "degelo": 168,
+  "alarme": 72,
+  "falhas": 159,
+  "kev": 135,
+  "expostos": 145,
+  "autoria": 177,
+  "pergunta": 120
+ },
+ "m": {
+  "ninguem": 1,
+  "esquentar": 95,
+  "noite": 112,
+  "atingiu": 135,
+  "n700": 159,
+  "houve": 212,
+  "n20": 232,
+  "incendio": 258,
+  "promotoria": 288,
+  "invasores": 339,
+  "paineis": 384,
+  "frio": 419,
+  "internet": 446,
+  "degelo": 526,
+  "resistencia": 556,
+  "gelo": 591,
+  "ligada": 604,
+  "parar": 623,
+  "alarme": 656,
+  "desligado": 683,
+  "cisa": 760,
+  "publicado": 789,
+  "n26": 801,
+  "antes": 846,
+  "nenhuma": 879,
+  "lista": 931,
+  "exploradas": 952,
+  "coalition": 1045,
+  "n820": 1079,
+  "francesas": 1152,
+  "franca": 1196,
+  "guarda": 1241,
+  "ira": 1290,
+  "fundamento": 1337,
+  "imaginava": 1381,
+  "esquentarP": 1422,
+  "internetP": 1474
+ },
+ "digita": [
+  {
+   "id": "cert",
+   "texto": "ALERTA CERT-FR · 12/10/2026",
+   "de": 380,
+   "ate": 400
+  },
+  {
+   "id": "prom",
+   "texto": "SEGUNDO A PROMOTORIA DE PARIS",
+   "de": 468,
+   "ate": 486
+  },
+  {
+   "id": "kev",
+   "texto": "DANFOSS · COPELAND · DIXELL",
+   "de": 929,
+   "ate": 947
+  }
+ ],
+ "contas": [
+  {
+   "id": "c700",
+   "de": 149,
+   "ate": 167,
+   "passo": 2
+  },
+  {
+   "id": "c26",
+   "de": 793,
+   "ate": 811,
+   "passo": 2
+  },
+  {
+   "id": "c820",
+   "de": 1069,
+   "ate": 1087,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Ninguém",
+     "chave": true
+    },
+    {
+     "t": "tocou",
+     "chave": true
+    }
+   ],
+   "ate": 24
+  },
+  {
+   "de": 24,
+   "partes": [
+    {
+     "t": "nessas",
+     "chave": false
+    },
+    {
+     "t": "geladeiras.",
+     "chave": false
+    }
+   ],
+   "ate": 42
+  },
+  {
+   "de": 42,
+   "partes": [
+    {
+     "t": "Mesmo",
+     "chave": false
+    },
+    {
+     "t": "assim,",
+     "chave": false
+    }
+   ],
+   "ate": 65
+  },
+  {
+   "de": 65,
+   "partes": [
+    {
+     "t": "elas",
+     "chave": false
+    },
+    {
+     "t": "começaram",
+     "chave": false
+    }
+   ],
+   "ate": 85
+  },
+  {
+   "de": 85,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "esquentar.",
+     "chave": true
+    }
+   ],
+   "ate": 100
+  },
+  {
+   "de": 100,
+   "partes": [
+    {
+     "t": "Numa",
+     "chave": false
+    },
+    {
+     "t": "noite,",
+     "chave": false
+    }
+   ],
+   "ate": 118
+  },
+  {
+   "de": 118,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "ataque",
+     "chave": false
+    },
+    {
+     "t": "atingiu",
+     "chave": false
+    }
+   ],
+   "ate": 144
+  },
+  {
+   "de": 144,
+   "partes": [
+    {
+     "t": "cerca",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "700",
+     "chave": true
+    },
+    {
+     "t": "locais",
+     "chave": true
+    }
+   ],
+   "ate": 180
+  },
+  {
+   "de": 180,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "França.",
+     "chave": false
+    }
+   ],
+   "ate": 202
+  },
+  {
+   "de": 202,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "houve",
+     "chave": false
+    },
+    {
+     "t": "cerca",
+     "chave": false
+    }
+   ],
+   "ate": 224
+  },
+  {
+   "de": 224,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "20",
+     "chave": true
+    },
+    {
+     "t": "começos",
+     "chave": true
+    }
+   ],
+   "ate": 250
+  },
+  {
+   "de": 250,
+   "partes": [
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "incêndio,",
+     "chave": true
+    }
+   ],
+   "ate": 267
+  },
+  {
+   "de": 267,
+   "partes": [
+    {
+     "t": "segundo",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "promotoria",
+     "chave": false
+    }
+   ],
+   "ate": 297
+  },
+  {
+   "de": 297,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Paris.",
+     "chave": false
+    }
+   ],
+   "ate": 329
+  },
+  {
+   "de": 329,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "invasores",
+     "chave": false
+    },
+    {
+     "t": "entraram",
+     "chave": false
+    }
+   ],
+   "ate": 376
+  },
+  {
+   "de": 376,
+   "partes": [
+    {
+     "t": "pelos",
+     "chave": false
+    },
+    {
+     "t": "painéis",
+     "chave": true
+    }
+   ],
+   "ate": 395
+  },
+  {
+   "de": 395,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "controlam",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "frio,",
+     "chave": false
+    }
+   ],
+   "ate": 421
+  },
+  {
+   "de": 421,
+   "partes": [
+    {
+     "t": "abertos",
+     "chave": true
+    },
+    {
+     "t": "na",
+     "chave": true
+    },
+    {
+     "t": "internet.",
+     "chave": true
+    }
+   ],
+   "ate": 466
+  },
+  {
+   "de": 466,
+   "partes": [
+    {
+     "t": "Segundo",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "promotoria,",
+     "chave": false
+    }
+   ],
+   "ate": 500
+  },
+  {
+   "de": 500,
+   "partes": [
+    {
+     "t": "mandaram",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    }
+   ],
+   "ate": 524
+  },
+  {
+   "de": 524,
+   "partes": [
+    {
+     "t": "degelo",
+     "chave": true
+    },
+    {
+     "t": "sem",
+     "chave": true
+    },
+    {
+     "t": "fim:",
+     "chave": true
+    }
+   ],
+   "ate": 544
+  },
+  {
+   "de": 544,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "resistência",
+     "chave": true
+    }
+   ],
+   "ate": 568
+  },
+  {
+   "de": 568,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "derrete",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "gelo",
+     "chave": false
+    }
+   ],
+   "ate": 597
+  },
+  {
+   "de": 597,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "ligada",
+     "chave": true
+    }
+   ],
+   "ate": 614
+  },
+  {
+   "de": 614,
+   "partes": [
+    {
+     "t": "sem",
+     "chave": true
+    },
+    {
+     "t": "parar.",
+     "chave": true
+    }
+   ],
+   "ate": 638
+  },
+  {
+   "de": 638,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "alarme",
+     "chave": true
+    }
+   ],
+   "ate": 664
+  },
+  {
+   "de": 664,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "temperatura?",
+     "chave": false
+    }
+   ],
+   "ate": 681
+  },
+  {
+   "de": 681,
+   "partes": [
+    {
+     "t": "Desligado.",
+     "chave": true
+    }
+   ],
+   "ate": 714
+  },
+  {
+   "de": 714,
+   "partes": [
+    {
+     "t": "Só",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "agência",
+     "chave": false
+    }
+   ],
+   "ate": 744
+  },
+  {
+   "de": 744,
+   "partes": [
+    {
+     "t": "americana",
+     "chave": false
+    },
+    {
+     "t": "CISA",
+     "chave": true
+    }
+   ],
+   "ate": 769
+  },
+  {
+   "de": 769,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "tinha",
+     "chave": false
+    },
+    {
+     "t": "publicado",
+     "chave": false
+    }
+   ],
+   "ate": 799
+  },
+  {
+   "de": 799,
+   "partes": [
+    {
+     "t": "26",
+     "chave": true
+    },
+    {
+     "t": "falhas",
+     "chave": true
+    }
+   ],
+   "ate": 826
+  },
+  {
+   "de": 826,
+   "partes": [
+    {
+     "t": "desses",
+     "chave": false
+    },
+    {
+     "t": "painéis",
+     "chave": false
+    }
+   ],
+   "ate": 844
+  },
+  {
+   "de": 844,
+   "partes": [
+    {
+     "t": "antes",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": true
+    },
+    {
+     "t": "ataque.",
+     "chave": true
+    }
+   ],
+   "ate": 877
+  },
+  {
+   "de": 877,
+   "partes": [
+    {
+     "t": "Nenhuma",
+     "chave": true
+    },
+    {
+     "t": "delas",
+     "chave": false
+    }
+   ],
+   "ate": 913
+  },
+  {
+   "de": 913,
+   "partes": [
+    {
+     "t": "está",
+     "chave": false
+    },
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "lista",
+     "chave": false
+    }
+   ],
+   "ate": 935
+  },
+  {
+   "de": 935,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "falhas",
+     "chave": true
+    },
+    {
+     "t": "exploradas",
+     "chave": true
+    }
+   ],
+   "ate": 975
+  },
+  {
+   "de": 975,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "própria",
+     "chave": false
+    },
+    {
+     "t": "CISA.",
+     "chave": false
+    }
+   ],
+   "ate": 1026
+  },
+  {
+   "de": 1026,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "empresa",
+     "chave": false
+    }
+   ],
+   "ate": 1043
+  },
+  {
+   "de": 1043,
+   "partes": [
+    {
+     "t": "Coalition",
+     "chave": true
+    },
+    {
+     "t": "contou",
+     "chave": false
+    }
+   ],
+   "ate": 1077
+  },
+  {
+   "de": 1077,
+   "partes": [
+    {
+     "t": "820",
+     "chave": true
+    },
+    {
+     "t": "painéis",
+     "chave": true
+    },
+    {
+     "t": "Danfoss",
+     "chave": false
+    }
+   ],
+   "ate": 1125
+  },
+  {
+   "de": 1125,
+   "partes": [
+    {
+     "t": "abertos",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    }
+   ],
+   "ate": 1144
+  },
+  {
+   "de": 1144,
+   "partes": [
+    {
+     "t": "redes",
+     "chave": true
+    },
+    {
+     "t": "francesas.",
+     "chave": true
+    }
+   ],
+   "ate": 1175
+  },
+  {
+   "de": 1175,
+   "partes": [
+    {
+     "t": "Segundo",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "França,",
+     "chave": true
+    }
+   ],
+   "ate": 1203
+  },
+  {
+   "de": 1203,
+   "partes": [
+    {
+     "t": "foi",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "unidade",
+     "chave": false
+    }
+   ],
+   "ate": 1232
+  },
+  {
+   "de": 1232,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Guarda",
+     "chave": false
+    },
+    {
+     "t": "Revolucionária",
+     "chave": false
+    }
+   ],
+   "ate": 1267
+  },
+  {
+   "de": 1267,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Irã.",
+     "chave": false
+    }
+   ],
+   "ate": 1276
+  },
+  {
+   "de": 1276,
+   "partes": [
+    {
+     "t": "O",
+     "chave": true
+    },
+    {
+     "t": "Irã",
+     "chave": true
+    },
+    {
+     "t": "chama",
+     "chave": false
+    }
+   ],
+   "ate": 1302
+  },
+  {
+   "de": 1302,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "acusação",
+     "chave": false
+    }
+   ],
+   "ate": 1316
+  },
+  {
+   "de": 1316,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "sem",
+     "chave": true
+    },
+    {
+     "t": "fundamento.",
+     "chave": true
+    }
+   ],
+   "ate": 1358
+  },
+  {
+   "de": 1370,
+   "partes": [
+    {
+     "t": "Você",
+     "chave": false
+    },
+    {
+     "t": "imaginava",
+     "chave": false
+    }
+   ],
+   "ate": 1401
+  },
+  {
+   "de": 1401,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "dava",
+     "chave": false
+    },
+    {
+     "t": "pra",
+     "chave": false
+    }
+   ],
+   "ate": 1420
+  },
+  {
+   "de": 1420,
+   "partes": [
+    {
+     "t": "esquentar",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "geladeira",
+     "chave": false
+    }
+   ],
+   "ate": 1447
+  },
+  {
+   "de": 1447,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "mercado",
+     "chave": false
+    }
+   ],
+   "ate": 1463
+  },
+  {
+   "de": 1463,
+   "partes": [
+    {
+     "t": "pela",
+     "chave": true
+    },
+    {
+     "t": "internet?",
+     "chave": true
+    }
+   ],
+   "ate": 1494
+  }
+ ],
+ "cenas": [
+  204,
+  331,
+  468,
+  716,
+  879,
+  1028,
+  1177,
+  1372,
+  1500
+ ],
+ "fimFala": 1492,
+ "cta": 1500,
+ "fim": 1500,
+ "total": 1540
+}

@@ -1,0 +1,860 @@
+{
+ "fala": {
+  "gancho": 1,
+  "dialuz": 161,
+  "corrida": 384,
+  "longe": 580,
+  "heliopausa": 758,
+  "ponto": 1014,
+  "pergunta": 1184
+ },
+ "dur": {
+  "gancho": 157,
+  "dialuz": 220,
+  "corrida": 181,
+  "longe": 175,
+  "heliopausa": 253,
+  "ponto": 157,
+  "pergunta": 94
+ },
+ "m": {
+  "oi": 37,
+  "voyager": 46,
+  "quarta": 71,
+  "resposta": 115,
+  "sexta": 145,
+  "h716": 174,
+  "dialuz": 246,
+  "terra": 262,
+  "h24": 294,
+  "chegar": 316,
+  "mais24": 349,
+  "voltar": 366,
+  "luz": 398,
+  "lua": 419,
+  "segundo": 462,
+  "sol": 489,
+  "minutos": 500,
+  "netuno": 526,
+  "horas": 549,
+  "seis": 620,
+  "netunoL": 659,
+  "bilhoes": 718,
+  "a1977": 793,
+  "heliopausa": 868,
+  "borda": 895,
+  "a2012": 945,
+  "dados": 997,
+  "a1990": 1021,
+  "quarto": 1078,
+  "terraP": 1157,
+  "dois": 1250
+ },
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Se",
+     "chave": false
+    },
+    {
+     "t": "você",
+     "chave": false
+    },
+    {
+     "t": "mandar",
+     "chave": false
+    }
+   ],
+   "ate": 28
+  },
+  {
+   "de": 28,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "oi",
+     "chave": true
+    },
+    {
+     "t": "pra",
+     "chave": false
+    }
+   ],
+   "ate": 44
+  },
+  {
+   "de": 44,
+   "partes": [
+    {
+     "t": "Voyager",
+     "chave": true
+    },
+    {
+     "t": "1",
+     "chave": true
+    }
+   ],
+   "ate": 58
+  },
+  {
+   "de": 58,
+   "partes": [
+    {
+     "t": "nesta",
+     "chave": false
+    },
+    {
+     "t": "quarta,",
+     "chave": false
+    },
+    {
+     "t": "18,",
+     "chave": false
+    }
+   ],
+   "ate": 101
+  },
+  {
+   "de": 101,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "resposta",
+     "chave": false
+    }
+   ],
+   "ate": 124
+  },
+  {
+   "de": 124,
+   "partes": [
+    {
+     "t": "só",
+     "chave": true
+    },
+    {
+     "t": "chega",
+     "chave": true
+    }
+   ],
+   "ate": 137
+  },
+  {
+   "de": 137,
+   "partes": [
+    {
+     "t": "na",
+     "chave": true
+    },
+    {
+     "t": "sexta.",
+     "chave": true
+    }
+   ],
+   "ate": 159
+  },
+  {
+   "de": 159,
+   "partes": [
+    {
+     "t": "Às",
+     "chave": false
+    },
+    {
+     "t": "7",
+     "chave": false
+    },
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "16",
+     "chave": false
+    }
+   ],
+   "ate": 200
+  },
+  {
+   "de": 200,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "manhã,",
+     "chave": false
+    }
+   ],
+   "ate": 222
+  },
+  {
+   "de": 222,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "fica",
+     "chave": false
+    }
+   ],
+   "ate": 239
+  },
+  {
+   "de": 239,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "dia-luz",
+     "chave": true
+    }
+   ],
+   "ate": 252
+  },
+  {
+   "de": 252,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Terra:",
+     "chave": false
+    }
+   ],
+   "ate": 273
+  },
+  {
+   "de": 273,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "sinal",
+     "chave": false
+    },
+    {
+     "t": "leva",
+     "chave": false
+    }
+   ],
+   "ate": 292
+  },
+  {
+   "de": 292,
+   "partes": [
+    {
+     "t": "24",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    }
+   ],
+   "ate": 310
+  },
+  {
+   "de": 310,
+   "partes": [
+    {
+     "t": "pra",
+     "chave": false
+    },
+    {
+     "t": "chegar",
+     "chave": false
+    },
+    {
+     "t": "lá,",
+     "chave": false
+    }
+   ],
+   "ate": 330
+  },
+  {
+   "de": 330,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "24",
+     "chave": true
+    }
+   ],
+   "ate": 356
+  },
+  {
+   "de": 356,
+   "partes": [
+    {
+     "t": "pra",
+     "chave": false
+    },
+    {
+     "t": "voltar.",
+     "chave": false
+    }
+   ],
+   "ate": 382
+  },
+  {
+   "de": 382,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "mesma",
+     "chave": false
+    },
+    {
+     "t": "luz",
+     "chave": false
+    }
+   ],
+   "ate": 403
+  },
+  {
+   "de": 403,
+   "partes": [
+    {
+     "t": "chega",
+     "chave": false
+    },
+    {
+     "t": "à",
+     "chave": false
+    },
+    {
+     "t": "Lua",
+     "chave": true
+    }
+   ],
+   "ate": 432
+  },
+  {
+   "de": 432,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    }
+   ],
+   "ate": 454
+  },
+  {
+   "de": 454,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "segundo,",
+     "chave": true
+    }
+   ],
+   "ate": 482
+  },
+  {
+   "de": 482,
+   "partes": [
+    {
+     "t": "ao",
+     "chave": false
+    },
+    {
+     "t": "Sol",
+     "chave": true
+    }
+   ],
+   "ate": 492
+  },
+  {
+   "de": 492,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "8",
+     "chave": true
+    },
+    {
+     "t": "minutos,",
+     "chave": true
+    }
+   ],
+   "ate": 521
+  },
+  {
+   "de": 521,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Netuno",
+     "chave": true
+    }
+   ],
+   "ate": 542
+  },
+  {
+   "de": 542,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "4",
+     "chave": true
+    },
+    {
+     "t": "horas.",
+     "chave": true
+    }
+   ],
+   "ate": 565
+  },
+  {
+   "de": 578,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Voyager",
+     "chave": false
+    },
+    {
+     "t": "está",
+     "chave": false
+    }
+   ],
+   "ate": 609
+  },
+  {
+   "de": 609,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "seis",
+     "chave": true
+    },
+    {
+     "t": "vezes",
+     "chave": true
+    }
+   ],
+   "ate": 637
+  },
+  {
+   "de": 637,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "longe",
+     "chave": false
+    }
+   ],
+   "ate": 652
+  },
+  {
+   "de": 652,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "Netuno:",
+     "chave": false
+    }
+   ],
+   "ate": 667
+  },
+  {
+   "de": 667,
+   "partes": [
+    {
+     "t": "25,9",
+     "chave": true
+    },
+    {
+     "t": "bilhões",
+     "chave": true
+    }
+   ],
+   "ate": 727
+  },
+  {
+   "de": 727,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "quilômetros.",
+     "chave": false
+    }
+   ],
+   "ate": 756
+  },
+  {
+   "de": 756,
+   "partes": [
+    {
+     "t": "Lançada",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "1977,",
+     "chave": true
+    }
+   ],
+   "ate": 835
+  },
+  {
+   "de": 835,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "cruzou",
+     "chave": false
+    }
+   ],
+   "ate": 859
+  },
+  {
+   "de": 859,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "heliopausa,",
+     "chave": true
+    }
+   ],
+   "ate": 886
+  },
+  {
+   "de": 886,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "borda",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "bolha",
+     "chave": false
+    }
+   ],
+   "ate": 912
+  },
+  {
+   "de": 912,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "vento",
+     "chave": false
+    },
+    {
+     "t": "solar,",
+     "chave": false
+    }
+   ],
+   "ate": 932
+  },
+  {
+   "de": 932,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2012,",
+     "chave": true
+    }
+   ],
+   "ate": 965
+  },
+  {
+   "de": 965,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "ainda",
+     "chave": true
+    },
+    {
+     "t": "manda",
+     "chave": true
+    },
+    {
+     "t": "dados.",
+     "chave": true
+    }
+   ],
+   "ate": 1012
+  },
+  {
+   "de": 1012,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "1990,",
+     "chave": true
+    }
+   ],
+   "ate": 1058
+  },
+  {
+   "de": 1058,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "quarto",
+     "chave": false
+    }
+   ],
+   "ate": 1084
+  },
+  {
+   "de": 1084,
+   "partes": [
+    {
+     "t": "dessa",
+     "chave": false
+    },
+    {
+     "t": "distância,",
+     "chave": false
+    }
+   ],
+   "ate": 1107
+  },
+  {
+   "de": 1107,
+   "partes": [
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "via",
+     "chave": false
+    }
+   ],
+   "ate": 1139
+  },
+  {
+   "de": 1139,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Terra",
+     "chave": true
+    },
+    {
+     "t": "assim.",
+     "chave": false
+    }
+   ],
+   "ate": 1170
+  }
+ ],
+ "grande": [
+  {
+   "t": "Chuta:",
+   "chave": false,
+   "f": 1184,
+   "l": 0
+  },
+  {
+   "t": "em",
+   "chave": false,
+   "f": 1195,
+   "l": 0
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1209,
+   "l": 0
+  },
+  {
+   "t": "ano",
+   "chave": false,
+   "f": 1215,
+   "l": 0
+  },
+  {
+   "t": "ela",
+   "chave": false,
+   "f": 1220,
+   "l": 1
+  },
+  {
+   "t": "chega",
+   "chave": false,
+   "f": 1231,
+   "l": 1
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 1239,
+   "l": 1
+  },
+  {
+   "t": "dois",
+   "chave": true,
+   "f": 1250,
+   "l": 2
+  },
+  {
+   "t": "dias-luz?",
+   "chave": true,
+   "f": 1256,
+   "l": 2
+  }
+ ],
+ "cena": {
+  "relogio": {
+   "de": 0,
+   "ate": 384
+  },
+  "corrida": {
+   "de": 384,
+   "ate": 580
+  },
+  "longe": {
+   "de": 580,
+   "ate": 758
+  },
+  "bolha": {
+   "de": 758,
+   "ate": 1014
+  },
+  "ponto": {
+   "de": 1014,
+   "ate": 1184
+  },
+  "pergunta": {
+   "de": 1184,
+   "ate": 1286
+  }
+ },
+ "cenas": [
+  161,
+  384,
+  580,
+  758,
+  1014,
+  1184,
+  1286
+ ],
+ "fimFala": 1278,
+ "cta": 1286,
+ "fim": 1286,
+ "total": 1331
+}

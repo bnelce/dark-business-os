@@ -1,0 +1,69 @@
+{
+ "contas": {
+  "instante_nasa_ut": "2026-11-18T10:16:07Z",
+  "instante_brt": "18/11/2026 07:16:07",
+  "cruzamento_serie_horaria_ut": "18/11 10:16:07.227",
+  "lt_cresce_s_por_hora": 0.3095,
+  "voyager_km": 25902068371,
+  "voyager_lt_s": 86400,
+  "voyager_ua": 173.145,
+  "voyager_afasta_kms_terra": 25.41,
+  "c_vezes_dia_km": 25902068371,
+  "lua_s": 1.311,
+  "lua_km": 393014,
+  "sol_s": 493.3,
+  "sol_km": 147884664,
+  "netuno_s": 14616,
+  "netuno_km": 4381659483,
+  "netuno_ua": 29.29,
+  "voyager_sobre_netuno": 5.91,
+  "voyager_sobre_sol": 175.2,
+  "ida_s": 86404.86,
+  "volta_s": 86409.55,
+  "ida_e_volta_s": 172814.41,
+  "resposta_chega_ut": "20/11 10:16:21.415",
+  "dois_dias_luz": "2075-Oct-23",
+  "voyager_ua_sol": 172.4
+ },
+ "fatos": {
+  "lancamento": "5/9/1977",
+  "heliopausa": {
+   "data": "25/8/2012",
+   "ua": 121
+  },
+  "paleBlueDot": {
+   "data": "14/2/1990",
+   "km": 6000000000
+  },
+  "oort": {
+   "inicioUa": 2000,
+   "anos": 300
+  }
+ },
+ "paradas": [
+  {
+   "id": "lua",
+   "nome": "LUA",
+   "s": 1.311,
+   "rotulo": "1,3 S"
+  },
+  {
+   "id": "sol",
+   "nome": "SOL",
+   "s": 493.3,
+   "rotulo": "8 MIN 13 S"
+  },
+  {
+   "id": "netuno",
+   "nome": "NETUNO",
+   "s": 14616,
+   "rotulo": "4 H 04 MIN"
+  },
+  {
+   "id": "voyager",
+   "nome": "VOYAGER 1",
+   "s": 86400,
+   "rotulo": "24 H"
+  }
+ ]
+}

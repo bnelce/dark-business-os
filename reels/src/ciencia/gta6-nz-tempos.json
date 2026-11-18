@@ -1,0 +1,1376 @@
+{
+ "fala": {
+  "gancho": 1,
+  "ciencia": 166,
+  "regiao": 470,
+  "xbox": 629,
+  "ps5": 1010,
+  "riscos": 1360,
+  "fecho": 1803
+ },
+ "dur": {
+  "gancho": 157,
+  "ciencia": 288,
+  "regiao": 151,
+  "xbox": 367,
+  "ps5": 334,
+  "riscos": 425,
+  "fecho": 134
+ },
+ "m": {
+  "brasileiro": 6,
+  "n8": 78,
+  "manha": 98,
+  "meianoiteG": 139,
+  "terra": 173,
+  "n15": 191,
+  "meianoiteC": 237,
+  "leste": 272,
+  "oeste": 289,
+  "zelandiaC": 304,
+  "linha": 333,
+  "verao": 372,
+  "vira": 375,
+  "n16": 400,
+  "brasiliaC": 447,
+  "loja": 484,
+  "regiao": 510,
+  "relogio": 541,
+  "mudar": 553,
+  "adianta": 603,
+  "xbox": 634,
+  "baixado": 677,
+  "config": 688,
+  "sistema": 715,
+  "idioma": 735,
+  "local": 775,
+  "nzX": 802,
+  "reiniciar": 825,
+  "segundo": 843,
+  "destrava": 904,
+  "depois": 921,
+  "brasilX": 981,
+  "ps5": 1018,
+  "daConta": 1070,
+  "guias": 1107,
+  "contaNova": 1130,
+  "nzP": 1154,
+  "comprado": 1180,
+  "novo": 1198,
+  "cartao": 1232,
+  "dolar": 1258,
+  "compart": 1297,
+  "ligado": 1337,
+  "risco": 1365,
+  "regras": 1386,
+  "trava": 1437,
+  "punicao": 1476,
+  "ps5R": 1509,
+  "falso": 1539,
+  "termos": 1564,
+  "suspensas": 1613,
+  "confirmacao": 1639,
+  "paga": 1667,
+  "duas": 1673,
+  "pronta": 1706,
+  "banimento": 1780,
+  "esperou": 1815,
+  "n13": 1831,
+  "n16F": 1868,
+  "vale": 1905,
+  "contaF": 1927
+ },
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Tem",
+     "chave": false
+    },
+    {
+     "t": "brasileiro",
+     "chave": true
+    },
+    {
+     "t": "jogando",
+     "chave": false
+    }
+   ],
+   "ate": 33
+  },
+  {
+   "de": 33,
+   "partes": [
+    {
+     "t": "GTA",
+     "chave": true
+    },
+    {
+     "t": "VI",
+     "chave": true
+    },
+    {
+     "t": "desde",
+     "chave": false
+    }
+   ],
+   "ate": 69
+  },
+  {
+   "de": 69,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "8",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "manhã.",
+     "chave": true
+    }
+   ],
+   "ate": 96
+  },
+  {
+   "de": 96,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "jogo",
+     "chave": false
+    }
+   ],
+   "ate": 109
+  },
+  {
+   "de": 109,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "libera",
+     "chave": false
+    },
+    {
+     "t": "aqui",
+     "chave": false
+    }
+   ],
+   "ate": 135
+  },
+  {
+   "de": 135,
+   "partes": [
+    {
+     "t": "à",
+     "chave": false
+    },
+    {
+     "t": "meia-noite.",
+     "chave": true
+    }
+   ],
+   "ate": 164
+  },
+  {
+   "de": 164,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Terra",
+     "chave": false
+    },
+    {
+     "t": "gira",
+     "chave": false
+    }
+   ],
+   "ate": 189
+  },
+  {
+   "de": 189,
+   "partes": [
+    {
+     "t": "15",
+     "chave": true
+    },
+    {
+     "t": "graus",
+     "chave": true
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "hora,",
+     "chave": false
+    }
+   ],
+   "ate": 224
+  },
+  {
+   "de": 224,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "meia-noite",
+     "chave": true
+    },
+    {
+     "t": "anda",
+     "chave": false
+    }
+   ],
+   "ate": 260
+  },
+  {
+   "de": 260,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "leste",
+     "chave": true
+    },
+    {
+     "t": "para",
+     "chave": true
+    },
+    {
+     "t": "oeste.",
+     "chave": true
+    }
+   ],
+   "ate": 287
+  },
+  {
+   "de": 287,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Nova",
+     "chave": true
+    },
+    {
+     "t": "Zelândia,",
+     "chave": true
+    }
+   ],
+   "ate": 318
+  },
+  {
+   "de": 318,
+   "partes": [
+    {
+     "t": "colada",
+     "chave": false
+    },
+    {
+     "t": "na",
+     "chave": false
+    }
+   ],
+   "ate": 331
+  },
+  {
+   "de": 331,
+   "partes": [
+    {
+     "t": "Linha",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "Data",
+     "chave": true
+    }
+   ],
+   "ate": 346
+  },
+  {
+   "de": 346,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    }
+   ],
+   "ate": 359
+  },
+  {
+   "de": 359,
+   "partes": [
+    {
+     "t": "horário",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "verão,",
+     "chave": true
+    }
+   ],
+   "ate": 373
+  },
+  {
+   "de": 373,
+   "partes": [
+    {
+     "t": "vira",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "dia",
+     "chave": false
+    }
+   ],
+   "ate": 398
+  },
+  {
+   "de": 398,
+   "partes": [
+    {
+     "t": "16",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    },
+    {
+     "t": "antes",
+     "chave": true
+    }
+   ],
+   "ate": 433
+  },
+  {
+   "de": 433,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Brasília.",
+     "chave": false
+    }
+   ],
+   "ate": 455
+  },
+  {
+   "de": 468,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "loja",
+     "chave": false
+    },
+    {
+     "t": "libera",
+     "chave": false
+    }
+   ],
+   "ate": 503
+  },
+  {
+   "de": 503,
+   "partes": [
+    {
+     "t": "pela",
+     "chave": false
+    },
+    {
+     "t": "região,",
+     "chave": true
+    }
+   ],
+   "ate": 520
+  },
+  {
+   "de": 520,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "pelo",
+     "chave": false
+    },
+    {
+     "t": "relógio.",
+     "chave": true
+    }
+   ],
+   "ate": 551
+  },
+  {
+   "de": 551,
+   "partes": [
+    {
+     "t": "Mudar",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "hora",
+     "chave": false
+    }
+   ],
+   "ate": 574
+  },
+  {
+   "de": 574,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "console",
+     "chave": false
+    }
+   ],
+   "ate": 588
+  },
+  {
+   "de": 588,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "adianta.",
+     "chave": true
+    }
+   ],
+   "ate": 627
+  },
+  {
+   "de": 627,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Xbox,",
+     "chave": true
+    }
+   ],
+   "ate": 647
+  },
+  {
+   "de": 647,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "jogo",
+     "chave": false
+    }
+   ],
+   "ate": 666
+  },
+  {
+   "de": 666,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "baixado:",
+     "chave": false
+    }
+   ],
+   "ate": 686
+  },
+  {
+   "de": 686,
+   "partes": [
+    {
+     "t": "Configurações,",
+     "chave": true
+    }
+   ],
+   "ate": 713
+  },
+  {
+   "de": 713,
+   "partes": [
+    {
+     "t": "Sistema,",
+     "chave": true
+    }
+   ],
+   "ate": 733
+  },
+  {
+   "de": 733,
+   "partes": [
+    {
+     "t": "Idioma",
+     "chave": true
+    },
+    {
+     "t": "e",
+     "chave": true
+    },
+    {
+     "t": "localização,",
+     "chave": true
+    }
+   ],
+   "ate": 773
+  },
+  {
+   "de": 773,
+   "partes": [
+    {
+     "t": "local",
+     "chave": false
+    },
+    {
+     "t": "Nova",
+     "chave": true
+    },
+    {
+     "t": "Zelândia,",
+     "chave": true
+    }
+   ],
+   "ate": 814
+  },
+  {
+   "de": 814,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "reiniciar.",
+     "chave": true
+    }
+   ],
+   "ate": 841
+  },
+  {
+   "de": 841,
+   "partes": [
+    {
+     "t": "Segundo",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Vice",
+     "chave": false
+    }
+   ],
+   "ate": 865
+  },
+  {
+   "de": 865,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "TechTudo,",
+     "chave": false
+    }
+   ],
+   "ate": 887
+  },
+  {
+   "de": 887,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "jogo",
+     "chave": false
+    },
+    {
+     "t": "destrava.",
+     "chave": true
+    }
+   ],
+   "ate": 919
+  },
+  {
+   "de": 919,
+   "partes": [
+    {
+     "t": "Depois",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "lançamento,",
+     "chave": false
+    }
+   ],
+   "ate": 950
+  },
+  {
+   "de": 950,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "voltar",
+     "chave": false
+    }
+   ],
+   "ate": 973
+  },
+  {
+   "de": 973,
+   "partes": [
+    {
+     "t": "para",
+     "chave": false
+    },
+    {
+     "t": "Brasil.",
+     "chave": true
+    }
+   ],
+   "ate": 1008
+  },
+  {
+   "de": 1008,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "PS5,",
+     "chave": true
+    }
+   ],
+   "ate": 1042
+  },
+  {
+   "de": 1042,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "região",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    }
+   ],
+   "ate": 1062
+  },
+  {
+   "de": 1062,
+   "partes": [
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "conta",
+     "chave": true
+    }
+   ],
+   "ate": 1073
+  },
+  {
+   "de": 1073,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "muda.",
+     "chave": false
+    }
+   ],
+   "ate": 1098
+  },
+  {
+   "de": 1098,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "guias",
+     "chave": false
+    },
+    {
+     "t": "descrevem",
+     "chave": false
+    }
+   ],
+   "ate": 1121
+  },
+  {
+   "de": 1121,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": true
+    },
+    {
+     "t": "nova",
+     "chave": true
+    }
+   ],
+   "ate": 1142
+  },
+  {
+   "de": 1142,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Nova",
+     "chave": true
+    },
+    {
+     "t": "Zelândia,",
+     "chave": true
+    }
+   ],
+   "ate": 1165
+  },
+  {
+   "de": 1165,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "jogo",
+     "chave": false
+    },
+    {
+     "t": "comprado",
+     "chave": false
+    }
+   ],
+   "ate": 1190
+  },
+  {
+   "de": 1190,
+   "partes": [
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "novo",
+     "chave": true
+    }
+   ],
+   "ate": 1202
+  },
+  {
+   "de": 1202,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "loja",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "lá,",
+     "chave": false
+    }
+   ],
+   "ate": 1220
+  },
+  {
+   "de": 1220,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "cartão-presente",
+     "chave": true
+    }
+   ],
+   "ate": 1252
+  },
+  {
+   "de": 1252,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "dólar",
+     "chave": true
+    },
+    {
+     "t": "neozelandês,",
+     "chave": true
+    }
+   ],
+   "ate": 1282
+  },
+  {
+   "de": 1282,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "compartilhamento",
+     "chave": true
+    }
+   ],
+   "ate": 1312
+  },
+  {
+   "de": 1312,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "console",
+     "chave": false
+    },
+    {
+     "t": "ligado.",
+     "chave": false
+    }
+   ],
+   "ate": 1345
+  },
+  {
+   "de": 1358,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "risco:",
+     "chave": true
+    }
+   ],
+   "ate": 1371
+  },
+  {
+   "de": 1371,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "regras",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": true
+    },
+    {
+     "t": "Xbox",
+     "chave": true
+    }
+   ],
+   "ate": 1407
+  },
+  {
+   "de": 1407,
+   "partes": [
+    {
+     "t": "proíbem",
+     "chave": false
+    },
+    {
+     "t": "contornar",
+     "chave": false
+    }
+   ],
+   "ate": 1435
+  },
+  {
+   "de": 1435,
+   "partes": [
+    {
+     "t": "trava",
+     "chave": true
+    },
+    {
+     "t": "regional,",
+     "chave": true
+    }
+   ],
+   "ate": 1453
+  },
+  {
+   "de": 1453,
+   "partes": [
+    {
+     "t": "mas",
+     "chave": false
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "há",
+     "chave": false
+    }
+   ],
+   "ate": 1474
+  },
+  {
+   "de": 1474,
+   "partes": [
+    {
+     "t": "punição",
+     "chave": false
+    },
+    {
+     "t": "relatada.",
+     "chave": false
+    }
+   ],
+   "ate": 1502
+  },
+  {
+   "de": 1502,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "PS5,",
+     "chave": true
+    }
+   ],
+   "ate": 1529
+  },
+  {
+   "de": 1529,
+   "partes": [
+    {
+     "t": "dado",
+     "chave": true
+    },
+    {
+     "t": "falso",
+     "chave": true
+    }
+   ],
+   "ate": 1548
+  },
+  {
+   "de": 1548,
+   "partes": [
+    {
+     "t": "viola",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "termos",
+     "chave": true
+    }
+   ],
+   "ate": 1567
+  },
+  {
+   "de": 1567,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "Sony,",
+     "chave": false
+    }
+   ],
+   "ate": 1578
+  },
+  {
+   "de": 1578,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "há",
+     "chave": false
+    },
+    {
+     "t": "relatos",
+     "chave": false
+    }
+   ],
+   "ate": 1600
+  },
+  {
+   "de": 1600,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "contas",
+     "chave": true
+    },
+    {
+     "t": "suspensas,",
+     "chave": true
+    }
+   ],
+   "ate": 1627
+  },
+  {
+   "de": 1627,
+   "partes": [
+    {
+     "t": "sem",
+     "chave": true
+    },
+    {
+     "t": "confirmação.",
+     "chave": true
+    }
+   ],
+   "ate": 1653
+  },
+  {
+   "de": 1653,
+   "partes": [
+    {
+     "t": "Você",
+     "chave": false
+    },
+    {
+     "t": "paga",
+     "chave": false
+    }
+   ],
+   "ate": 1671
+  },
+  {
+   "de": 1671,
+   "partes": [
+    {
+     "t": "duas",
+     "chave": true
+    },
+    {
+     "t": "vezes.",
+     "chave": true
+    }
+   ],
+   "ate": 1687
+  },
+  {
+   "de": 1687,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": true
+    },
+    {
+     "t": "pronta,",
+     "chave": true
+    }
+   ],
+   "ate": 1713
+  },
+  {
+   "de": 1713,
+   "partes": [
+    {
+     "t": "vendida",
+     "chave": false
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "terceiros,",
+     "chave": false
+    }
+   ],
+   "ate": 1747
+  },
+  {
+   "de": 1747,
+   "partes": [
+    {
+     "t": "tem",
+     "chave": false
+    },
+    {
+     "t": "relato",
+     "chave": false
+    }
+   ],
+   "ate": 1765
+  },
+  {
+   "de": 1765,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "banimento.",
+     "chave": true
+    }
+   ],
+   "ate": 1788
+  },
+  {
+   "de": 1801,
+   "partes": [
+    {
+     "t": "Para",
+     "chave": false
+    },
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "esperou",
+     "chave": false
+    }
+   ],
+   "ate": 1829
+  },
+  {
+   "de": 1829,
+   "partes": [
+    {
+     "t": "13",
+     "chave": true
+    },
+    {
+     "t": "anos,",
+     "chave": true
+    }
+   ],
+   "ate": 1860
+  },
+  {
+   "de": 1860,
+   "partes": [
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "16",
+     "chave": true
+    },
+    {
+     "t": "horas.",
+     "chave": true
+    }
+   ],
+   "ate": 1903
+  },
+  {
+   "de": 1903,
+   "partes": [
+    {
+     "t": "Vale",
+     "chave": false
+    },
+    {
+     "t": "arriscar",
+     "chave": true
+    }
+   ],
+   "ate": 1917
+  },
+  {
+   "de": 1917,
+   "partes": [
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "conta?",
+     "chave": true
+    }
+   ],
+   "ate": 1935
+  }
+ ],
+ "meianoite": [
+  {
+   "f": 166,
+   "t": 9.6
+  },
+  {
+   "f": 302,
+   "t": 11
+  },
+  {
+   "f": 373,
+   "t": 11
+  },
+  {
+   "f": 447,
+   "t": 27
+  }
+ ],
+ "cenas": [
+  166,
+  470,
+  629,
+  1010,
+  1360,
+  1803,
+  1947
+ ],
+ "fimFala": 1937,
+ "cta": 1947,
+ "fim": 1947,
+ "total": 1987
+}

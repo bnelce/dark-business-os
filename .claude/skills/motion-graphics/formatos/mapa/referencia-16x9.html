@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Referência do motor de mapa (16:9)</title>
+<!--
+  Implementação de referência do motor da família de mapas (skill motion-graphics, formatos/mapa/_motor.md).
+  Origem: teste 01-mapa de 2026-11-14 (gerado de uma vez por um agente, 20 s, 1920x1080), com três mudanças:
+  1) sem marca do Google: o pin é de cor única (--marca) e a palavra do logo virou o nome do lugar;
+  2) window.MOTION declarado para os scripts capturar/gravar (+ MOTION.audio para alinhar o som);
+  3) o botão "Assistir de novo" não aparece em navegador automatizado (não entra no MP4).
+  "Café Claude", "Rua Augusta" e "Av. Paulista" são do exercício: numa peça real, tudo vem do cliente.
+-->
+<script>window.MOTION = { w: 1920, h: 1080, dur: 20, atraso: 0.2, pronto: false };</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1a73e8;--blue-d:#1967d2;--red:#ea4335;--green:#1e8e3e;--yellow:#fbbc04;
+  --ink:#202124;--ink2:#5f6368;--line:#dadce0;--terra:#d97757;
+  --marca:#d97757;--font:Roboto,'Helvetica Neue',Arial,sans-serif;
+  --shadow:0 24px 60px rgba(32,33,36,.22),0 4px 14px rgba(32,33,36,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:#0d0f12;overflow:hidden;font-family:var(--font);color:var(--ink)}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:50% 50%;overflow:hidden;background:#e6ebf0}
+#gl{position:absolute;left:0;top:0;width:1920px;height:1080px;display:block}
+.layer{position:absolute;inset:0;pointer-events:none}
+svg{display:block}
+
+/* intro */
+#introBg{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#fff 0%,#f4f6f9 62%,#e9edf2 100%)}
+#logoWrap{position:absolute;left:0;top:0;width:156px;height:260px;transform-origin:50% 100%;will-change:transform,opacity}
+#logo{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 18px 22px rgba(60,64,67,.28))}
+#logoWord{position:absolute;left:0;right:0;top:700px;text-align:center;font-size:64px;font-weight:500;color:var(--ink2);letter-spacing:.5px}
+
+/* place sheet */
+#card{position:absolute;left:80px;bottom:80px;width:760px;background:#fff;border-radius:30px;box-shadow:var(--shadow);padding:34px 36px 34px;opacity:0;will-change:transform,opacity}
+.ctop{display:flex;gap:26px;align-items:center}
+.tile{width:112px;height:112px;border-radius:26px;background:var(--terra);display:grid;place-items:center;flex:none}
+.tile svg{width:62px;height:62px;fill:#fff}
+.pname{font-size:52px;font-weight:500;letter-spacing:-.5px;line-height:1.1}
+.ptype{font-size:27px;color:var(--ink2);margin-top:6px}
+.paddr{display:flex;align-items:center;gap:12px;font-size:26px;margin-top:24px;padding-top:22px;border-top:1px solid #eceff1}
+.paddr svg{width:30px;height:30px;fill:var(--red)}
+.btns{display:flex;gap:14px;margin-top:26px;align-items:center}
+.btn{display:flex;align-items:center;gap:10px;height:64px;padding:0 26px;border-radius:32px;border:1.5px solid var(--line);font-size:24px;font-weight:500;color:var(--blue-d);background:#fff;position:relative;overflow:hidden;white-space:nowrap}
+.btn svg{width:28px;height:28px;fill:currentColor}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.round{width:64px;padding:0;justify-content:center}
+.pwrap{position:relative}
+.ripple{position:absolute;left:50%;top:50%;width:20px;height:20px;margin:-10px;border-radius:50%;background:rgba(255,255,255,.6);transform:scale(0)}
+.touch{position:absolute;left:50%;top:50%;width:96px;height:96px;margin:-48px;border-radius:50%;border:4px solid rgba(26,115,232,.9);background:rgba(26,115,232,.16);opacity:0}
+
+/* directions panel */
+#dir{position:absolute;left:80px;top:72px;width:600px;background:#fff;border-radius:30px;box-shadow:var(--shadow);padding:26px 30px 24px;opacity:0;will-change:transform,opacity}
+.drow{display:flex;align-items:center;gap:20px;height:62px}
+.dfield{flex:1;height:58px;border-radius:14px;background:#f1f3f4;display:flex;align-items:center;padding:0 20px;font-size:25px}
+.dfield em{font-style:normal;color:var(--ink2);margin-left:8px}
+.dot-blue{width:26px;height:26px;border-radius:50%;background:var(--blue);border:4px solid #fff;box-shadow:0 0 0 2px var(--blue);flex:none;margin:0 2px}
+.dpin{width:30px;height:30px;fill:var(--red);flex:none}
+.dconn{margin:2px 0 2px 13px;height:20px;border-left:4px dotted #9aa0a6}
+.modes{display:flex;gap:12px;margin-top:18px}
+.mode{display:flex;align-items:center;gap:8px;height:52px;padding:0 20px;border-radius:26px;font-size:22px;font-weight:500;color:var(--ink2)}
+.mode svg{width:28px;height:28px;fill:currentColor}
+.mode.on{background:#e8f0fe;color:var(--blue-d)}
+.via{margin-top:14px;font-size:22px;color:var(--ink2);padding-left:4px}
+
+/* navigation pill */
+#nav{position:absolute;left:50%;bottom:72px;width:900px;margin-left:-450px;height:136px;border-radius:32px;background:#137333;box-shadow:0 20px 50px rgba(32,33,36,.28);display:flex;align-items:center;overflow:hidden;opacity:0;will-change:transform,opacity}
+.navIco{position:relative;width:136px;height:136px;flex:none;overflow:hidden}
+.navIco svg{position:absolute;left:30px;top:30px;width:76px;height:76px;fill:#fff}
+.navTxt{position:relative;flex:1;height:136px;overflow:hidden}
+.navLine{position:absolute;left:0;right:0;top:0;height:136px;display:flex;flex-direction:column;justify-content:center;color:#fff}
+.navLine span{font-size:25px;opacity:.85}
+.navLine b{font-size:46px;font-weight:500;letter-spacing:-.3px}
+.navBar{position:absolute;left:28px;right:28px;bottom:14px;height:6px;border-radius:3px;background:rgba(255,255,255,.25)}
+.navBar i{display:block;height:100%;width:0;background:#fff;border-radius:3px}
+
+/* banners anchored to 3D */
+.banner{position:absolute;left:0;top:0;opacity:0;will-change:transform,opacity}
+.bstem{position:absolute;left:-2px;bottom:10px;width:4px;height:76px;background:#fff;border-radius:2px;box-shadow:0 0 8px rgba(0,0,0,.18);transform-origin:50% 100%}
+.bdot{position:absolute;left:-13px;top:-13px;width:26px;height:26px;border-radius:50%;background:#fff;border:7px solid var(--blue);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.bcard{position:absolute;left:0;bottom:84px;display:flex;align-items:center;gap:18px;background:#fff;border-radius:24px;padding:18px 30px 18px 18px;box-shadow:0 18px 44px rgba(32,33,36,.26);white-space:nowrap;transform-origin:0 100%}
+.road{width:68px;height:68px;border-radius:18px;background:var(--yellow);display:grid;place-items:center;flex:none}
+.road svg{width:42px;height:42px;fill:#fff}
+.bt b{display:block;font-size:38px;font-weight:500;line-height:1.1}
+.bt span{font-size:22px;color:var(--ink2)}
+
+/* arrival */
+#arrive{position:absolute;left:50%;top:80px;display:flex;align-items:center;gap:28px;background:#fff;border-radius:999px;padding:22px 56px 22px 22px;box-shadow:var(--shadow);opacity:0;white-space:nowrap;will-change:transform,opacity}
+.chk{width:108px;height:108px;border-radius:50%;background:var(--green);display:grid;place-items:center;flex:none}
+.chk svg{width:66px;height:66px;fill:#fff}
+#arrive b{font-size:62px;font-weight:700;letter-spacing:-.8px;display:block;line-height:1.05}
+#arrive span{font-size:28px;color:var(--ink2)}
+.ring{position:absolute;left:0;top:0;width:40px;height:40px;margin:-20px;border-radius:50%;border:5px solid var(--red);opacity:0}
+
+/* final card */
+#finalBg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.72),rgba(236,240,245,.4));opacity:0}
+#final{position:absolute;left:50%;top:50%;width:840px;background:#fff;border-radius:44px;box-shadow:0 40px 110px rgba(32,33,36,.3);padding:56px 64px 54px;text-align:center;opacity:0;will-change:transform,opacity}
+.fi{opacity:0;will-change:transform,opacity}
+.flogo{width:72px;height:120px;margin:0 auto 22px;filter:drop-shadow(0 8px 10px rgba(60,64,67,.25))}
+.fname{font-size:88px;font-weight:700;letter-spacing:-2px;line-height:1}
+.ftype{display:inline-flex;align-items:center;gap:10px;margin-top:22px;height:50px;padding:0 22px;border-radius:25px;background:#fbe9e3;color:#a4462a;font-size:24px;font-weight:500}
+.ftype svg{width:26px;height:26px;fill:currentColor}
+.faddr{font-size:31px;color:var(--ink2);margin-top:20px}
+.fchips{display:flex;justify-content:center;gap:14px;margin-top:20px}
+.fchip{display:flex;align-items:center;gap:10px;height:54px;padding:0 22px;border-radius:27px;background:#f1f3f4;font-size:23px;font-weight:500}
+.fchip i{width:26px;height:26px;border-radius:7px;background:var(--yellow)}
+.fbtn{display:inline-flex;align-items:center;gap:14px;margin-top:36px;height:92px;padding:0 52px;border-radius:46px;background:var(--blue);color:#fff;font-size:36px;font-weight:500;box-shadow:0 12px 28px rgba(26,115,232,.38)}
+.fbtn svg{width:40px;height:40px;fill:#fff}
+
+/* start / replay */
+#start{position:absolute;inset:0;display:grid;place-items:center;background:rgba(233,237,242,.94);cursor:pointer;z-index:10}
+.sbox{display:flex;flex-direction:column;align-items:center;gap:36px}
+.slogo{width:96px;height:160px;filter:drop-shadow(0 14px 18px rgba(60,64,67,.25))}
+.sbtn{display:flex;align-items:center;gap:20px;height:116px;padding:0 60px 0 44px;border-radius:58px;background:var(--blue);color:#fff;font-size:42px;font-weight:500;box-shadow:0 18px 40px rgba(26,115,232,.35);transition:transform .15s}
+#start:hover .sbtn{transform:scale(1.04)}
+.sbtn svg{width:52px;height:52px;fill:#fff}
+.shint{font-size:26px;color:var(--ink2)}
+#replay{position:absolute;right:40px;bottom:36px;z-index:9;display:none;align-items:center;gap:10px;height:60px;padding:0 26px;border:0;border-radius:30px;background:rgba(32,33,36,.78);color:#fff;font:500 22px var(--font);cursor:pointer}
+#replay svg{width:28px;height:28px;fill:#fff}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="pinClip"><path d="M30 100 L2.9 42.86 A30 30 0 1 1 57.1 42.86 Z"/></clipPath>
+    <linearGradient id="pinShade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".14"/>
+    </linearGradient>
+  </defs>
+  <symbol id="pinMarca" viewBox="0 0 60 100">
+    <path d="M30 100 L2.9 42.86 A30 30 0 1 1 57.1 42.86 Z" style="fill:var(--marca)"/>
+    <path d="M30 100 L2.9 42.86 A30 30 0 1 1 57.1 42.86 Z" fill="url(#pinShade)"/>
+    <circle cx="30" cy="30" r="11" fill="#fff"/>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <canvas id="gl" width="1920" height="1080"></canvas>
+
+  <div id="ui" class="layer">
+    <div id="bnP" class="banner"><div class="bstem"></div><div class="bdot"></div>
+      <div class="bcard"><div class="road"><svg viewBox="0 0 24 24"><path d="M11 3h2v4h-2zm0 7h2v4h-2zm0 7h2v4h-2zM3.5 21L8 3h1.6L5.6 21zM20.5 21L16 3h-1.6l4 18z"/></svg></div>
+        <div class="bt"><b>Av. Paulista</b><span>Siga em frente</span></div></div></div>
+    <div id="bnA" class="banner"><div class="bstem"></div><div class="bdot"></div>
+      <div class="bcard"><div class="road"><svg viewBox="0 0 24 24"><path d="M11 3h2v4h-2zm0 7h2v4h-2zm0 7h2v4h-2zM3.5 21L8 3h1.6L5.6 21zM20.5 21L16 3h-1.6l4 18z"/></svg></div>
+        <div class="bt"><b>Rua Augusta</b><span>Vire à esquerda</span></div></div></div>
+    <div id="ring1" class="ring"></div><div id="ring2" class="ring"></div>
+
+    <div id="card">
+      <div class="ctop st"><div class="tile"><svg viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM2 21h18v-2H2v2z"/></svg></div>
+        <div><div class="pname">Café Claude</div><div class="ptype">Cafeteria</div></div></div>
+      <div class="paddr st"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>Rua Augusta, 1520 · São Paulo</div>
+      <div class="btns st">
+        <div class="pwrap"><div class="btn primary" id="goBtn"><svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>Como chegar<i class="ripple" id="ripple"></i></div><i class="touch" id="touch"></i></div>
+        <div class="btn"><svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>Iniciar</div>
+        <div class="btn"><svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>Salvar</div>
+        <div class="btn round"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg></div>
+      </div>
+    </div>
+
+    <div id="dir">
+      <div class="drow"><span class="dot-blue"></span><div class="dfield">Seu local<em>· Av. Paulista</em></div></div>
+      <div class="dconn"></div>
+      <div class="drow"><svg class="dpin" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg><div class="dfield">Café Claude<em>· Rua Augusta, 1520</em></div></div>
+      <div class="modes">
+        <div class="mode"><svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg></div>
+        <div class="mode"><svg viewBox="0 0 24 24"><path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/></svg></div>
+        <div class="mode on"><svg viewBox="0 0 24 24"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/></svg>A pé</div>
+      </div>
+      <div class="via">via Av. Paulista e Rua Augusta</div>
+    </div>
+
+    <div id="nav">
+      <div class="navIco"><svg id="icoA" viewBox="0 0 24 24"><path d="M12 3l-7 7h5v11h4V10h5z"/></svg><svg id="icoB" viewBox="0 0 24 24"><path d="M9 4L3 10l6 6v-4h7v9h4v-9c0-2.2-1.8-4-4-4H9V4z"/></svg></div>
+      <div class="navTxt">
+        <div class="navLine" id="lnA"><span>Siga pela</span><b>Av. Paulista</b></div>
+        <div class="navLine" id="lnB"><span>Vire à esquerda na</span><b>Rua Augusta</b></div>
+      </div>
+      <div class="navBar"><i id="navProg"></i></div>
+    </div>
+
+    <div id="arrive"><div class="chk"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+      <div><b>Você chegou!</b><span>Café Claude · Rua Augusta, 1520</span></div></div>
+
+    <div id="finalBg"></div>
+    <div id="final">
+      <svg class="flogo fi" viewBox="0 0 60 100"><use href="#pinMarca"/></svg>
+      <div class="fname fi">Café Claude</div>
+      <div class="ftype fi"><svg viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM2 21h18v-2H2v2z"/></svg>Cafeteria</div>
+      <div class="faddr fi">Rua Augusta, 1520 · São Paulo</div>
+      <div class="fchips fi"><div class="fchip"><i></i>Av. Paulista</div><div class="fchip"><i></i>Rua Augusta</div></div>
+      <div class="fbtn fi" id="fbtn"><svg viewBox="0 0 24 24"><path d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/></svg>Como chegar</div>
+    </div>
+  </div>
+
+  <div id="intro" class="layer">
+    <div id="introBg"></div>
+    <div id="logoWrap"><svg id="logo" viewBox="0 0 60 100">
+      <use href="#pinMarca"/>
+      <path id="logoRed" d="M30 100 L2.9 42.86 A30 30 0 1 1 57.1 42.86 Z" style="fill:var(--marca)" opacity="0"/><!-- mesma cor do pin 3D -->
+      <path d="M30 100 L2.9 42.86 A30 30 0 1 1 57.1 42.86 Z" fill="url(#pinShade)"/>
+      <circle id="logoHole" cx="30" cy="30" r="11" fill="#fff"/>
+    </svg></div>
+    <div id="logoWord">Café Claude</div>
+  </div>
+
+  <div id="start"><div class="sbox">
+    <svg class="slogo" viewBox="0 0 60 100"><use href="#pinMarca"/></svg>
+    <div class="sbtn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>Clique para começar</div>
+    <div class="shint">Anúncio · 20 s · com som</div>
+  </div></div>
+  <button id="replay"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>Assistir de novo</button>
+</div>
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
+<script type="module">
+import * as THREE from 'three';
+
+/* ================= utilidades ================= */
+const PREVIEW = new URLSearchParams(location.search).has('preview');
+const W = 1920, H = 1080, DUR = 20, SUB = PREVIEW ? 2 : 16, SHUTTER = 1 / 48; // ?preview: prévia leve; a exportação usa 16
+const $ = id => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, t) => a + (b - a) * t;
+const sstep = (a, b, x) => { const t = clamp((x - a) / (b - a)); return t * t * (3 - 2 * t); };
+const eOutCubic = x => 1 - Math.pow(1 - clamp(x), 3);
+const eInCubic = x => Math.pow(clamp(x), 3);
+const eInOut = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eOutBack = x => { x = clamp(x); const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+function mulberry(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const R = mulberry(20261114);
+
+const stage = $('stage');
+function fit() { const s = Math.min(innerWidth / W, innerHeight / H); stage.style.transform = `translate(-50%,-50%) scale(${s})`; }
+addEventListener('resize', fit); fit();
+
+try { await Promise.race([Promise.all([document.fonts.load('700 80px Roboto'), document.fonts.load('500 60px Roboto')]), new Promise(r => setTimeout(r, 1500))]); } catch (e) { }
+
+/* ================= renderer ================= */
+const renderer = new THREE.WebGLRenderer({ canvas: $('gl'), antialias: false, powerPreference: 'high-performance' });
+renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+renderer.autoClear = false;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.autoUpdate = false; renderer.shadowMap.needsUpdate = true; // cidade estática: sombra calculada uma vez
+const FOG = new THREE.Color('#e6ebf0');
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(FOG, 400, 3000);
+const camera = new THREE.PerspectiveCamera(40, W / H, 2, 9000);
+
+scene.add(new THREE.HemisphereLight(0xffffff, 0xcfd6de, 2.6));
+const sun = new THREE.DirectionalLight(0xfff4e6, 1.6);
+sun.target.position.set(150, 0, 150);
+sun.position.set(150 - 900, 1700, 150 + 700);
+sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
+Object.assign(sun.shadow.camera, { left: -1700, right: 1700, top: 1700, bottom: -1700, near: 100, far: 4500 });
+sun.shadow.camera.updateProjectionMatrix();
+sun.shadow.bias = -0.0005; sun.shadow.normalBias = 0.8;
+scene.add(sun, sun.target);
+
+/* ================= cidade procedural ================= */
+const P = 130, N = 18;                       // quarteirão + rua, raio da cidade em quadras
+const swx = i => i === 0 ? 34 : 22;          // ruas no eixo X (i=0 → Rua Augusta)
+const swz = j => j === 0 ? 46 : 22;          // ruas no eixo Z (j=0 → Av. Paulista)
+const CAFE = { x: 41, z: 325 };
+const bld = [], blocks = [], parks = [], trees = [];
+
+function capAt(x, z) { const d = Math.hypot(x - CAFE.x, z - CAFE.z); return d < 190 ? 20 : d < 430 ? 20 + (d - 190) / 240 * 60 : 1e9; }
+function heightFor(x, z) {
+  let h = 9 + Math.pow(R(), 2) * 34;
+  if (Math.abs(z) < 210 && Math.abs(x) > 230 && R() < .5) h = 70 + R() * 130;  // espigões da Paulista
+  else if (R() < .05) h = 50 + R() * 80;
+  const c = Math.exp(-((x + 820) ** 2 + (z + 760) ** 2) / (650 * 650));      // "centro" com torres
+  h *= 1 + 1.3 * c; if (c > .3 && R() < .25) h += 60 + R() * 120;
+  return Math.min(h, capAt(x, z));
+}
+function addB(x0, x1, z0, z1, h, y = 0, tint = .9 + R() * .1) { bld.push({ x: (x0 + x1) / 2, z: (z0 + z1) / 2, w: x1 - x0, d: z1 - z0, h, y, tint }); }
+function addBuilding(x0, x1, z0, z1) {
+  const h = heightFor((x0 + x1) / 2, (z0 + z1) / 2), tint = .9 + R() * .1;
+  if (h > 55 && R() < .6) {
+    const ph = 8 + R() * 10; addB(x0, x1, z0, z1, ph, 0, tint);
+    const ix = (x1 - x0) * (.12 + R() * .12), iz = (z1 - z0) * (.12 + R() * .12);
+    addB(x0 + ix, x1 - ix, z0 + iz, z1 - iz, h - ph, ph, tint);
+  } else addB(x0, x1, z0, z1, h, 0, tint);
+}
+function treeAt(x, z, s = 1) { trees.push({ x, z, r: (5 + R() * 3) * s, g: R() }); }
+
+for (let i = -N; i < N; i++) for (let j = -N; j < N; j++) {
+  const x0 = i * P + swx(i) / 2, x1 = (i + 1) * P - swx(i + 1) / 2;
+  const z0 = j * P + swz(j) / 2, z1 = (j + 1) * P - swz(j + 1) / 2;
+  const plaza = i === -1 && j === 2, isCafe = i === 0 && j === 2;
+  const park = plaza || (!isCafe && Math.hypot(i, j - 1) > 3 && R() < .035);
+  if (park) {
+    parks.push({ x0, x1, z0, z1 });
+    if (plaza) { // praça em frente ao café: árvores só nas bordas, centro livre pra câmera
+      for (let z = z0 + 10; z < z1 - 6; z += 14) treeAt(x0 + 8 + R() * 4, z);
+      for (let x = x0 + 24; x < x1 - 30; x += 17) { treeAt(x, z0 + 8 + R() * 3, .9); treeAt(x, z1 - 8 - R() * 3, .9); }
+    } else for (let k = 0; k < 40; k++) treeAt(lerp(x0 + 8, x1 - 8, R()), lerp(z0 + 8, z1 - 8, R()));
+    continue;
+  }
+  blocks.push({ x0, x1, z0, z1 });
+  const m = 4, bx0 = x0 + m, bx1 = x1 - m, bz0 = z0 + m, bz1 = z1 - m;
+  if (isCafe) { // vizinhos baixos; o café (x 21–61, z 297–353) é montado à parte
+    addB(bx0, 61, bz0, 294, 13); addB(bx0, 61, 356, bz1, 15);
+    addB(64, bx1, bz0, 323, 17); addB(64, bx1, 326, bz1, 12);
+    continue;
+  }
+  const nx = R() < .55 ? 2 : 3, nz = R() < .55 ? 2 : 3;
+  const lw = (bx1 - bx0) / nx, ld = (bz1 - bz0) / nz;
+  for (let a = 0; a < nx; a++) for (let b = 0; b < nz; b++) {
+    if (R() < .07) continue;
+    const s = 1.5 + R() * 3.5;
+    addBuilding(bx0 + a * lw + s, bx0 + (a + 1) * lw - s, bz0 + b * ld + s, bz0 + (b + 1) * ld - s);
+  }
+}
+for (let x = -N * P + 20; x < N * P; x += 26) { if (Math.abs(x) > 30) { treeAt(x, -25.5, .7); treeAt(x, 25.5, .7); } } // canteiros da Paulista
+
+const M4 = new THREE.Matrix4(), Q0 = new THREE.Quaternion(), S3 = new THREE.Vector3(), V3 = new THREE.Vector3(), C3 = new THREE.Color();
+const boxG = new THREE.BoxGeometry(1, 1, 1); boxG.translate(0, .5, 0);
+
+const bMesh = new THREE.InstancedMesh(boxG, new THREE.MeshLambertMaterial({ color: 0xffffff }), bld.length);
+bld.forEach((b, k) => {
+  M4.compose(V3.set(b.x, b.y, b.z), Q0, S3.set(b.w, b.h, b.d)); bMesh.setMatrixAt(k, M4);
+  C3.setRGB(b.tint, b.tint, Math.min(1, b.tint * 1.015)); bMesh.setColorAt(k, C3);
+});
+bMesh.castShadow = bMesh.receiveShadow = true; bMesh.frustumCulled = false; scene.add(bMesh);
+
+function flatInstances(list, h, color) {
+  const mesh = new THREE.InstancedMesh(boxG, new THREE.MeshBasicMaterial({ color }), list.length);
+  list.forEach((b, k) => { M4.compose(V3.set((b.x0 + b.x1) / 2, 0, (b.z0 + b.z1) / 2), Q0, S3.set(b.x1 - b.x0, h, b.z1 - b.z0)); mesh.setMatrixAt(k, M4); });
+  mesh.frustumCulled = false; scene.add(mesh); return mesh;
+}
+flatInstances(blocks, .6, '#e2e6eb');
+flatInstances(parks, .7, '#bfe3c0');
+
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(20000, 20000).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: '#ffffff' }));
+scene.add(ground);
+const aveMat = new THREE.MeshBasicMaterial({ color: '#fde7a6', polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -1 });
+const pau = new THREE.Mesh(new THREE.PlaneGeometry(N * P * 2, 46).rotateX(-Math.PI / 2), aveMat); pau.position.y = .05; scene.add(pau);
+const aug = new THREE.Mesh(new THREE.PlaneGeometry(34, N * P * 2).rotateX(-Math.PI / 2), aveMat); aug.position.y = .05; scene.add(aug);
+const shadowPlane = new THREE.Mesh(new THREE.PlaneGeometry(6000, 6000).rotateX(-Math.PI / 2), new THREE.ShadowMaterial({ color: '#2b3a4d', opacity: .17 }));
+shadowPlane.position.set(150, .9, 150); shadowPlane.receiveShadow = true; scene.add(shadowPlane);
+
+const treeMesh = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 1), new THREE.MeshLambertMaterial({ color: 0xffffff }), trees.length);
+trees.forEach((t, k) => {
+  M4.compose(V3.set(t.x, t.r * .95 + 1.5, t.z), Q0, S3.set(t.r, t.r * 1.08, t.r)); treeMesh.setMatrixAt(k, M4);
+  C3.set('#8fcf8a').lerp(new THREE.Color('#6fbf73'), t.g); treeMesh.setColorAt(k, C3);
+});
+treeMesh.castShadow = true; treeMesh.frustumCulled = false; scene.add(treeMesh);
+
+function textTex(txt, size = 64, color = '#5f6368', w = 1024, h = 128, weight = 500) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+  g.font = `${weight} ${size}px Roboto, Arial, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.lineJoin = 'round'; g.lineWidth = size * .22; g.strokeStyle = 'rgba(255,255,255,.95)'; g.strokeText(txt, w / 2, h / 2);
+  g.fillStyle = color; g.fillText(txt, w / 2, h / 2);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+function streetLabels(txt, list, alongZ) {
+  const mat = new THREE.MeshBasicMaterial({ map: textTex(txt), transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+  for (const p of list) {
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(150, 18.75), mat);
+    m.rotation.x = -Math.PI / 2; if (alongZ) m.rotation.z = Math.PI / 2;
+    m.position.set(alongZ ? 0 : p, .3, alongZ ? p : 0); scene.add(m);
+  }
+}
+streetLabels('Av. Paulista', [-1250, -620, 960, 1560], false);
+streetLabels('Rua Augusta', [-420, -1050, 760, 1350], true);
+
+/* ================= Café Claude (fachada) ================= */
+function facadeTex() {
+  const c = document.createElement('canvas'); c.width = 1400; c.height = 550; const g = c.getContext('2d');
+  const Y = yw => (22 - yw) * 25; // metros → pixels (25 px/unidade)
+  g.fillStyle = '#f7f1e8'; g.fillRect(0, 0, 1400, 550);
+  g.fillStyle = '#ebe2d5'; g.fillRect(0, 0, 1400, 22);
+  // janelas do andar de cima
+  for (let k = 0; k < 6; k++) {
+    const x = 70 + k * 220, y = Y(20.6), w = 160, h = Y(15.6) - Y(20.6);
+    g.fillStyle = '#ffffff'; g.fillRect(x - 8, y - 8, w + 16, h + 16);
+    const gr = g.createLinearGradient(x, y, x + w, y + h); gr.addColorStop(0, '#a9bccb'); gr.addColorStop(.5, '#6f8494'); gr.addColorStop(1, '#55697a');
+    g.fillStyle = gr; g.fillRect(x, y, w, h);
+    g.strokeStyle = 'rgba(255,255,255,.35)'; g.lineWidth = 10; g.beginPath(); g.moveTo(x + 20, y + h - 10); g.lineTo(x + 70, y + 10); g.stroke();
+    g.fillStyle = '#ffffff'; g.fillRect(x + w / 2 - 4, y, 8, h);
+    g.fillStyle = '#7cb37a'; for (let p = 0; p < 6; p++) { g.beginPath(); g.arc(x + 14 + p * 26, y + h + 14, 11, 0, 7); g.fill(); }
+  }
+  // letreiro
+  g.fillStyle = '#d97757'; const sy = Y(14.6), sh = Y(10.6) - Y(14.6);
+  g.beginPath(); g.roundRect(250, sy, 900, sh, 18); g.fill();
+  g.fillStyle = '#fff'; g.font = '700 82px Roboto, Arial, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.fillText('Café Claude', 700, sy + sh / 2 + 4);
+  g.fillStyle = '#9b5a3f'; g.font = '500 30px Roboto, Arial, sans-serif'; g.fillText('CAFETERIA', 130, sy + sh / 2); g.fillText('Nº 1520', 1270, sy + sh / 2);
+  // vitrine iluminada
+  const vy = Y(9.2), vh = Y(.4) - Y(9.2);
+  const wg = g.createLinearGradient(0, vy, 0, vy + vh); wg.addColorStop(0, '#ffe2b0'); wg.addColorStop(.6, '#e7a86a'); wg.addColorStop(1, '#b8743f');
+  g.fillStyle = wg; g.fillRect(40, vy, 1320, vh);
+  for (let k = 0; k < 9; k++) { const lx = 110 + k * 148; const rg = g.createRadialGradient(lx, vy + 40, 2, lx, vy + 40, 70); rg.addColorStop(0, 'rgba(255,250,220,.95)'); rg.addColorStop(1, 'rgba(255,250,220,0)'); g.fillStyle = rg; g.fillRect(lx - 70, vy - 30, 140, 140); g.fillStyle = '#3a2c25'; g.fillRect(lx - 1.5, vy, 3, 26); }
+  g.fillStyle = '#6b4a35'; g.fillRect(40, vy + vh * .66, 1320, vh * .34);
+  g.fillStyle = 'rgba(60,40,30,.55)'; for (let k = 0; k < 7; k++) { g.beginPath(); g.arc(160 + k * 175 + (k % 2) * 30, vy + vh * .5, 22, 0, 7); g.fill(); g.fillRect(140 + k * 175 + (k % 2) * 30, vy + vh * .5, 40, 60); }
+  g.fillStyle = '#3a2c25'; for (let k = 0; k <= 6; k++) g.fillRect(36 + k * 220, vy, 10, vh);
+  g.fillStyle = '#2e2522'; g.fillRect(625, vy - 4, 150, vh + 4);
+  g.fillStyle = 'rgba(255,214,160,.55)'; g.fillRect(640, vy + 14, 120, vh - 40);
+  g.fillStyle = '#f4d7a8'; g.fillRect(744, vy + vh * .5, 8, 46);
+  g.fillStyle = '#fff'; g.font = '500 26px Roboto, Arial, sans-serif'; g.fillText('1520', 700, vy - 16 + 0);
+  g.fillStyle = '#8d7a6a'; g.fillRect(0, 540, 1400, 10);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+const cafeG = new THREE.Group(); scene.add(cafeG);
+const wallM = new THREE.MeshLambertMaterial({ color: '#fbf7f1' });
+const terraM = new THREE.MeshLambertMaterial({ color: '#d97757' });
+const body = new THREE.Mesh(new THREE.BoxGeometry(40, 22, 56).translate(0, 11, 0), wallM);
+body.position.set(41, 0, 325); body.castShadow = body.receiveShadow = true; cafeG.add(body);
+const fac = new THREE.Mesh(new THREE.PlaneGeometry(56, 22), new THREE.MeshBasicMaterial({ map: facadeTex() }));
+fac.rotation.y = -Math.PI / 2; fac.position.set(20.9, 11, 325); cafeG.add(fac);
+const awning = new THREE.Mesh(new THREE.BoxGeometry(7, 1, 50), terraM);
+awning.position.set(17.6, 9.9, 325); awning.rotation.z = .2; awning.castShadow = true; cafeG.add(awning);
+const valance = new THREE.Mesh(new THREE.BoxGeometry(.4, 1.3, 50), new THREE.MeshLambertMaterial({ color: '#f3e4d4' }));
+valance.position.set(14.3, 8.8, 325); cafeG.add(valance);
+const parapet = new THREE.Mesh(new THREE.BoxGeometry(41, 1.6, 57).translate(0, .8, 0), terraM); parapet.position.set(41, 22, 325); cafeG.add(parapet);
+const roofTop = new THREE.Mesh(new THREE.BoxGeometry(38, .4, 54), wallM); roofTop.position.set(41, 22.6, 325); cafeG.add(roofTop);
+const acBox = new THREE.Mesh(new THREE.BoxGeometry(8, 3, 6).translate(0, 1.5, 0), new THREE.MeshLambertMaterial({ color: '#dfe3e8' }));
+acBox.position.set(50, 22.6, 312); acBox.castShadow = true; cafeG.add(acBox);
+for (const z of [301.5, 348.5]) { // vasos com plantas na calçada
+  const pot = new THREE.Mesh(new THREE.CylinderGeometry(1.1, .9, 1.8, 16).translate(0, .9, 0), terraM); pot.position.set(18.6, .6, z); cafeG.add(pot);
+  const bush = new THREE.Mesh(new THREE.IcosahedronGeometry(1.9, 1), new THREE.MeshLambertMaterial({ color: '#6fbf73' })); bush.position.set(18.6, 3.6, z); bush.castShadow = true; cafeG.add(bush);
+}
+
+/* ================= pin vermelho (billboard, tamanho constante na tela) ================= */
+function pinProfile() {
+  const pts = [new THREE.Vector2(0.001, 0)], Cy = 21, Rr = 9, tx = 8.13, ty = 17.14;
+  for (let k = 1; k <= 6; k++) pts.push(new THREE.Vector2(tx * k / 6, ty * k / 6));
+  const a0 = Math.atan2(ty - Cy, tx);
+  for (let k = 1; k <= 28; k++) { const a = a0 + (Math.PI / 2 - a0) * k / 28; pts.push(new THREE.Vector2(Math.max(.001, Rr * Math.cos(a)), Cy + Rr * Math.sin(a))); }
+  return pts;
+}
+const pinGroup = new THREE.Group(); pinGroup.position.set(CAFE.x, 23.4, CAFE.z); scene.add(pinGroup);
+const COR_MARCA = getComputedStyle(document.documentElement).getPropertyValue('--marca').trim();
+const pinMat = new THREE.MeshPhongMaterial({ color: COR_MARCA, specular: '#444444', shininess: 70, transparent: true, fog: false });
+const pinMesh = new THREE.Mesh(new THREE.LatheGeometry(pinProfile(), 56), pinMat);
+pinMesh.renderOrder = 990;
+pinMesh.onBeforeRender = r => { r.state.buffers.depth.setMask(true); r.clearDepth(); }; // marcador sempre por cima, como no app
+pinGroup.add(pinMesh);
+const dotMat = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, fog: false }); // aqui entra o ícone do cliente (textura)
+const pinDot = new THREE.Mesh(new THREE.CircleGeometry(3.7, 40), dotMat); pinDot.position.set(0, 21, 9.15); pinDot.renderOrder = 991; pinGroup.add(pinDot);
+const PIN_TOP = new THREE.Vector3(0, 30, 0), PIN_BULB = new THREE.Vector3(0, 21, 0);
+
+/* ================= rota ================= */
+const RC = 26, RX = 620, RZ = 325;
+const L1 = RX - RC, LA = Math.PI / 2 * RC, L3 = RZ - RC, LT = L1 + LA + L3;
+function pathAt(s) {
+  s = clamp(s, 0, LT);
+  if (s <= L1) return new THREE.Vector2(RX - s, 0);
+  s -= L1;
+  if (s <= LA) { const ph = -Math.PI / 2 - s / RC; return new THREE.Vector2(RC + RC * Math.cos(ph), RC + RC * Math.sin(ph)); }
+  return new THREE.Vector2(0, RC + (s - LA));
+}
+const routeAt = u => pathAt(u * LT);
+const NS = 600, routePts = []; for (let k = 0; k < NS; k++) routePts.push(pathAt(k / (NS - 1) * LT));
+function ribbon(pts, width, y) {
+  const n = pts.length, pos = new Float32Array(n * 6), idx = [];
+  for (let i = 0; i < n; i++) {
+    const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
+    const dx = b.x - a.x, dz = b.y - a.y, l = Math.hypot(dx, dz) || 1, nx = -dz / l * width / 2, nz = dx / l * width / 2;
+    pos.set([pts[i].x + nx, y, pts[i].y + nz, pts[i].x - nx, y, pts[i].y - nz], i * 6);
+    if (i < n - 1) { const k = i * 2; idx.push(k, k + 1, k + 2, k + 1, k + 3, k + 2); }
+  }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3)); g.setIndex(idx); return g;
+}
+const routeMatB = new THREE.MeshBasicMaterial({ color: '#1557b0', side: THREE.DoubleSide, fog: false, polygonOffset: true, polygonOffsetFactor: -3, polygonOffsetUnits: -3 });
+const routeMatC = new THREE.MeshBasicMaterial({ color: '#4285f4', side: THREE.DoubleSide, fog: false, polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -4 });
+const routeB = new THREE.Mesh(ribbon(routePts, 14, 1.25), routeMatB);
+const routeC = new THREE.Mesh(ribbon(routePts, 9, 1.35), routeMatC);
+routeB.frustumCulled = routeC.frustumCulled = false; scene.add(routeB, routeC);
+const capB = new THREE.Mesh(new THREE.CircleGeometry(7, 32).rotateX(-Math.PI / 2), routeMatB);
+const capC = new THREE.Mesh(new THREE.CircleGeometry(4.5, 32).rotateX(-Math.PI / 2), routeMatC);
+const headGlow = new THREE.Mesh(new THREE.CircleGeometry(2.6, 24).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: '#ffffff', fog: false, polygonOffset: true, polygonOffsetFactor: -5, polygonOffsetUnits: -5 }));
+capB.position.y = 1.26; capC.position.y = 1.36; headGlow.position.y = 1.42;
+scene.add(capB, capC, headGlow);
+function setRoute(p) {
+  const n = Math.floor(p * (NS - 1));
+  routeB.geometry.setDrawRange(0, n * 6); routeC.geometry.setDrawRange(0, n * 6);
+  const h = routeAt(p), on = p > 0.001;
+  capB.visible = capC.visible = headGlow.visible = on;
+  capB.position.x = capC.position.x = headGlow.position.x = h.x;
+  capB.position.z = capC.position.z = headGlow.position.z = h.y;
+}
+
+/* ================= ponto azul "você está aqui" ================= */
+const meG = new THREE.Group(); meG.position.set(RX, 1.5, 0); scene.add(meG);
+const meWhite = new THREE.Mesh(new THREE.CylinderGeometry(9, 9, 1.2, 40), new THREE.MeshBasicMaterial({ color: '#ffffff', fog: false }));
+const meBlue = new THREE.Mesh(new THREE.CylinderGeometry(6.3, 6.3, 1.6, 40), new THREE.MeshBasicMaterial({ color: '#1a73e8', fog: false }));
+const haloMat = new THREE.MeshBasicMaterial({ color: '#1a73e8', transparent: true, opacity: .25, depthWrite: false, fog: false });
+const meHalo = new THREE.Mesh(new THREE.CircleGeometry(1, 48).rotateX(-Math.PI / 2), haloMat); meHalo.position.y = -.4;
+meG.add(meHalo, meWhite, meBlue);
+
+const ANCHOR_P = new THREE.Vector3(380, 2, 0), ANCHOR_A = new THREE.Vector3(0, 2, 200);
+
+/* ================= câmera: órbita contínua + tomadas misturadas por spline ================= */
+const RT0 = 5.5, RT1 = 12.5;
+const routeProg = t => sstep(RT0, RT1, t);
+const theta = t => 1.932389 + 0.2 * t + 0.07 * Math.sin(0.5 * (t - 13.9)); // sempre crescente; de frente pra fachada em 13,9s
+const keys = [];
+function K(t, tg, dist, pitch) { keys.push({ t, v: [tg[0], tg[1], tg[2], Math.log(dist), pitch * Math.PI / 180] }); }
+const PIN = [CAFE.x, 26, CAFE.z], CAF = [CAFE.x, 22, CAFE.z], FACADE = [24, 13, 325];
+K(0, PIN, 3200, 86);
+K(1.0, PIN, 2700, 84);            // logo → pin
+K(2.05, PIN, 820, 58);            // mergulho
+K(3.0, CAF, 280, 33);             // card do lugar
+K(4.0, CAF, 238, 28);
+K(4.9, [300, 0, 170], 1150, 60);  // visão geral
+K(5.8, [330, 0, 140], 1060, 57);
+for (const tk of [6.9, 8.1, 9.3, 10.5, 11.6]) {   // segue a ponta da rota
+  const p = routeAt(routeProg(tk + .35));
+  K(tk, [p.x * .85 + 300 * .15, 0, p.y * .85 + 170 * .15], tk < 9.5 ? 600 : 520, tk < 9.5 ? 48 : 44);
+}
+K(12.8, FACADE, 110, 9);          // fachada
+K(14.2, [24, 12.5, 325], 88, 8);
+K(15.0, [26, 14, 325], 104, 11);
+K(16.3, [40, 20, 320], 470, 36);  // a câmera sobe
+K(17.7, [70, 0, 290], 1300, 60);  // cartão final
+K(20, [90, 0, 280], 1750, 67);
+keys.forEach((k, i) => {
+  k.m = []; for (let c = 0; c < 5; c++) k.m[c] = (i === 0 || i === keys.length - 1) ? 0 : (keys[i + 1].v[c] - keys[i - 1].v[c]) / (keys[i + 1].t - keys[i - 1].t);
+});
+function evalKeys(t) {
+  t = clamp(t, keys[0].t, keys[keys.length - 1].t);
+  let k = 0; while (k < keys.length - 2 && t > keys[k + 1].t) k++;
+  const a = keys[k], b = keys[k + 1], h = b.t - a.t, s = (t - a.t) / h, s2 = s * s, s3 = s2 * s;
+  const h00 = 2 * s3 - 3 * s2 + 1, h10 = s3 - 2 * s2 + s, h01 = -2 * s3 + 3 * s2, h11 = s3 - s2;
+  const o = []; for (let c = 0; c < 5; c++) o[c] = h00 * a.v[c] + h10 * h * a.m[c] + h01 * b.v[c] + h11 * h * b.m[c];
+  return o;
+}
+
+let camDist = 1000;
+function setState(ts) {
+  const [tx, ty, tz, ld, pp] = evalKeys(ts), d = Math.exp(ld), th = theta(ts), cp = Math.cos(pp);
+  camDist = d;
+  camera.position.set(tx + d * cp * Math.sin(th), ty + d * Math.sin(pp), tz + d * cp * Math.cos(th));
+  camera.lookAt(tx, ty, tz);
+  camera.near = Math.max(1.5, d * .04); camera.far = d * 2 + 6000; camera.updateProjectionMatrix();
+  camera.updateMatrixWorld();
+  scene.fog.near = 150 + d * .4; scene.fog.far = 1600 + d * 1.15;   // névoa pela distância
+
+  // pin: billboard com tamanho constante + quique na chegada
+  pinGroup.quaternion.copy(camera.quaternion);
+  const pd = camera.position.distanceTo(pinGroup.position);
+  const bt = ts - 12.8, bounce = bt > 0 && bt < 1 ? Math.sin(bt * Math.PI * 3) * Math.exp(-bt * 4) * .35 : 0;
+  pinGroup.scale.setScalar(pd / 300 * (1 + bounce));
+  pinGroup.visible = ts > 1.0;
+  pinGroup.updateMatrixWorld();
+
+  setRoute(routeProg(ts));
+
+  const md = Math.max(1, Math.min(3.5, camera.position.distanceTo(meG.position) / 500));
+  meG.scale.set(md, 1, md);
+  const ph = ((ts * 0.8) % 1);
+  meHalo.scale.setScalar(1 + ph * 3.2); haloMat.opacity = .32 * (1 - ph);
+  meG.visible = ts > 3.9;
+
+  const hs = Math.max(1, Math.min(3, camDist / 450)); // ponta da rota legível de longe
+  capB.scale.setScalar(hs); capC.scale.setScalar(hs); headGlow.scale.setScalar(hs);
+}
+
+/* ================= motion blur: média de 16 subquadros ================= */
+const rtScene = new THREE.WebGLRenderTarget(W, H, { samples: 4, type: THREE.HalfFloatType });
+const rtAcc = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, depthBuffer: false });
+const VS = 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }';
+const accMat = new THREE.ShaderMaterial({
+  uniforms: { tex: { value: rtScene.texture }, w: { value: 1 / SUB } }, vertexShader: VS,
+  fragmentShader: 'uniform sampler2D tex; uniform float w; varying vec2 vUv; void main(){ gl_FragColor = vec4(texture2D(tex, vUv).rgb * w, 1.0); }',
+  depthTest: false, depthWrite: false, blending: THREE.CustomBlending,
+  blendSrc: THREE.OneFactor, blendDst: THREE.OneFactor, blendEquation: THREE.AddEquation,
+  blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.OneFactor
+});
+const outMat = new THREE.ShaderMaterial({
+  uniforms: { tex: { value: rtAcc.texture } }, vertexShader: VS,
+  fragmentShader: `uniform sampler2D tex; varying vec2 vUv;
+void main(){
+  vec3 c = texture2D(tex, vUv).rgb;
+  vec2 q = vUv - 0.5; c *= 1.0 - 0.28 * dot(q, q);
+  gl_FragColor = vec4(c, 1.0);
+  #include <colorspace_fragment>
+}`, depthTest: false, depthWrite: false
+});
+const qCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+const accScene = new THREE.Scene(); accScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), accMat));
+const outScene = new THREE.Scene(); outScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), outMat));
+accScene.children[0].frustumCulled = outScene.children[0].frustumCulled = false;
+
+function renderFrame(t) {
+  for (let i = 0; i < SUB; i++) {
+    const ts = t - SHUTTER * (1 - (i + .5) / SUB);
+    setState(ts);
+    renderer.setRenderTarget(rtScene); renderer.setClearColor(FOG, 1); renderer.clear(); renderer.render(scene, camera);
+    renderer.setRenderTarget(rtAcc); if (i === 0) { renderer.setClearColor(0x000000, 0); renderer.clear(); }
+    renderer.render(accScene, qCam);
+  }
+  renderer.setRenderTarget(null); renderer.render(outScene, qCam);
+  setState(t);
+  ui(t);
+}
+
+/* ================= interface (DOM) guiada pelo mesmo relógio ================= */
+const el = {
+  introBg: $('introBg'), intro: $('intro'), logoWrap: $('logoWrap'), logoRed: $('logoRed'), logoHole: $('logoHole'), logoWord: $('logoWord'),
+  card: $('card'), st: [...document.querySelectorAll('#card .st')], goBtn: $('goBtn'), ripple: $('ripple'), touch: $('touch'),
+  dir: $('dir'), nav: $('nav'), lnA: $('lnA'), lnB: $('lnB'), icoA: $('icoA'), icoB: $('icoB'), navProg: $('navProg'),
+  bnP: $('bnP'), bnA: $('bnA'), ring1: $('ring1'), ring2: $('ring2'), arrive: $('arrive'),
+  finalBg: $('finalBg'), final: $('final'), fi: [...document.querySelectorAll('#final .fi')], fbtn: $('fbtn')
+};
+const PV = new THREE.Vector3();
+function project(v) { PV.copy(v).project(camera); return { x: (PV.x + 1) / 2 * W, y: (1 - PV.y) / 2 * H, ok: PV.z < 1 }; }
+const op = (e, o) => { e.style.opacity = o.toFixed(3); };
+
+function banner(e, anchor, tIn, tOut, t) {
+  const a = eOutBack((t - tIn) / .45), o = eInCubic((t - tOut) / .3), vis = clamp((t - tIn) / .15) * (1 - o);
+  if (vis <= 0) { op(e, 0); return; }
+  const p = project(anchor);
+  const x = clamp(p.x, 120, W - 520), y = clamp(p.y, 260, H - 60);
+  e.style.transform = `translate(${x.toFixed(1)}px,${y.toFixed(1)}px)`;
+  e.children[0].style.transform = `scaleY(${clamp(a * 1.2).toFixed(3)})`;
+  e.children[2].style.transform = `translate(${(-40 + 0 * a).toFixed(1)}px,${((1 - a) * 30).toFixed(1)}px) scale(${(.6 + .4 * a).toFixed(3)})`;
+  op(e, p.ok ? vis : 0);
+}
+
+function ui(t) {
+  /* 0–1,4s: o logo (pin da marca) vira o pin 3D */
+  op(el.introBg, 1 - sstep(.8, 1.25, t));
+  const pop = eOutBack(t / .42), mv = eInOut((t - .68) / .5);
+  const tip = project(pinGroup.position), top = project(pinGroup.localToWorld(PV.copy(PIN_TOP)).clone());
+  const ph = Math.hypot(top.x - tip.x, top.y - tip.y);
+  const tx = lerp(960, tip.x, mv), ty = lerp(650, tip.y, mv), hh = Math.max(.001, lerp(260, ph, mv) * pop);
+  el.logoWrap.style.transform = `translate(${(tx - 78).toFixed(1)}px,${(ty - 260).toFixed(1)}px) scale(${(hh / 260).toFixed(4)})`;
+  op(el.logoWrap, 1 - sstep(1.2, 1.38, t));
+  const m = sstep(.42, .75, t);
+  el.logoRed.setAttribute('opacity', m.toFixed(3));
+  el.logoHole.setAttribute('r', lerp(11, 12, m).toFixed(2));
+  op(el.logoWord, sstep(.1, .3, t) * (1 - sstep(.45, .62, t)));
+  el.logoWord.style.transform = `translateY(${((1 - sstep(.1, .35, t)) * 20).toFixed(1)}px)`;
+  el.intro.style.display = t > 1.45 ? 'none' : '';
+
+  /* 3,0–4,4s: card do lugar + toque em "Como chegar" */
+  const cin = eOutCubic((t - 3.0) / .4), cout = eInCubic((t - 4.1) / .32);
+  el.card.style.transform = `translateY(${((1 - cin) * 150 + cout * 180).toFixed(1)}px)`;
+  op(el.card, cin * (1 - cout));
+  el.st.forEach((s, k) => { const o = eOutCubic((t - 3.08 - k * .08) / .35); op(s, o); s.style.transform = `translateY(${((1 - o) * 22).toFixed(1)}px)`; });
+  const press = sstep(3.72, 3.8, t) * (1 - sstep(3.88, 4.0, t));
+  el.goBtn.style.transform = `scale(${(1 - .07 * press).toFixed(3)})`;
+  const rp = clamp((t - 3.78) / .45);
+  el.ripple.style.transform = `scale(${(rp * 22).toFixed(2)})`; op(el.ripple, t > 3.78 ? (1 - rp) * .7 : 0);
+  const tr = clamp((t - 3.6) / .5);
+  op(el.touch, Math.sin(Math.PI * tr)); el.touch.style.transform = `scale(${(1.5 - .6 * tr).toFixed(3)})`;
+
+  /* 4,35–12,7s: painel de direções */
+  const din = eOutCubic((t - 4.35) / .4), dout = eInCubic((t - 12.35) / .35);
+  el.dir.style.transform = `translateY(${(-(1 - din) * 40 - dout * 50).toFixed(1)}px)`; op(el.dir, din * (1 - dout));
+
+  /* 5,7–12,7s: instrução de navegação */
+  const nin = eOutBack((t - 5.7) / .45), nout = eInCubic((t - 12.4) / .3);
+  el.nav.style.transform = `translateY(${((1 - nin) * 90 + nout * 120).toFixed(1)}px)`; op(el.nav, clamp((t - 5.7) / .2) * (1 - nout));
+  const sw = eInOut((t - 9.45) / .35);
+  el.lnA.style.transform = el.icoA.style.transform = `translateY(${(-sw * 136).toFixed(1)}px)`;
+  el.lnB.style.transform = el.icoB.style.transform = `translateY(${((1 - sw) * 136).toFixed(1)}px)`;
+  el.navProg.style.width = (routeProg(t) * 100).toFixed(2) + '%';
+
+  /* banners das ruas presos ao 3D */
+  banner(el.bnP, ANCHOR_P, 6.15, 9.45, t);
+  banner(el.bnA, ANCHOR_A, 9.95, 12.35, t);
+
+  /* 12,8–15,6s: "Você chegou!" */
+  const ain = eOutBack((t - 12.85) / .5), aout = eInCubic((t - 15.25) / .35);
+  el.arrive.style.transform = `translateX(-50%) translateY(${(-(1 - ain) * 40 - aout * 60).toFixed(1)}px) scale(${(.85 + .15 * ain).toFixed(3)})`;
+  op(el.arrive, clamp((t - 12.85) / .2) * (1 - aout));
+  [[el.ring1, 12.8], [el.ring2, 13.1]].forEach(([r, t0]) => {
+    const k = clamp((t - t0) / .9);
+    r.style.transform = `translate(${tip.x.toFixed(1)}px,${tip.y.toFixed(1)}px) scale(${(1 + k * 5).toFixed(3)})`;
+    op(r, t > t0 && k < 1 ? (1 - k) * .9 : 0);
+  });
+
+  /* 17,7–20s: cartão final */
+  const fb = sstep(17.6, 18.3, t);
+  op(el.finalBg, fb); el.finalBg.style.backdropFilter = fb > 0 ? `blur(${(fb * 10).toFixed(1)}px)` : 'none';
+  const fin = eOutBack((t - 17.75) / .6);
+  el.final.style.transform = `translate(-50%,-50%) translateY(${((1 - fin) * 60).toFixed(1)}px) scale(${(.9 + .1 * fin).toFixed(3)})`;
+  op(el.final, clamp((t - 17.75) / .25));
+  el.fi.forEach((f, k) => { const o = eOutCubic((t - 17.9 - k * .1) / .4); op(f, o); f.style.transform = `translateY(${((1 - o) * 26).toFixed(1)}px)`; });
+  const pulse = t > 18.9 ? Math.max(0, Math.sin((t - 18.9) * Math.PI * 2)) * Math.exp(-(t - 18.9) * 1.5) : 0;
+  el.fbtn.style.transform = `translateY(${((1 - eOutCubic((t - 18.4) / .4)) * 26).toFixed(1)}px) scale(${(1 + .06 * pulse).toFixed(3)})`;
+}
+
+/* ================= trilha: Web Audio, 120 BPM, whooshes nas transições ================= */
+function scheduleScore(ctx, T) {
+  const at = s => T + s, mtof = m => 440 * Math.pow(2, (m - 69) / 12), BEAT = .5;
+  const out = ctx.createGain(); out.gain.value = .85;
+  const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -12; comp.knee.value = 8; comp.ratio.value = 3.5; comp.attack.value = .004; comp.release.value = .18;
+  out.connect(comp); comp.connect(ctx.destination);
+  const ir = ctx.createBuffer(2, ctx.sampleRate * 2.4, ctx.sampleRate);
+  for (let c = 0; c < 2; c++) { const d = ir.getChannelData(c); for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / d.length, 3.2); }
+  const rev = ctx.createConvolver(); rev.buffer = ir; const revG = ctx.createGain(); revG.gain.value = .3; rev.connect(revG); revG.connect(out);
+  const noise = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate); { const d = noise.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; }
+  const drums = ctx.createGain(); drums.gain.value = .9; drums.connect(out);
+  const music = ctx.createGain(); music.gain.value = 1; music.connect(out);
+  const sfx = ctx.createGain(); sfx.gain.value = .9; sfx.connect(out);
+  const send = (node, amt) => { const g = ctx.createGain(); g.gain.value = amt; node.connect(g); g.connect(rev); };
+  const env = (g, t, a, peak, dec) => { g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(.0001, t + a + dec); };
+  const nsrc = (t, len) => { const s = ctx.createBufferSource(); s.buffer = noise; s.loop = true; s.start(t, Math.random() * 1.5); s.stop(t + len + .05); return s; };
+  const filt = (type, f, q = 1) => { const b = ctx.createBiquadFilter(); b.type = type; b.frequency.value = f; b.Q.value = q; return b; };
+
+  function kick(t, v = 1) {
+    const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine';
+    o.frequency.setValueAtTime(165, t); o.frequency.exponentialRampToValueAtTime(46, t + .13);
+    env(g, t, .004, v, .4); o.connect(g); g.connect(drums); o.start(t); o.stop(t + .5);
+    const c = nsrc(t, .03), hp = filt('highpass', 3000), cg = ctx.createGain(); env(cg, t, .001, .12 * v, .02); c.connect(hp); hp.connect(cg); cg.connect(drums);
+    music.gain.setValueAtTime(.45, t); music.gain.linearRampToValueAtTime(1, t + .24); // sidechain
+  }
+  function clap(t, v = .5) {
+    const s = nsrc(t, .3), bp = filt('bandpass', 1600, 1.1), g = ctx.createGain();
+    g.gain.setValueAtTime(.0001, t);
+    for (let k = 0; k < 3; k++) { g.gain.exponentialRampToValueAtTime(v, t + k * .011 + .001); g.gain.exponentialRampToValueAtTime(v * .2, t + k * .011 + .009); }
+    g.gain.exponentialRampToValueAtTime(v * .7, t + .036); g.gain.exponentialRampToValueAtTime(.0001, t + .22);
+    s.connect(bp); bp.connect(g); g.connect(drums); send(g, .5);
+  }
+  function hat(t, v = .12, len = .05) { const s = nsrc(t, len + .02), hp = filt('highpass', 8000), g = ctx.createGain(); env(g, t, .002, v, len); s.connect(hp); hp.connect(g); g.connect(drums); }
+  function crash(t, v = .3) { const s = nsrc(t, 2), hp = filt('highpass', 5000), g = ctx.createGain(); env(g, t, .005, v, 1.8); s.connect(hp); hp.connect(g); g.connect(drums); send(g, .6); }
+  function bass(t, m, dur, v) {
+    const o = ctx.createOscillator(), o2 = ctx.createOscillator(), lp = filt('lowpass', 900, 4), g = ctx.createGain();
+    o.type = 'sawtooth'; o2.type = 'square'; o.frequency.value = mtof(m); o2.frequency.value = mtof(m - 12);
+    lp.frequency.setValueAtTime(1100, t); lp.frequency.exponentialRampToValueAtTime(220, t + dur);
+    env(g, t, .006, v, dur); o.connect(lp); o2.connect(lp); lp.connect(g); g.connect(music);
+    o.start(t); o2.start(t); o.stop(t + dur + .05); o2.stop(t + dur + .05);
+  }
+  function pad(t, notes, dur, v) {
+    const lp = filt('lowpass', 1500, .6), g = ctx.createGain();
+    g.gain.setValueAtTime(.0001, t); g.gain.linearRampToValueAtTime(v, t + .3); g.gain.setValueAtTime(v, t + dur - .4); g.gain.linearRampToValueAtTime(.0001, t + dur + .3);
+    lp.connect(g); g.connect(music); send(g, .7);
+    for (const n of notes) for (const det of [-8, 8]) { const o = ctx.createOscillator(); o.type = 'sawtooth'; o.frequency.value = mtof(n); o.detune.value = det; o.connect(lp); o.start(t); o.stop(t + dur + .4); }
+  }
+  function pluck(t, m, v = .07) {
+    const o = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain();
+    o.type = 'triangle'; o2.type = 'sine'; o.frequency.value = mtof(m); o2.frequency.value = mtof(m + 12);
+    env(g, t, .004, v, .32); o.connect(g); o2.connect(g); g.connect(music); send(g, .5); o.start(t); o2.start(t); o.stop(t + .4); o2.stop(t + .4);
+  }
+  function bell(t, m, v = .1) {
+    for (const [r, a, d] of [[1, 1, 1.2], [2.76, .35, .5], [5.4, .15, .25]]) {
+      const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine'; o.frequency.value = mtof(m) * r;
+      env(g, t, .003, v * a, d); o.connect(g); g.connect(sfx); send(g, .6); o.start(t); o.stop(t + d + .1);
+    }
+  }
+  function blip(t, f0, f1, v = .12) { const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(f1, t + .07); env(g, t, .003, v, .1); o.connect(g); g.connect(sfx); send(g, .3); o.start(t); o.stop(t + .15); }
+  function whoosh(t0, tp, t1, f0, fp, f1, v, p0 = -.7, p1 = .7) {
+    t0 = at(t0); tp = at(tp); t1 = at(t1);
+    const s = nsrc(t0, t1 - t0), bp = filt('bandpass', f0, 1.4), g = ctx.createGain(), pan = ctx.createStereoPanner();
+    bp.frequency.setValueAtTime(f0, t0); bp.frequency.exponentialRampToValueAtTime(fp, tp); bp.frequency.exponentialRampToValueAtTime(f1, t1);
+    g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(v, tp); g.gain.exponentialRampToValueAtTime(.0001, t1);
+    pan.pan.setValueAtTime(p0, t0); pan.pan.linearRampToValueAtTime(p1, t1);
+    s.connect(bp); bp.connect(g); g.connect(pan); pan.connect(sfx); send(pan, .35);
+  }
+  function boom(t, v = .7) {
+    const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(80, t); o.frequency.exponentialRampToValueAtTime(32, t + 1);
+    env(g, t, .005, v, 1.1); o.connect(g); g.connect(sfx); o.start(t); o.stop(t + 1.2);
+    const s = nsrc(t, .6), lp = filt('lowpass', 500), ng = ctx.createGain(); env(ng, t, .005, v * .5, .5); s.connect(lp); lp.connect(ng); ng.connect(sfx); send(ng, .4);
+  }
+  function riser(t0, t1, v) { const s = nsrc(t0, t1 - t0), hp = filt('highpass', 400, 2), g = ctx.createGain(); hp.frequency.setValueAtTime(400, t0); hp.frequency.exponentialRampToValueAtTime(7000, t1); g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(v, t1 - .02); g.gain.linearRampToValueAtTime(.0001, t1 + .03); s.connect(hp); hp.connect(g); g.connect(sfx); send(g, .4); }
+
+  // harmonia I–V–vi–IV em Dó, 1 compasso = 2s
+  const prog = [[60, 64, 67], [59, 62, 67], [57, 60, 64], [57, 60, 65], [60, 64, 67], [59, 62, 67], [57, 60, 64], [57, 60, 65], [59, 62, 67], [60, 64, 67, 72]];
+  const root = [36, 43, 45, 41, 36, 43, 45, 41, 43, 36];
+  for (let b = 0; b < 10; b++) pad(at(b * 2), prog[b], b === 9 ? 1.6 : 2.05, b === 0 ? .03 : .045);
+  for (let k = 2; k < 30; k++) kick(at(k * BEAT), k % 4 === 2 ? 1 : .88);
+  for (let k = 3; k < 30; k += 2) clap(at(k * BEAT), .45);
+  for (let k = 2; k < 35; k++) hat(at(k * BEAT + .25), k >= 30 ? .07 : .12);
+  for (let s = 5.5; s < 12.5; s += .25) hat(at(s + .125), .045, .03);
+  for (let e = 4; e < 60; e++) { const t = e * .25, bar = Math.floor(t / 2); bass(at(t), root[bar] + (e % 4 === 3 ? 12 : 0), .2, e % 2 ? .3 : .18); }
+  bass(at(16), 43, 1.9, .16);
+  for (let e = 12; e < 70; e++) { const t = e * .25, bar = Math.floor(t / 2), n = prog[bar][[0, 1, 2, 1][e % 4]] + 12; pluck(at(t), n, t >= 15 ? .045 : .065); }
+  for (let k = 0; k < 9; k++) clap(at(16.5 + k * .125), .08 + k * .04);           // virada antes do final
+  // final
+  kick(at(18), 1.1); boom(at(18), .55); crash(at(18), .28); bass(at(18), 36, 1.8, .3);
+  [72, 76, 79, 84].forEach((n, k) => bell(at(18.02 + k * .06), n, .05));
+  out.gain.setValueAtTime(.85, at(18.6)); out.gain.linearRampToValueAtTime(.0001, at(20.2));
+
+  // efeitos sincronizados às cenas
+  blip(at(.06), 660, 990, .14); bell(at(.08), 84, .07);
+  whoosh(.45, 1.0, 1.15, 500, 5000, 2500, .3, -.6, .2);                     // logo → pin
+  boom(at(1.0), .6); whoosh(.95, 1.25, 2.7, 3000, 4200, 160, .42, .2, .8); // mergulho
+  whoosh(2.6, 3.0, 3.45, 600, 3800, 500, .24, .5, -.5); blip(at(3.05), 520, 780, .1);
+  blip(at(3.8), 1400, 1700, .12);                                           // toque no botão
+  whoosh(3.9, 4.3, 4.95, 300, 3000, 200, .34, -.7, .7);                     // visão geral
+  whoosh(5.15, 5.5, 5.95, 700, 5000, 900, .24, .6, -.6);                    // rota começa
+  [79, 84, 88].forEach((n, k) => bell(at(5.5 + k * .12), n, .05));
+  blip(at(6.2), 600, 900, .09); whoosh(9.2, 9.5, 9.9, 500, 2800, 400, .2, -.5, .5); blip(at(10.0), 700, 1050, .09);
+  whoosh(12.3, 12.8, 13.35, 300, 4200, 250, .4, .7, -.7);                   // chegada
+  [84, 88, 91].forEach((n, k) => bell(at(12.85 + k * .12), n, .11));
+  whoosh(14.55, 15.1, 16.1, 200, 2500, 1200, .34, -.6, .6);                 // câmera sobe
+  riser(at(15.2), at(17.7), .16);
+  whoosh(17.15, 17.7, 18.35, 300, 5000, 200, .48, .7, -.7);                 // cartão final
+  blip(at(18.4), 520, 1040, .1);
+}
+
+/* ================= play ================= */
+let actx = null, T0 = 0, playing = false, perf0 = 0;
+const params = new URLSearchParams(location.search);
+function clock() {
+  if (actx) return actx.currentTime - T0 - (actx.outputLatency || actx.baseLatency || 0);
+  return (performance.now() - perf0) / 1000;
+}
+function loop() {
+  if (!playing) return;
+  let t = clock();
+  if (t >= DUR) { t = DUR; playing = false; if (!navigator.webdriver) $('replay').style.display = 'flex'; }
+  renderFrame(Math.max(0, t));
+  if (playing) requestAnimationFrame(loop);
+}
+async function start() {
+  $('start').style.display = 'none'; $('replay').style.display = 'none';
+  if (actx) { try { await actx.close(); } catch (e) { } }
+  try {
+    actx = new (window.AudioContext || window.webkitAudioContext)();
+    await actx.resume();
+    T0 = actx.currentTime + .2;
+    scheduleScore(actx, T0);
+    MOTION.audio = { ctx: actx, t0: T0 };
+  } catch (e) { actx = null; perf0 = performance.now(); }
+  playing = true; requestAnimationFrame(loop);
+}
+$('start').addEventListener('click', start);
+$('replay').addEventListener('click', start);
+
+renderFrame(0); // compila shaders e calcula a sombra antes do play
+if (params.has('t')) { // ?t=12.9 congela num instante (útil pra captura)
+  $('start').style.display = 'none'; renderFrame(clamp(parseFloat(params.get('t')) || 0, 0, DUR));
+} else if (params.has('mudo')) { $('start').style.display = 'none'; perf0 = performance.now(); playing = true; requestAnimationFrame(loop); }
+window.renderAt = t => renderFrame(t);
+MOTION.pronto = true;
+</script>
+</body>
+</html>

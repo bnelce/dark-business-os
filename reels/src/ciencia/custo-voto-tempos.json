@@ -1,0 +1,871 @@
+{
+ "fala": {
+  "gancho": 1,
+  "bolso": 147,
+  "tipico": 378,
+  "partidos": 623,
+  "fora": 846,
+  "ressalva": 1056,
+  "pergunta": 1262
+ },
+ "dur": {
+  "gancho": 141,
+  "bolso": 226,
+  "tipico": 230,
+  "partidos": 194,
+  "fora": 199,
+  "ressalva": 201,
+  "pergunta": 71
+ },
+ "m": {
+  "deputado": 7,
+  "centavos": 34,
+  "outro": 93,
+  "n170": 97,
+  "bolso": 197,
+  "n100": 223,
+  "n88": 288,
+  "publico": 306,
+  "fundo": 327,
+  "partidario": 357,
+  "n513": 387,
+  "n22": 470,
+  "metade1": 513,
+  "metade2": 577,
+  "n28": 644,
+  "regua": 739,
+  "zero": 750,
+  "n70": 776,
+  "nao": 859,
+  "bilhoes": 906,
+  "n65": 972,
+  "tres": 1009,
+  "alto": 1069,
+  "baixo": 1146,
+  "explica": 1232,
+  "justo": 1288
+ },
+ "contas": [
+  {
+   "id": "c88",
+   "de": 276,
+   "ate": 290,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Esse",
+     "chave": true
+    },
+    {
+     "t": "deputado",
+     "chave": true
+    }
+   ],
+   "ate": 17
+  },
+  {
+   "de": 17,
+   "partes": [
+    {
+     "t": "gastou",
+     "chave": false
+    },
+    {
+     "t": "25",
+     "chave": true
+    },
+    {
+     "t": "centavos",
+     "chave": true
+    }
+   ],
+   "ate": 59
+  },
+  {
+   "de": 59,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "voto.",
+     "chave": false
+    }
+   ],
+   "ate": 81
+  },
+  {
+   "de": 81,
+   "partes": [
+    {
+     "t": "Esse",
+     "chave": false
+    },
+    {
+     "t": "outro,",
+     "chave": false
+    }
+   ],
+   "ate": 95
+  },
+  {
+   "de": 95,
+   "partes": [
+    {
+     "t": "170",
+     "chave": true
+    },
+    {
+     "t": "reais.",
+     "chave": true
+    }
+   ],
+   "ate": 133
+  },
+  {
+   "de": 145,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "quase",
+     "chave": false
+    },
+    {
+     "t": "tudo",
+     "chave": false
+    }
+   ],
+   "ate": 179
+  },
+  {
+   "de": 179,
+   "partes": [
+    {
+     "t": "veio",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "mesmo",
+     "chave": true
+    },
+    {
+     "t": "bolso:",
+     "chave": true
+    }
+   ],
+   "ate": 209
+  },
+  {
+   "de": 209,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    },
+    {
+     "t": "100",
+     "chave": true
+    },
+    {
+     "t": "reais",
+     "chave": true
+    }
+   ],
+   "ate": 239
+  },
+  {
+   "de": 239,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "eleitos",
+     "chave": false
+    },
+    {
+     "t": "pagaram,",
+     "chave": false
+    }
+   ],
+   "ate": 286
+  },
+  {
+   "de": 286,
+   "partes": [
+    {
+     "t": "88",
+     "chave": true
+    },
+    {
+     "t": "eram",
+     "chave": false
+    }
+   ],
+   "ate": 297
+  },
+  {
+   "de": 297,
+   "partes": [
+    {
+     "t": "dinheiro",
+     "chave": true
+    },
+    {
+     "t": "público,",
+     "chave": true
+    }
+   ],
+   "ate": 323
+  },
+  {
+   "de": 323,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "fundo",
+     "chave": false
+    },
+    {
+     "t": "eleitoral",
+     "chave": false
+    }
+   ],
+   "ate": 347
+  },
+  {
+   "de": 347,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "partidário.",
+     "chave": false
+    }
+   ],
+   "ate": 376
+  },
+  {
+   "de": 376,
+   "partes": [
+    {
+     "t": "Nos",
+     "chave": false
+    },
+    {
+     "t": "513",
+     "chave": true
+    },
+    {
+     "t": "eleitos,",
+     "chave": true
+    }
+   ],
+   "ate": 426
+  },
+  {
+   "de": 426,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "voto",
+     "chave": false
+    },
+    {
+     "t": "típico",
+     "chave": false
+    }
+   ],
+   "ate": 458
+  },
+  {
+   "de": 458,
+   "partes": [
+    {
+     "t": "custou",
+     "chave": false
+    },
+    {
+     "t": "22",
+     "chave": true
+    },
+    {
+     "t": "reais.",
+     "chave": true
+    }
+   ],
+   "ate": 511
+  },
+  {
+   "de": 511,
+   "partes": [
+    {
+     "t": "Metade",
+     "chave": true
+    },
+    {
+     "t": "gastou",
+     "chave": false
+    },
+    {
+     "t": "menos",
+     "chave": false
+    }
+   ],
+   "ate": 540
+  },
+  {
+   "de": 540,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "isso",
+     "chave": false
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "voto,",
+     "chave": false
+    }
+   ],
+   "ate": 575
+  },
+  {
+   "de": 575,
+   "partes": [
+    {
+     "t": "metade",
+     "chave": true
+    },
+    {
+     "t": "gastou",
+     "chave": false
+    },
+    {
+     "t": "mais.",
+     "chave": false
+    }
+   ],
+   "ate": 621
+  },
+  {
+   "de": 621,
+   "partes": [
+    {
+     "t": "Aqui",
+     "chave": false
+    },
+    {
+     "t": "estão",
+     "chave": false
+    }
+   ],
+   "ate": 638
+  },
+  {
+   "de": 638,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "28",
+     "chave": true
+    },
+    {
+     "t": "partidos,",
+     "chave": true
+    }
+   ],
+   "ate": 670
+  },
+  {
+   "de": 670,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "todos",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "candidatos",
+     "chave": false
+    }
+   ],
+   "ate": 706
+  },
+  {
+   "de": 706,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    },
+    {
+     "t": "um,",
+     "chave": false
+    }
+   ],
+   "ate": 719
+  },
+  {
+   "de": 719,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "mesma",
+     "chave": true
+    },
+    {
+     "t": "régua:",
+     "chave": true
+    }
+   ],
+   "ate": 745
+  },
+  {
+   "de": 745,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "zero",
+     "chave": true
+    }
+   ],
+   "ate": 768
+  },
+  {
+   "de": 768,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "70",
+     "chave": true
+    },
+    {
+     "t": "reais",
+     "chave": true
+    }
+   ],
+   "ate": 799
+  },
+  {
+   "de": 799,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "voto.",
+     "chave": false
+    }
+   ],
+   "ate": 818
+  },
+  {
+   "de": 844,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "quem",
+     "chave": false
+    }
+   ],
+   "ate": 857
+  },
+  {
+   "de": 857,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "se",
+     "chave": true
+    },
+    {
+     "t": "elegeu?",
+     "chave": true
+    }
+   ],
+   "ate": 883
+  },
+  {
+   "de": 883,
+   "partes": [
+    {
+     "t": "Gastou",
+     "chave": false
+    },
+    {
+     "t": "2,2",
+     "chave": true
+    },
+    {
+     "t": "bilhões,",
+     "chave": true
+    }
+   ],
+   "ate": 932
+  },
+  {
+   "de": 932,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "voto",
+     "chave": false
+    },
+    {
+     "t": "típico",
+     "chave": false
+    }
+   ],
+   "ate": 961
+  },
+  {
+   "de": 961,
+   "partes": [
+    {
+     "t": "custou",
+     "chave": false
+    },
+    {
+     "t": "65",
+     "chave": true
+    },
+    {
+     "t": "reais.",
+     "chave": true
+    }
+   ],
+   "ate": 1007
+  },
+  {
+   "de": 1007,
+   "partes": [
+    {
+     "t": "Três",
+     "chave": true
+    },
+    {
+     "t": "vezes",
+     "chave": true
+    }
+   ],
+   "ate": 1021
+  },
+  {
+   "de": 1021,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "eleitos.",
+     "chave": false
+    }
+   ],
+   "ate": 1054
+  },
+  {
+   "de": 1054,
+   "partes": [
+    {
+     "t": "Gasto",
+     "chave": false
+    },
+    {
+     "t": "alto",
+     "chave": false
+    }
+   ],
+   "ate": 1077
+  },
+  {
+   "de": 1077,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "quer",
+     "chave": false
+    },
+    {
+     "t": "dizer",
+     "chave": false
+    }
+   ],
+   "ate": 1104
+  },
+  {
+   "de": 1104,
+   "partes": [
+    {
+     "t": "irregularidade,",
+     "chave": true
+    }
+   ],
+   "ate": 1124
+  },
+  {
+   "de": 1124,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "gasto",
+     "chave": false
+    },
+    {
+     "t": "baixo",
+     "chave": false
+    }
+   ],
+   "ate": 1153
+  },
+  {
+   "de": 1153,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "quer",
+     "chave": false
+    },
+    {
+     "t": "dizer",
+     "chave": false
+    }
+   ],
+   "ate": 1178
+  },
+  {
+   "de": 1178,
+   "partes": [
+    {
+     "t": "mérito.",
+     "chave": true
+    }
+   ],
+   "ate": 1188
+  },
+  {
+   "de": 1188,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "número",
+     "chave": false
+    },
+    {
+     "t": "sozinho",
+     "chave": false
+    }
+   ],
+   "ate": 1216
+  },
+  {
+   "de": 1216,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "explica",
+     "chave": true
+    }
+   ],
+   "ate": 1239
+  },
+  {
+   "de": 1239,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "porquê.",
+     "chave": false
+    }
+   ],
+   "ate": 1259
+  }
+ ],
+ "grande": [
+  {
+   "t": "Quanto",
+   "chave": false,
+   "f": 1262,
+   "l": 0
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1272,
+   "l": 0
+  },
+  {
+   "t": "acha",
+   "chave": false,
+   "f": 1282,
+   "l": 0
+  },
+  {
+   "t": "justo",
+   "chave": true,
+   "f": 1288,
+   "l": 1
+  },
+  {
+   "t": "custar",
+   "chave": false,
+   "f": 1302,
+   "l": 1
+  },
+  {
+   "t": "um",
+   "chave": true,
+   "f": 1314,
+   "l": 2
+  },
+  {
+   "t": "voto?",
+   "chave": true,
+   "f": 1319,
+   "l": 2
+  }
+ ],
+ "cena": {
+  "dupla": {
+   "de": 0,
+   "ate": 147
+  },
+  "bolso": {
+   "de": 147,
+   "ate": 378
+  },
+  "dist": {
+   "de": 378,
+   "ate": 623
+  },
+  "partidos": {
+   "de": 623,
+   "ate": 846
+  },
+  "fora": {
+   "de": 846,
+   "ate": 1056
+  },
+  "ressalva": {
+   "de": 1056,
+   "ate": 1262
+  },
+  "pergunta": {
+   "de": 1262,
+   "ate": 1343
+  }
+ },
+ "cenas": [
+  147,
+  378,
+  623,
+  846,
+  1056,
+  1262,
+  1343
+ ],
+ "fimFala": 1333,
+ "cta": 1343,
+ "fim": 1343,
+ "total": 1383
+}

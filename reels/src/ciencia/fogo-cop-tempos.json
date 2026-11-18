@@ -1,0 +1,1321 @@
+{
+ "fala": {
+  "gancho": 1,
+  "prodes": 139,
+  "foco": 409,
+  "biomas": 602,
+  "regua": 894,
+  "estados": 1082,
+  "virada": 1306,
+  "pergunta": 1538
+ },
+ "dur": {
+  "gancho": 133,
+  "prodes": 265,
+  "foco": 188,
+  "biomas": 287,
+  "regua": 183,
+  "estados": 209,
+  "virada": 227,
+  "pergunta": 128
+ },
+ "m": {
+  "menor": 69,
+  "medido": 100,
+  "fogo": 123,
+  "km": 188,
+  "p42": 307,
+  "cerrado": 327,
+  "c2001": 385,
+  "focos": 454,
+  "area": 504,
+  "aqua": 591,
+  "amazonia": 649,
+  "media": 721,
+  "cerrado2": 791,
+  "caatinga": 851,
+  "regua": 921,
+  "r2025": 954,
+  "r70": 1040,
+  "para": 1089,
+  "outubro": 1192,
+  "serie": 1236,
+  "ceara": 1255,
+  "prodes": 1325,
+  "julho": 1374,
+  "outubro2": 1394,
+  "fora": 1421,
+  "queimada": 1486,
+  "desmat": 1512
+ },
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "desmatamento",
+     "chave": false
+    }
+   ],
+   "ate": 31
+  },
+  {
+   "de": 31,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "Amazônia",
+     "chave": true
+    }
+   ],
+   "ate": 51
+  },
+  {
+   "de": 51,
+   "partes": [
+    {
+     "t": "caiu",
+     "chave": false
+    },
+    {
+     "t": "ao",
+     "chave": false
+    },
+    {
+     "t": "menor",
+     "chave": true
+    },
+    {
+     "t": "nível",
+     "chave": true
+    }
+   ],
+   "ate": 87
+  },
+  {
+   "de": 87,
+   "partes": [
+    {
+     "t": "já",
+     "chave": false
+    },
+    {
+     "t": "medido.",
+     "chave": false
+    }
+   ],
+   "ate": 108
+  },
+  {
+   "de": 108,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "fogo?",
+     "chave": true
+    }
+   ],
+   "ate": 137
+  },
+  {
+   "de": 137,
+   "partes": [
+    {
+     "t": "Pela",
+     "chave": false
+    },
+    {
+     "t": "estimativa",
+     "chave": false
+    }
+   ],
+   "ate": 157
+  },
+  {
+   "de": 157,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "INPE,",
+     "chave": false
+    }
+   ],
+   "ate": 167
+  },
+  {
+   "de": 167,
+   "partes": [
+    {
+     "t": "foram",
+     "chave": false
+    },
+    {
+     "t": "3.335",
+     "chave": true
+    }
+   ],
+   "ate": 186
+  },
+  {
+   "de": 186,
+   "partes": [
+    {
+     "t": "quilômetros",
+     "chave": false
+    },
+    {
+     "t": "quadrados,",
+     "chave": false
+    }
+   ],
+   "ate": 305
+  },
+  {
+   "de": 305,
+   "partes": [
+    {
+     "t": "42%",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "menos.",
+     "chave": true
+    }
+   ],
+   "ate": 323
+  },
+  {
+   "de": 323,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Cerrado,",
+     "chave": true
+    }
+   ],
+   "ate": 343
+  },
+  {
+   "de": 343,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "menor",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "série,",
+     "chave": false
+    }
+   ],
+   "ate": 367
+  },
+  {
+   "de": 367,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "começa",
+     "chave": false
+    }
+   ],
+   "ate": 378
+  },
+  {
+   "de": 378,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2001.",
+     "chave": true
+    }
+   ],
+   "ate": 407
+  },
+  {
+   "de": 407,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "fogo",
+     "chave": false
+    },
+    {
+     "t": "aqui",
+     "chave": false
+    }
+   ],
+   "ate": 427
+  },
+  {
+   "de": 427,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "contado",
+     "chave": false
+    }
+   ],
+   "ate": 444
+  },
+  {
+   "de": 444,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "focos",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "calor,",
+     "chave": true
+    }
+   ],
+   "ate": 469
+  },
+  {
+   "de": 469,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "foco",
+     "chave": false
+    }
+   ],
+   "ate": 486
+  },
+  {
+   "de": 486,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "é",
+     "chave": true
+    },
+    {
+     "t": "área",
+     "chave": true
+    },
+    {
+     "t": "queimada.",
+     "chave": true
+    }
+   ],
+   "ate": 519
+  },
+  {
+   "de": 519,
+   "partes": [
+    {
+     "t": "Usamos",
+     "chave": false
+    },
+    {
+     "t": "sempre",
+     "chave": false
+    }
+   ],
+   "ate": 544
+  },
+  {
+   "de": 544,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "mesmo",
+     "chave": false
+    },
+    {
+     "t": "satélite,",
+     "chave": false
+    }
+   ],
+   "ate": 574
+  },
+  {
+   "de": 574,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "AQUA.",
+     "chave": true
+    }
+   ],
+   "ate": 600
+  },
+  {
+   "de": 600,
+   "partes": [
+    {
+     "t": "De",
+     "chave": false
+    },
+    {
+     "t": "janeiro",
+     "chave": false
+    }
+   ],
+   "ate": 619
+  },
+  {
+   "de": 619,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "outubro,",
+     "chave": false
+    }
+   ],
+   "ate": 646
+  },
+  {
+   "de": 646,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Amazônia",
+     "chave": true
+    },
+    {
+     "t": "teve",
+     "chave": false
+    }
+   ],
+   "ate": 668
+  },
+  {
+   "de": 668,
+   "partes": [
+    {
+     "t": "40%",
+     "chave": true
+    },
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "focos",
+     "chave": false
+    }
+   ],
+   "ate": 707
+  },
+  {
+   "de": 707,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "média",
+     "chave": true
+    }
+   ],
+   "ate": 720
+  },
+  {
+   "de": 720,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "2019",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "2025.",
+     "chave": false
+    }
+   ],
+   "ate": 787
+  },
+  {
+   "de": 787,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "Cerrado,",
+     "chave": true
+    }
+   ],
+   "ate": 807
+  },
+  {
+   "de": 807,
+   "partes": [
+    {
+     "t": "38%",
+     "chave": true
+    },
+    {
+     "t": "menos.",
+     "chave": true
+    }
+   ],
+   "ate": 837
+  },
+  {
+   "de": 837,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Caatinga,",
+     "chave": true
+    }
+   ],
+   "ate": 860
+  },
+  {
+   "de": 860,
+   "partes": [
+    {
+     "t": "8%.",
+     "chave": true
+    }
+   ],
+   "ate": 892
+  },
+  {
+   "de": 892,
+   "partes": [
+    {
+     "t": "Mas",
+     "chave": false
+    },
+    {
+     "t": "troque",
+     "chave": false
+    }
+   ],
+   "ate": 914
+  },
+  {
+   "de": 914,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "régua.",
+     "chave": true
+    }
+   ],
+   "ate": 938
+  },
+  {
+   "de": 938,
+   "partes": [
+    {
+     "t": "Contra",
+     "chave": false
+    },
+    {
+     "t": "2025,",
+     "chave": true
+    }
+   ],
+   "ate": 975
+  },
+  {
+   "de": 975,
+   "partes": [
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "ano",
+     "chave": false
+    }
+   ],
+   "ate": 982
+  },
+  {
+   "de": 982,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "fogo,",
+     "chave": false
+    }
+   ],
+   "ate": 1011
+  },
+  {
+   "de": 1011,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "Amazônia",
+     "chave": false
+    },
+    {
+     "t": "teve",
+     "chave": false
+    }
+   ],
+   "ate": 1038
+  },
+  {
+   "de": 1038,
+   "partes": [
+    {
+     "t": "70%",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "mais.",
+     "chave": true
+    }
+   ],
+   "ate": 1080
+  },
+  {
+   "de": 1080,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Pará,",
+     "chave": true
+    }
+   ],
+   "ate": 1097
+  },
+  {
+   "de": 1097,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "metade",
+     "chave": false
+    }
+   ],
+   "ate": 1127
+  },
+  {
+   "de": 1127,
+   "partes": [
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "focos",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "2026",
+     "chave": false
+    }
+   ],
+   "ate": 1168
+  },
+  {
+   "de": 1168,
+   "partes": [
+    {
+     "t": "veio",
+     "chave": false
+    },
+    {
+     "t": "só",
+     "chave": false
+    }
+   ],
+   "ate": 1186
+  },
+  {
+   "de": 1186,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "outubro,",
+     "chave": true
+    }
+   ],
+   "ate": 1199
+  },
+  {
+   "de": 1199,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "maior",
+     "chave": true
+    },
+    {
+     "t": "outubro",
+     "chave": true
+    }
+   ],
+   "ate": 1229
+  },
+  {
+   "de": 1229,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "série.",
+     "chave": false
+    }
+   ],
+   "ate": 1240
+  },
+  {
+   "de": 1240,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Ceará,",
+     "chave": true
+    }
+   ],
+   "ate": 1262
+  },
+  {
+   "de": 1262,
+   "partes": [
+    {
+     "t": "perto",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "média.",
+     "chave": false
+    }
+   ],
+   "ate": 1304
+  },
+  {
+   "de": 1304,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "PRODES",
+     "chave": true
+    }
+   ],
+   "ate": 1336
+  },
+  {
+   "de": 1336,
+   "partes": [
+    {
+     "t": "vai",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "agosto",
+     "chave": false
+    }
+   ],
+   "ate": 1365
+  },
+  {
+   "de": 1365,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "julho:",
+     "chave": true
+    }
+   ],
+   "ate": 1390
+  },
+  {
+   "de": 1390,
+   "partes": [
+    {
+     "t": "esse",
+     "chave": false
+    },
+    {
+     "t": "outubro",
+     "chave": true
+    }
+   ],
+   "ate": 1410
+  },
+  {
+   "de": 1410,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "fora.",
+     "chave": true
+    }
+   ],
+   "ate": 1442
+  },
+  {
+   "de": 1442,
+   "partes": [
+    {
+     "t": "Segundo",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "INPE,",
+     "chave": false
+    }
+   ],
+   "ate": 1467
+  },
+  {
+   "de": 1467,
+   "partes": [
+    {
+     "t": "nem",
+     "chave": false
+    },
+    {
+     "t": "toda",
+     "chave": false
+    }
+   ],
+   "ate": 1482
+  },
+  {
+   "de": 1482,
+   "partes": [
+    {
+     "t": "área",
+     "chave": true
+    },
+    {
+     "t": "queimada",
+     "chave": true
+    }
+   ],
+   "ate": 1498
+  },
+  {
+   "de": 1498,
+   "partes": [
+    {
+     "t": "vira",
+     "chave": false
+    },
+    {
+     "t": "desmatamento.",
+     "chave": true
+    }
+   ],
+   "ate": 1536
+  },
+  {
+   "de": 1536,
+   "partes": [
+    {
+     "t": "Pra",
+     "chave": false
+    },
+    {
+     "t": "comparar",
+     "chave": false
+    }
+   ],
+   "ate": 1556
+  },
+  {
+   "de": 1556,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "fogo,",
+     "chave": false
+    }
+   ],
+   "ate": 1579
+  }
+ ],
+ "grande": [
+  {
+   "t": "qual",
+   "chave": false,
+   "f": 1571,
+   "l": 0
+  },
+  {
+   "t": "régua",
+   "chave": true,
+   "f": 1585,
+   "l": 0
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1591,
+   "l": 1
+  },
+  {
+   "t": "usaria:",
+   "chave": false,
+   "f": 1599,
+   "l": 1
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 1609,
+   "l": 2
+  },
+  {
+   "t": "média",
+   "chave": true,
+   "f": 1621,
+   "l": 2
+  },
+  {
+   "t": "ou",
+   "chave": false,
+   "f": 1628,
+   "l": 2
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 1638,
+   "l": 3
+  },
+  {
+   "t": "ano",
+   "chave": true,
+   "f": 1644,
+   "l": 3
+  },
+  {
+   "t": "passado?",
+   "chave": true,
+   "f": 1647,
+   "l": 3
+  }
+ ],
+ "drenaA": {
+  "de": 0,
+  "ate": 192
+ },
+ "drenaC": {
+  "de": 331,
+  "ate": 385
+ },
+ "somem": [
+  {
+   "f": 191,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 183,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 175,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 167,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 159,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 151,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 143,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 135,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 127,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 119,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 111,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 103,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 95,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 87,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 79,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 71,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 63,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 55,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 47,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 39,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 31,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 23,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 15,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 6,
+   "pan": 0.42,
+   "fq": 950
+  },
+  {
+   "f": 384,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 381,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 378,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 375,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 371,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 368,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 365,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 362,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 359,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 356,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 353,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 349,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 346,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 343,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 340,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 337,
+   "pan": 0.6,
+   "fq": 780
+  },
+  {
+   "f": 334,
+   "pan": 0.6,
+   "fq": 780
+  }
+ ],
+ "fogos": [
+  {
+   "de": 645,
+   "ate": 671
+  },
+  {
+   "de": 787,
+   "ate": 813
+  },
+  {
+   "de": 847,
+   "ate": 873
+  },
+  {
+   "de": 1085,
+   "ate": 1111
+  },
+  {
+   "de": 1251,
+   "ate": 1277
+  }
+ ],
+ "troca": {
+  "de": 919,
+  "ate": 960
+ },
+ "digita": [],
+ "contas": [],
+ "graves": [
+  100,
+  307,
+  385,
+  504,
+  1040,
+  1236
+ ],
+ "sinos": [
+  123,
+  591,
+  921,
+  1325,
+  1421
+ ],
+ "cenas": [
+  409,
+  602,
+  921,
+  1082,
+  1306,
+  1538,
+  1571,
+  1676
+ ],
+ "fimFala": 1666,
+ "cta": 1676,
+ "fim": 1676,
+ "total": 1721
+}

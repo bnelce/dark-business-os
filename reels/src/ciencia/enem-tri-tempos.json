@@ -1,0 +1,868 @@
+{
+ "fala": {
+  "gancho": 1,
+  "domingo": 178,
+  "regua": 319,
+  "tri": 635,
+  "escala": 819,
+  "inep": 1017,
+  "pergunta": 1194
+ },
+ "dur": {
+  "gancho": 172,
+  "domingo": 136,
+  "regua": 299,
+  "tri": 179,
+  "escala": 179,
+  "inep": 172,
+  "pergunta": 94
+ },
+ "m": {
+  "um": 69,
+  "n319": 89,
+  "outro": 130,
+  "n570": 147,
+  "domingo": 178,
+  "enem": 222,
+  "quantas": 257,
+  "quais": 296,
+  "estas": 319,
+  "n43": 340,
+  "facil": 395,
+  "dificil": 418,
+  "alta": 427,
+  "cinco": 498,
+  "baixa": 534,
+  "errou": 579,
+  "n21": 590,
+  "tri": 646,
+  "chute": 673,
+  "sabe": 696,
+  "facilT": 749,
+  "valem": 792,
+  "excecao": 832,
+  "mil": 923,
+  "variou": 944,
+  "n250": 956,
+  "inep": 1034,
+  "branco": 1104,
+  "soma": 1135,
+  "branco2": 1158,
+  "erro": 1177,
+  "n15": 1212,
+  "da": 1279
+ },
+ "contas": [
+  {
+   "id": "c268",
+   "de": 911,
+   "ate": 927,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Dois",
+     "chave": true
+    },
+    {
+     "t": "candidatos",
+     "chave": true
+    }
+   ],
+   "ate": 20
+  },
+  {
+   "de": 20,
+   "partes": [
+    {
+     "t": "acertaram",
+     "chave": false
+    },
+    {
+     "t": "10",
+     "chave": true
+    },
+    {
+     "t": "questões",
+     "chave": true
+    }
+   ],
+   "ate": 53
+  },
+  {
+   "de": 53,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "Matemática.",
+     "chave": false
+    }
+   ],
+   "ate": 67
+  },
+  {
+   "de": 67,
+   "partes": [
+    {
+     "t": "Um",
+     "chave": false
+    },
+    {
+     "t": "tirou",
+     "chave": false
+    },
+    {
+     "t": "319.",
+     "chave": true
+    }
+   ],
+   "ate": 114
+  },
+  {
+   "de": 114,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "outro,",
+     "chave": false
+    }
+   ],
+   "ate": 130
+  },
+  {
+   "de": 130,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "570.",
+     "chave": true
+    }
+   ],
+   "ate": 176
+  },
+  {
+   "de": 176,
+   "partes": [
+    {
+     "t": "Domingo",
+     "chave": false
+    },
+    {
+     "t": "tem",
+     "chave": false
+    },
+    {
+     "t": "prova,",
+     "chave": false
+    }
+   ],
+   "ate": 207
+  },
+  {
+   "de": 207,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "ENEM",
+     "chave": false
+    }
+   ],
+   "ate": 228
+  },
+  {
+   "de": 228,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "conta",
+     "chave": false
+    },
+    {
+     "t": "só",
+     "chave": false
+    }
+   ],
+   "ate": 255
+  },
+  {
+   "de": 255,
+   "partes": [
+    {
+     "t": "quantas",
+     "chave": true
+    },
+    {
+     "t": "você",
+     "chave": false
+    },
+    {
+     "t": "acerta.",
+     "chave": false
+    }
+   ],
+   "ate": 280
+  },
+  {
+   "de": 280,
+   "partes": [
+    {
+     "t": "Conta",
+     "chave": true
+    },
+    {
+     "t": "quais.",
+     "chave": true
+    }
+   ],
+   "ate": 317
+  },
+  {
+   "de": 317,
+   "partes": [
+    {
+     "t": "Estas",
+     "chave": false
+    },
+    {
+     "t": "são",
+     "chave": false
+    }
+   ],
+   "ate": 332
+  },
+  {
+   "de": 332,
+   "partes": [
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "43",
+     "chave": true
+    },
+    {
+     "t": "questões",
+     "chave": true
+    }
+   ],
+   "ate": 362
+  },
+  {
+   "de": 362,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "valeram,",
+     "chave": false
+    }
+   ],
+   "ate": 378
+  },
+  {
+   "de": 378,
+   "partes": [
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "fácil",
+     "chave": true
+    }
+   ],
+   "ate": 401
+  },
+  {
+   "de": 401,
+   "partes": [
+    {
+     "t": "à",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "difícil.",
+     "chave": true
+    }
+   ],
+   "ate": 425
+  },
+  {
+   "de": 425,
+   "partes": [
+    {
+     "t": "Quem",
+     "chave": false
+    },
+    {
+     "t": "tirou",
+     "chave": false
+    }
+   ],
+   "ate": 443
+  },
+  {
+   "de": 443,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": false
+    },
+    {
+     "t": "570",
+     "chave": false
+    }
+   ],
+   "ate": 461
+  },
+  {
+   "de": 461,
+   "partes": [
+    {
+     "t": "acertou",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "cinco",
+     "chave": true
+    }
+   ],
+   "ate": 509
+  },
+  {
+   "de": 509,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "fáceis.",
+     "chave": true
+    }
+   ],
+   "ate": 532
+  },
+  {
+   "de": 532,
+   "partes": [
+    {
+     "t": "Quem",
+     "chave": false
+    },
+    {
+     "t": "tirou",
+     "chave": false
+    },
+    {
+     "t": "319",
+     "chave": false
+    }
+   ],
+   "ate": 577
+  },
+  {
+   "de": 577,
+   "partes": [
+    {
+     "t": "errou",
+     "chave": true
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "21",
+     "chave": true
+    }
+   ],
+   "ate": 597
+  },
+  {
+   "de": 597,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "fáceis.",
+     "chave": true
+    }
+   ],
+   "ate": 633
+  },
+  {
+   "de": 633,
+   "partes": [
+    {
+     "t": "Para",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "TRI,",
+     "chave": true
+    }
+   ],
+   "ate": 649
+  },
+  {
+   "de": 649,
+   "partes": [
+    {
+     "t": "isso",
+     "chave": false
+    },
+    {
+     "t": "parece",
+     "chave": false
+    },
+    {
+     "t": "chute:",
+     "chave": true
+    }
+   ],
+   "ate": 683
+  },
+  {
+   "de": 683,
+   "partes": [
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "sabe",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": true
+    },
+    {
+     "t": "difícil",
+     "chave": true
+    }
+   ],
+   "ate": 713
+  },
+  {
+   "de": 713,
+   "partes": [
+    {
+     "t": "deveria",
+     "chave": false
+    },
+    {
+     "t": "saber",
+     "chave": false
+    }
+   ],
+   "ate": 735
+  },
+  {
+   "de": 735,
+   "partes": [
+    {
+     "t": "o",
+     "chave": true
+    },
+    {
+     "t": "fácil.",
+     "chave": true
+    }
+   ],
+   "ate": 747
+  },
+  {
+   "de": 747,
+   "partes": [
+    {
+     "t": "Por",
+     "chave": false
+    },
+    {
+     "t": "isso,",
+     "chave": false
+    }
+   ],
+   "ate": 766
+  },
+  {
+   "de": 766,
+   "partes": [
+    {
+     "t": "esses",
+     "chave": false
+    },
+    {
+     "t": "acertos",
+     "chave": false
+    }
+   ],
+   "ate": 790
+  },
+  {
+   "de": 790,
+   "partes": [
+    {
+     "t": "valem",
+     "chave": true
+    },
+    {
+     "t": "menos.",
+     "chave": true
+    }
+   ],
+   "ate": 817
+  },
+  {
+   "de": 817,
+   "partes": [
+    {
+     "t": "Não",
+     "chave": false
+    },
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "exceção:",
+     "chave": false
+    }
+   ],
+   "ate": 839
+  },
+  {
+   "de": 839,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "10",
+     "chave": true
+    },
+    {
+     "t": "acertos,",
+     "chave": true
+    }
+   ],
+   "ate": 870
+  },
+  {
+   "de": 870,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "nota",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 891
+  },
+  {
+   "de": 891,
+   "partes": [
+    {
+     "t": "268",
+     "chave": true
+    },
+    {
+     "t": "mil",
+     "chave": true
+    },
+    {
+     "t": "pessoas",
+     "chave": true
+    }
+   ],
+   "ate": 942
+  },
+  {
+   "de": 942,
+   "partes": [
+    {
+     "t": "variou",
+     "chave": false
+    },
+    {
+     "t": "250",
+     "chave": true
+    },
+    {
+     "t": "pontos.",
+     "chave": true
+    }
+   ],
+   "ate": 996
+  },
+  {
+   "de": 1015,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "próprio",
+     "chave": false
+    }
+   ],
+   "ate": 1032
+  },
+  {
+   "de": 1032,
+   "partes": [
+    {
+     "t": "INEP",
+     "chave": true
+    },
+    {
+     "t": "avisa:",
+     "chave": false
+    }
+   ],
+   "ate": 1063
+  },
+  {
+   "de": 1063,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "deixe",
+     "chave": false
+    },
+    {
+     "t": "questão",
+     "chave": false
+    }
+   ],
+   "ate": 1092
+  },
+  {
+   "de": 1092,
+   "partes": [
+    {
+     "t": "em",
+     "chave": true
+    },
+    {
+     "t": "branco.",
+     "chave": true
+    }
+   ],
+   "ate": 1108
+  },
+  {
+   "de": 1108,
+   "partes": [
+    {
+     "t": "Acerto",
+     "chave": false
+    },
+    {
+     "t": "sempre",
+     "chave": true
+    },
+    {
+     "t": "soma,",
+     "chave": true
+    }
+   ],
+   "ate": 1143
+  },
+  {
+   "de": 1143,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "branco",
+     "chave": true
+    }
+   ],
+   "ate": 1160
+  },
+  {
+   "de": 1160,
+   "partes": [
+    {
+     "t": "conta",
+     "chave": false
+    },
+    {
+     "t": "como",
+     "chave": false
+    },
+    {
+     "t": "erro.",
+     "chave": true
+    }
+   ],
+   "ate": 1189
+  }
+ ],
+ "grande": [
+  {
+   "t": "E",
+   "chave": false,
+   "f": 1194,
+   "l": 0
+  },
+  {
+   "t": "com",
+   "chave": false,
+   "f": 1201,
+   "l": 0
+  },
+  {
+   "t": "15",
+   "chave": true,
+   "f": 1212,
+   "l": 0
+  },
+  {
+   "t": "acertos,",
+   "chave": true,
+   "f": 1222,
+   "l": 0
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1237,
+   "l": 1
+  },
+  {
+   "t": "nota",
+   "chave": false,
+   "f": 1251,
+   "l": 1
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1258,
+   "l": 2
+  },
+  {
+   "t": "acha",
+   "chave": false,
+   "f": 1269,
+   "l": 2
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1273,
+   "l": 2
+  },
+  {
+   "t": "dá?",
+   "chave": true,
+   "f": 1279,
+   "l": 2
+  }
+ ],
+ "cena": {
+  "dupla": {
+   "de": 0,
+   "ate": 178
+  },
+  "domingo": {
+   "de": 178,
+   "ate": 319
+  },
+  "regua": {
+   "de": 319,
+   "ate": 819
+  },
+  "hist": {
+   "de": 819,
+   "ate": 1017
+  },
+  "inep": {
+   "de": 1017,
+   "ate": 1194
+  },
+  "pergunta": {
+   "de": 1194,
+   "ate": 1298
+  }
+ },
+ "cenas": [
+  178,
+  319,
+  635,
+  819,
+  1017,
+  1194,
+  1298
+ ],
+ "fimFala": 1288,
+ "cta": 1298,
+ "fim": 1298,
+ "total": 1338
+}

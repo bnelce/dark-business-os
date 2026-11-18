@@ -1,0 +1,951 @@
+{
+ "fala": {
+  "gancho": 1,
+  "camara": 129,
+  "mulheres": 378,
+  "negros": 590,
+  "chance": 793,
+  "regra": 953,
+  "pergunta": 1354
+ },
+ "dur": {
+  "gancho": 123,
+  "camara": 244,
+  "mulheres": 207,
+  "negros": 188,
+  "chance": 155,
+  "regra": 372,
+  "pergunta": 186
+ },
+ "m": {
+  "n56": 34,
+  "camaraG": 82,
+  "n26": 90,
+  "n513": 150,
+  "leis": 209,
+  "fevereiro": 227,
+  "mulheres": 247,
+  "n51": 269,
+  "n109": 301,
+  "n21": 336,
+  "etapas": 394,
+  "mCand": 437,
+  "mFundo": 492,
+  "mEl": 547,
+  "nCand": 631,
+  "nFundo": 691,
+  "nEl": 735,
+  "n40": 807,
+  "uma": 855,
+  "homens": 899,
+  "oito": 936,
+  "regra": 959,
+  "n30": 977,
+  "proporcao": 1068,
+  "conta": 1117,
+  "metade": 1172,
+  "n7": 1254,
+  "menos30": 1265,
+  "porque": 1400,
+  "lista": 1485,
+  "dinheiro": 1506,
+  "urna": 1528
+ },
+ "contas": [],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Pessoas",
+     "chave": true
+    },
+    {
+     "t": "negras",
+     "chave": true
+    }
+   ],
+   "ate": 23
+  },
+  {
+   "de": 23,
+   "partes": [
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "56%",
+     "chave": true
+    }
+   ],
+   "ate": 49
+  },
+  {
+   "de": 49,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Brasil.",
+     "chave": false
+    }
+   ],
+   "ate": 63
+  },
+  {
+   "de": 63,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "nova",
+     "chave": false
+    },
+    {
+     "t": "Câmara,",
+     "chave": false
+    }
+   ],
+   "ate": 88
+  },
+  {
+   "de": 88,
+   "partes": [
+    {
+     "t": "26%.",
+     "chave": true
+    }
+   ],
+   "ate": 127
+  },
+  {
+   "de": 127,
+   "partes": [
+    {
+     "t": "São",
+     "chave": false
+    },
+    {
+     "t": "esses",
+     "chave": false
+    }
+   ],
+   "ate": 148
+  },
+  {
+   "de": 148,
+   "partes": [
+    {
+     "t": "513",
+     "chave": true
+    },
+    {
+     "t": "deputados",
+     "chave": true
+    }
+   ],
+   "ate": 186
+  },
+  {
+   "de": 186,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "votam",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "leis",
+     "chave": false
+    }
+   ],
+   "ate": 210
+  },
+  {
+   "de": 210,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "partir",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "fevereiro.",
+     "chave": false
+    }
+   ],
+   "ate": 240
+  },
+  {
+   "de": 240,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "mulheres?",
+     "chave": true
+    }
+   ],
+   "ate": 267
+  },
+  {
+   "de": 267,
+   "partes": [
+    {
+     "t": "51%",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "país,",
+     "chave": false
+    }
+   ],
+   "ate": 299
+  },
+  {
+   "de": 299,
+   "partes": [
+    {
+     "t": "109",
+     "chave": true
+    },
+    {
+     "t": "cadeiras:",
+     "chave": true
+    }
+   ],
+   "ate": 334
+  },
+  {
+   "de": 334,
+   "partes": [
+    {
+     "t": "21%.",
+     "chave": true
+    }
+   ],
+   "ate": 376
+  },
+  {
+   "de": 376,
+   "partes": [
+    {
+     "t": "Siga",
+     "chave": false
+    },
+    {
+     "t": "as",
+     "chave": false
+    },
+    {
+     "t": "etapas.",
+     "chave": false
+    }
+   ],
+   "ate": 419
+  },
+  {
+   "de": 419,
+   "partes": [
+    {
+     "t": "Mulheres:",
+     "chave": true
+    }
+   ],
+   "ate": 435
+  },
+  {
+   "de": 435,
+   "partes": [
+    {
+     "t": "37%",
+     "chave": true
+    },
+    {
+     "t": "das",
+     "chave": false
+    },
+    {
+     "t": "candidaturas,",
+     "chave": false
+    }
+   ],
+   "ate": 490
+  },
+  {
+   "de": 490,
+   "partes": [
+    {
+     "t": "35%",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "fundo",
+     "chave": false
+    },
+    {
+     "t": "eleitoral,",
+     "chave": false
+    }
+   ],
+   "ate": 545
+  },
+  {
+   "de": 545,
+   "partes": [
+    {
+     "t": "21%",
+     "chave": true
+    },
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "eleitos.",
+     "chave": false
+    }
+   ],
+   "ate": 588
+  },
+  {
+   "de": 588,
+   "partes": [
+    {
+     "t": "Pessoas",
+     "chave": true
+    },
+    {
+     "t": "negras:",
+     "chave": true
+    }
+   ],
+   "ate": 629
+  },
+  {
+   "de": 629,
+   "partes": [
+    {
+     "t": "46%",
+     "chave": true
+    },
+    {
+     "t": "das",
+     "chave": false
+    },
+    {
+     "t": "candidaturas,",
+     "chave": false
+    }
+   ],
+   "ate": 689
+  },
+  {
+   "de": 689,
+   "partes": [
+    {
+     "t": "37%",
+     "chave": true
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "fundo,",
+     "chave": false
+    }
+   ],
+   "ate": 733
+  },
+  {
+   "de": 733,
+   "partes": [
+    {
+     "t": "26%",
+     "chave": true
+    },
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "eleitos.",
+     "chave": false
+    }
+   ],
+   "ate": 779
+  },
+  {
+   "de": 791,
+   "partes": [
+    {
+     "t": "De",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    },
+    {
+     "t": "40",
+     "chave": true
+    }
+   ],
+   "ate": 823
+  },
+  {
+   "de": 823,
+   "partes": [
+    {
+     "t": "candidatas",
+     "chave": true
+    },
+    {
+     "t": "negras,",
+     "chave": true
+    }
+   ],
+   "ate": 853
+  },
+  {
+   "de": 853,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": true
+    },
+    {
+     "t": "se",
+     "chave": false
+    },
+    {
+     "t": "elegeu.",
+     "chave": false
+    }
+   ],
+   "ate": 885
+  },
+  {
+   "de": 885,
+   "partes": [
+    {
+     "t": "Entre",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    }
+   ],
+   "ate": 897
+  },
+  {
+   "de": 897,
+   "partes": [
+    {
+     "t": "homens",
+     "chave": true
+    },
+    {
+     "t": "brancos,",
+     "chave": true
+    }
+   ],
+   "ate": 913
+  },
+  {
+   "de": 913,
+   "partes": [
+    {
+     "t": "um",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": true
+    },
+    {
+     "t": "cada",
+     "chave": true
+    },
+    {
+     "t": "oito.",
+     "chave": true
+    }
+   ],
+   "ate": 951
+  },
+  {
+   "de": 951,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "regra",
+     "chave": false
+    },
+    {
+     "t": "pede",
+     "chave": false
+    }
+   ],
+   "ate": 975
+  },
+  {
+   "de": 975,
+   "partes": [
+    {
+     "t": "30%",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "candidaturas",
+     "chave": false
+    }
+   ],
+   "ate": 1021
+  },
+  {
+   "de": 1021,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    },
+    {
+     "t": "sexo",
+     "chave": false
+    }
+   ],
+   "ate": 1046
+  },
+  {
+   "de": 1046,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "fundo",
+     "chave": false
+    }
+   ],
+   "ate": 1062
+  },
+  {
+   "de": 1062,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "proporção",
+     "chave": true
+    }
+   ],
+   "ate": 1079
+  },
+  {
+   "de": 1079,
+   "partes": [
+    {
+     "t": "das",
+     "chave": false
+    },
+    {
+     "t": "candidatas.",
+     "chave": false
+    }
+   ],
+   "ate": 1098
+  },
+  {
+   "de": 1098,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "nossa",
+     "chave": false
+    },
+    {
+     "t": "conta,",
+     "chave": false
+    }
+   ],
+   "ate": 1120
+  },
+  {
+   "de": 1120,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "todos",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "cargos,",
+     "chave": false
+    }
+   ],
+   "ate": 1163
+  },
+  {
+   "de": 1163,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "metade",
+     "chave": true
+    }
+   ],
+   "ate": 1176
+  },
+  {
+   "de": 1176,
+   "partes": [
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "partidos",
+     "chave": false
+    }
+   ],
+   "ate": 1194
+  },
+  {
+   "de": 1194,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "abaixo",
+     "chave": false
+    }
+   ],
+   "ate": 1216
+  },
+  {
+   "de": 1216,
+   "partes": [
+    {
+     "t": "dessa",
+     "chave": false
+    },
+    {
+     "t": "proporção,",
+     "chave": false
+    }
+   ],
+   "ate": 1242
+  },
+  {
+   "de": 1242,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "7",
+     "chave": true
+    },
+    {
+     "t": "deram",
+     "chave": false
+    }
+   ],
+   "ate": 1263
+  },
+  {
+   "de": 1263,
+   "partes": [
+    {
+     "t": "menos",
+     "chave": true
+    },
+    {
+     "t": "de",
+     "chave": true
+    },
+    {
+     "t": "30%",
+     "chave": true
+    }
+   ],
+   "ate": 1293
+  },
+  {
+   "de": 1293,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "pessoas",
+     "chave": false
+    },
+    {
+     "t": "negras.",
+     "chave": false
+    }
+   ],
+   "ate": 1329
+  },
+  {
+   "de": 1352,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "números",
+     "chave": false
+    }
+   ],
+   "ate": 1371
+  },
+  {
+   "de": 1371,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "dizem",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "porquê.",
+     "chave": false
+    }
+   ],
+   "ate": 1415
+  }
+ ],
+ "grande": [
+  {
+   "t": "Em",
+   "chave": false,
+   "f": 1407,
+   "l": 0
+  },
+  {
+   "t": "qual",
+   "chave": false,
+   "f": 1417,
+   "l": 0
+  },
+  {
+   "t": "etapa",
+   "chave": false,
+   "f": 1421,
+   "l": 0
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1431,
+   "l": 1
+  },
+  {
+   "t": "acha",
+   "chave": false,
+   "f": 1439,
+   "l": 1
+  },
+  {
+   "t": "que",
+   "chave": false,
+   "f": 1444,
+   "l": 1
+  },
+  {
+   "t": "a",
+   "chave": false,
+   "f": 1447,
+   "l": 2
+  },
+  {
+   "t": "diferença",
+   "chave": false,
+   "f": 1451,
+   "l": 2
+  },
+  {
+   "t": "mais",
+   "chave": false,
+   "f": 1457,
+   "l": 3
+  },
+  {
+   "t": "cresce:",
+   "chave": true,
+   "f": 1467,
+   "l": 3
+  },
+  {
+   "t": "na",
+   "chave": false,
+   "f": 1475,
+   "l": 4
+  },
+  {
+   "t": "lista,",
+   "chave": true,
+   "f": 1485,
+   "l": 4
+  },
+  {
+   "t": "no",
+   "chave": false,
+   "f": 1492,
+   "l": 4
+  },
+  {
+   "t": "dinheiro",
+   "chave": true,
+   "f": 1506,
+   "l": 4
+  },
+  {
+   "t": "ou",
+   "chave": false,
+   "f": 1512,
+   "l": 5
+  },
+  {
+   "t": "na",
+   "chave": false,
+   "f": 1523,
+   "l": 5
+  },
+  {
+   "t": "urna?",
+   "chave": true,
+   "f": 1528,
+   "l": 5
+  }
+ ],
+ "cena": {
+  "gancho": {
+   "de": 0,
+   "ate": 129
+  },
+  "camara": {
+   "de": 129,
+   "ate": 378
+  },
+  "mulheres": {
+   "de": 378,
+   "ate": 590
+  },
+  "negros": {
+   "de": 590,
+   "ate": 793
+  },
+  "chance": {
+   "de": 793,
+   "ate": 953
+  },
+  "regra": {
+   "de": 953,
+   "ate": 1354
+  },
+  "pergunta": {
+   "de": 1354,
+   "ate": 1550
+  }
+ },
+ "cenas": [
+  129,
+  378,
+  590,
+  793,
+  953,
+  1117,
+  1354,
+  1550
+ ],
+ "fimFala": 1540,
+ "cta": 1550,
+ "fim": 1550,
+ "total": 1590
+}

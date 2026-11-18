@@ -1,0 +1,28 @@
+{
+  "fala": {
+    "gancho": 8,
+    "resultado": 270,
+    "margem": 432,
+    "sorteio": 618,
+    "nuvem": 891,
+    "nenhum": 1113,
+    "vies": 1321,
+    "em-2022": 1626,
+    "conclusao": 1942,
+    "cta": 2113
+  },
+  "fim": {
+    "gancho": 260,
+    "resultado": 422,
+    "margem": 608,
+    "sorteio": 881,
+    "nuvem": 1103,
+    "nenhum": 1311,
+    "vies": 1616,
+    "em-2022": 1932,
+    "conclusao": 2103,
+    "cta": 2175
+  },
+  "marca": 2190,
+  "total": 2265
+}

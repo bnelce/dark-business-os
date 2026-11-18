@@ -1,0 +1,1096 @@
+{
+ "fala": {
+  "gancho": 0,
+  "pontos": 179,
+  "p1": 302,
+  "p2": 446,
+  "p3": 646,
+  "p4": 798,
+  "soma": 1040,
+  "pergunta": 1386
+ },
+ "dur": {
+  "gancho": 174,
+  "pontos": 118,
+  "p1": 139,
+  "p2": 181,
+  "p3": 147,
+  "p4": 237,
+  "soma": 329,
+  "pergunta": 181
+ },
+ "m": {
+  "chance": 98,
+  "nikolas": 103,
+  "quatro": 187,
+  "tse": 245,
+  "um": 302,
+  "n11": 331,
+  "foram": 377,
+  "n104": 381,
+  "exag": 427,
+  "dois": 446,
+  "todos": 486,
+  "verdade2": 519,
+  "n27": 561,
+  "flavio2": 583,
+  "n21": 609,
+  "tres": 646,
+  "abst": 682,
+  "verdade3": 723,
+  "n3": 755,
+  "votar": 780,
+  "resto": 830,
+  "quatro4": 838,
+  "todos4": 905,
+  "elim": 932,
+  "n93": 971,
+  "menos": 1006,
+  "s3": 1064,
+  "n18": 1117,
+  "nulo": 1173,
+  "n141": 1174,
+  "n74": 1252,
+  "flavioS": 1290,
+  "n26": 1302,
+  "precisou": 1339,
+  "sozinha": 1386,
+  "juntas": 1441,
+  "voto": 1487,
+  "qual": 1496,
+  "dados": 1552
+ },
+ "contas": [
+  {
+   "id": "c104",
+   "de": 377,
+   "ate": 387,
+   "passo": 2
+  },
+  {
+   "id": "c3",
+   "de": 747,
+   "ate": 761,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "“Todos",
+     "chave": false
+    },
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "votos",
+     "chave": false
+    }
+   ],
+   "ate": 26
+  },
+  {
+   "de": 26,
+   "partes": [
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "outros",
+     "chave": false
+    },
+    {
+     "t": "candidatos",
+     "chave": false
+    }
+   ],
+   "ate": 53
+  },
+  {
+   "de": 53,
+   "partes": [
+    {
+     "t": "teriam",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "ir",
+     "chave": false
+    }
+   ],
+   "ate": 71
+  },
+  {
+   "de": 71,
+   "partes": [
+    {
+     "t": "pro",
+     "chave": false
+    },
+    {
+     "t": "Lula.",
+     "chave": true
+    }
+   ],
+   "ate": 80
+  },
+  {
+   "de": 80,
+   "partes": [
+    {
+     "t": "Qual",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": true
+    },
+    {
+     "t": "chance?”",
+     "chave": true
+    }
+   ],
+   "ate": 101
+  },
+  {
+   "de": 101,
+   "partes": [
+    {
+     "t": "Nikolas",
+     "chave": false
+    },
+    {
+     "t": "Ferreira,",
+     "chave": false
+    }
+   ],
+   "ate": 128
+  },
+  {
+   "de": 128,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "noite",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    }
+   ],
+   "ate": 152
+  },
+  {
+   "de": 152,
+   "partes": [
+    {
+     "t": "segundo",
+     "chave": false
+    },
+    {
+     "t": "turno.",
+     "chave": false
+    }
+   ],
+   "ate": 177
+  },
+  {
+   "de": 177,
+   "partes": [
+    {
+     "t": "São",
+     "chave": false
+    },
+    {
+     "t": "quatro",
+     "chave": true
+    },
+    {
+     "t": "pontos.",
+     "chave": true
+    }
+   ],
+   "ate": 206
+  },
+  {
+   "de": 206,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "boletins",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "urna",
+     "chave": false
+    }
+   ],
+   "ate": 239
+  },
+  {
+   "de": 239,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "TSE",
+     "chave": true
+    }
+   ],
+   "ate": 253
+  },
+  {
+   "de": 253,
+   "partes": [
+    {
+     "t": "respondem",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "um.",
+     "chave": false
+    }
+   ],
+   "ate": 300
+  },
+  {
+   "de": 300,
+   "partes": [
+    {
+     "t": "Um:",
+     "chave": false
+    }
+   ],
+   "ate": 319
+  },
+  {
+   "de": 319,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "11",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 344
+  },
+  {
+   "de": 344,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "votos",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "mais.",
+     "chave": false
+    }
+   ],
+   "ate": 375
+  },
+  {
+   "de": 375,
+   "partes": [
+    {
+     "t": "Foram",
+     "chave": false
+    },
+    {
+     "t": "10,4",
+     "chave": true
+    },
+    {
+     "t": "milhões.",
+     "chave": true
+    }
+   ],
+   "ate": 425
+  },
+  {
+   "de": 425,
+   "partes": [
+    {
+     "t": "Exagerado.",
+     "chave": true
+    }
+   ],
+   "ate": 444
+  },
+  {
+   "de": 444,
+   "partes": [
+    {
+     "t": "Dois:",
+     "chave": false
+    }
+   ],
+   "ate": 468
+  },
+  {
+   "de": 468,
+   "partes": [
+    {
+     "t": "crescimento",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    }
+   ],
+   "ate": 484
+  },
+  {
+   "de": 484,
+   "partes": [
+    {
+     "t": "todos",
+     "chave": true
+    },
+    {
+     "t": "os",
+     "chave": true
+    },
+    {
+     "t": "estados.",
+     "chave": true
+    }
+   ],
+   "ate": 517
+  },
+  {
+   "de": 517,
+   "partes": [
+    {
+     "t": "Verdade:",
+     "chave": true
+    }
+   ],
+   "ate": 534
+  },
+  {
+   "de": 534,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Lula",
+     "chave": false
+    },
+    {
+     "t": "cresceu",
+     "chave": false
+    }
+   ],
+   "ate": 549
+  },
+  {
+   "de": 549,
+   "partes": [
+    {
+     "t": "nos",
+     "chave": false
+    },
+    {
+     "t": "27.",
+     "chave": true
+    }
+   ],
+   "ate": 579
+  },
+  {
+   "de": 579,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "Flávio",
+     "chave": false
+    },
+    {
+     "t": "também,",
+     "chave": false
+    }
+   ],
+   "ate": 604
+  },
+  {
+   "de": 604,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "21.",
+     "chave": true
+    }
+   ],
+   "ate": 627
+  },
+  {
+   "de": 644,
+   "partes": [
+    {
+     "t": "Três:",
+     "chave": false
+    }
+   ],
+   "ate": 668
+  },
+  {
+   "de": 668,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "queda",
+     "chave": false
+    },
+    {
+     "t": "da",
+     "chave": false
+    },
+    {
+     "t": "abstenção",
+     "chave": false
+    }
+   ],
+   "ate": 692
+  },
+  {
+   "de": 692,
+   "partes": [
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "explica.",
+     "chave": false
+    }
+   ],
+   "ate": 716
+  },
+  {
+   "de": 716,
+   "partes": [
+    {
+     "t": "Também",
+     "chave": false
+    },
+    {
+     "t": "verdade:",
+     "chave": true
+    }
+   ],
+   "ate": 741
+  },
+  {
+   "de": 741,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "3",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    }
+   ],
+   "ate": 763
+  },
+  {
+   "de": 763,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "foram",
+     "chave": false
+    },
+    {
+     "t": "votar.",
+     "chave": false
+    }
+   ],
+   "ate": 796
+  },
+  {
+   "de": 796,
+   "partes": [
+    {
+     "t": "Então",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "onde",
+     "chave": false
+    }
+   ],
+   "ate": 820
+  },
+  {
+   "de": 820,
+   "partes": [
+    {
+     "t": "veio",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "resto?",
+     "chave": true
+    }
+   ],
+   "ate": 836
+  },
+  {
+   "de": 836,
+   "partes": [
+    {
+     "t": "Quatro:",
+     "chave": false
+    }
+   ],
+   "ate": 865
+  },
+  {
+   "de": 865,
+   "partes": [
+    {
+     "t": "os",
+     "chave": false
+    },
+    {
+     "t": "votos",
+     "chave": false
+    },
+    {
+     "t": "dos",
+     "chave": false
+    },
+    {
+     "t": "outros",
+     "chave": false
+    }
+   ],
+   "ate": 886
+  },
+  {
+   "de": 886,
+   "partes": [
+    {
+     "t": "teriam",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "ir",
+     "chave": false
+    }
+   ],
+   "ate": 903
+  },
+  {
+   "de": 903,
+   "partes": [
+    {
+     "t": "todos",
+     "chave": true
+    },
+    {
+     "t": "pro",
+     "chave": false
+    },
+    {
+     "t": "Lula.",
+     "chave": false
+    }
+   ],
+   "ate": 927
+  },
+  {
+   "de": 927,
+   "partes": [
+    {
+     "t": "Os",
+     "chave": false
+    },
+    {
+     "t": "eliminados",
+     "chave": false
+    },
+    {
+     "t": "tinham",
+     "chave": false
+    }
+   ],
+   "ate": 969
+  },
+  {
+   "de": 969,
+   "partes": [
+    {
+     "t": "9,3",
+     "chave": true
+    },
+    {
+     "t": "milhões.",
+     "chave": true
+    }
+   ],
+   "ate": 1004
+  },
+  {
+   "de": 1004,
+   "partes": [
+    {
+     "t": "Menos",
+     "chave": true
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "ganho",
+     "chave": false
+    }
+   ],
+   "ate": 1020
+  },
+  {
+   "de": 1020,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Lula.",
+     "chave": false
+    }
+   ],
+   "ate": 1038
+  },
+  {
+   "de": 1038,
+   "partes": [
+    {
+     "t": "Mas",
+     "chave": false
+    },
+    {
+     "t": "some",
+     "chave": false
+    }
+   ],
+   "ate": 1062
+  },
+  {
+   "de": 1062,
+   "partes": [
+    {
+     "t": "3",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    }
+   ],
+   "ate": 1090
+  },
+  {
+   "de": 1090,
+   "partes": [
+    {
+     "t": "nas",
+     "chave": false
+    },
+    {
+     "t": "urnas",
+     "chave": false
+    }
+   ],
+   "ate": 1105
+  },
+  {
+   "de": 1105,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "1,8",
+     "chave": true
+    },
+    {
+     "t": "milhão",
+     "chave": true
+    }
+   ],
+   "ate": 1142
+  },
+  {
+   "de": 1142,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "menos",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    }
+   ],
+   "ate": 1159
+  },
+  {
+   "de": 1159,
+   "partes": [
+    {
+     "t": "branco",
+     "chave": false
+    },
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "nulo:",
+     "chave": false
+    }
+   ],
+   "ate": 1172
+  },
+  {
+   "de": 1172,
+   "partes": [
+    {
+     "t": "14,1",
+     "chave": true
+    },
+    {
+     "t": "milhões",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "jogo.",
+     "chave": false
+    }
+   ],
+   "ate": 1226
+  },
+  {
+   "de": 1226,
+   "partes": [
+    {
+     "t": "Lula",
+     "chave": false
+    },
+    {
+     "t": "levou",
+     "chave": false
+    },
+    {
+     "t": "74%.",
+     "chave": true
+    }
+   ],
+   "ate": 1288
+  },
+  {
+   "de": 1288,
+   "partes": [
+    {
+     "t": "Flávio,",
+     "chave": false
+    },
+    {
+     "t": "26.",
+     "chave": true
+    }
+   ],
+   "ate": 1321
+  },
+  {
+   "de": 1321,
+   "partes": [
+    {
+     "t": "Não",
+     "chave": true
+    },
+    {
+     "t": "precisou",
+     "chave": true
+    }
+   ],
+   "ate": 1348
+  },
+  {
+   "de": 1348,
+   "partes": [
+    {
+     "t": "ser",
+     "chave": false
+    },
+    {
+     "t": "tudo.",
+     "chave": false
+    }
+   ],
+   "ate": 1368
+  },
+  {
+   "de": 1384,
+   "partes": [
+    {
+     "t": "Sozinha,",
+     "chave": true
+    },
+    {
+     "t": "nenhuma",
+     "chave": false
+    },
+    {
+     "t": "fonte",
+     "chave": false
+    },
+    {
+     "t": "explica.",
+     "chave": false
+    }
+   ],
+   "ate": 1439
+  },
+  {
+   "de": 1439,
+   "partes": [
+    {
+     "t": "Juntas,",
+     "chave": true
+    },
+    {
+     "t": "fecham",
+     "chave": false
+    }
+   ],
+   "ate": 1473
+  },
+  {
+   "de": 1473,
+   "partes": [
+    {
+     "t": "voto",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "voto.",
+     "chave": false
+    }
+   ],
+   "ate": 1504
+  }
+ ],
+ "grande": [
+  {
+   "t": "Qual",
+   "chave": false,
+   "f": 1496,
+   "l": 0
+  },
+  {
+   "t": "frase",
+   "chave": false,
+   "f": 1505,
+   "l": 0
+  },
+  {
+   "t": "da",
+   "chave": false,
+   "f": 1513,
+   "l": 1
+  },
+  {
+   "t": "eleição",
+   "chave": false,
+   "f": 1517,
+   "l": 1
+  },
+  {
+   "t": "você",
+   "chave": false,
+   "f": 1526,
+   "l": 2
+  },
+  {
+   "t": "quer",
+   "chave": false,
+   "f": 1540,
+   "l": 2
+  },
+  {
+   "t": "ver",
+   "chave": false,
+   "f": 1543,
+   "l": 2
+  },
+  {
+   "t": "nos",
+   "chave": false,
+   "f": 1548,
+   "l": 3
+  },
+  {
+   "t": "dados?",
+   "chave": true,
+   "f": 1552,
+   "l": 3
+  }
+ ],
+ "cena": {
+  "cartao": {
+   "de": 0,
+   "ate": 179
+  },
+  "lista": {
+   "de": 179,
+   "ate": 302
+  },
+  "p1": {
+   "de": 302,
+   "ate": 446
+  },
+  "p2": {
+   "de": 446,
+   "ate": 646
+  },
+  "p3": {
+   "de": 646,
+   "ate": 798
+  },
+  "fontes": {
+   "de": 798,
+   "ate": 1496
+  },
+  "veredito": {
+   "de": 1496,
+   "ate": 1577
+  }
+ },
+ "cenas": [
+  179,
+  302,
+  446,
+  646,
+  798,
+  1496,
+  1577
+ ],
+ "fimFala": 1567,
+ "cta": 1577,
+ "fim": 1577,
+ "total": 1617
+}

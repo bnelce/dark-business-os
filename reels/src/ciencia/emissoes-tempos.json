@@ -1,0 +1,28 @@
+{
+  "fala": {
+    "gancho": 8,
+    "mundo": 143,
+    "brasil": 394,
+    "floresta": 534,
+    "dobro": 773,
+    "campo": 1071,
+    "queda": 1233,
+    "fogo": 1491,
+    "conclusao": 1827,
+    "cta": 2060
+  },
+  "fim": {
+    "gancho": 133,
+    "mundo": 384,
+    "brasil": 512,
+    "floresta": 763,
+    "dobro": 1061,
+    "campo": 1223,
+    "queda": 1481,
+    "fogo": 1817,
+    "conclusao": 2050,
+    "cta": 2125
+  },
+  "marca": 2140,
+  "total": 2215
+}

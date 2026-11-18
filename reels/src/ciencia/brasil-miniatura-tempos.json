@@ -1,0 +1,1337 @@
+{
+ "fala": {
+  "gancho": 1,
+  "prova": 97,
+  "historico": 338,
+  "ranking": 557,
+  "pergunta": 764,
+  "paradoxo": 863,
+  "termometro": 1147,
+  "minas": 1480,
+  "estados": 1747,
+  "final": 1832
+ },
+ "dur": {
+  "gancho": 91,
+  "prova": 236,
+  "historico": 214,
+  "ranking": 202,
+  "pergunta": 94,
+  "paradoxo": 279,
+  "termometro": 328,
+  "minas": 262,
+  "estados": 66,
+  "final": 122
+ },
+ "m": {
+  "g24": 68,
+  "turno": 144,
+  "a526": 170,
+  "a474": 209,
+  "brasil": 251,
+  "b518": 257,
+  "b482": 304,
+  "sorte": 366,
+  "sete": 406,
+  "h2002": 449,
+  "media": 483,
+  "h17": 498,
+  "primeira": 575,
+  "n5563": 595,
+  "errou": 654,
+  "r2022": 706,
+  "meio": 740,
+  "miniatura": 838,
+  "censo": 875,
+  "nao": 892,
+  "parda": 935,
+  "evangelica": 959,
+  "mossoro": 1054,
+  "votou": 1089,
+  "p12": 1107,
+  "termometro": 1230,
+  "pedreira": 1290,
+  "t2002": 1350,
+  "cheio": 1378,
+  "t2026": 1398,
+  "t23": 1436,
+  "minas": 1559,
+  "sete2": 1601,
+  "m107": 1632,
+  "m67": 1686,
+  "miniatura2": 1792,
+  "legenda": 1879,
+  "sua": 1902
+ },
+ "digita": [
+  {
+   "id": "a526",
+   "texto": "52,6",
+   "de": 168,
+   "ate": 180
+  },
+  {
+   "id": "a474",
+   "texto": "47,4",
+   "de": 207,
+   "ate": 219
+  },
+  {
+   "id": "b518",
+   "texto": "51,8",
+   "de": 255,
+   "ate": 267
+  },
+  {
+   "id": "b482",
+   "texto": "48,2",
+   "de": 302,
+   "ate": 314
+  },
+  {
+   "id": "h17",
+   "texto": "1,7",
+   "de": 496,
+   "ate": 506
+  },
+  {
+   "id": "n5563",
+   "texto": "5.563",
+   "de": 593,
+   "ate": 609
+  },
+  {
+   "id": "p12",
+   "texto": "11,9",
+   "de": 1105,
+   "ate": 1117
+  },
+  {
+   "id": "t23",
+   "texto": "23",
+   "de": 1434,
+   "ate": 1441
+  },
+  {
+   "id": "m67",
+   "texto": "67",
+   "de": 1684,
+   "ate": 1691
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Existe",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "cidade",
+     "chave": false
+    }
+   ],
+   "ate": 24
+  },
+  {
+   "de": 24,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "vota",
+     "chave": false
+    },
+    {
+     "t": "igual",
+     "chave": false
+    }
+   ],
+   "ate": 45
+  },
+  {
+   "de": 45,
+   "partes": [
+    {
+     "t": "ao",
+     "chave": false
+    },
+    {
+     "t": "Brasil",
+     "chave": false
+    }
+   ],
+   "ate": 57
+  },
+  {
+   "de": 57,
+   "partes": [
+    {
+     "t": "há",
+     "chave": false
+    },
+    {
+     "t": "24",
+     "chave": true
+    },
+    {
+     "t": "anos.",
+     "chave": true
+    }
+   ],
+   "ate": 95
+  },
+  {
+   "de": 95,
+   "partes": [
+    {
+     "t": "Ananindeua,",
+     "chave": true
+    }
+   ],
+   "ate": 115
+  },
+  {
+   "de": 115,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "Pará.",
+     "chave": false
+    }
+   ],
+   "ate": 136
+  },
+  {
+   "de": 136,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "segundo",
+     "chave": false
+    },
+    {
+     "t": "turno,",
+     "chave": false
+    }
+   ],
+   "ate": 163
+  },
+  {
+   "de": 163,
+   "partes": [
+    {
+     "t": "deu",
+     "chave": false
+    },
+    {
+     "t": "52,6",
+     "chave": true
+    }
+   ],
+   "ate": 200
+  },
+  {
+   "de": 200,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "47,4.",
+     "chave": false
+    }
+   ],
+   "ate": 238
+  },
+  {
+   "de": 238,
+   "partes": [
+    {
+     "t": "O",
+     "chave": false
+    },
+    {
+     "t": "Brasil,",
+     "chave": false
+    }
+   ],
+   "ate": 255
+  },
+  {
+   "de": 255,
+   "partes": [
+    {
+     "t": "51,8",
+     "chave": true
+    }
+   ],
+   "ate": 290
+  },
+  {
+   "de": 290,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "48,2.",
+     "chave": false
+    }
+   ],
+   "ate": 336
+  },
+  {
+   "de": 336,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "não",
+     "chave": false
+    },
+    {
+     "t": "foi",
+     "chave": false
+    }
+   ],
+   "ate": 364
+  },
+  {
+   "de": 364,
+   "partes": [
+    {
+     "t": "sorte",
+     "chave": false
+    }
+   ],
+   "ate": 373
+  },
+  {
+   "de": 373,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "eleição.",
+     "chave": false
+    }
+   ],
+   "ate": 390
+  },
+  {
+   "de": 390,
+   "partes": [
+    {
+     "t": "Em",
+     "chave": false
+    },
+    {
+     "t": "sete",
+     "chave": false
+    }
+   ],
+   "ate": 415
+  },
+  {
+   "de": 415,
+   "partes": [
+    {
+     "t": "segundos",
+     "chave": false
+    },
+    {
+     "t": "turnos",
+     "chave": false
+    }
+   ],
+   "ate": 437
+  },
+  {
+   "de": 437,
+   "partes": [
+    {
+     "t": "desde",
+     "chave": false
+    },
+    {
+     "t": "2002,",
+     "chave": false
+    }
+   ],
+   "ate": 472
+  },
+  {
+   "de": 472,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "média",
+     "chave": false
+    }
+   ],
+   "ate": 491
+  },
+  {
+   "de": 491,
+   "partes": [
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "1,7",
+     "chave": true
+    },
+    {
+     "t": "ponto",
+     "chave": true
+    }
+   ],
+   "ate": 530
+  },
+  {
+   "de": 530,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "país.",
+     "chave": false
+    }
+   ],
+   "ate": 555
+  },
+  {
+   "de": 555,
+   "partes": [
+    {
+     "t": "É",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "primeira",
+     "chave": true
+    }
+   ],
+   "ate": 583
+  },
+  {
+   "de": 583,
+   "partes": [
+    {
+     "t": "entre",
+     "chave": false
+    },
+    {
+     "t": "5.563",
+     "chave": true
+    }
+   ],
+   "ate": 638
+  },
+  {
+   "de": 638,
+   "partes": [
+    {
+     "t": "cidades.",
+     "chave": false
+    }
+   ],
+   "ate": 652
+  },
+  {
+   "de": 652,
+   "partes": [
+    {
+     "t": "Errou",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "vencedor",
+     "chave": false
+    }
+   ],
+   "ate": 679
+  },
+  {
+   "de": 679,
+   "partes": [
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "vez",
+     "chave": false
+    },
+    {
+     "t": "só,",
+     "chave": false
+    }
+   ],
+   "ate": 698
+  },
+  {
+   "de": 698,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2022,",
+     "chave": true
+    }
+   ],
+   "ate": 725
+  },
+  {
+   "de": 725,
+   "partes": [
+    {
+     "t": "por",
+     "chave": false
+    },
+    {
+     "t": "meio",
+     "chave": true
+    },
+    {
+     "t": "ponto.",
+     "chave": true
+    }
+   ],
+   "ate": 762
+  },
+  {
+   "de": 762,
+   "partes": [
+    {
+     "t": "Então",
+     "chave": false
+    },
+    {
+     "t": "Ananindeua",
+     "chave": true
+    }
+   ],
+   "ate": 806
+  },
+  {
+   "de": 806,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "um",
+     "chave": false
+    },
+    {
+     "t": "Brasil",
+     "chave": false
+    }
+   ],
+   "ate": 830
+  },
+  {
+   "de": 830,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "miniatura?",
+     "chave": true
+    }
+   ],
+   "ate": 861
+  },
+  {
+   "de": 861,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "Censo,",
+     "chave": false
+    }
+   ],
+   "ate": 890
+  },
+  {
+   "de": 890,
+   "partes": [
+    {
+     "t": "não.",
+     "chave": true
+    }
+   ],
+   "ate": 904
+  },
+  {
+   "de": 904,
+   "partes": [
+    {
+     "t": "É",
+     "chave": false
+    },
+    {
+     "t": "bem",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "parda",
+     "chave": false
+    }
+   ],
+   "ate": 938
+  },
+  {
+   "de": 938,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "evangélica",
+     "chave": false
+    }
+   ],
+   "ate": 966
+  },
+  {
+   "de": 966,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "país.",
+     "chave": false
+    }
+   ],
+   "ate": 980
+  },
+  {
+   "de": 980,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "cidade",
+     "chave": false
+    }
+   ],
+   "ate": 997
+  },
+  {
+   "de": 997,
+   "partes": [
+    {
+     "t": "mais",
+     "chave": false
+    },
+    {
+     "t": "parecida",
+     "chave": false
+    }
+   ],
+   "ate": 1018
+  },
+  {
+   "de": 1018,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Brasil",
+     "chave": false
+    }
+   ],
+   "ate": 1034
+  },
+  {
+   "de": 1034,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "Censo",
+     "chave": false
+    }
+   ],
+   "ate": 1048
+  },
+  {
+   "de": 1048,
+   "partes": [
+    {
+     "t": "é",
+     "chave": false
+    },
+    {
+     "t": "Mossoró,",
+     "chave": true
+    }
+   ],
+   "ate": 1079
+  },
+  {
+   "de": 1079,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "ela",
+     "chave": false
+    },
+    {
+     "t": "votou",
+     "chave": false
+    }
+   ],
+   "ate": 1095
+  },
+  {
+   "de": 1095,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": true
+    },
+    {
+     "t": "12",
+     "chave": true
+    },
+    {
+     "t": "pontos",
+     "chave": true
+    }
+   ],
+   "ate": 1126
+  },
+  {
+   "de": 1126,
+   "partes": [
+    {
+     "t": "fora.",
+     "chave": false
+    }
+   ],
+   "ate": 1145
+  },
+  {
+   "de": 1145,
+   "partes": [
+    {
+     "t": "Parecer",
+     "chave": false
+    },
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "país",
+     "chave": false
+    }
+   ],
+   "ate": 1177
+  },
+  {
+   "de": 1177,
+   "partes": [
+    {
+     "t": "não",
+     "chave": true
+    },
+    {
+     "t": "é",
+     "chave": true
+    }
+   ],
+   "ate": 1191
+  },
+  {
+   "de": 1191,
+   "partes": [
+    {
+     "t": "votar",
+     "chave": false
+    },
+    {
+     "t": "como",
+     "chave": false
+    },
+    {
+     "t": "ele.",
+     "chave": false
+    }
+   ],
+   "ate": 1213
+  },
+  {
+   "de": 1213,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "termômetro",
+     "chave": true
+    }
+   ],
+   "ate": 1239
+  },
+  {
+   "de": 1239,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": false
+    },
+    {
+     "t": "eleição",
+     "chave": false
+    }
+   ],
+   "ate": 1255
+  },
+  {
+   "de": 1255,
+   "partes": [
+    {
+     "t": "costuma",
+     "chave": false
+    },
+    {
+     "t": "errar",
+     "chave": false
+    }
+   ],
+   "ate": 1273
+  },
+  {
+   "de": 1273,
+   "partes": [
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "seguinte:",
+     "chave": false
+    }
+   ],
+   "ate": 1288
+  },
+  {
+   "de": 1288,
+   "partes": [
+    {
+     "t": "Pedreira,",
+     "chave": true
+    }
+   ],
+   "ate": 1308
+  },
+  {
+   "de": 1308,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "São",
+     "chave": false
+    },
+    {
+     "t": "Paulo,",
+     "chave": false
+    }
+   ],
+   "ate": 1328
+  },
+  {
+   "de": 1328,
+   "partes": [
+    {
+     "t": "acertou",
+     "chave": false
+    },
+    {
+     "t": "2002",
+     "chave": false
+    }
+   ],
+   "ate": 1366
+  },
+  {
+   "de": 1366,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "cheio",
+     "chave": false
+    }
+   ],
+   "ate": 1384
+  },
+  {
+   "de": 1384,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "2026",
+     "chave": false
+    }
+   ],
+   "ate": 1420
+  },
+  {
+   "de": 1420,
+   "partes": [
+    {
+     "t": "ficou",
+     "chave": false
+    },
+    {
+     "t": "23",
+     "chave": true
+    },
+    {
+     "t": "pontos",
+     "chave": true
+    }
+   ],
+   "ate": 1459
+  },
+  {
+   "de": 1459,
+   "partes": [
+    {
+     "t": "longe.",
+     "chave": false
+    }
+   ],
+   "ate": 1478
+  },
+  {
+   "de": 1478,
+   "partes": [
+    {
+     "t": "Tem",
+     "chave": false
+    },
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "estado",
+     "chave": false
+    }
+   ],
+   "ate": 1502
+  },
+  {
+   "de": 1502,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "fama",
+     "chave": false
+    }
+   ],
+   "ate": 1517
+  },
+  {
+   "de": 1517,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "termômetro:",
+     "chave": false
+    }
+   ],
+   "ate": 1546
+  },
+  {
+   "de": 1546,
+   "partes": [
+    {
+     "t": "quem",
+     "chave": false
+    },
+    {
+     "t": "ganhou",
+     "chave": false
+    }
+   ],
+   "ate": 1554
+  },
+  {
+   "de": 1554,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "Minas",
+     "chave": true
+    }
+   ],
+   "ate": 1566
+  },
+  {
+   "de": 1566,
+   "partes": [
+    {
+     "t": "ganhou",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "Brasil",
+     "chave": false
+    }
+   ],
+   "ate": 1593
+  },
+  {
+   "de": 1593,
+   "partes": [
+    {
+     "t": "nas",
+     "chave": false
+    },
+    {
+     "t": "sete",
+     "chave": true
+    },
+    {
+     "t": "eleições.",
+     "chave": false
+    }
+   ],
+   "ate": 1617
+  },
+  {
+   "de": 1617,
+   "partes": [
+    {
+     "t": "Das",
+     "chave": false
+    },
+    {
+     "t": "107",
+     "chave": true
+    },
+    {
+     "t": "cidades",
+     "chave": false
+    }
+   ],
+   "ate": 1657
+  },
+  {
+   "de": 1657,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "acertaram",
+     "chave": false
+    }
+   ],
+   "ate": 1672
+  },
+  {
+   "de": 1672,
+   "partes": [
+    {
+     "t": "todas,",
+     "chave": false
+    }
+   ],
+   "ate": 1684
+  },
+  {
+   "de": 1684,
+   "partes": [
+    {
+     "t": "67",
+     "chave": true
+    },
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "mineiras.",
+     "chave": false
+    }
+   ],
+   "ate": 1745
+  },
+  {
+   "de": 1745,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "cada",
+     "chave": false
+    },
+    {
+     "t": "estado",
+     "chave": false
+    }
+   ],
+   "ate": 1772
+  },
+  {
+   "de": 1772,
+   "partes": [
+    {
+     "t": "tem",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "sua",
+     "chave": false
+    }
+   ],
+   "ate": 1790
+  },
+  {
+   "de": 1790,
+   "partes": [
+    {
+     "t": "miniatura.",
+     "chave": true
+    }
+   ],
+   "ate": 1813
+  },
+  {
+   "de": 1830,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "seu",
+     "chave": false
+    },
+    {
+     "t": "estado",
+     "chave": false
+    }
+   ],
+   "ate": 1864
+  },
+  {
+   "de": 1864,
+   "partes": [
+    {
+     "t": "tá",
+     "chave": false
+    },
+    {
+     "t": "na",
+     "chave": false
+    },
+    {
+     "t": "legenda.",
+     "chave": true
+    }
+   ],
+   "ate": 1898
+  }
+ ],
+ "grande": [
+  {
+   "t": "A",
+   "chave": false,
+   "f": 1890,
+   "l": 0
+  },
+  {
+   "t": "sua",
+   "chave": false,
+   "f": 1902,
+   "l": 0
+  },
+  {
+   "t": "cidade",
+   "chave": false,
+   "f": 1908,
+   "l": 0
+  },
+  {
+   "t": "vota",
+   "chave": false,
+   "f": 1917,
+   "l": 1
+  },
+  {
+   "t": "como",
+   "chave": false,
+   "f": 1932,
+   "l": 1
+  },
+  {
+   "t": "o",
+   "chave": false,
+   "f": 1938,
+   "l": 2
+  },
+  {
+   "t": "Brasil?",
+   "chave": true,
+   "f": 1943,
+   "l": 2
+  }
+ ],
+ "cenas": [
+  144,
+  338,
+  557,
+  654,
+  764,
+  863,
+  1054,
+  1230,
+  1480,
+  1747,
+  1890,
+  1962
+ ],
+ "colapso": {
+  "inicio": 64,
+  "fim": 45
+ },
+ "fimFala": 1954,
+ "cta": 1962,
+ "total": 2007
+}

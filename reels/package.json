@@ -1,0 +1,27 @@
+{
+  "name": "revisao-rapida-reels",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "remotion render",
+    "still": "remotion still",
+    "studio": "remotion studio"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.520",
+    "@remotion/google-fonts": "^4.0.520",
+    "@types/katex": "^0.16.8",
+    "katex": "^0.18.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.520"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.9.3",
+    "world-atlas": "^2.0.2"
+  }
+}

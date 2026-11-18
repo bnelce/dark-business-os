@@ -1,0 +1,35 @@
+{
+  "fala": {
+    "gancho": 8,
+    "foco": 220,
+    "relogio": 408,
+    "seca": 734,
+    "hoje": 934,
+    "nov-dez": 1138,
+    "mapa23": 1298,
+    "sertao": 1508,
+    "tendencia": 1766,
+    "fecho": 2174,
+    "cta": 2284
+  },
+  "relogio": 396,
+  "pct86": 534,
+  "chuva": 794,
+  "fevMai": 845,
+  "hojeChega": 982,
+  "pct72": 1024,
+  "pct67": 1210,
+  "mapa23": 1286,
+  "nomes": [
+    1595,
+    1628,
+    1655,
+    1691,
+    1706
+  ],
+  "tendencia": 1754,
+  "fecho": 2162,
+  "cta": 2284,
+  "marca": 2371,
+  "total": 2446
+}

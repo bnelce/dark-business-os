@@ -1,0 +1,864 @@
+{
+ "fala": {
+  "gancho": 1,
+  "tamanho": 146,
+  "corrida": 363,
+  "fusos": 718,
+  "zelandia": 959,
+  "pergunta": 1054
+ },
+ "dur": {
+  "gancho": 135,
+  "tamanho": 213,
+  "corrida": 337,
+  "fusos": 223,
+  "zelandia": 83,
+  "pergunta": 121
+ },
+ "m": {
+  "vinteG": 37,
+  "gta": 66,
+  "termina": 84,
+  "amanha": 108,
+  "noite": 131,
+  "rockstar": 150,
+  "preload": 172,
+  "n212": 197,
+  "gigabytes": 201,
+  "internet": 256,
+  "bits": 279,
+  "n1696": 303,
+  "gigabits": 336,
+  "melhor": 372,
+  "giga": 402,
+  "n28": 437,
+  "minutos": 449,
+  "mediana": 488,
+  "n220": 510,
+  "duas": 567,
+  "horasC": 585,
+  "n100": 597,
+  "cinco": 645,
+  "n20": 655,
+  "n23": 671,
+  "meia": 695,
+  "libera": 742,
+  "instante": 767,
+  "n22": 793,
+  "acre": 828,
+  "n23f": 847,
+  "manaus": 856,
+  "meianoite": 874,
+  "brasilia": 884,
+  "uma": 901,
+  "noronha": 926,
+  "zelandia": 972,
+  "abriu": 997,
+  "n16": 1005,
+  "antes": 1032,
+  "preloadP": 1077,
+  "relogio": 1116,
+  "seu": 1140,
+  "demorou": 1163
+ },
+ "relogio": {
+  "gancho": {
+   "de": 0,
+   "ate": 131
+  },
+  "corrida": [
+   {
+    "de": 398,
+    "ate": 449,
+    "ate_h": "giga"
+   },
+   {
+    "de": 488,
+    "ate": 585,
+    "ate_h": "mediana"
+   },
+   {
+    "de": 595,
+    "ate": 645,
+    "ate_h": "cem"
+   },
+   {
+    "de": 653,
+    "ate": 695,
+    "ate_h": "vinte"
+   }
+  ]
+ },
+ "digita": [
+  {
+   "id": "melhor",
+   "texto": "NO MELHOR CASO",
+   "de": 370,
+   "ate": 404
+  }
+ ],
+ "contas": [
+  {
+   "id": "bits",
+   "de": 273,
+   "ate": 289,
+   "passo": 2
+  },
+  {
+   "id": "nz",
+   "de": 993,
+   "ate": 1009,
+   "passo": 2
+  }
+ ],
+ "legendas": [
+  {
+   "de": 0,
+   "partes": [
+    {
+     "t": "Se",
+     "chave": false
+    },
+    {
+     "t": "a",
+     "chave": false
+    },
+    {
+     "t": "sua",
+     "chave": false
+    },
+    {
+     "t": "internet",
+     "chave": false
+    }
+   ],
+   "ate": 25
+  },
+  {
+   "de": 25,
+   "partes": [
+    {
+     "t": "for",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "20",
+     "chave": true
+    },
+    {
+     "t": "mega,",
+     "chave": true
+    }
+   ],
+   "ate": 62
+  },
+  {
+   "de": 62,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "GTA",
+     "chave": true
+    },
+    {
+     "t": "VI",
+     "chave": true
+    }
+   ],
+   "ate": 79
+  },
+  {
+   "de": 79,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "termina",
+     "chave": false
+    },
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "baixar",
+     "chave": false
+    }
+   ],
+   "ate": 106
+  },
+  {
+   "de": 106,
+   "partes": [
+    {
+     "t": "amanhã",
+     "chave": true
+    },
+    {
+     "t": "à",
+     "chave": true
+    },
+    {
+     "t": "noite.",
+     "chave": true
+    }
+   ],
+   "ate": 144
+  },
+  {
+   "de": 144,
+   "partes": [
+    {
+     "t": "A",
+     "chave": false
+    },
+    {
+     "t": "Rockstar",
+     "chave": false
+    },
+    {
+     "t": "diz",
+     "chave": false
+    }
+   ],
+   "ate": 165
+  },
+  {
+   "de": 165,
+   "partes": [
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "pré-load",
+     "chave": true
+    },
+    {
+     "t": "pede",
+     "chave": false
+    }
+   ],
+   "ate": 187
+  },
+  {
+   "de": 187,
+   "partes": [
+    {
+     "t": "até",
+     "chave": false
+    },
+    {
+     "t": "212",
+     "chave": true
+    },
+    {
+     "t": "gigabytes.",
+     "chave": true
+    }
+   ],
+   "ate": 253
+  },
+  {
+   "de": 253,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "internet",
+     "chave": false
+    }
+   ],
+   "ate": 269
+  },
+  {
+   "de": 269,
+   "partes": [
+    {
+     "t": "se",
+     "chave": false
+    },
+    {
+     "t": "mede",
+     "chave": false
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "bits:",
+     "chave": true
+    }
+   ],
+   "ate": 293
+  },
+  {
+   "de": 293,
+   "partes": [
+    {
+     "t": "são",
+     "chave": false
+    },
+    {
+     "t": "1.696",
+     "chave": true
+    },
+    {
+     "t": "gigabits.",
+     "chave": true
+    }
+   ],
+   "ate": 361
+  },
+  {
+   "de": 361,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "melhor",
+     "chave": true
+    },
+    {
+     "t": "caso,",
+     "chave": true
+    }
+   ],
+   "ate": 387
+  },
+  {
+   "de": 387,
+   "partes": [
+    {
+     "t": "com",
+     "chave": false
+    },
+    {
+     "t": "1",
+     "chave": true
+    },
+    {
+     "t": "giga,",
+     "chave": true
+    }
+   ],
+   "ate": 426
+  },
+  {
+   "de": 426,
+   "partes": [
+    {
+     "t": "isso",
+     "chave": false
+    },
+    {
+     "t": "leva",
+     "chave": false
+    }
+   ],
+   "ate": 435
+  },
+  {
+   "de": 435,
+   "partes": [
+    {
+     "t": "28",
+     "chave": true
+    },
+    {
+     "t": "minutos.",
+     "chave": true
+    }
+   ],
+   "ate": 466
+  },
+  {
+   "de": 466,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "velocidade",
+     "chave": false
+    },
+    {
+     "t": "mediana",
+     "chave": true
+    }
+   ],
+   "ate": 494
+  },
+  {
+   "de": 494,
+   "partes": [
+    {
+     "t": "do",
+     "chave": false
+    },
+    {
+     "t": "Brasil,",
+     "chave": false
+    }
+   ],
+   "ate": 505
+  },
+  {
+   "de": 505,
+   "partes": [
+    {
+     "t": "uns",
+     "chave": false
+    },
+    {
+     "t": "220",
+     "chave": true
+    },
+    {
+     "t": "mega,",
+     "chave": true
+    }
+   ],
+   "ate": 533
+  },
+  {
+   "de": 533,
+   "partes": [
+    {
+     "t": "pouco",
+     "chave": false
+    },
+    {
+     "t": "mais",
+     "chave": false
+    }
+   ],
+   "ate": 563
+  },
+  {
+   "de": 563,
+   "partes": [
+    {
+     "t": "de",
+     "chave": false
+    },
+    {
+     "t": "duas",
+     "chave": true
+    },
+    {
+     "t": "horas.",
+     "chave": true
+    }
+   ],
+   "ate": 583
+  },
+  {
+   "de": 583,
+   "partes": [
+    {
+     "t": "Com",
+     "chave": false
+    },
+    {
+     "t": "100",
+     "chave": true
+    },
+    {
+     "t": "mega,",
+     "chave": true
+    }
+   ],
+   "ate": 608
+  },
+  {
+   "de": 608,
+   "partes": [
+    {
+     "t": "quase",
+     "chave": false
+    },
+    {
+     "t": "cinco.",
+     "chave": true
+    }
+   ],
+   "ate": 643
+  },
+  {
+   "de": 643,
+   "partes": [
+    {
+     "t": "Com",
+     "chave": false
+    },
+    {
+     "t": "20,",
+     "chave": true
+    }
+   ],
+   "ate": 669
+  },
+  {
+   "de": 669,
+   "partes": [
+    {
+     "t": "23",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    },
+    {
+     "t": "e",
+     "chave": true
+    },
+    {
+     "t": "meia.",
+     "chave": true
+    }
+   ],
+   "ate": 703
+  },
+  {
+   "de": 716,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "que",
+     "chave": false
+    },
+    {
+     "t": "horas",
+     "chave": false
+    }
+   ],
+   "ate": 732
+  },
+  {
+   "de": 732,
+   "partes": [
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "jogo",
+     "chave": false
+    },
+    {
+     "t": "libera?",
+     "chave": true
+    }
+   ],
+   "ate": 750
+  },
+  {
+   "de": 750,
+   "partes": [
+    {
+     "t": "No",
+     "chave": false
+    },
+    {
+     "t": "mesmo",
+     "chave": true
+    },
+    {
+     "t": "instante,",
+     "chave": true
+    }
+   ],
+   "ate": 774
+  },
+  {
+   "de": 774,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "país",
+     "chave": false
+    },
+    {
+     "t": "todo:",
+     "chave": false
+    }
+   ],
+   "ate": 791
+  },
+  {
+   "de": 791,
+   "partes": [
+    {
+     "t": "22",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    },
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "Acre,",
+     "chave": false
+    }
+   ],
+   "ate": 845
+  },
+  {
+   "de": 845,
+   "partes": [
+    {
+     "t": "23",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "Manaus,",
+     "chave": false
+    }
+   ],
+   "ate": 872
+  },
+  {
+   "de": 872,
+   "partes": [
+    {
+     "t": "meia-noite",
+     "chave": true
+    },
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "Brasília",
+     "chave": false
+    }
+   ],
+   "ate": 892
+  },
+  {
+   "de": 892,
+   "partes": [
+    {
+     "t": "e",
+     "chave": false
+    },
+    {
+     "t": "uma",
+     "chave": true
+    },
+    {
+     "t": "da",
+     "chave": true
+    },
+    {
+     "t": "manhã",
+     "chave": true
+    }
+   ],
+   "ate": 919
+  },
+  {
+   "de": 919,
+   "partes": [
+    {
+     "t": "em",
+     "chave": false
+    },
+    {
+     "t": "Noronha.",
+     "chave": false
+    }
+   ],
+   "ate": 941
+  },
+  {
+   "de": 957,
+   "partes": [
+    {
+     "t": "Na",
+     "chave": false
+    },
+    {
+     "t": "Nova",
+     "chave": true
+    },
+    {
+     "t": "Zelândia,",
+     "chave": true
+    }
+   ],
+   "ate": 990
+  },
+  {
+   "de": 990,
+   "partes": [
+    {
+     "t": "ele",
+     "chave": false
+    },
+    {
+     "t": "abriu",
+     "chave": false
+    }
+   ],
+   "ate": 1003
+  },
+  {
+   "de": 1003,
+   "partes": [
+    {
+     "t": "16",
+     "chave": true
+    },
+    {
+     "t": "horas",
+     "chave": true
+    },
+    {
+     "t": "antes.",
+     "chave": true
+    }
+   ],
+   "ate": 1040
+  },
+  {
+   "de": 1052,
+   "partes": [
+    {
+     "t": "Quem",
+     "chave": false
+    },
+    {
+     "t": "baixou",
+     "chave": false
+    }
+   ],
+   "ate": 1071
+  },
+  {
+   "de": 1071,
+   "partes": [
+    {
+     "t": "no",
+     "chave": false
+    },
+    {
+     "t": "pré-load",
+     "chave": true
+    }
+   ],
+   "ate": 1088
+  },
+  {
+   "de": 1088,
+   "partes": [
+    {
+     "t": "só",
+     "chave": false
+    },
+    {
+     "t": "espera",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "relógio.",
+     "chave": false
+    }
+   ],
+   "ate": 1128
+  },
+  {
+   "de": 1128,
+   "partes": [
+    {
+     "t": "E",
+     "chave": false
+    },
+    {
+     "t": "o",
+     "chave": false
+    },
+    {
+     "t": "seu,",
+     "chave": false
+    }
+   ],
+   "ate": 1143
+  },
+  {
+   "de": 1143,
+   "partes": [
+    {
+     "t": "quanto",
+     "chave": true
+    },
+    {
+     "t": "tempo",
+     "chave": true
+    }
+   ],
+   "ate": 1161
+  },
+  {
+   "de": 1161,
+   "partes": [
+    {
+     "t": "demorou?",
+     "chave": true
+    }
+   ],
+   "ate": 1180
+  }
+ ],
+ "cenas": [
+  146,
+  363,
+  718,
+  959,
+  1054,
+  1183
+ ],
+ "fimFala": 1175,
+ "cta": 1183,
+ "fim": 1183,
+ "total": 1223
+}

@@ -1,0 +1,25 @@
+{
+  "fonte": "TSE, Boletim de Urna, 2º turno de 25/10/2026, Presidente",
+  "aptos": 158744977,
+  "comparecimento": 128236074,
+  "lula": 64256232,
+  "flavio": 59826041,
+  "branco": 1430496,
+  "nulo": 2723305,
+  "validos": 124082273,
+  "dosValidos": {
+    "lula": 51.79,
+    "flavio": 48.21
+  },
+  "doComparecimento": {
+    "branco": 1.12,
+    "nulo": 2.12
+  },
+  "umPonto": 100000,
+  "grade": {
+    "lula": 643,
+    "flavio": 598,
+    "branco": 14,
+    "nulo": 27
+  }
+}

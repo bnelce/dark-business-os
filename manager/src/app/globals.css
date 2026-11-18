@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/*
+  Ferramenta operacional interna, estilo data-dense: pouca moldura, muita
+  informação por tela, cor reservada pra significado (status) e não pra
+  decoração. A identidade de cada projeto entra como acento pontual, não
+  como tema da interface inteira — a fila mistura projetos e precisa ler
+  como uma coisa só.
+*/
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+
+  --color-fundo: #f8fafc;
+  --color-superficie: #ffffff;
+  --color-superficie-2: #f1f5f9;
+  --color-borda: #e2e8f0;
+  --color-borda-forte: #cbd5e1;
+  --color-texto: #0f172a;
+  --color-texto-suave: #475569;
+  --color-texto-fraco: #64748b;
+
+  --color-marca: #4338ca;
+  --color-marca-suave: #eef2ff;
+  --color-foco: #4338ca;
+
+  /* Status: cada um tem par de fundo e texto com contraste AA sobre o fundo. */
+  --color-rascunho: #475569;
+  --color-rascunho-bg: #f1f5f9;
+  --color-aprovado: #4338ca;
+  --color-aprovado-bg: #eef2ff;
+  --color-agendado: #0369a1;
+  --color-agendado-bg: #e0f2fe;
+  --color-publicando: #a16207;
+  --color-publicando-bg: #fef9c3;
+  --color-publicado: #15803d;
+  --color-publicado-bg: #dcfce7;
+  --color-falhou: #b91c1c;
+  --color-falhou-bg: #fee2e2;
+  --color-retentando: #c2410c;
+  --color-retentando-bg: #ffedd5;
+  --color-cancelado: #64748b;
+  --color-cancelado-bg: #f1f5f9;
+}
+
+/* Dark mode definido junto com o claro, não derivado dele. */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-fundo: #0b1120;
+    --color-superficie: #111827;
+    --color-superficie-2: #1e293b;
+    --color-borda: #1e293b;
+    --color-borda-forte: #334155;
+    --color-texto: #f1f5f9;
+    --color-texto-suave: #cbd5e1;
+    --color-texto-fraco: #94a3b8;
+
+    --color-marca: #a5b4fc;
+    --color-marca-suave: #1e1b4b;
+    --color-foco: #a5b4fc;
+
+    --color-rascunho: #cbd5e1;      --color-rascunho-bg: #1e293b;
+    --color-aprovado: #a5b4fc;      --color-aprovado-bg: #1e1b4b;
+    --color-agendado: #7dd3fc;      --color-agendado-bg: #0c2b3f;
+    --color-publicando: #fde047;    --color-publicando-bg: #3b2f0b;
+    --color-publicado: #86efac;     --color-publicado-bg: #052e16;
+    --color-falhou: #fca5a5;        --color-falhou-bg: #450a0a;
+    --color-retentando: #fdba74;    --color-retentando-bg: #431407;
+    --color-cancelado: #94a3b8;     --color-cancelado-bg: #1e293b;
+  }
+}
+
+@layer base {
+  html { color-scheme: light dark; }
+  body {
+    background: var(--color-fundo);
+    color: var(--color-texto);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Números em colunas de dados não podem dançar entre linhas. */
+  .tabular { font-variant-numeric: tabular-nums; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-foco);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

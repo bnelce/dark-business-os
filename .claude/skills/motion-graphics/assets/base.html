@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Base motion-graphics</title>
+<!--
+  Esqueleto do contrato da skill motion-graphics (referencias/contrato-html.md).
+  Troque a cena (renderFrame) e a trilha (trilha), mantenha o resto.
+  Parâmetros de URL: ?t=3.2 congela no segundo 3,2 · ?preview modo leve · ?guias zonas seguras · ?mudo começa sem clique e sem som
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap" rel="stylesheet">
+<script>
+  // Lido pelos scripts capturar/gravar. w/h = tamanho do quadro, dur = duração em s,
+  // atraso = folga entre o clique e o t=0 (o áudio é agendado em ctx.currentTime + atraso).
+  window.MOTION = { w: 1080, h: 1920, dur: 6, atraso: 0.15, pronto: false };
+</script>
+<style>
+  :root { --marca: #5b3df5; --marca-2: #12d6a3; --fundo: #0d0b1a; --texto: #ffffff; --fonte: 'Inter', system-ui, sans-serif; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 50%; top: 50%; overflow: hidden; background: var(--fundo); transform-origin: 50% 50%; font-family: var(--fonte); color: var(--texto); }
+  #c { position: absolute; inset: 0; display: block; }
+  .camada { position: absolute; inset: 0; pointer-events: none; }
+  #cta { position: absolute; left: 90px; right: 230px; bottom: 520px; padding: 44px 48px; border-radius: 36px; background: #fff; color: #111; opacity: 0; will-change: transform, opacity; }
+  #cta b { display: block; font-size: 64px; font-weight: 800; letter-spacing: -1px; line-height: 1.05; }
+  #cta span { display: block; margin-top: 14px; font-size: 34px; font-weight: 500; color: #555; }
+  #guias { display: none; }
+  #guias div { position: absolute; background: rgba(255, 0, 80, .28); outline: 2px dashed rgba(255, 0, 80, .9); }
+  #start { position: absolute; inset: 0; z-index: 10; border: 0; cursor: pointer; background: rgba(13, 11, 26, .94); color: #fff; font: 800 64px var(--fonte); }
+  #start:disabled { cursor: wait; opacity: .7; }
+  #start small { display: block; margin-top: 18px; font: 500 30px var(--fonte); opacity: .7; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="c"></canvas>
+  <div class="camada"><div id="cta"><b>Chamada final</b><span>@perfil · link na bio</span></div></div>
+  <div class="camada" id="guias"><div style="left:0;right:0;top:0;height:250px"></div><div style="left:0;right:0;bottom:0;height:420px"></div><div style="right:0;top:250px;bottom:420px;width:140px"></div></div>
+  <button id="start" disabled>Carregando…</button>
+</div>
+
+<script type="module">
+/* ================= configuração ================= */
+const { w: W, h: H, dur: DUR, atraso: ATRASO } = window.MOTION;
+const Q = new URLSearchParams(location.search);
+const PREVIEW = Q.has('preview');
+const SUB = PREVIEW ? 1 : 10;          // amostras de motion blur por quadro (?preview: 1)
+const OBTURADOR = 1 / 48;              // 180° a 24 fps
+const T_FIXO = Q.has('t') ? Math.min(DUR, Math.max(0, parseFloat(Q.get('t')) || 0)) : null;
+const $ = (id) => document.getElementById(id);
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const COR = { marca: css('--marca'), marca2: css('--marca-2') };   // lidas uma vez, não a cada amostra
+
+/* ================= utilidades ================= */
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, u) => a + (b - a) * u;
+const sstep = (a, b, x) => { const u = clamp((x - a) / (b - a)); return u * u * (3 - 2 * u); };
+const eOut = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eIn = (x) => Math.pow(clamp(x), 3);
+const eInOut = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eBack = (x) => { x = clamp(x); const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+// Mola amortecida: 0 → 1 com overshoot. f = oscilações por segundo, z = amortecimento (0,3 a 0,6).
+const mola = (dt, f = 2.2, z = .42) => dt <= 0 ? 0 : 1 - Math.exp(-z * 2 * Math.PI * f * dt) * Math.cos(2 * Math.PI * f * Math.sqrt(1 - z * z) * dt);
+// Aleatório com semente: o mesmo t sempre desenha o mesmo quadro (prévia, ?t e exportação iguais).
+const rng = (s) => () => { s |= 0; s = s + 0x6D2B79F5 | 0; let x = Math.imul(s ^ s >>> 15, 1 | s); x = x + Math.imul(x ^ x >>> 7, 61 | x) ^ x; return ((x ^ x >>> 14) >>> 0) / 4294967296; };
+const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/* ================= palco ================= */
+const stage = $('stage');
+Object.assign(stage.style, { width: W + 'px', height: H + 'px' });
+const encaixar = () => { const s = Math.min(innerWidth / W, innerHeight / H); stage.style.transform = `translate(-50%,-50%) scale(${s})`; };
+addEventListener('resize', encaixar); encaixar();
+if (Q.has('guias')) $('guias').style.display = 'block';
+
+const cv = $('c'); cv.width = W; cv.height = H;
+const g = cv.getContext('2d');
+const amostra = new OffscreenCanvas(W, H), ga = amostra.getContext('2d');
+const acumulado = new OffscreenCanvas(W, H), gacc = acumulado.getContext('2d');
+
+/* ================= cena: função pura de t ================= */
+// Desenha o estado da cena no instante t. Nada de estado guardado entre quadros:
+// qualquer t, em qualquer ordem, tem que dar o mesmo desenho.
+function cena(c, t) {
+  const fundo = c.createLinearGradient(0, 0, 0, H);
+  fundo.addColorStop(0, '#1a1438'); fundo.addColorStop(1, '#0d0b1a');
+  c.fillStyle = fundo; c.fillRect(0, 0, W, H);
+
+  // título sobe da linha de base com mola (0,4 s)
+  const m = mola(t - .4);
+  c.save();
+  c.beginPath(); c.rect(0, 0, W, 980); c.clip();                    // a linha de base esconde a letra antes de subir
+  c.fillStyle = '#fff'; c.font = '800 150px Inter, system-ui'; c.textAlign = 'left'; c.textBaseline = 'alphabetic';
+  c.fillText('Motion', 90, 980 + (1 - m) * 190);
+  c.restore();
+
+  // pílula entra rápido em 1,8 s e para com overshoot: o borrão sai das amostras, não de um filtro
+  const p = mola(t - 1.8, 1.4, .45), sai = eIn((t - 3.6) / .5);
+  c.fillStyle = COR.marca2;
+  c.beginPath(); c.roundRect(lerp(-500, (W - 400) / 2, p) + sai * (W + 600), 1120, 400, 120, 60); c.fill();
+
+  // confete com semente
+  const r = rng(7);
+  for (let i = 0; i < 40; i++) {
+    const x0 = r() * W, v = 300 + r() * 500, ini = 3 + r() * .4;
+    const y = 300 + (t - ini) * v + 400 * Math.pow(Math.max(0, t - ini), 2);
+    if (t > ini && y < H - 420) { c.fillStyle = i % 2 ? '#fff' : '#ffcc33'; c.fillRect(x0, y, 14, 26); }
+  }
+}
+
+// Média de SUB amostras dentro do obturador (média corrente: alpha 1/(i+1)).
+function renderFrame(t) {
+  if (SUB === 1) cena(g, t);
+  else {
+    for (let i = 0; i < SUB; i++) {
+      const ts = t - OBTURADOR * (1 - (i + .5) / SUB);
+      ga.setTransform(1, 0, 0, 1, 0, 0); ga.globalAlpha = 1; cena(ga, ts);
+      gacc.globalAlpha = 1 / (i + 1); gacc.drawImage(amostra, 0, 0);
+    }
+    g.globalAlpha = 1; g.drawImage(acumulado, 0, 0);
+  }
+  interface_(t);
+}
+
+// Camada DOM guiada pelo mesmo relógio.
+function interface_(t) {
+  const e = $('cta'), a = eBack((t - 4) / .55);
+  e.style.opacity = clamp((t - 4) / .2).toFixed(3);
+  e.style.transform = `translateY(${((1 - a) * 80).toFixed(1)}px) scale(${(.92 + .08 * a).toFixed(3)})`;
+}
+
+/* ================= som (Web Audio) ================= */
+const hz = (f) => Math.min(18000, Math.max(20, f));   // oscilador fora de [-24 kHz, 24 kHz] gera aviso e é cortado
+let ruido = null;
+function barramento(ctx) {
+  const comp = ctx.createDynamicsCompressor();
+  comp.threshold.value = -12; comp.knee.value = 8; comp.ratio.value = 4; comp.attack.value = .004; comp.release.value = .18;
+  const master = ctx.createGain(); master.gain.value = .85;
+  master.connect(comp).connect(ctx.destination);
+  const n = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate), d = n.getChannelData(0), r = rng(99);
+  for (let i = 0; i < d.length; i++) d[i] = r() * 2 - 1;
+  ruido = n;
+  return master;
+}
+function envelope(ctx, quando, ataque, pico, dur) {
+  const ganho = ctx.createGain();
+  ganho.gain.setValueAtTime(.0001, quando);
+  ganho.gain.exponentialRampToValueAtTime(Math.max(pico, .0002), quando + ataque);   // rampa exponencial nunca vai a 0
+  ganho.gain.exponentialRampToValueAtTime(.0001, quando + ataque + dur);
+  return ganho;
+}
+function whoosh(ctx, out, quando, dur = .6, pico = .5) {
+  const s = ctx.createBufferSource(); s.buffer = ruido; s.loop = true;
+  const f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = .9;
+  f.frequency.setValueAtTime(hz(300), quando); f.frequency.exponentialRampToValueAtTime(hz(3000), quando + dur * .55); f.frequency.exponentialRampToValueAtTime(hz(400), quando + dur);
+  const e = envelope(ctx, quando, dur * .5, pico, dur * .5);
+  s.connect(f).connect(e).connect(out); s.start(quando); s.stop(quando + dur + .05);
+}
+function batida(ctx, out, quando, pico = .9) {
+  const o = ctx.createOscillator(); o.frequency.setValueAtTime(hz(150), quando); o.frequency.exponentialRampToValueAtTime(hz(45), quando + .16);
+  const e = envelope(ctx, quando, .003, pico, .3); o.connect(e).connect(out); o.start(quando); o.stop(quando + .4);
+}
+function ping(ctx, out, quando, f = 880, pico = .18) {
+  const o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.setValueAtTime(hz(f), quando);
+  const e = envelope(ctx, quando, .004, pico, .5); o.connect(e).connect(out); o.start(quando); o.stop(quando + .6);
+}
+// Tudo agendado de uma vez no clique, em tempos absolutos da linha do tempo (at(s) = T0 + s).
+function trilha(ctx, out, T0) {
+  const at = (s) => T0 + s, BATIDA = 60 / 120;
+  for (let b = 0; b * BATIDA < DUR - .5; b++) batida(ctx, out, at(b * BATIDA), b % 4 ? .5 : .9);
+  ping(ctx, out, at(.4), 660); whoosh(ctx, out, at(1.6), .5); whoosh(ctx, out, at(3.5), .6); ping(ctx, out, at(4), 990);
+}
+
+/* ================= relógio único ================= */
+let ctx = null, T0 = 0, P0 = 0, rodando = false;
+function agora() {
+  if (T_FIXO !== null) return T_FIXO;
+  if (!rodando) return 0;
+  return ctx ? ctx.currentTime - T0 : (performance.now() - P0) / 1000;
+}
+function laco() {
+  const t = Math.min(agora(), DUR);
+  renderFrame(Math.max(0, t));
+  if (t >= DUR) { rodando = false; MOTION.terminou = true; return; }   // fica no último quadro, sem botão por cima
+  requestAnimationFrame(laco);
+}
+async function comecar(comSom = true) {
+  $('start').style.display = 'none';
+  if (ctx) { try { await ctx.close(); } catch (_) {} ctx = null; }
+  if (comSom) {
+    try {
+      ctx = new AudioContext();
+      const out = barramento(ctx);            // conecta ao destino já no clique
+      await ctx.resume();
+      T0 = ctx.currentTime + ATRASO;
+      trilha(ctx, out, T0);
+      MOTION.audio = { ctx, t0: T0 };          // o gravar alinha o áudio exato por aqui
+    } catch (e) { console.warn('sem áudio:', e); ctx = null; }
+  }
+  if (!ctx) P0 = performance.now() + ATRASO * 1000;
+  rodando = true; MOTION.terminou = false;
+  requestAnimationFrame(laco);
+}
+
+/* ================= preparação ================= */
+// Fontes e imagens antes do primeiro quadro: sem isso o print sai com fonte de sistema.
+try { await Promise.race([document.fonts.ready.then(() => Promise.all(['800 150px Inter', '500 34px Inter'].map((f) => document.fonts.load(f)))), esperar(4000)]); } catch (_) {}
+async function carregarImagens(mapa) {          // { logo: 'assets/logo.svg' } → { logo: HTMLImageElement }
+  const out = {};
+  await Promise.all(Object.entries(mapa).map(async ([k, src]) => { const i = new Image(); i.src = src; await i.decode(); out[k] = i; }));
+  return out;
+}
+const IMG = await carregarImagens({});          // caminhos relativos à pasta do HTML
+
+window.renderAt = (t) => renderFrame(t);
+MOTION.tempo = agora;
+renderFrame(T_FIXO ?? 0);
+MOTION.pronto = true;
+
+const botao = $('start');
+if (T_FIXO !== null) botao.remove();
+else if (Q.has('mudo')) comecar(false);
+else {
+  botao.disabled = false;
+  botao.innerHTML = '▶ Clique para começar<small>com som</small>';
+  botao.addEventListener('click', () => comecar(true));
+  // Assistir de novo: clique no quadro depois do fim (nunca um botão desenhado por cima do vídeo)
+  stage.addEventListener('click', (e) => { if (e.target !== botao && MOTION.terminou && !navigator.webdriver) comecar(true); });
+}
+</script>
+</body>
+</html>

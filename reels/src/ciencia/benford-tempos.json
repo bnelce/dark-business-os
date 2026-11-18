@@ -1,0 +1,28 @@
+{
+  "fala": {
+    "gancho": 8,
+    "regra": 226,
+    "urnas": 440,
+    "reprova": 668,
+    "porque": 788,
+    "escala": 1099,
+    "cidades": 1259,
+    "passa": 1459,
+    "conclusao": 1579,
+    "cta": 1816
+  },
+  "fim": {
+    "gancho": 216,
+    "regra": 430,
+    "urnas": 658,
+    "reprova": 765,
+    "porque": 1089,
+    "escala": 1243,
+    "cidades": 1439,
+    "passa": 1537,
+    "conclusao": 1806,
+    "cta": 1883
+  },
+  "marca": 1898,
+  "total": 1973
+}

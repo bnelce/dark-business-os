@@ -1,0 +1,26 @@
+{
+  "fala": {
+    "gancho": 8,
+    "resposta": 222,
+    "validos": 376,
+    "mito-1": 543,
+    "simulacao": 699,
+    "origem": 1021,
+    "mito-2": 1299,
+    "conclusao": 1575,
+    "cta": 1781
+  },
+  "fim": {
+    "gancho": 212,
+    "resposta": 366,
+    "validos": 533,
+    "mito-1": 689,
+    "simulacao": 1011,
+    "origem": 1289,
+    "mito-2": 1565,
+    "conclusao": 1771,
+    "cta": 1864
+  },
+  "marca": 1879,
+  "total": 1954
+}
